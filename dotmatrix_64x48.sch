@@ -354,8 +354,6 @@ F 3 "" H 2800 1000 50  0000 C CNN
 	1    2800 1000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4750 6900 0    60   Input ~ 0
-LEDLOGICVDD
 Text GLabel 2050 2100 0    60   Input ~ 0
 E_SDA
 Text GLabel 4650 1800 2    60   Input ~ 0
@@ -1688,4 +1686,6 @@ Connection ~ 7350 2100
 Wire Wire Line
 	6950 1550 7050 1550
 Connection ~ 6950 950 
+Text GLabel 4750 6900 0    60   Input ~ 0
+ESPVDD
 $EndSCHEMATC
