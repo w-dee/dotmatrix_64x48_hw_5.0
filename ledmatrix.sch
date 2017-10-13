@@ -46,6 +46,7 @@ LIBS:diode
 LIBS:wiznet
 LIBS:mechanical
 LIBS:microchip_pic32mcu
+LIBS:ESP32-footprints-Shem-Lib
 LIBS:dotmatrix_64x48-cache
 EELAYER 26 0
 EELAYER END

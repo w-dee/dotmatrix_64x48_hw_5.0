@@ -1,4 +1,4 @@
-update=2017年09月01日 17時03分55秒
+update=2017年10月03日 10時55分33秒
 version=1
 last_client=kicad
 [pcbnew]
@@ -76,3 +76,4 @@ LibName44=diode
 LibName45=wiznet
 LibName46=mechanical
 LibName47=microchip_pic32mcu
+LibName48=ESP32-footprints-Shem-Lib
