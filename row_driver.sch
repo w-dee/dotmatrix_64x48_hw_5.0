@@ -1,34 +1,25 @@
 EESchema Schematic File Version 3
 LIBS:power
 LIBS:device
-LIBS:transistors
-LIBS:conn
 LIBS:linear
 LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
 LIBS:adc-dac
 LIBS:dsp
 LIBS:analog_switches
 LIBS:audio
 LIBS:interface
-LIBS:display
 LIBS:siliconi
 LIBS:opto
 LIBS:contrib
-LIBS:valves
 LIBS:DeeComponents
 LIBS:bb-ch340t
 LIBS:wroom-02
-LIBS:actel
 LIBS:silabs
 LIBS:ac-dc
 LIBS:ir
-LIBS:74xgxx
 LIBS:Zilog
 LIBS:dc-dc
 LIBS:references
-LIBS:cmos_ieee
 LIBS:sensors
 LIBS:bbd
 LIBS:bosch
@@ -36,17 +27,81 @@ LIBS:zetex
 LIBS:hc11
 LIBS:ESD_Protection
 LIBS:Oscillators
-LIBS:allegro
-LIBS:switches
 LIBS:pspice
-LIBS:transf
-LIBS:relays
-LIBS:ttl_ieee
-LIBS:diode
 LIBS:wiznet
-LIBS:mechanical
-LIBS:microchip_pic32mcu
 LIBS:ESP32-footprints-Shem-Lib
+LIBS:Altera
+LIBS:Battery_Management
+LIBS:Connector
+LIBS:DSP_Microchip_DSPIC33
+LIBS:Diode
+LIBS:Display
+LIBS:Espressif
+LIBS:FPGA_Actel
+LIBS:Graphic
+LIBS:LED
+LIBS:LEM
+LIBS:Lattice
+LIBS:Logic_74xgxx
+LIBS:Logic_74xx
+LIBS:Logic_CMOS_4000
+LIBS:Logic_CMOS_IEEE
+LIBS:Logic_TTL_IEEE
+LIBS:MCU_Microchip_PIC10
+LIBS:MCU_Microchip_PIC12
+LIBS:MCU_Microchip_PIC16
+LIBS:MCU_Microchip_PIC18
+LIBS:MCU_Microchip_PIC24
+LIBS:MCU_Microchip_PIC32
+LIBS:MCU_NXP_Kinetis
+LIBS:MCU_NXP_LPC
+LIBS:MCU_NXP_S08
+LIBS:MCU_ST_STM8
+LIBS:MCU_ST_STM32
+LIBS:MCU_Texas_MSP430
+LIBS:Mechanical
+LIBS:Motor
+LIBS:Power_Management
+LIBS:RFSolutions
+LIBS:Relay
+LIBS:Sensor_Current
+LIBS:Switch
+LIBS:Transformer
+LIBS:Transistor
+LIBS:Valve
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:analog_devices
+LIBS:atmel
+LIBS:brooktre
+LIBS:cypress
+LIBS:digital-audio
+LIBS:driver_gate
+LIBS:elec-unifil
+LIBS:ftdi
+LIBS:gennum
+LIBS:infineon
+LIBS:intel
+LIBS:intersil
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:memory
+LIBS:microchip
+LIBS:microcontrollers
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:onsemi
+LIBS:philips
+LIBS:powerint
+LIBS:rfcom
+LIBS:supertex
+LIBS:texas
+LIBS:triac_thyristor
+LIBS:video
+LIBS:xilinx
 LIBS:dotmatrix_64x48-cache
 EELAYER 26 0
 EELAYER END
@@ -937,7 +992,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 750  8500 900 
 Wire Wire Line
-	7500 750  8500 750 
+	7250 750  8500 750 
 Wire Wire Line
 	7850 750  7850 1000
 Wire Wire Line
@@ -1007,4 +1062,31 @@ Wire Wire Line
 	9650 2250 9650 2150
 Wire Wire Line
 	9650 2150 9450 2150
+$Comp
+L R R50
+U 1 1 59E6F4DB
+P 7250 1050
+F 0 "R50" V 7250 1000 50  0000 L CNN
+F 1 "10k DNI" V 7350 850 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7180 1050 50  0001 C CNN
+F 3 "" H 7250 1050 50  0000 C CNN
+	1    7250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR0160
+U 1 1 59E6F925
+P 7250 1450
+F 0 "#PWR0160" H 7250 1200 50  0001 C CNN
+F 1 "GND" H 7255 1277 50  0000 C CNN
+F 2 "" H 7250 1450 50  0000 C CNN
+F 3 "" H 7250 1450 50  0000 C CNN
+	1    7250 1450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1450 7250 1200
+Wire Wire Line
+	7250 900  7250 750 
+Connection ~ 7500 750 
 $EndSCHEMATC
