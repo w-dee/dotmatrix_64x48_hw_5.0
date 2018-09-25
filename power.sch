@@ -1,108 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:power
-LIBS:device
-LIBS:linear
-LIBS:regul
-LIBS:adc-dac
-LIBS:dsp
-LIBS:analog_switches
-LIBS:audio
-LIBS:interface
-LIBS:siliconi
-LIBS:opto
-LIBS:contrib
-LIBS:DeeComponents
-LIBS:bb-ch340t
-LIBS:wroom-02
-LIBS:silabs
-LIBS:ac-dc
-LIBS:ir
-LIBS:Zilog
-LIBS:dc-dc
-LIBS:references
-LIBS:sensors
-LIBS:bbd
-LIBS:bosch
-LIBS:zetex
-LIBS:hc11
-LIBS:ESD_Protection
-LIBS:Oscillators
-LIBS:pspice
-LIBS:wiznet
-LIBS:ESP32-footprints-Shem-Lib
-LIBS:Altera
-LIBS:Battery_Management
-LIBS:Connector
-LIBS:DSP_Microchip_DSPIC33
-LIBS:Diode
-LIBS:Display
-LIBS:Espressif
-LIBS:FPGA_Actel
-LIBS:Graphic
-LIBS:LED
-LIBS:LEM
-LIBS:Lattice
-LIBS:Logic_74xgxx
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
-LIBS:Logic_CMOS_IEEE
-LIBS:Logic_TTL_IEEE
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_S08
-LIBS:MCU_ST_STM8
-LIBS:MCU_ST_STM32
-LIBS:MCU_Texas_MSP430
-LIBS:Mechanical
-LIBS:Motor
-LIBS:Power_Management
-LIBS:RFSolutions
-LIBS:Relay
-LIBS:Sensor_Current
-LIBS:Switch
-LIBS:Transformer
-LIBS:Transistor
-LIBS:Valve
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:analog_devices
-LIBS:atmel
-LIBS:brooktre
-LIBS:cypress
-LIBS:digital-audio
-LIBS:driver_gate
-LIBS:elec-unifil
-LIBS:ftdi
-LIBS:gennum
-LIBS:infineon
-LIBS:intel
-LIBS:intersil
-LIBS:logic_programmable
-LIBS:maxim
-LIBS:memory
-LIBS:microchip
-LIBS:microcontrollers
-LIBS:modules
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:onsemi
-LIBS:philips
-LIBS:powerint
-LIBS:rfcom
-LIBS:supertex
-LIBS:texas
-LIBS:triac_thyristor
-LIBS:video
-LIBS:xilinx
-LIBS:dotmatrix_64x48-cache
+EESchema Schematic File Version 4
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -120,7 +16,7 @@ $EndDescr
 Text GLabel 1350 1250 1    60   Input ~ 0
 DC_IN
 $Comp
-L Polyfuse_Small F1
+L device:Polyfuse_Small F1
 U 1 1 57A2A89C
 P 2250 950
 F 0 "F1" V 2150 950 50  0000 C CNN
@@ -131,7 +27,7 @@ F 3 "" H 2250 950 50  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L VCC #PWR0134
+L power:VCC #PWR0134
 U 1 1 57A2D136
 P 4600 850
 F 0 "#PWR0134" H 4600 700 50  0001 C CNN
@@ -142,7 +38,7 @@ F 3 "" H 4600 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Barrel_Jack CONN1
+L Connector:Barrel_Jack CONN1
 U 1 1 57A2CB58
 P 1000 1350
 F 0 "CONN1" H 982 1675 50  0000 C CNN
@@ -153,7 +49,7 @@ F 3 "" H 1000 1350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0137
+L power:GND #PWR0137
 U 1 1 5837D4C6
 P 4150 1300
 F 0 "#PWR0137" H 4150 1050 50  0001 C CNN
@@ -164,7 +60,7 @@ F 3 "" H 4150 1300 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C64
+L device:C C64
 U 1 1 5836E9C2
 P 4150 1150
 F 0 "C64" H 4050 750 50  0000 L CNN
@@ -175,7 +71,7 @@ F 3 "" H 4150 1150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0136
+L power:GND #PWR0136
 U 1 1 5836E9BC
 P 3950 1300
 F 0 "#PWR0136" H 3950 1050 50  0001 C CNN
@@ -186,7 +82,7 @@ F 3 "" H 3950 1300 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CP C31
+L device:CP C31
 U 1 1 5836E9B6
 P 3950 1150
 F 0 "C31" H 3900 750 50  0000 L CNN
@@ -197,7 +93,7 @@ F 3 "" H 3950 1150 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0138
+L power:GND #PWR0138
 U 1 1 5836E9B0
 P 4400 1300
 F 0 "#PWR0138" H 4400 1050 50  0001 C CNN
@@ -208,7 +104,7 @@ F 3 "" H 4400 1300 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0135
+L power:GND #PWR0135
 U 1 1 582622CC
 P 3800 1150
 F 0 "#PWR0135" H 3800 900 50  0001 C CNN
@@ -219,7 +115,7 @@ F 3 "" H 3800 1150 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L COMMON_MODE_CHOKE T1
+L DeeComponents:COMMON_MODE_CHOKE T1
 U 1 1 582608B5
 P 3300 950
 F 0 "T1" H 3300 1128 50  0000 C CNN
@@ -230,7 +126,7 @@ F 3 "" V 3300 850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L D_Zener_Small_ALT D7
+L device:D_Zener_Small_ALT D7
 U 1 1 5859EE13
 P 1750 1100
 F 0 "D7" V 2050 1100 50  0000 L CNN
@@ -241,7 +137,7 @@ F 3 "" V 1750 1100 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C72
+L device:C C72
 U 1 1 583E92D5
 P 2650 1100
 F 0 "C72" H 2600 1350 50  0000 L CNN
@@ -252,7 +148,7 @@ F 3 "" H 2650 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C66
+L device:C C66
 U 1 1 5837D4CC
 P 4400 1150
 F 0 "C66" H 4300 750 50  0000 L CNN
@@ -262,8 +158,6 @@ F 3 "" H 4400 1150 50  0000 C CNN
 	1    4400 1150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 950  2800 950 
 Connection ~ 1750 950 
 Wire Wire Line
 	1750 950  1750 1000
@@ -275,18 +169,16 @@ Wire Wire Line
 Wire Wire Line
 	1500 950  1500 1250
 Wire Wire Line
-	3800 950  4600 950 
+	3800 950  3950 950 
 Wire Wire Line
 	1600 1350 1300 1350
 Wire Wire Line
 	2800 1250 2800 1150
-Connection ~ 2650 1250
 Wire Wire Line
-	1500 950  2150 950 
+	1500 950  1750 950 
 Connection ~ 1600 1350
 Wire Wire Line
-	1600 1250 2800 1250
-Connection ~ 2650 950 
+	1600 1250 1750 1250
 Connection ~ 4400 950 
 Wire Wire Line
 	4400 950  4400 1000
@@ -297,13 +189,13 @@ Connection ~ 3950 950
 Wire Wire Line
 	3950 1000 3950 950 
 Wire Wire Line
-	1600 1250 1600 1450
+	1600 1250 1600 1350
 Wire Wire Line
 	4600 950  4600 850 
 Wire Wire Line
 	1500 1250 1300 1250
 $Comp
-L GND #PWR0121
+L power:GND #PWR0121
 U 1 1 59DC37C3
 P 4600 3050
 F 0 "#PWR0121" H 4600 2800 50  0001 C CNN
@@ -314,7 +206,7 @@ F 3 "" H 4600 3050 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0119
+L power:GND #PWR0119
 U 1 1 59DC37C4
 P 2000 3050
 F 0 "#PWR0119" H 2000 2800 50  0001 C CNN
@@ -325,7 +217,7 @@ F 3 "" H 2000 3050 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C20
+L device:C C20
 U 1 1 59DC37C5
 P 4600 2900
 F 0 "C20" H 4550 2500 50  0000 L CNN
@@ -336,7 +228,7 @@ F 3 "" H 4600 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C18
+L device:C C18
 U 1 1 59DC37C6
 P 1450 2900
 F 0 "C18" H 1400 2450 50  0000 L CNN
@@ -347,7 +239,7 @@ F 3 "" H 1450 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0118
+L power:GND #PWR0118
 U 1 1 59DC37C7
 P 1450 3100
 F 0 "#PWR0118" H 1450 2850 50  0001 C CNN
@@ -358,7 +250,7 @@ F 3 "" H 1450 3100 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CP C1
+L device:CP C1
 U 1 1 59DC37C8
 P 1250 2900
 F 0 "C1" H 1250 2450 50  0000 L CNN
@@ -369,7 +261,7 @@ F 3 "" H 1250 2900 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0117
+L power:GND #PWR0117
 U 1 1 59DC37C9
 P 1250 3050
 F 0 "#PWR0117" H 1250 2800 50  0001 C CNN
@@ -380,7 +272,7 @@ F 3 "" H 1250 3050 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CP C19
+L device:CP C19
 U 1 1 59DC37CA
 P 2650 2900
 F 0 "C19" H 2650 2500 50  0000 L CNN
@@ -391,7 +283,7 @@ F 3 "" H 2650 2900 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0120
+L power:GND #PWR0120
 U 1 1 59DC37CB
 P 2650 3050
 F 0 "#PWR0120" H 2650 2800 50  0001 C CNN
@@ -402,7 +294,7 @@ F 3 "" H 2650 3050 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR0116
+L power:VCC #PWR0116
 U 1 1 59DC37D1
 P 1100 2300
 F 0 "#PWR0116" H 1100 2150 50  0001 C CNN
@@ -413,7 +305,7 @@ F 3 "" H 1100 2300 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L LT1129-3.3_SOT223 U14
+L regul:LT1129-3.3_SOT223 U14
 U 1 1 59DC37D9
 P 2000 2750
 F 0 "U14" H 2000 2950 50  0000 C CNN
@@ -424,17 +316,11 @@ F 3 "" H 2000 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 2750 1700 2750
-Connection ~ 1450 2750
-Connection ~ 1250 2750
-Wire Wire Line
 	1100 2300 1100 2750
-Connection ~ 2650 2750
-Connection ~ 4600 2750
 Wire Wire Line
 	1450 3100 1450 3050
 $Comp
-L CP C21
+L device:CP C21
 U 1 1 59DD837B
 P 2900 2900
 F 0 "C21" H 2900 2500 50  0000 L CNN
@@ -445,7 +331,7 @@ F 3 "" H 2900 2900 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0122
+L power:GND #PWR0122
 U 1 1 59DD8381
 P 2900 3050
 F 0 "#PWR0122" H 2900 2800 50  0001 C CNN
@@ -455,9 +341,8 @@ F 3 "" H 2900 3050 50  0000 C CNN
 	1    2900 3050
 	-1   0    0    -1  
 $EndComp
-Connection ~ 2900 2750
 $Comp
-L CP C22
+L device:CP C22
 U 1 1 59DD8453
 P 3200 2900
 F 0 "C22" H 3200 2500 50  0000 L CNN
@@ -468,7 +353,7 @@ F 3 "" H 3200 2900 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0123
+L power:GND #PWR0123
 U 1 1 59DD8459
 P 3200 3050
 F 0 "#PWR0123" H 3200 2800 50  0001 C CNN
@@ -479,7 +364,7 @@ F 3 "" H 3200 3050 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CP C23
+L device:CP C23
 U 1 1 59DD8504
 P 3450 2900
 F 0 "C23" H 3450 2500 50  0000 L CNN
@@ -490,7 +375,7 @@ F 3 "" H 3450 2900 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0124
+L power:GND #PWR0124
 U 1 1 59DD850A
 P 3450 3050
 F 0 "#PWR0124" H 3450 2800 50  0001 C CNN
@@ -500,12 +385,8 @@ F 3 "" H 3450 3050 50  0000 C CNN
 	1    3450 3050
 	-1   0    0    -1  
 $EndComp
-Connection ~ 3200 2750
-Connection ~ 3450 2750
-Wire Wire Line
-	2300 2750 4700 2750
 $Comp
-L GND #PWR0125
+L power:GND #PWR0125
 U 1 1 59DEDB07
 P 4350 3050
 F 0 "#PWR0125" H 4350 2800 50  0001 C CNN
@@ -516,7 +397,7 @@ F 3 "" H 4350 3050 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C30
+L device:C C30
 U 1 1 59DEDB0D
 P 4350 2900
 F 0 "C30" H 4300 2500 50  0000 L CNN
@@ -527,7 +408,7 @@ F 3 "" H 4350 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0127
+L power:GND #PWR0127
 U 1 1 59DEDB38
 P 4100 3050
 F 0 "#PWR0127" H 4100 2800 50  0001 C CNN
@@ -538,7 +419,7 @@ F 3 "" H 4100 3050 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L C C28
+L device:C C28
 U 1 1 59DEDB3E
 P 4100 2900
 F 0 "C28" H 4050 2500 50  0000 L CNN
@@ -548,10 +429,8 @@ F 3 "" H 4100 2900 50  0000 C CNN
 	1    4100 2900
 	1    0    0    -1  
 $EndComp
-Connection ~ 4350 2750
-Connection ~ 4100 2750
 $Comp
-L NCP1529 U20
+L DeeComponents:NCP1529 U20
 U 1 1 59E41A7A
 P 1900 4300
 F 0 "U20" H 1900 4667 50  0000 C CNN
@@ -562,7 +441,7 @@ F 3 "" H 1650 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C33
+L device:C C33
 U 1 1 59E42088
 P 1050 4350
 F 0 "C33" H 1000 3900 50  0000 L CNN
@@ -573,7 +452,7 @@ F 3 "" H 1050 4350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0146
+L power:GND #PWR0146
 U 1 1 59E4208E
 P 1050 4550
 F 0 "#PWR0146" H 1050 4300 50  0001 C CNN
@@ -586,7 +465,7 @@ $EndComp
 Wire Wire Line
 	1050 4550 1050 4500
 $Comp
-L L L1
+L device:L L1
 U 1 1 59E42358
 P 2550 4200
 F 0 "L1" V 2372 4200 50  0000 C CNN
@@ -597,7 +476,7 @@ F 3 "" H 2550 4200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C34
+L device:C C34
 U 1 1 59E426BA
 P 2950 4350
 F 0 "C34" H 2900 3750 50  0000 L CNN
@@ -608,7 +487,7 @@ F 3 "" H 2950 4350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0148
+L power:GND #PWR0148
 U 1 1 59E426C0
 P 2950 4700
 F 0 "#PWR0148" H 2950 4450 50  0001 C CNN
@@ -621,7 +500,7 @@ $EndComp
 Wire Wire Line
 	2950 4500 2950 4700
 $Comp
-L R R38
+L device:R R38
 U 1 1 59E42F9D
 P 3350 4400
 F 0 "R38" V 3350 4350 50  0000 L CNN
@@ -632,7 +511,7 @@ F 3 "" H 3350 4400 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R39
+L device:R R39
 U 1 1 59E430E9
 P 3350 4800
 F 0 "R39" V 3350 4750 50  0000 L CNN
@@ -643,7 +522,7 @@ F 3 "" H 3350 4800 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C35
+L device:C C35
 U 1 1 59E4315B
 P 3700 4350
 F 0 "C35" H 3650 3950 50  0000 L CNN
@@ -654,9 +533,9 @@ F 3 "" H 3700 4350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 4550 3350 4650
+	3350 4550 3350 4600
 Wire Wire Line
-	2400 4600 3700 4600
+	2400 4600 3350 4600
 Wire Wire Line
 	2400 4600 2400 4400
 Wire Wire Line
@@ -665,22 +544,17 @@ Connection ~ 3350 4600
 Wire Wire Line
 	2300 4200 2400 4200
 Wire Wire Line
-	2700 4200 4000 4200
-Wire Wire Line
 	3350 4200 3350 4250
 Connection ~ 3350 4200
-Connection ~ 2950 4200
 Wire Wire Line
 	3700 4600 3700 4500
 Wire Wire Line
 	1500 4400 1400 4400
 Wire Wire Line
 	1400 4400 1400 4200
-Wire Wire Line
-	850  4200 1500 4200
 Connection ~ 1400 4200
 $Comp
-L VCC #PWR0145
+L power:VCC #PWR0145
 U 1 1 59E439B6
 P 850 4000
 F 0 "#PWR0145" H 850 3850 50  0001 C CNN
@@ -692,14 +566,12 @@ F 3 "" H 850 4000 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	850  4000 850  4200
-Connection ~ 1050 4200
 Text GLabel 4700 2750 2    60   Input ~ 0
 ESPVDD
 Text GLabel 4000 4200 2    60   Input ~ 0
 ESPVDD
-Connection ~ 3700 4200
 $Comp
-L GND #PWR0147
+L power:GND #PWR0147
 U 1 1 59E441C7
 P 1900 4600
 F 0 "#PWR0147" H 1900 4350 50  0001 C CNN
@@ -710,7 +582,7 @@ F 3 "" H 1900 4600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0149
+L power:GND #PWR0149
 U 1 1 59E449D3
 P 3350 4950
 F 0 "#PWR0149" H 3350 4700 50  0001 C CNN
@@ -720,376 +592,36 @@ F 3 "" H 3350 4950 50  0000 C CNN
 	1    3350 4950
 	-1   0    0    -1  
 $EndComp
-Text Notes 3900 4450 0    60   ~ 0
+Text Notes 4200 4650 0    60   ~ 0
 Vout = 0.6*(1+330/75) = 3.24V
 Wire Wire Line
-	3800 5850 2700 5850
+	1750 950  2150 950 
 Wire Wire Line
-	850  5450 850  5850
+	1600 1350 1600 1450
 Wire Wire Line
-	2250 5450 850  5450
+	4400 950  4600 950 
 Wire Wire Line
-	3800 5450 3800 5850
+	4150 950  4400 950 
 Wire Wire Line
-	2450 5450 3800 5450
-$Comp
-L GND #PWR0150
-U 1 1 59E4D119
-P 2350 5450
-F 0 "#PWR0150" H 2350 5200 50  0001 C CNN
-F 1 "GND" H 2350 5300 50  0000 C CNN
-F 2 "" H 2350 5450 50  0000 C CNN
-F 3 "" H 2350 5450 50  0000 C CNN
-	1    2350 5450
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Conn_01x03_Female J12
-U 1 1 59E4CA8E
-P 2350 5250
-F 0 "J12" H 2300 5050 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 1650 5000 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 2350 5250 50  0001 C CNN
-F 3 "" H 2350 5250 50  0001 C CNN
-	1    2350 5250
-	0    -1   -1   0   
-$EndComp
-Text Notes 3900 6100 0    60   ~ 0
-Vout = 0.6*(1+330/75) = 3.24V
-$Comp
-L GND #PWR0154
-U 1 1 59E4C3F8
-P 3350 6600
-F 0 "#PWR0154" H 3350 6350 50  0001 C CNN
-F 1 "GND" H 3350 6450 50  0000 C CNN
-F 2 "" H 3350 6600 50  0000 C CNN
-F 3 "" H 3350 6600 50  0000 C CNN
-	1    3350 6600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L GND #PWR0152
-U 1 1 59E4C3F2
-P 1900 6250
-F 0 "#PWR0152" H 1900 6000 50  0001 C CNN
-F 1 "GND" H 1900 6100 50  0000 C CNN
-F 2 "" H 1900 6250 50  0000 C CNN
-F 3 "" H 1900 6250 50  0000 C CNN
-	1    1900 6250
-	-1   0    0    -1  
-$EndComp
-Connection ~ 3700 5850
-Connection ~ 1050 5850
-Connection ~ 1400 5850
+	3950 950  4150 950 
 Wire Wire Line
-	850  5850 1500 5850
+	3350 4600 3350 4650
 Wire Wire Line
-	1400 6050 1400 5850
+	3350 4600 3700 4600
 Wire Wire Line
-	1500 6050 1400 6050
+	1400 4200 1500 4200
 Wire Wire Line
-	3700 6250 3700 6150
-Connection ~ 2950 5850
-Connection ~ 3350 5850
+	2350 950  2800 950 
 Wire Wire Line
-	3350 5850 3350 5900
+	2700 4200 3350 4200
 Wire Wire Line
-	2300 5850 2400 5850
-Connection ~ 3350 6250
+	850  4200 1400 4200
 Wire Wire Line
-	2400 6050 2300 6050
+	1750 1250 2800 1250
 Wire Wire Line
-	2400 6250 2400 6050
+	1100 2750 1700 2750
 Wire Wire Line
-	2400 6250 3700 6250
+	3350 4200 4000 4200
 Wire Wire Line
-	3350 6200 3350 6300
-$Comp
-L C C60
-U 1 1 59E4C3D3
-P 3700 6000
-F 0 "C60" H 3650 5600 50  0000 L CNN
-F 1 "22p" H 3700 5500 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3815 5909 50  0001 L CNN
-F 3 "" H 3700 6000 50  0000 C CNN
-	1    3700 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R46
-U 1 1 59E4C3CD
-P 3350 6450
-F 0 "R46" V 3350 6400 50  0000 L CNN
-F 1 "75k" V 3450 6400 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3280 6450 50  0001 C CNN
-F 3 "" H 3350 6450 50  0000 C CNN
-	1    3350 6450
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R41
-U 1 1 59E4C3C7
-P 3350 6050
-F 0 "R41" V 3350 6000 50  0000 L CNN
-F 1 "330k" V 3450 6000 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3280 6050 50  0001 C CNN
-F 3 "" H 3350 6050 50  0000 C CNN
-	1    3350 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2950 6150 2950 6350
-$Comp
-L GND #PWR0153
-U 1 1 59E4C3C0
-P 2950 6350
-F 0 "#PWR0153" H 2950 6100 50  0001 C CNN
-F 1 "GND" H 2950 6200 50  0000 C CNN
-F 2 "" H 2950 6350 50  0000 C CNN
-F 3 "" H 2950 6350 50  0000 C CNN
-	1    2950 6350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L C C57
-U 1 1 59E4C3BA
-P 2950 6000
-F 0 "C57" H 2900 5400 50  0000 L CNN
-F 1 "10u" H 2900 5300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3065 5909 50  0001 L CNN
-F 3 "" H 2950 6000 50  0000 C CNN
-	1    2950 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L L L4
-U 1 1 59E4C3B4
-P 2550 5850
-F 0 "L4" V 2372 5850 50  0000 C CNN
-F 1 "2.2uH" V 2463 5850 50  0000 C CNN
-F 2 "components:Choke_SMD_7.3x7.3_H3.5_handsoldering" H 2550 5850 50  0001 C CNN
-F 3 "" H 2550 5850 50  0001 C CNN
-	1    2550 5850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1050 6200 1050 6150
-$Comp
-L GND #PWR0151
-U 1 1 59E4C3AD
-P 1050 6200
-F 0 "#PWR0151" H 1050 5950 50  0001 C CNN
-F 1 "GND" H 1050 6050 50  0000 C CNN
-F 2 "" H 1050 6200 50  0000 C CNN
-F 3 "" H 1050 6200 50  0000 C CNN
-	1    1050 6200
-	-1   0    0    -1  
-$EndComp
-$Comp
-L C C56
-U 1 1 59E4C3A7
-P 1050 6000
-F 0 "C56" H 1000 5550 50  0000 L CNN
-F 1 "4.7u" H 1000 5450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1165 5909 50  0001 L CNN
-F 3 "" H 1050 6000 50  0000 C CNN
-	1    1050 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L NCP1529 U21
-U 1 1 59E4C3A1
-P 1900 5950
-F 0 "U21" H 1900 6317 50  0000 C CNN
-F 1 "NCP1529" H 1900 6226 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 1950 5700 50  0001 L CNN
-F 3 "" H 1650 5600 50  0001 C CNN
-	1    1900 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 5350 7950 5350
-Wire Wire Line
-	6100 4950 6100 5350
-Wire Wire Line
-	7500 4950 6100 4950
-Wire Wire Line
-	9050 4950 9050 5350
-Wire Wire Line
-	7700 4950 9050 4950
-$Comp
-L GND #PWR0155
-U 1 1 59E4DB59
-P 7600 4950
-F 0 "#PWR0155" H 7600 4700 50  0001 C CNN
-F 1 "GND" H 7600 4800 50  0000 C CNN
-F 2 "" H 7600 4950 50  0000 C CNN
-F 3 "" H 7600 4950 50  0000 C CNN
-	1    7600 4950
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Conn_01x03_Female J13
-U 1 1 59E4DB5F
-P 7600 4750
-F 0 "J13" H 7550 4550 50  0000 L CNN
-F 1 "Conn_01x03_Female" H 6900 4500 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7600 4750 50  0001 C CNN
-F 3 "" H 7600 4750 50  0001 C CNN
-	1    7600 4750
-	0    -1   -1   0   
-$EndComp
-Text Notes 9150 5600 0    60   ~ 0
-Vout = 0.6*(1+330/75) = 3.24V
-$Comp
-L GND #PWR0156
-U 1 1 59E4DB66
-P 8600 6100
-F 0 "#PWR0156" H 8600 5850 50  0001 C CNN
-F 1 "GND" H 8600 5950 50  0000 C CNN
-F 2 "" H 8600 6100 50  0000 C CNN
-F 3 "" H 8600 6100 50  0000 C CNN
-	1    8600 6100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L GND #PWR0157
-U 1 1 59E4DB6C
-P 7150 5750
-F 0 "#PWR0157" H 7150 5500 50  0001 C CNN
-F 1 "GND" H 7150 5600 50  0000 C CNN
-F 2 "" H 7150 5750 50  0000 C CNN
-F 3 "" H 7150 5750 50  0000 C CNN
-	1    7150 5750
-	-1   0    0    -1  
-$EndComp
-Connection ~ 8950 5350
-Connection ~ 6300 5350
-Connection ~ 6650 5350
-Wire Wire Line
-	6100 5350 6750 5350
-Wire Wire Line
-	6650 5550 6650 5350
-Wire Wire Line
-	6750 5550 6650 5550
-Wire Wire Line
-	8950 5750 8950 5650
-Connection ~ 8200 5350
-Connection ~ 8600 5350
-Wire Wire Line
-	8600 5350 8600 5400
-Wire Wire Line
-	7550 5350 7650 5350
-Connection ~ 8600 5750
-Wire Wire Line
-	7650 5550 7550 5550
-Wire Wire Line
-	7650 5750 7650 5550
-Wire Wire Line
-	7650 5750 8950 5750
-Wire Wire Line
-	8600 5700 8600 5800
-$Comp
-L C C71
-U 1 1 59E4DB82
-P 8950 5500
-F 0 "C71" H 8900 5100 50  0000 L CNN
-F 1 "22p" H 8950 5000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9065 5409 50  0001 L CNN
-F 3 "" H 8950 5500 50  0000 C CNN
-	1    8950 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R49
-U 1 1 59E4DB88
-P 8600 5950
-F 0 "R49" V 8600 5900 50  0000 L CNN
-F 1 "75k" V 8700 5900 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 8530 5950 50  0001 C CNN
-F 3 "" H 8600 5950 50  0000 C CNN
-	1    8600 5950
-	-1   0    0    1   
-$EndComp
-$Comp
-L R R48
-U 1 1 59E4DB8E
-P 8600 5550
-F 0 "R48" V 8600 5500 50  0000 L CNN
-F 1 "330k" V 8700 5500 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 8530 5550 50  0001 C CNN
-F 3 "" H 8600 5550 50  0000 C CNN
-	1    8600 5550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8200 5650 8200 5850
-$Comp
-L GND #PWR0158
-U 1 1 59E4DB95
-P 8200 5850
-F 0 "#PWR0158" H 8200 5600 50  0001 C CNN
-F 1 "GND" H 8200 5700 50  0000 C CNN
-F 2 "" H 8200 5850 50  0000 C CNN
-F 3 "" H 8200 5850 50  0000 C CNN
-	1    8200 5850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L C C69
-U 1 1 59E4DB9B
-P 8200 5500
-F 0 "C69" H 8150 4900 50  0000 L CNN
-F 1 "10u" H 8150 4800 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 8315 5409 50  0001 L CNN
-F 3 "" H 8200 5500 50  0000 C CNN
-	1    8200 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L L L7
-U 1 1 59E4DBA1
-P 7800 5350
-F 0 "L7" V 7622 5350 50  0000 C CNN
-F 1 "2.2uH" V 7713 5350 50  0000 C CNN
-F 2 "components:Choke_SMD_7.3x7.3_H3.5_handsoldering" H 7800 5350 50  0001 C CNN
-F 3 "" H 7800 5350 50  0001 C CNN
-	1    7800 5350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6300 5700 6300 5650
-$Comp
-L GND #PWR0159
-U 1 1 59E4DBA8
-P 6300 5700
-F 0 "#PWR0159" H 6300 5450 50  0001 C CNN
-F 1 "GND" H 6300 5550 50  0000 C CNN
-F 2 "" H 6300 5700 50  0000 C CNN
-F 3 "" H 6300 5700 50  0000 C CNN
-	1    6300 5700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L C C61
-U 1 1 59E4DBAE
-P 6300 5500
-F 0 "C61" H 6250 5050 50  0000 L CNN
-F 1 "4.7u" H 6250 4950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6415 5409 50  0001 L CNN
-F 3 "" H 6300 5500 50  0000 C CNN
-	1    6300 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L NCP1529 U22
-U 1 1 59E4DBB4
-P 7150 5450
-F 0 "U22" H 7150 5817 50  0000 C CNN
-F 1 "NCP1529" H 7150 5726 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5_HandSoldering" H 7200 5200 50  0001 L CNN
-F 3 "" H 6900 5100 50  0001 C CNN
-	1    7150 5450
-	1    0    0    -1  
-$EndComp
+	2300 2750 4700 2750
 $EndSCHEMATC

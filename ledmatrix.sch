@@ -1,108 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:power
-LIBS:device
-LIBS:linear
-LIBS:regul
-LIBS:adc-dac
-LIBS:dsp
-LIBS:analog_switches
-LIBS:audio
-LIBS:interface
-LIBS:siliconi
-LIBS:opto
-LIBS:contrib
-LIBS:DeeComponents
-LIBS:bb-ch340t
-LIBS:wroom-02
-LIBS:silabs
-LIBS:ac-dc
-LIBS:ir
-LIBS:Zilog
-LIBS:dc-dc
-LIBS:references
-LIBS:sensors
-LIBS:bbd
-LIBS:bosch
-LIBS:zetex
-LIBS:hc11
-LIBS:ESD_Protection
-LIBS:Oscillators
-LIBS:pspice
-LIBS:wiznet
-LIBS:ESP32-footprints-Shem-Lib
-LIBS:Altera
-LIBS:Battery_Management
-LIBS:Connector
-LIBS:DSP_Microchip_DSPIC33
-LIBS:Diode
-LIBS:Display
-LIBS:Espressif
-LIBS:FPGA_Actel
-LIBS:Graphic
-LIBS:LED
-LIBS:LEM
-LIBS:Lattice
-LIBS:Logic_74xgxx
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
-LIBS:Logic_CMOS_IEEE
-LIBS:Logic_TTL_IEEE
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_S08
-LIBS:MCU_ST_STM8
-LIBS:MCU_ST_STM32
-LIBS:MCU_Texas_MSP430
-LIBS:Mechanical
-LIBS:Motor
-LIBS:Power_Management
-LIBS:RFSolutions
-LIBS:Relay
-LIBS:Sensor_Current
-LIBS:Switch
-LIBS:Transformer
-LIBS:Transistor
-LIBS:Valve
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:analog_devices
-LIBS:atmel
-LIBS:brooktre
-LIBS:cypress
-LIBS:digital-audio
-LIBS:driver_gate
-LIBS:elec-unifil
-LIBS:ftdi
-LIBS:gennum
-LIBS:infineon
-LIBS:intel
-LIBS:intersil
-LIBS:logic_programmable
-LIBS:maxim
-LIBS:memory
-LIBS:microchip
-LIBS:microcontrollers
-LIBS:modules
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:onsemi
-LIBS:philips
-LIBS:powerint
-LIBS:rfcom
-LIBS:supertex
-LIBS:texas
-LIBS:triac_thyristor
-LIBS:video
-LIBS:xilinx
-LIBS:dotmatrix_64x48-cache
+EESchema Schematic File Version 4
 EELAYER 26 0
 EELAYER END
 $Descr A3 11693 16535 portrait
@@ -422,7 +318,7 @@ r22
 Text GLabel 800  7700 0    60   Input ~ 0
 r23
 $Comp
-L LED8x8 LED1
+L DeeComponents:LED8x8 LED1
 U 1 1 59A97C81
 P 1000 900
 F 0 "LED1" H 1350 450 60  0000 L CNN
@@ -449,7 +345,7 @@ r6
 Text GLabel 800  3350 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED9
+L DeeComponents:LED8x8 LED9
 U 1 1 59AAA060
 P 1000 2350
 F 0 "LED9" H 1350 1900 60  0000 L CNN
@@ -476,7 +372,7 @@ r6
 Text GLabel 2000 1900 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED2
+L DeeComponents:LED8x8 LED2
 U 1 1 59AAA0CE
 P 2200 900
 F 0 "LED2" H 2550 450 60  0000 L CNN
@@ -503,7 +399,7 @@ r6
 Text GLabel 2000 3350 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED10
+L DeeComponents:LED8x8 LED10
 U 1 1 59AAA0DC
 P 2200 2350
 F 0 "LED10" H 2550 1900 60  0000 L CNN
@@ -530,7 +426,7 @@ r6
 Text GLabel 3200 1900 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED3
+L DeeComponents:LED8x8 LED3
 U 1 1 59AAA1BE
 P 3400 900
 F 0 "LED3" H 3750 450 60  0000 L CNN
@@ -557,7 +453,7 @@ r6
 Text GLabel 3200 3350 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED11
+L DeeComponents:LED8x8 LED11
 U 1 1 59AAA1CC
 P 3400 2350
 F 0 "LED11" H 3750 1900 60  0000 L CNN
@@ -584,7 +480,7 @@ r6
 Text GLabel 4400 1900 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED4
+L DeeComponents:LED8x8 LED4
 U 1 1 59AAA1DA
 P 4600 900
 F 0 "LED4" H 4950 450 60  0000 L CNN
@@ -611,7 +507,7 @@ r6
 Text GLabel 4400 3350 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED12
+L DeeComponents:LED8x8 LED12
 U 1 1 59AAA1E8
 P 4600 2350
 F 0 "LED12" H 4950 1900 60  0000 L CNN
@@ -638,7 +534,7 @@ r6
 Text GLabel 5600 1900 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED5
+L DeeComponents:LED8x8 LED5
 U 1 1 59AAA33E
 P 5800 900
 F 0 "LED5" H 6150 450 60  0000 L CNN
@@ -665,7 +561,7 @@ r6
 Text GLabel 5600 3350 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED13
+L DeeComponents:LED8x8 LED13
 U 1 1 59AAA34C
 P 5800 2350
 F 0 "LED13" H 6150 1900 60  0000 L CNN
@@ -692,7 +588,7 @@ r6
 Text GLabel 6800 1900 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED6
+L DeeComponents:LED8x8 LED6
 U 1 1 59AAA35A
 P 7000 900
 F 0 "LED6" H 7350 450 60  0000 L CNN
@@ -719,7 +615,7 @@ r6
 Text GLabel 6800 3350 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED14
+L DeeComponents:LED8x8 LED14
 U 1 1 59AAA368
 P 7000 2350
 F 0 "LED14" H 7350 1900 60  0000 L CNN
@@ -746,7 +642,7 @@ r6
 Text GLabel 8000 1900 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED7
+L DeeComponents:LED8x8 LED7
 U 1 1 59AAA396
 P 8200 900
 F 0 "LED7" H 8550 450 60  0000 L CNN
@@ -773,7 +669,7 @@ r6
 Text GLabel 8000 3350 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED15
+L DeeComponents:LED8x8 LED15
 U 1 1 59AAA3A4
 P 8200 2350
 F 0 "LED15" H 8550 1900 60  0000 L CNN
@@ -800,7 +696,7 @@ r6
 Text GLabel 9200 1900 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED8
+L DeeComponents:LED8x8 LED8
 U 1 1 59AAA3B2
 P 9400 900
 F 0 "LED8" H 9750 450 60  0000 L CNN
@@ -827,7 +723,7 @@ r6
 Text GLabel 9200 3350 0    60   Input ~ 0
 r7
 $Comp
-L LED8x8 LED16
+L DeeComponents:LED8x8 LED16
 U 1 1 59AAA3C0
 P 9400 2350
 F 0 "LED16" H 9750 1900 60  0000 L CNN
@@ -1094,7 +990,7 @@ co62
 Text GLabel 10150 5150 1    60   Input ~ 0
 co63
 $Comp
-L LED8x8 LED17
+L DeeComponents:LED8x8 LED17
 U 1 1 59AAA9CE
 P 1000 3800
 F 0 "LED17" H 1350 3350 60  0000 L CNN
@@ -1105,7 +1001,7 @@ F 3 "" H 1000 3800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED25
+L DeeComponents:LED8x8 LED25
 U 1 1 59AAA9DC
 P 1000 5250
 F 0 "LED25" H 1350 4800 60  0000 L CNN
@@ -1116,7 +1012,7 @@ F 3 "" H 1000 5250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED18
+L DeeComponents:LED8x8 LED18
 U 1 1 59AAA9EA
 P 2200 3800
 F 0 "LED18" H 2550 3350 60  0000 L CNN
@@ -1127,7 +1023,7 @@ F 3 "" H 2200 3800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED26
+L DeeComponents:LED8x8 LED26
 U 1 1 59AAA9F8
 P 2200 5250
 F 0 "LED26" H 2550 4800 60  0000 L CNN
@@ -1138,7 +1034,7 @@ F 3 "" H 2200 5250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED19
+L DeeComponents:LED8x8 LED19
 U 1 1 59AAAA06
 P 3400 3800
 F 0 "LED19" H 3750 3350 60  0000 L CNN
@@ -1149,7 +1045,7 @@ F 3 "" H 3400 3800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED27
+L DeeComponents:LED8x8 LED27
 U 1 1 59AAAA14
 P 3400 5250
 F 0 "LED27" H 3750 4800 60  0000 L CNN
@@ -1160,7 +1056,7 @@ F 3 "" H 3400 5250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED20
+L DeeComponents:LED8x8 LED20
 U 1 1 59AAAA22
 P 4600 3800
 F 0 "LED20" H 4950 3350 60  0000 L CNN
@@ -1171,7 +1067,7 @@ F 3 "" H 4600 3800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED28
+L DeeComponents:LED8x8 LED28
 U 1 1 59AAAA30
 P 4600 5250
 F 0 "LED28" H 4950 4800 60  0000 L CNN
@@ -1182,7 +1078,7 @@ F 3 "" H 4600 5250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED21
+L DeeComponents:LED8x8 LED21
 U 1 1 59AAAA3E
 P 5800 3800
 F 0 "LED21" H 6150 3350 60  0000 L CNN
@@ -1193,7 +1089,7 @@ F 3 "" H 5800 3800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED29
+L DeeComponents:LED8x8 LED29
 U 1 1 59AAAA4C
 P 5800 5250
 F 0 "LED29" H 6150 4800 60  0000 L CNN
@@ -1204,7 +1100,7 @@ F 3 "" H 5800 5250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED22
+L DeeComponents:LED8x8 LED22
 U 1 1 59AAAA5A
 P 7000 3800
 F 0 "LED22" H 7350 3350 60  0000 L CNN
@@ -1215,7 +1111,7 @@ F 3 "" H 7000 3800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED30
+L DeeComponents:LED8x8 LED30
 U 1 1 59AAAA68
 P 7000 5250
 F 0 "LED30" H 7350 4800 60  0000 L CNN
@@ -1226,7 +1122,7 @@ F 3 "" H 7000 5250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED23
+L DeeComponents:LED8x8 LED23
 U 1 1 59AAAA76
 P 8200 3800
 F 0 "LED23" H 8550 3350 60  0000 L CNN
@@ -1237,7 +1133,7 @@ F 3 "" H 8200 3800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED31
+L DeeComponents:LED8x8 LED31
 U 1 1 59AAAA84
 P 8200 5250
 F 0 "LED31" H 8550 4800 60  0000 L CNN
@@ -1248,7 +1144,7 @@ F 3 "" H 8200 5250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED24
+L DeeComponents:LED8x8 LED24
 U 1 1 59AAAA92
 P 9400 3800
 F 0 "LED24" H 9750 3350 60  0000 L CNN
@@ -1259,7 +1155,7 @@ F 3 "" H 9400 3800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED32
+L DeeComponents:LED8x8 LED32
 U 1 1 59AAAAA0
 P 9400 5250
 F 0 "LED32" H 9750 4800 60  0000 L CNN
@@ -1766,7 +1662,7 @@ co62
 Text GLabel 10150 8050 1    60   Input ~ 0
 co63
 $Comp
-L LED8x8 LED33
+L DeeComponents:LED8x8 LED33
 U 1 1 59AAB966
 P 1000 6700
 F 0 "LED33" H 1350 6250 60  0000 L CNN
@@ -1777,7 +1673,7 @@ F 3 "" H 1000 6700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED41
+L DeeComponents:LED8x8 LED41
 U 1 1 59AAB96C
 P 1000 8150
 F 0 "LED41" H 1350 7700 60  0000 L CNN
@@ -1788,7 +1684,7 @@ F 3 "" H 1000 8150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED34
+L DeeComponents:LED8x8 LED34
 U 1 1 59AAB972
 P 2200 6700
 F 0 "LED34" H 2550 6250 60  0000 L CNN
@@ -1799,7 +1695,7 @@ F 3 "" H 2200 6700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED42
+L DeeComponents:LED8x8 LED42
 U 1 1 59AAB978
 P 2200 8150
 F 0 "LED42" H 2550 7700 60  0000 L CNN
@@ -1810,7 +1706,7 @@ F 3 "" H 2200 8150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED35
+L DeeComponents:LED8x8 LED35
 U 1 1 59AAB97E
 P 3400 6700
 F 0 "LED35" H 3750 6250 60  0000 L CNN
@@ -1821,7 +1717,7 @@ F 3 "" H 3400 6700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED43
+L DeeComponents:LED8x8 LED43
 U 1 1 59AAB984
 P 3400 8150
 F 0 "LED43" H 3750 7700 60  0000 L CNN
@@ -1832,7 +1728,7 @@ F 3 "" H 3400 8150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED36
+L DeeComponents:LED8x8 LED36
 U 1 1 59AAB98A
 P 4600 6700
 F 0 "LED36" H 4950 6250 60  0000 L CNN
@@ -1843,7 +1739,7 @@ F 3 "" H 4600 6700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED44
+L DeeComponents:LED8x8 LED44
 U 1 1 59AAB990
 P 4600 8150
 F 0 "LED44" H 4950 7700 60  0000 L CNN
@@ -1854,7 +1750,7 @@ F 3 "" H 4600 8150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED38
+L DeeComponents:LED8x8 LED38
 U 1 1 59AAB9A2
 P 7000 6700
 F 0 "LED38" H 7350 6250 60  0000 L CNN
@@ -1865,7 +1761,7 @@ F 3 "" H 7000 6700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED46
+L DeeComponents:LED8x8 LED46
 U 1 1 59AAB9A8
 P 7000 8150
 F 0 "LED46" H 7350 7700 60  0000 L CNN
@@ -1876,7 +1772,7 @@ F 3 "" H 7000 8150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED39
+L DeeComponents:LED8x8 LED39
 U 1 1 59AAB9AE
 P 8200 6700
 F 0 "LED39" H 8550 6250 60  0000 L CNN
@@ -1887,7 +1783,7 @@ F 3 "" H 8200 6700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED47
+L DeeComponents:LED8x8 LED47
 U 1 1 59AAB9B4
 P 8200 8150
 F 0 "LED47" H 8550 7700 60  0000 L CNN
@@ -1898,7 +1794,7 @@ F 3 "" H 8200 8150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED40
+L DeeComponents:LED8x8 LED40
 U 1 1 59AAB9BA
 P 9400 6700
 F 0 "LED40" H 9750 6250 60  0000 L CNN
@@ -1909,7 +1805,7 @@ F 3 "" H 9400 6700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED48
+L DeeComponents:LED8x8 LED48
 U 1 1 59AAB9C0
 P 9400 8150
 F 0 "LED48" H 9750 7700 60  0000 L CNN
@@ -1920,7 +1816,7 @@ F 3 "" H 9400 8150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED45
+L DeeComponents:LED8x8 LED45
 U 1 1 59AAB99C
 P 5800 8150
 F 0 "LED45" H 6150 7700 60  0000 L CNN
@@ -1931,7 +1827,7 @@ F 3 "" H 5800 8150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED8x8 LED37
+L DeeComponents:LED8x8 LED37
 U 1 1 59AAB996
 P 5800 6700
 F 0 "LED37" H 6150 6250 60  0000 L CNN

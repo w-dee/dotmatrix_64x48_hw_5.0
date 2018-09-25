@@ -1,108 +1,4 @@
-EESchema Schematic File Version 3
-LIBS:power
-LIBS:device
-LIBS:linear
-LIBS:regul
-LIBS:adc-dac
-LIBS:dsp
-LIBS:analog_switches
-LIBS:audio
-LIBS:interface
-LIBS:siliconi
-LIBS:opto
-LIBS:contrib
-LIBS:DeeComponents
-LIBS:bb-ch340t
-LIBS:wroom-02
-LIBS:silabs
-LIBS:ac-dc
-LIBS:ir
-LIBS:Zilog
-LIBS:dc-dc
-LIBS:references
-LIBS:sensors
-LIBS:bbd
-LIBS:bosch
-LIBS:zetex
-LIBS:hc11
-LIBS:ESD_Protection
-LIBS:Oscillators
-LIBS:pspice
-LIBS:wiznet
-LIBS:ESP32-footprints-Shem-Lib
-LIBS:Altera
-LIBS:Battery_Management
-LIBS:Connector
-LIBS:DSP_Microchip_DSPIC33
-LIBS:Diode
-LIBS:Display
-LIBS:Espressif
-LIBS:FPGA_Actel
-LIBS:Graphic
-LIBS:LED
-LIBS:LEM
-LIBS:Lattice
-LIBS:Logic_74xgxx
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
-LIBS:Logic_CMOS_IEEE
-LIBS:Logic_TTL_IEEE
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_S08
-LIBS:MCU_ST_STM8
-LIBS:MCU_ST_STM32
-LIBS:MCU_Texas_MSP430
-LIBS:Mechanical
-LIBS:Motor
-LIBS:Power_Management
-LIBS:RFSolutions
-LIBS:Relay
-LIBS:Sensor_Current
-LIBS:Switch
-LIBS:Transformer
-LIBS:Transistor
-LIBS:Valve
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:analog_devices
-LIBS:atmel
-LIBS:brooktre
-LIBS:cypress
-LIBS:digital-audio
-LIBS:driver_gate
-LIBS:elec-unifil
-LIBS:ftdi
-LIBS:gennum
-LIBS:infineon
-LIBS:intel
-LIBS:intersil
-LIBS:logic_programmable
-LIBS:maxim
-LIBS:memory
-LIBS:microchip
-LIBS:microcontrollers
-LIBS:modules
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:onsemi
-LIBS:philips
-LIBS:powerint
-LIBS:rfcom
-LIBS:supertex
-LIBS:texas
-LIBS:triac_thyristor
-LIBS:video
-LIBS:xilinx
-LIBS:dotmatrix_64x48-cache
+EESchema Schematic File Version 4
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -260,7 +156,7 @@ F16 "IN5" I B 5600 2200 60
 F17 "OUT5" I T 5600 1500 60 
 $EndSheet
 $Comp
-L SW_Push SW3
+L Switch:SW_Push SW3
 U 1 1 58181DE2
 P 7700 1250
 F 0 "SW3" H 7700 1384 50  0000 C CNN
@@ -271,7 +167,7 @@ F 3 "" H 7700 1450 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D_Schottky_Small D1
+L device:D_Schottky_Small D1
 U 1 1 58182A5C
 P 9450 2900
 F 0 "D1" H 9000 2900 50  0000 C CNN
@@ -284,7 +180,7 @@ $EndComp
 Text Label 9550 2900 0    60   ~ 0
 SEL1
 $Comp
-L SW_Push SW4
+L Switch:SW_Push SW4
 U 1 1 58183FA7
 P 8050 1000
 F 0 "SW4" H 8050 1134 50  0000 C CNN
@@ -295,7 +191,7 @@ F 3 "" H 8050 1200 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D_Schottky_Small D2
+L device:D_Schottky_Small D2
 U 1 1 58183FAD
 P 9450 3000
 F 0 "D2" H 9000 3000 50  0000 C CNN
@@ -308,7 +204,7 @@ $EndComp
 Text Label 9550 3000 0    60   ~ 0
 SEL2
 $Comp
-L SW_Push SW5
+L Switch:SW_Push SW5
 U 1 1 58184034
 P 8050 1500
 F 0 "SW5" H 8050 1634 50  0000 C CNN
@@ -319,7 +215,7 @@ F 3 "" H 8050 1700 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D_Schottky_Small D3
+L device:D_Schottky_Small D3
 U 1 1 5818403A
 P 9450 3100
 F 0 "D3" H 9000 3100 50  0000 C CNN
@@ -332,7 +228,7 @@ $EndComp
 Text Label 9550 3100 0    60   ~ 0
 SEL3
 $Comp
-L SW_Push SW6
+L Switch:SW_Push SW6
 U 1 1 58184145
 P 8500 1300
 F 0 "SW6" H 8500 1434 50  0000 C CNN
@@ -343,7 +239,7 @@ F 3 "" H 8500 1500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D_Schottky_Small D4
+L device:D_Schottky_Small D4
 U 1 1 5818414B
 P 9450 3200
 F 0 "D4" H 9000 3200 50  0000 C CNN
@@ -356,7 +252,7 @@ $EndComp
 Text Label 9550 3200 0    60   ~ 0
 SEL4
 $Comp
-L SW_Push SW7
+L Switch:SW_Push SW7
 U 1 1 58184270
 P 9050 1300
 F 0 "SW7" H 9050 1434 50  0000 C CNN
@@ -367,7 +263,7 @@ F 3 "" H 9050 1500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D_Schottky_Small D5
+L device:D_Schottky_Small D5
 U 1 1 58184276
 P 9450 3300
 F 0 "D5" H 9000 3300 50  0000 C CNN
@@ -380,7 +276,7 @@ $EndComp
 Text Label 9550 3300 0    60   ~ 0
 SEL5
 $Comp
-L SW_Push SW8
+L Switch:SW_Push SW8
 U 1 1 58184403
 P 9550 1300
 F 0 "SW8" H 9550 1434 50  0000 C CNN
@@ -391,7 +287,7 @@ F 3 "" H 9550 1500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L D_Schottky_Small D6
+L device:D_Schottky_Small D6
 U 1 1 58184409
 P 9450 3400
 F 0 "D6" H 9000 3400 50  0000 C CNN
@@ -406,7 +302,7 @@ SEL6
 Text GLabel 9900 2800 2    60   Input ~ 0
 BUTTONSENSE
 $Comp
-L R R28
+L device:R R28
 U 1 1 58185F31
 P 9650 2400
 F 0 "R28" V 9650 2350 50  0000 L CNN
@@ -417,7 +313,7 @@ F 3 "" H 9650 2400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C14
+L device:C C14
 U 1 1 58184665
 P 6950 5100
 F 0 "C14" H 6900 4550 50  0000 L CNN
@@ -428,7 +324,7 @@ F 3 "" H 6950 5100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C15
+L device:C C15
 U 1 1 58184673
 P 7250 5100
 F 0 "C15" H 7200 4550 50  0000 L CNN
@@ -439,7 +335,7 @@ F 3 "" H 7250 5100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC595-alt-vdd U11
+L DeeComponents:74HC595-alt-vdd U11
 U 1 1 581950A0
 P 2650 3650
 F 0 "U11" V 2800 3600 50  0000 L CNN
@@ -450,7 +346,7 @@ F 3 "" H 2650 3650 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L 74HC595-alt-vdd U13
+L DeeComponents:74HC595-alt-vdd U13
 U 1 1 5819597E
 P 4000 3650
 F 0 "U13" V 4150 3600 50  0000 L CNN
@@ -461,7 +357,7 @@ F 3 "" H 4000 3650 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L 74HC595-alt-vdd U15
+L DeeComponents:74HC595-alt-vdd U15
 U 1 1 581959CD
 P 5350 3650
 F 0 "U15" V 5500 3600 50  0000 L CNN
@@ -472,7 +368,7 @@ F 3 "" H 5350 3650 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L CP C59
+L device:CP C59
 U 1 1 582447DE
 P 10050 5300
 F 0 "C59" H 9950 4900 50  0000 L CNN
@@ -483,7 +379,7 @@ F 3 "" H 10050 5300 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R47
+L device:R R47
 U 1 1 582610FB
 P 2800 5000
 F 0 "R47" V 2800 4900 50  0000 L CNN
@@ -494,7 +390,7 @@ F 3 "" H 2800 5000 50  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L C C65
+L device:C C65
 U 1 1 58379E0B
 P 9250 5300
 F 0 "C65" H 9200 4850 50  0000 L CNN
@@ -505,7 +401,7 @@ F 3 "" H 9250 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C67
+L device:C C67
 U 1 1 5837DBAB
 P 9650 5300
 F 0 "C67" H 9600 4900 50  0000 L CNN
@@ -516,7 +412,7 @@ F 3 "" H 9650 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR081
+L power:VCC #PWR081
 U 1 1 584A8233
 P 6650 4950
 F 0 "#PWR081" H 6650 4800 50  0001 C CNN
@@ -527,7 +423,7 @@ F 3 "" H 6650 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR082
+L power:VCC #PWR082
 U 1 1 584A84D9
 P 6950 4950
 F 0 "#PWR082" H 6950 4800 50  0001 C CNN
@@ -538,7 +434,7 @@ F 3 "" H 6950 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR083
+L power:VCC #PWR083
 U 1 1 584A84FF
 P 7250 4950
 F 0 "#PWR083" H 7250 4800 50  0001 C CNN
@@ -549,7 +445,7 @@ F 3 "" H 7250 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR085
+L power:VCC #PWR085
 U 1 1 584A8637
 P 2800 5250
 F 0 "#PWR085" H 2800 5100 50  0001 C CNN
@@ -560,7 +456,7 @@ F 3 "" H 2800 5250 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L VCC #PWR076
+L power:VCC #PWR076
 U 1 1 584A865D
 P 3700 4350
 F 0 "#PWR076" H 3700 4200 50  0001 C CNN
@@ -571,7 +467,7 @@ F 3 "" H 3700 4350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L VCC #PWR073
+L power:VCC #PWR073
 U 1 1 584A88B2
 P 2350 4350
 F 0 "#PWR073" H 2350 4200 50  0001 C CNN
@@ -582,7 +478,7 @@ F 3 "" H 2350 4350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L VCC #PWR079
+L power:VCC #PWR079
 U 1 1 584A8A58
 P 5050 4350
 F 0 "#PWR079" H 5050 4200 50  0001 C CNN
@@ -595,7 +491,7 @@ $EndComp
 Text GLabel 10650 5150 2    60   Input ~ 0
 LEDVDD
 $Comp
-L INDUCTOR L2
+L pspice:INDUCTOR L2
 U 1 1 584AB0DC
 P 8700 5150
 F 0 "L2" H 8550 5300 50  0000 C CNN
@@ -606,7 +502,7 @@ F 3 "" H 8700 5150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR084
+L power:VCC #PWR084
 U 1 1 584AB1DF
 P 8400 5150
 F 0 "#PWR084" H 8400 5000 50  0001 C CNN
@@ -617,7 +513,7 @@ F 3 "" H 8400 5150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TEST_1P W22
+L Connector:Test_Point W22
 U 1 1 58ABC40E
 P 5750 4350
 F 0 "W22" V 5800 4400 50  0000 C CNN
@@ -628,7 +524,7 @@ F 3 "" H 5950 4350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L TEST_1P W21
+L Connector:Test_Point W21
 U 1 1 58ABC483
 P 4400 4350
 F 0 "W21" V 4450 4400 50  0000 C CNN
@@ -639,7 +535,7 @@ F 3 "" H 4600 4350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L TEST_1P W20
+L Connector:Test_Point W20
 U 1 1 58ABC749
 P 3050 4350
 F 0 "W20" V 3100 4400 50  0000 C CNN
@@ -650,7 +546,7 @@ F 3 "" H 3250 4350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L C C13
+L device:C C13
 U 1 1 58184657
 P 6650 5100
 F 0 "C13" H 6550 4550 50  0000 L CNN
@@ -661,7 +557,7 @@ F 3 "" H 6650 5100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR086
+L power:GND #PWR086
 U 1 1 5943AB4A
 P 6650 5250
 F 0 "#PWR086" H 6650 5000 50  0001 C CNN
@@ -672,7 +568,7 @@ F 3 "" H 6650 5250 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR087
+L power:GND #PWR087
 U 1 1 5943AB76
 P 6950 5250
 F 0 "#PWR087" H 6950 5000 50  0001 C CNN
@@ -683,7 +579,7 @@ F 3 "" H 6950 5250 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR088
+L power:GND #PWR088
 U 1 1 5943ABA2
 P 7250 5250
 F 0 "#PWR088" H 7250 5000 50  0001 C CNN
@@ -694,7 +590,7 @@ F 3 "" H 7250 5250 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR089
+L power:GND #PWR089
 U 1 1 5943AE2E
 P 9250 5450
 F 0 "#PWR089" H 9250 5200 50  0001 C CNN
@@ -705,7 +601,7 @@ F 3 "" H 9250 5450 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR090
+L power:GND #PWR090
 U 1 1 5943AE34
 P 9650 5450
 F 0 "#PWR090" H 9650 5200 50  0001 C CNN
@@ -716,7 +612,7 @@ F 3 "" H 9650 5450 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR091
+L power:GND #PWR091
 U 1 1 5943AE3A
 P 10050 5450
 F 0 "#PWR091" H 10050 5200 50  0001 C CNN
@@ -727,7 +623,7 @@ F 3 "" H 10050 5450 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR080
+L power:GND #PWR080
 U 1 1 5943B74E
 P 5200 4350
 F 0 "#PWR080" H 5200 4100 50  0001 C CNN
@@ -738,7 +634,7 @@ F 3 "" H 5200 4350 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR078
+L power:GND #PWR078
 U 1 1 5943B77A
 P 4900 4350
 F 0 "#PWR078" H 4900 4100 50  0001 C CNN
@@ -749,7 +645,7 @@ F 3 "" H 4900 4350 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR077
+L power:GND #PWR077
 U 1 1 5943B994
 P 3850 4350
 F 0 "#PWR077" H 3850 4100 50  0001 C CNN
@@ -760,7 +656,7 @@ F 3 "" H 3850 4350 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR075
+L power:GND #PWR075
 U 1 1 5943B9C0
 P 3550 4350
 F 0 "#PWR075" H 3550 4100 50  0001 C CNN
@@ -771,7 +667,7 @@ F 3 "" H 3550 4350 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR074
+L power:GND #PWR074
 U 1 1 5943B9EC
 P 2500 4350
 F 0 "#PWR074" H 2500 4100 50  0001 C CNN
@@ -782,7 +678,7 @@ F 3 "" H 2500 4350 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR072
+L power:GND #PWR072
 U 1 1 5943BA18
 P 2200 4350
 F 0 "#PWR072" H 2200 4100 50  0001 C CNN
@@ -797,7 +693,7 @@ Text Notes 9750 2250 0    60   ~ 0
 Text GLabel 9450 2150 0    60   Input ~ 0
 ESPVDD
 $Comp
-L Conn_01x07_Female J10
+L Connector:Conn_01x07_Female J10
 U 1 1 59DED4D1
 P 11000 1200
 F 0 "J10" H 10800 800 50  0000 L CNN
@@ -822,7 +718,7 @@ SWPAD_OK
 Text Label 10100 1500 0    60   ~ 0
 SWPAD_CANCEL
 $Comp
-L Conn_01x07_Female J9
+L Connector:Conn_01x07_Female J9
 U 1 1 59DEEA85
 P 9150 3100
 F 0 "J9" H 8950 2700 50  0000 L CNN
@@ -832,8 +728,6 @@ F 3 "" H 9150 3100 50  0001 C CNN
 	1    9150 3100
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3050 4350 3250 4350
 Wire Wire Line
 	3250 4350 3250 2950
 Wire Wire Line
@@ -858,8 +752,6 @@ Wire Wire Line
 	2900 4350 2900 4850
 Wire Wire Line
 	4250 4350 4250 4850
-Wire Wire Line
-	4400 4350 4600 4350
 Wire Wire Line
 	4600 4350 4600 2950
 Wire Wire Line
@@ -959,14 +851,14 @@ Wire Wire Line
 Wire Wire Line
 	3100 1400 3100 1500
 Wire Wire Line
-	9350 2800 9900 2800
+	9350 2800 9650 2800
 Wire Wire Line
 	9650 2550 9650 2800
 Connection ~ 9650 2800
 Wire Wire Line
 	2800 5150 2800 5250
 Wire Wire Line
-	8950 5150 10650 5150
+	8950 5150 9250 5150
 Connection ~ 10050 5150
 Connection ~ 9650 5150
 Connection ~ 9250 5150
@@ -974,25 +866,22 @@ Wire Wire Line
 	8450 5150 8400 5150
 Wire Wire Line
 	5750 4350 5800 4350
-Connection ~ 5800 4350
-Connection ~ 4450 4350
-Connection ~ 3100 4350
 Wire Wire Line
 	4150 4350 4150 4750
 Wire Wire Line
-	2800 4750 5500 4750
+	2800 4750 4150 4750
 Wire Wire Line
-	2800 4350 2800 4850
+	2800 4350 2800 4750
 Wire Wire Line
 	5500 4750 5500 4350
 Connection ~ 4150 4750
 Connection ~ 2800 4750
 Wire Wire Line
-	8500 900  10800 900 
+	8500 900  8850 900 
 Wire Wire Line
 	8500 750  8500 900 
 Wire Wire Line
-	7250 750  8500 750 
+	7250 750  7500 750 
 Wire Wire Line
 	7850 750  7850 1000
 Wire Wire Line
@@ -1044,7 +933,7 @@ Wire Wire Line
 	8850 1300 8850 900 
 Connection ~ 8850 900 
 Wire Wire Line
-	8300 1300 8300 750 
+	8300 1300 8300 1250
 Connection ~ 8300 750 
 Wire Wire Line
 	7850 1500 7850 1350
@@ -1063,7 +952,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 2150 9450 2150
 $Comp
-L R R50
+L device:R R50
 U 1 1 59E6F4DB
 P 7250 1050
 F 0 "R50" V 7250 1000 50  0000 L CNN
@@ -1074,7 +963,7 @@ F 3 "" H 7250 1050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0160
+L power:GND #PWR0160
 U 1 1 59E6F925
 P 7250 1450
 F 0 "#PWR0160" H 7250 1200 50  0001 C CNN
@@ -1089,4 +978,32 @@ Wire Wire Line
 Wire Wire Line
 	7250 900  7250 750 
 Connection ~ 7500 750 
+Wire Wire Line
+	9650 2800 9900 2800
+Wire Wire Line
+	10050 5150 10650 5150
+Wire Wire Line
+	9650 5150 10050 5150
+Wire Wire Line
+	9250 5150 9650 5150
+Wire Wire Line
+	4150 4750 5500 4750
+Wire Wire Line
+	2800 4750 2800 4850
+Wire Wire Line
+	9350 900  10800 900 
+Wire Wire Line
+	8850 900  9350 900 
+Wire Wire Line
+	8300 750  8500 750 
+Wire Wire Line
+	8300 1250 8300 750 
+Wire Wire Line
+	7850 750  8300 750 
+Wire Wire Line
+	7500 750  7850 750 
+Wire Wire Line
+	3050 4350 3250 4350
+Wire Wire Line
+	4400 4350 4600 4350
 $EndSCHEMATC
