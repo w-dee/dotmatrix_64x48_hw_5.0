@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:dotmatrix_64x48-cache
+EELAYER 28 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -57,26 +58,18 @@ F 3 "" H 2050 2800 50  0000 C CNN
 	1    2050 2800
 	1    0    0    -1  
 $EndComp
-Text GLabel 7850 2650 3    60   Input ~ 0
-COLPWCLK1
 Text GLabel 7750 2650 3    60   Input ~ 0
 COLLATCH
 Text GLabel 7650 2650 3    60   Input ~ 0
 COLCLK
-Text GLabel 5750 2650 3    60   Input ~ 0
-COLPWCLK0
 Text GLabel 5650 2650 3    60   Input ~ 0
 COLLATCH
 Text GLabel 5550 2650 3    60   Input ~ 0
 COLCLK
-Text GLabel 3650 2650 3    60   Input ~ 0
-COLPWCLK1
 Text GLabel 3550 2650 3    60   Input ~ 0
 COLLATCH
 Text GLabel 3450 2650 3    60   Input ~ 0
 COLCLK
-Text GLabel 1550 2650 3    60   Input ~ 0
-COLPWCLK0
 Text GLabel 1450 2650 3    60   Input ~ 0
 COLLATCH
 Text GLabel 1350 2650 3    60   Input ~ 0
@@ -125,29 +118,21 @@ Wire Wire Line
 Wire Wire Line
 	2050 2350 2050 2650
 Wire Wire Line
-	7850 2350 7850 2650
-Wire Wire Line
 	7750 2350 7750 2650
 Wire Wire Line
-	7650 2350 7650 2650
-Wire Wire Line
-	5750 2350 5750 2650
+	7650 2350 7650 2450
 Wire Wire Line
 	5650 2350 5650 2650
 Wire Wire Line
-	5550 2350 5550 2650
-Wire Wire Line
-	3650 2350 3650 2650
+	5550 2350 5550 2450
 Wire Wire Line
 	3550 2350 3550 2650
 Wire Wire Line
-	3450 2350 3450 2650
-Wire Wire Line
-	1550 2350 1550 2650
+	3450 2350 3450 2450
 Wire Wire Line
 	1450 2350 1450 2650
 Wire Wire Line
-	1350 2350 1350 2650
+	1350 2350 1350 2450
 Wire Wire Line
 	1250 2350 1250 2450
 Wire Wire Line
@@ -433,26 +418,18 @@ F 3 "" H 2050 5600 50  0000 C CNN
 	1    2050 5600
 	1    0    0    -1  
 $EndComp
-Text GLabel 7850 5450 3    60   Input ~ 0
-COLPWCLK1
 Text GLabel 7750 5450 3    60   Input ~ 0
 COLLATCH
 Text GLabel 7650 5450 3    60   Input ~ 0
 COLCLK
-Text GLabel 5750 5450 3    60   Input ~ 0
-COLPWCLK0
 Text GLabel 5650 5450 3    60   Input ~ 0
 COLLATCH
 Text GLabel 5550 5450 3    60   Input ~ 0
 COLCLK
-Text GLabel 3650 5450 3    60   Input ~ 0
-COLPWCLK1
 Text GLabel 3550 5450 3    60   Input ~ 0
 COLLATCH
 Text GLabel 3450 5450 3    60   Input ~ 0
 COLCLK
-Text GLabel 1550 5450 3    60   Input ~ 0
-COLPWCLK0
 Text GLabel 1450 5450 3    60   Input ~ 0
 COLLATCH
 Text GLabel 1350 5450 3    60   Input ~ 0
@@ -490,8 +467,6 @@ F 3 "" H 2900 4750 60  0000 C CNN
 	1    3900 4450
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2150 6800 0    60   Input ~ 0
-LEDLOGICVDD
 Wire Wire Line
 	8500 5150 8500 5450
 Wire Wire Line
@@ -501,29 +476,21 @@ Wire Wire Line
 Wire Wire Line
 	2050 5150 2050 5450
 Wire Wire Line
-	7850 5150 7850 5450
-Wire Wire Line
 	7750 5150 7750 5450
 Wire Wire Line
 	7650 5150 7650 5250
 Wire Wire Line
-	5750 5150 5750 5450
-Wire Wire Line
 	5650 5150 5650 5450
 Wire Wire Line
-	5550 5150 5550 5450
-Wire Wire Line
-	3650 5150 3650 5450
+	5550 5150 5550 5250
 Wire Wire Line
 	3550 5150 3550 5450
 Wire Wire Line
-	3450 5150 3450 5450
-Wire Wire Line
-	1550 5150 1550 5450
+	3450 5150 3450 5250
 Wire Wire Line
 	1450 5150 1450 5450
 Wire Wire Line
-	1350 5150 1350 5450
+	1350 5150 1350 5250
 Wire Wire Line
 	1250 5150 1250 5250
 Wire Wire Line
@@ -1085,162 +1052,6 @@ F 3 "" H 9400 2750 50  0000 C CNN
 	1    9400 2750
 	1    0    0    -1  
 $EndComp
-Text GLabel 1650 2700 3    60   Input ~ 0
-COLPWCLK1
-$Comp
-L device:C C80
-U 1 1 596DAB56
-P 1800 2850
-F 0 "C80" H 1850 2950 50  0000 L CNN
-F 1 "3p" H 1850 2750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1915 2759 50  0001 L CNN
-F 3 "" H 1800 2850 50  0000 C CNN
-	1    1800 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR051
-U 1 1 596DACFA
-P 1800 3000
-F 0 "#PWR051" H 1800 2750 50  0001 C CNN
-F 1 "GND" H 1805 2827 50  0000 C CNN
-F 2 "" H 1800 3000 50  0000 C CNN
-F 3 "" H 1800 3000 50  0000 C CNN
-	1    1800 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 2700 1650 2700
-Text GLabel 5850 2700 3    60   Input ~ 0
-COLPWCLK1
-$Comp
-L device:C C84
-U 1 1 596DB002
-P 6000 2850
-F 0 "C84" H 6050 2950 50  0000 L CNN
-F 1 "3p" H 6050 2750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6115 2759 50  0001 L CNN
-F 3 "" H 6000 2850 50  0000 C CNN
-	1    6000 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR053
-U 1 1 596DB008
-P 6000 3000
-F 0 "#PWR053" H 6000 2750 50  0001 C CNN
-F 1 "GND" H 6005 2827 50  0000 C CNN
-F 2 "" H 6000 3000 50  0000 C CNN
-F 3 "" H 6000 3000 50  0000 C CNN
-	1    6000 3000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 2700 6000 2700
-Text GLabel 1650 5500 3    60   Input ~ 0
-COLPWCLK1
-$Comp
-L device:C C81
-U 1 1 596DB20B
-P 1800 5650
-F 0 "C81" H 1850 5750 50  0000 L CNN
-F 1 "3p" H 1850 5550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1915 5559 50  0001 L CNN
-F 3 "" H 1800 5650 50  0000 C CNN
-	1    1800 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1650 5500 1800 5500
-$Comp
-L power:GND #PWR067
-U 1 1 596DB237
-P 1800 5800
-F 0 "#PWR067" H 1800 5550 50  0001 C CNN
-F 1 "GND" H 1805 5627 50  0000 C CNN
-F 2 "" H 1800 5800 50  0000 C CNN
-F 3 "" H 1800 5800 50  0000 C CNN
-	1    1800 5800
-	1    0    0    -1  
-$EndComp
-Text GLabel 5850 5500 3    60   Input ~ 0
-COLPWCLK1
-$Comp
-L device:C C85
-U 1 1 596DB315
-P 6000 5650
-F 0 "C85" H 6050 5750 50  0000 L CNN
-F 1 "3p" H 6050 5550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6115 5559 50  0001 L CNN
-F 3 "" H 6000 5650 50  0000 C CNN
-	1    6000 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5850 5500 6000 5500
-$Comp
-L power:GND #PWR069
-U 1 1 596DB31C
-P 6000 5800
-F 0 "#PWR069" H 6000 5550 50  0001 C CNN
-F 1 "GND" H 6005 5627 50  0000 C CNN
-F 2 "" H 6000 5800 50  0000 C CNN
-F 3 "" H 6000 5800 50  0000 C CNN
-	1    6000 5800
-	1    0    0    -1  
-$EndComp
-Text GLabel 3750 5500 3    60   Input ~ 0
-COLPWCLK0
-$Comp
-L device:C C83
-U 1 1 596DB56E
-P 3900 5650
-F 0 "C83" H 3950 5750 50  0000 L CNN
-F 1 "3p" H 3950 5550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4015 5559 50  0001 L CNN
-F 3 "" H 3900 5650 50  0000 C CNN
-	1    3900 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 5500 3900 5500
-$Comp
-L power:GND #PWR068
-U 1 1 596DB575
-P 3900 5800
-F 0 "#PWR068" H 3900 5550 50  0001 C CNN
-F 1 "GND" H 3905 5627 50  0000 C CNN
-F 2 "" H 3900 5800 50  0000 C CNN
-F 3 "" H 3900 5800 50  0000 C CNN
-	1    3900 5800
-	1    0    0    -1  
-$EndComp
-Text GLabel 7950 5500 3    60   Input ~ 0
-COLPWCLK0
-$Comp
-L device:C C87
-U 1 1 596DB779
-P 8100 5650
-F 0 "C87" H 8100 5250 50  0000 L CNN
-F 1 "3p" H 8100 5150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8215 5559 50  0001 L CNN
-F 3 "" H 8100 5650 50  0000 C CNN
-	1    8100 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 5500 8100 5500
-$Comp
-L power:GND #PWR070
-U 1 1 596DB780
-P 8100 5800
-F 0 "#PWR070" H 8100 5550 50  0001 C CNN
-F 1 "GND" H 8105 5627 50  0000 C CNN
-F 2 "" H 8100 5800 50  0000 C CNN
-F 3 "" H 8100 5800 50  0000 C CNN
-	1    8100 5800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8050 5150 8050 5200
 Wire Wire Line
@@ -1249,58 +1060,6 @@ Wire Wire Line
 	8350 5200 8350 5250
 Wire Wire Line
 	8350 5150 8500 5150
-Text GLabel 3750 2700 3    60   Input ~ 0
-COLPWCLK0
-$Comp
-L device:C C82
-U 1 1 596DC33A
-P 3900 2850
-F 0 "C82" H 3950 2950 50  0000 L CNN
-F 1 "3p" H 3950 2750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4015 2759 50  0001 L CNN
-F 3 "" H 3900 2850 50  0000 C CNN
-	1    3900 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 2700 3900 2700
-$Comp
-L power:GND #PWR052
-U 1 1 596DC341
-P 3900 3000
-F 0 "#PWR052" H 3900 2750 50  0001 C CNN
-F 1 "GND" H 3905 2827 50  0000 C CNN
-F 2 "" H 3900 3000 50  0000 C CNN
-F 3 "" H 3900 3000 50  0000 C CNN
-	1    3900 3000
-	1    0    0    -1  
-$EndComp
-Text GLabel 7950 2700 3    60   Input ~ 0
-COLPWCLK0
-$Comp
-L device:C C86
-U 1 1 596DC3E3
-P 8100 2850
-F 0 "C86" H 8150 2950 50  0000 L CNN
-F 1 "3p" H 8150 2750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8215 2759 50  0001 L CNN
-F 3 "" H 8100 2850 50  0000 C CNN
-	1    8100 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 2700 8100 2700
-$Comp
-L power:GND #PWR054
-U 1 1 596DC3EA
-P 8100 3000
-F 0 "#PWR054" H 8100 2750 50  0001 C CNN
-F 1 "GND" H 8105 2827 50  0000 C CNN
-F 2 "" H 8100 3000 50  0000 C CNN
-F 3 "" H 8100 3000 50  0000 C CNN
-	1    8100 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8050 2350 8250 2350
 Wire Wire Line
@@ -1309,17 +1068,6 @@ Wire Wire Line
 	8250 3350 600  3350
 Wire Wire Line
 	600  3350 600  6050
-$Comp
-L device:Q_PMOS_GSD Q29
-U 1 1 59AFE800
-P 2450 6900
-F 0 "Q29" H 2641 6854 50  0000 L CNN
-F 1 "AO3401" H 2641 6945 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 2650 7000 50  0001 C CNN
-F 3 "" H 2450 6900 50  0000 C CNN
-	1    2450 6900
-	0    1    -1   0   
-$EndComp
 Text GLabel 9700 2450 1    60   Input ~ 0
 LED1642VDD
 Text GLabel 10000 2450 1    60   Input ~ 0
@@ -1350,72 +1098,6 @@ Text GLabel 3150 5150 3    60   Input ~ 0
 LED1642VDD
 Text GLabel 1050 5150 3    60   Input ~ 0
 LED1642VDD
-Text GLabel 3600 6800 2    60   Input ~ 0
-LED1642VDD
-Wire Wire Line
-	2150 6800 2250 6800
-$Comp
-L device:Q_NPN_BEC Q30
-U 1 1 59B00A99
-P 3300 7200
-F 0 "Q30" H 3490 7246 50  0000 L CNN
-F 1 "Q_NPN_BEC" H 3490 7155 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 3491 7109 50  0001 L CNN
-F 3 "" H 3300 7200 50  0000 C CNN
-	1    3300 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R147
-U 1 1 59B01D08
-P 2900 7200
-F 0 "R147" V 2900 7100 50  0000 L CNN
-F 1 "4.7k" V 3000 7150 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2830 7200 50  0001 C CNN
-F 3 "" H 2900 7200 50  0000 C CNN
-	1    2900 7200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L device:R R146
-U 1 1 59B020D0
-P 2200 7200
-F 0 "R146" V 2200 7100 50  0000 L CNN
-F 1 "10R" V 2300 7150 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2130 7200 50  0001 C CNN
-F 3 "" H 2200 7200 50  0000 C CNN
-	1    2200 7200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR071
-U 1 1 59B021F9
-P 3400 7450
-F 0 "#PWR071" H 3400 7200 50  0001 C CNN
-F 1 "GND" H 3405 7277 50  0000 C CNN
-F 2 "" H 3400 7450 50  0000 C CNN
-F 3 "" H 3400 7450 50  0000 C CNN
-	1    3400 7450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 7000 3400 6800
-Wire Wire Line
-	2650 6800 3400 6800
-Connection ~ 3400 6800
-Wire Wire Line
-	2450 7100 2450 7200
-Wire Wire Line
-	2350 7200 2450 7200
-Wire Wire Line
-	3050 7200 3100 7200
-Connection ~ 2450 7200
-Wire Wire Line
-	3400 7400 3400 7450
-Text GLabel 1950 7200 0    60   Input ~ 0
-D_LED1642_RST
-Wire Wire Line
-	2050 7200 1950 7200
 Wire Wire Line
 	1250 2450 1250 2650
 Wire Wire Line
@@ -1435,7 +1117,56 @@ Wire Wire Line
 Wire Wire Line
 	7650 5250 7650 5450
 Wire Wire Line
-	3400 6800 3600 6800
+	1550 2350 1550 2450
 Wire Wire Line
-	2450 7200 2750 7200
+	1550 2450 1350 2450
+Connection ~ 1350 2450
+Wire Wire Line
+	1350 2450 1350 2650
+Wire Wire Line
+	3650 2350 3650 2450
+Wire Wire Line
+	3650 2450 3450 2450
+Connection ~ 3450 2450
+Wire Wire Line
+	3450 2450 3450 2650
+Wire Wire Line
+	5750 2350 5750 2450
+Wire Wire Line
+	5750 2450 5550 2450
+Connection ~ 5550 2450
+Wire Wire Line
+	5550 2450 5550 2650
+Wire Wire Line
+	7850 2350 7850 2450
+Wire Wire Line
+	7850 2450 7650 2450
+Connection ~ 7650 2450
+Wire Wire Line
+	7650 2450 7650 2650
+Wire Wire Line
+	1550 5150 1550 5250
+Wire Wire Line
+	1550 5250 1350 5250
+Connection ~ 1350 5250
+Wire Wire Line
+	1350 5250 1350 5450
+Wire Wire Line
+	3650 5150 3650 5250
+Wire Wire Line
+	3650 5250 3450 5250
+Connection ~ 3450 5250
+Wire Wire Line
+	3450 5250 3450 5450
+Wire Wire Line
+	5750 5150 5750 5250
+Wire Wire Line
+	5750 5250 5550 5250
+Connection ~ 5550 5250
+Wire Wire Line
+	5550 5250 5550 5450
+Wire Wire Line
+	7850 5150 7850 5250
+Wire Wire Line
+	7850 5250 7650 5250
 $EndSCHEMATC

@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+LIBS:dotmatrix_64x48-cache
+EELAYER 28 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -22,7 +23,7 @@ IN2
 Text HLabel 4950 3050 2    60   Input ~ 0
 OUT2
 Wire Wire Line
-	4400 3050 4950 3050
+	4400 3050 4700 3050
 Wire Wire Line
 	4400 3050 4400 3000
 Wire Wire Line
@@ -34,7 +35,7 @@ IN3
 Text HLabel 4950 3800 2    60   Input ~ 0
 OUT3
 Wire Wire Line
-	4400 3800 4950 3800
+	4400 3800 4700 3800
 Wire Wire Line
 	4400 3800 4400 3750
 $Comp
@@ -60,7 +61,7 @@ IN0
 Text HLabel 4950 1550 2    60   Input ~ 0
 OUT0
 Wire Wire Line
-	4400 1550 4950 1550
+	4400 1550 4700 1550
 Wire Wire Line
 	4400 1550 4400 1500
 Wire Wire Line
@@ -72,7 +73,7 @@ IN1
 Text HLabel 4950 2300 2    60   Input ~ 0
 OUT1
 Wire Wire Line
-	4400 2300 4950 2300
+	4400 2300 4700 2300
 Wire Wire Line
 	4400 2300 4400 2250
 Wire Wire Line
@@ -84,7 +85,7 @@ IN6
 Text HLabel 4950 6100 2    60   Input ~ 0
 OUT6
 Wire Wire Line
-	4400 6100 4950 6100
+	4400 6100 4700 6100
 Wire Wire Line
 	4400 6100 4400 6050
 Wire Wire Line
@@ -96,7 +97,7 @@ IN7
 Text HLabel 4950 6850 2    60   Input ~ 0
 OUT7
 Wire Wire Line
-	4400 6850 4950 6850
+	4400 6850 4700 6850
 Wire Wire Line
 	4400 6850 4400 6800
 Wire Wire Line
@@ -108,7 +109,7 @@ IN4
 Text HLabel 4950 4600 2    60   Input ~ 0
 OUT4
 Wire Wire Line
-	4400 4600 4950 4600
+	4400 4600 4700 4600
 Wire Wire Line
 	4400 4600 4400 4550
 Wire Wire Line
@@ -120,7 +121,7 @@ IN5
 Text HLabel 4950 5350 2    60   Input ~ 0
 OUT5
 Wire Wire Line
-	4400 5350 4950 5350
+	4400 5350 4700 5350
 Wire Wire Line
 	4400 5350 4400 5300
 $Comp
@@ -808,19 +809,51 @@ F 3 "" H 5800 7000 50  0000 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	4400 1050 5900 1050
+	4400 1050 5800 1050
 Wire Wire Line
-	4400 1800 5900 1800
+	4400 1800 5800 1800
 Wire Wire Line
-	4400 2550 5900 2550
+	4400 2550 5800 2550
 Wire Wire Line
-	4400 3300 5900 3300
+	4400 3300 5800 3300
 Wire Wire Line
-	4400 4100 5900 4100
+	4400 4100 5800 4100
 Wire Wire Line
-	4400 4850 5900 4850
+	4400 4850 5800 4850
 Wire Wire Line
-	4400 5600 5900 5600
+	4400 5600 5800 5600
 Wire Wire Line
-	4400 6350 5900 6350
+	4400 6350 5800 6350
+Wire Wire Line
+	4700 4600 4950 4600
+Wire Wire Line
+	4700 6850 4950 6850
+Wire Wire Line
+	4700 6100 4950 6100
+Wire Wire Line
+	4700 5350 4950 5350
+Wire Wire Line
+	4700 3800 4950 3800
+Wire Wire Line
+	4700 3050 4950 3050
+Wire Wire Line
+	4700 2300 4950 2300
+Wire Wire Line
+	4700 1550 4950 1550
+Wire Wire Line
+	5800 1050 5900 1050
+Wire Wire Line
+	5800 1800 5900 1800
+Wire Wire Line
+	5800 2550 5900 2550
+Wire Wire Line
+	5800 3300 5900 3300
+Wire Wire Line
+	5800 4100 5900 4100
+Wire Wire Line
+	5800 4850 5900 4850
+Wire Wire Line
+	5800 5600 5900 5600
+Wire Wire Line
+	5800 6350 5900 6350
 $EndSCHEMATC
