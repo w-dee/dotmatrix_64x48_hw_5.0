@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:dotmatrix_64x48-cache
-EELAYER 28 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text GLabel 1350 1250 1    60   Input ~ 0
-DC_IN
+DC_IN_P
 $Comp
 L device:Polyfuse_Small F1
 U 1 1 57A2A89C
@@ -189,7 +189,7 @@ P 1100 3350
 AR Path="/59A82F84/59E42088" Ref="C33"  Part="1" 
 AR Path="/5BB33F0A/59E42088" Ref="C?"  Part="1" 
 F 0 "C33" H 1050 2900 50  0000 L CNN
-F 1 "10u" H 1050 2800 50  0000 L CNN
+F 1 "10u 16V" H 1050 2800 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1215 3259 50  0001 L CNN
 F 3 "" H 1100 3350 50  0000 C CNN
 	1    1100 3350
@@ -217,8 +217,8 @@ P 3250 3400
 AR Path="/59A82F84/59E42358" Ref="L1"  Part="1" 
 AR Path="/5BB33F0A/59E42358" Ref="L?"  Part="1" 
 F 0 "L1" V 3072 3400 50  0000 C CNN
-F 1 "2.2uH" V 3163 3400 50  0000 C CNN
-F 2 "components:Choke_SMD_12x12mm_10.4x10.4mm_compat_h4.5mm_handsoldering" H 3250 3400 50  0001 C CNN
+F 1 "10uH" V 3163 3400 50  0000 C CNN
+F 2 "components:Choke_SMD_7.3x7.3_H3.5_handsoldering" H 3250 3400 50  0001 C CNN
 F 3 "" H 3250 3400 50  0001 C CNN
 	1    3250 3400
 	0    1    1    0   
@@ -621,7 +621,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 1050 4200 1050
 Text Notes 4750 950  0    50   ~ 0
-5V
+12V
 $Comp
 L DeeComponents:TPS54428DDA U19
 U 1 1 5BBC789B
@@ -640,7 +640,7 @@ P 1000 5450
 AR Path="/59A82F84/5BBCC3D9" Ref="C28"  Part="1" 
 AR Path="/5BB33F0A/5BBCC3D9" Ref="C?"  Part="1" 
 F 0 "C28" H 950 5000 50  0000 L CNN
-F 1 "10u" H 950 4900 50  0000 L CNN
+F 1 "10u 16V" H 950 4900 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1115 5359 50  0001 L CNN
 F 3 "" H 1000 5450 50  0000 C CNN
 	1    1000 5450
@@ -784,7 +784,7 @@ AR Path="/59A82F84/5BBE36D3" Ref="L2"  Part="1"
 AR Path="/5BB33F0A/5BBE36D3" Ref="L?"  Part="1" 
 F 0 "L2" V 3522 5700 50  0000 C CNN
 F 1 "2.2uH" V 3613 5700 50  0000 C CNN
-F 2 "components:Choke_SMD_12x12mm_10.4x10.4mm_compat_h4.5mm_handsoldering" H 3700 5700 50  0001 C CNN
+F 2 "components:Choke_SMD_7.3x7.3_H3.5_handsoldering" H 3700 5700 50  0001 C CNN
 F 3 "" H 3700 5700 50  0001 C CNN
 	1    3700 5700
 	0    1    1    0   
@@ -1072,7 +1072,7 @@ P 1300 3350
 AR Path="/59A82F84/5BC62B65" Ref="C75"  Part="1" 
 AR Path="/5BB33F0A/5BC62B65" Ref="C?"  Part="1" 
 F 0 "C75" H 1200 2950 50  0000 L CNN
-F 1 "1u" H 1250 2850 50  0000 L CNN
+F 1 "1u 16V" H 1250 2850 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1415 3259 50  0001 L CNN
 F 3 "" H 1300 3350 50  0000 C CNN
 	1    1300 3350
@@ -1104,7 +1104,7 @@ P 1250 5450
 AR Path="/59A82F84/5BC7105F" Ref="C76"  Part="1" 
 AR Path="/5BB33F0A/5BC7105F" Ref="C?"  Part="1" 
 F 0 "C76" H 1150 5050 50  0000 L CNN
-F 1 "1u" H 1200 4950 50  0000 L CNN
+F 1 "1u 16V" H 1200 4950 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1365 5359 50  0001 L CNN
 F 3 "" H 1250 5450 50  0000 C CNN
 	1    1250 5450
@@ -1129,4 +1129,6 @@ F 3 "" H 2600 6100 50  0000 C CNN
 $EndComp
 Text Label 2900 5700 0    50   ~ 0
 LEDDC_SW
+Text Label 2050 1350 0    50   ~ 0
+DC_IN_N
 $EndSCHEMATC

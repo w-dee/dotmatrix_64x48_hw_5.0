@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:dotmatrix_64x48-cache
-EELAYER 28 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -488,7 +488,7 @@ $EndComp
 Text Notes 10250 1100 0    60   ~ 0
 3.3V
 Text GLabel 10500 1000 0    60   Input ~ 0
-ESPVDD
+LEDLOGICVDD
 Text Label 9700 1650 0    60   ~ 0
 SWPAD_COM
 Text Label 9700 1750 0    60   ~ 0
@@ -809,7 +809,7 @@ F 3 "" H 8650 3600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text GLabel 8550 2600 0    60   Input ~ 0
-ESPVDD
+LEDLOGICVDD
 Wire Wire Line
 	8550 2600 8650 2600
 Wire Wire Line
@@ -859,7 +859,7 @@ F 3 "" H 10000 3600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text GLabel 9800 2600 0    60   Input ~ 0
-ESPVDD
+LEDLOGICVDD
 Wire Wire Line
 	9800 2600 10000 2600
 Wire Wire Line

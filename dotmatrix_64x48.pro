@@ -1,4 +1,4 @@
-update=2018年10月12日 14時08分33秒
+update=2018年10月19日 10時11分17秒
 version=1
 last_client=kicad
 [cvpcb]
@@ -67,7 +67,7 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0.2
+SolderMaskClearance=0.14
 SolderMaskMinWidth=0.25
 SolderPasteClearance=0
 SolderPasteRatio=-0

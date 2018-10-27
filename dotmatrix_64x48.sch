@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:dotmatrix_64x48-cache
-EELAYER 28 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -121,7 +121,7 @@ F 3 "" H 10250 2850 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 10250 3400 0    60   Input ~ 0
-ESPVDD
+LEDLOGICVDD
 Text GLabel 5800 2300 2    60   Input ~ 0
 E_GPIO0
 Text GLabel 10350 800  1    60   Input ~ 0
@@ -240,58 +240,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 2400 5050 2450
 $Comp
-L Connector:Test_Point W?
-U 1 1 5BAEE445
-P 9450 5600
-AR Path="/59A8E319/5BAEE445" Ref="W?"  Part="1" 
-AR Path="/5BAEE445" Ref="W7"  Part="1" 
-F 0 "W7" V 9500 5650 50  0000 C CNN
-F 1 "TEST_1P" V 9554 5674 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 9650 5600 50  0001 C CNN
-F 3 "" H 9650 5600 50  0000 C CNN
-	1    9450 5600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Test_Point W?
-U 1 1 5BAEE44C
-P 9450 4250
-AR Path="/59A8E319/5BAEE44C" Ref="W?"  Part="1" 
-AR Path="/5BAEE44C" Ref="W1"  Part="1" 
-F 0 "W1" V 9500 4300 50  0000 C CNN
-F 1 "TEST_1P" V 9554 4324 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 9650 4250 50  0001 C CNN
-F 3 "" H 9650 4250 50  0000 C CNN
-	1    9450 4250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Test_Point W?
-U 1 1 5BAEE453
-P 9450 4350
-AR Path="/59A8E319/5BAEE453" Ref="W?"  Part="1" 
-AR Path="/5BAEE453" Ref="W2"  Part="1" 
-F 0 "W2" V 9500 4400 50  0000 C CNN
-F 1 "TEST_1P" V 9554 4424 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 9650 4350 50  0001 C CNN
-F 3 "" H 9650 4350 50  0000 C CNN
-	1    9450 4350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Test_Point W?
-U 1 1 5BAEE45A
-P 9450 5050
-AR Path="/59A8E319/5BAEE45A" Ref="W?"  Part="1" 
-AR Path="/5BAEE45A" Ref="W4"  Part="1" 
-F 0 "W4" V 9500 5100 50  0000 C CNN
-F 1 "TEST_1P" V 9554 5124 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 9650 5050 50  0001 C CNN
-F 3 "" H 9650 5050 50  0000 C CNN
-	1    9450 5050
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Logic_74xx:74LS541 U?
 U 1 1 5BAEE461
 P 7700 4750
@@ -373,19 +321,6 @@ F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7115 3659 50  0001 L CNN
 F 3 "" H 7000 3750 50  0000 C CNN
 	1    7000 3750
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Test_Point W?
-U 1 1 5BAEE48D
-P 9450 4750
-AR Path="/59A8E319/5BAEE48D" Ref="W?"  Part="1" 
-AR Path="/5BAEE48D" Ref="W3"  Part="1" 
-F 0 "W3" V 9500 4800 50  0000 C CNN
-F 1 "TEST_1P" V 9554 4824 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 9650 4750 50  0001 C CNN
-F 3 "" H 9650 4750 50  0000 C CNN
-	1    9450 4750
-	0    -1   -1   0   
 $EndComp
 $Comp
 L device:C C?
@@ -471,23 +406,11 @@ Wire Wire Line
 	9550 4750 9700 4750
 Wire Wire Line
 	9500 4850 9700 4850
-Connection ~ 9450 5600
-Connection ~ 9450 4350
-Connection ~ 9450 4250
 Wire Wire Line
 	6950 5150 6950 5250
 Connection ~ 6950 5250
 Wire Wire Line
-	8800 5600 9450 5600
-Wire Wire Line
-	8800 4250 9450 4250
-Wire Wire Line
-	8800 4350 9450 4350
-Wire Wire Line
-	8800 4750 9450 4750
-Wire Wire Line
 	9500 4750 9500 4850
-Connection ~ 9450 4750
 Wire Wire Line
 	7250 3900 7250 3950
 Wire Wire Line
@@ -496,15 +419,7 @@ Connection ~ 6350 3600
 Wire Wire Line
 	9550 4950 9700 4950
 Wire Wire Line
-	9450 5600 9700 5600
-Wire Wire Line
-	9450 4350 9700 4350
-Wire Wire Line
-	9450 4250 9700 4250
-Wire Wire Line
 	6950 5250 6950 5350
-Wire Wire Line
-	9450 4750 9500 4750
 Wire Wire Line
 	6350 3600 6550 3600
 Text GLabel 9700 4950 2    60   Input ~ 0
@@ -578,11 +493,6 @@ F 3 "" H 8650 5600 50  0000 C CNN
 $EndComp
 Text GLabel 9700 5050 2    60   Input ~ 0
 HC595LATCH
-Wire Wire Line
-	9450 5050 9700 5050
-Wire Wire Line
-	9450 5050 8800 5050
-Connection ~ 9450 5050
 Wire Wire Line
 	8500 4250 8200 4250
 Wire Wire Line
@@ -1346,62 +1256,36 @@ Wire Wire Line
 	4950 2100 5250 2100
 Wire Wire Line
 	5250 2200 4950 2200
-$Comp
-L Connector:Conn_01x08 P?
-U 1 1 5BEA5783
-P 3750 5500
-AR Path="/5BB33F0A/5BEA5783" Ref="P?"  Part="1" 
-AR Path="/5BEA5783" Ref="P3"  Part="1" 
-F 0 "P3" H 3827 5586 50  0000 L CNN
-F 1 "CONN_01X08" H 3350 5000 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3827 5404 50  0001 L CNN
-F 3 "" H 3750 5500 50  0000 C CNN
-	1    3750 5500
-	1    0    0    -1  
-$EndComp
-Text GLabel 2300 5300 0    50   Input ~ 0
+Text GLabel 2350 5300 0    50   Input ~ 0
 VSPI_SCK
 $Comp
 L power:GND #PWR0116
 U 1 1 5BEE4D20
-P 3550 5400
-F 0 "#PWR0116" H 3550 5150 50  0001 C CNN
-F 1 "GND" V 3555 5227 50  0000 C CNN
-F 2 "" H 3550 5400 50  0000 C CNN
-F 3 "" H 3550 5400 50  0000 C CNN
-	1    3550 5400
+P 3050 5400
+F 0 "#PWR0116" H 3050 5150 50  0001 C CNN
+F 1 "GND" V 3055 5227 50  0000 C CNN
+F 2 "" H 3050 5400 50  0000 C CNN
+F 3 "" H 3050 5400 50  0000 C CNN
+	1    3050 5400
 	0    1    -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0118
 U 1 1 5BEEF614
-P 3550 5200
-F 0 "#PWR0118" H 3550 4950 50  0001 C CNN
-F 1 "GND" V 3555 5027 50  0000 C CNN
-F 2 "" H 3550 5200 50  0000 C CNN
-F 3 "" H 3550 5200 50  0000 C CNN
-	1    3550 5200
+P 3050 5200
+F 0 "#PWR0118" H 3050 4950 50  0001 C CNN
+F 1 "GND" V 3055 5027 50  0000 C CNN
+F 2 "" H 3050 5200 50  0000 C CNN
+F 3 "" H 3050 5200 50  0000 C CNN
+	1    3050 5200
 	0    1    -1   0   
 $EndComp
-Text GLabel 2300 5500 0    50   Input ~ 0
+Text GLabel 2350 5500 0    50   Input ~ 0
 VSPI_MISO
-Text GLabel 2300 5600 0    50   Input ~ 0
+Text GLabel 2350 5600 0    50   Input ~ 0
 VSPI_MOSI
-Text GLabel 2300 5700 0    50   Input ~ 0
+Text GLabel 2350 5700 0    50   Input ~ 0
 VSPI_SS
-$Comp
-L Connector:Conn_01x08 P?
-U 1 1 5BF6E3F4
-P 4300 5500
-AR Path="/5BB33F0A/5BF6E3F4" Ref="P?"  Part="1" 
-AR Path="/5BF6E3F4" Ref="P4"  Part="1" 
-F 0 "P4" H 4377 5586 50  0000 L CNN
-F 1 "CONN_01X08" H 3900 5000 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 4377 5404 50  0001 L CNN
-F 3 "" H 4300 5500 50  0000 C CNN
-	1    4300 5500
-	-1   0    0    -1  
-$EndComp
 Text GLabel 6000 5300 2    50   Input ~ 0
 VSPI_SCK
 $Comp
@@ -1435,36 +1319,109 @@ VSPI_SS
 $Comp
 L device:R R?
 U 1 1 5BFEEDF9
-P 3050 4950
+P 2700 4950
 AR Path="/59A8E319/5BFEEDF9" Ref="R?"  Part="1" 
 AR Path="/5BFEEDF9" Ref="R126"  Part="1" 
-F 0 "R126" V 3050 4850 50  0000 L CNN
-F 1 "10k" V 3100 4650 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2980 4950 50  0001 C CNN
-F 3 "" H 3050 4950 50  0000 C CNN
-	1    3050 4950
+F 0 "R126" V 2700 4850 50  0000 L CNN
+F 1 "10k" V 2750 4650 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2630 4950 50  0001 C CNN
+F 3 "" H 2700 4950 50  0000 C CNN
+	1    2700 4950
 	-1   0    0    1   
 $EndComp
 $Comp
 L device:R R?
 U 1 1 5C00419B
-P 2900 4950
+P 2550 4950
 AR Path="/59A8E319/5C00419B" Ref="R?"  Part="1" 
 AR Path="/5C00419B" Ref="R125"  Part="1" 
-F 0 "R125" V 2900 4850 50  0000 L CNN
-F 1 "10k" V 2950 4650 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 2830 4950 50  0001 C CNN
-F 3 "" H 2900 4950 50  0000 C CNN
-	1    2900 4950
+F 0 "R125" V 2550 4850 50  0000 L CNN
+F 1 "10k" V 2600 4650 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2480 4950 50  0001 C CNN
+F 3 "" H 2550 4950 50  0000 C CNN
+	1    2550 4950
 	-1   0    0    1   
 $EndComp
 $Comp
 L device:R R?
 U 1 1 5C019396
-P 2800 4950
+P 2450 4950
 AR Path="/59A8E319/5C019396" Ref="R?"  Part="1" 
 AR Path="/5C019396" Ref="R122"  Part="1" 
-F 0 "R122" V 2800 4850 50  0000 L CNN
+F 0 "R122" V 2450 4850 50  0000 L CNN
+F 1 "10k" V 2500 4650 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2380 4950 50  0001 C CNN
+F 3 "" H 2450 4950 50  0000 C CNN
+	1    2450 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 5100 2450 5500
+Connection ~ 2450 5500
+Wire Wire Line
+	2550 5100 2550 5600
+Connection ~ 2550 5600
+Wire Wire Line
+	2700 5100 2700 5700
+Connection ~ 2700 5700
+$Comp
+L power:GND #PWR0125
+U 1 1 5C0AED0A
+P 3550 5200
+F 0 "#PWR0125" H 3550 4950 50  0001 C CNN
+F 1 "GND" V 3500 5050 50  0000 C CNN
+F 2 "" H 3550 5200 50  0000 C CNN
+F 3 "" H 3550 5200 50  0000 C CNN
+	1    3550 5200
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5C0BA9AF
+P 4000 5200
+F 0 "#PWR0127" H 4000 4950 50  0001 C CNN
+F 1 "GND" V 3950 5100 50  0000 C CNN
+F 2 "" H 4000 5200 50  0000 C CNN
+F 3 "" H 4000 5200 50  0000 C CNN
+	1    4000 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 5C0F5A3B
+P 4000 5300
+F 0 "#PWR0129" H 4000 5050 50  0001 C CNN
+F 1 "GND" V 4005 5127 50  0000 C CNN
+F 2 "" H 4000 5300 50  0000 C CNN
+F 3 "" H 4000 5300 50  0000 C CNN
+	1    4000 5300
+	0    1    1    0   
+$EndComp
+Text GLabel 2250 4500 0    60   Input ~ 0
+ESPVDD
+Wire Wire Line
+	2250 4500 2450 4500
+Wire Wire Line
+	2450 4500 2450 4800
+Wire Wire Line
+	2450 4500 2550 4500
+Wire Wire Line
+	2550 4500 2550 4800
+Connection ~ 2450 4500
+Wire Wire Line
+	2550 4500 2700 4500
+Wire Wire Line
+	2700 4500 2700 4800
+Connection ~ 2550 4500
+Wire Wire Line
+	3050 5300 2800 5300
+$Comp
+L device:R R?
+U 1 1 5C180D6E
+P 2800 4950
+AR Path="/59A8E319/5C180D6E" Ref="R?"  Part="1" 
+AR Path="/5C180D6E" Ref="R127"  Part="1" 
+F 0 "R127" V 2800 4850 50  0000 L CNN
 F 1 "10k" V 2850 4650 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 2730 4950 50  0001 C CNN
 F 3 "" H 2800 4950 50  0000 C CNN
@@ -1472,92 +1429,15 @@ F 3 "" H 2800 4950 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3550 5600 2900 5600
-Wire Wire Line
-	2800 5100 2800 5500
-Connection ~ 2800 5500
-Wire Wire Line
-	2900 5100 2900 5600
-Connection ~ 2900 5600
-Wire Wire Line
-	3050 5100 3050 5700
-Connection ~ 3050 5700
-$Comp
-L power:GND #PWR0125
-U 1 1 5C0AED0A
-P 3550 5900
-F 0 "#PWR0125" H 3550 5650 50  0001 C CNN
-F 1 "GND" V 3555 5727 50  0000 C CNN
-F 2 "" H 3550 5900 50  0000 C CNN
-F 3 "" H 3550 5900 50  0000 C CNN
-	1    3550 5900
-	0    1    -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0127
-U 1 1 5C0BA9AF
-P 4500 5900
-F 0 "#PWR0127" H 4500 5650 50  0001 C CNN
-F 1 "GND" V 4505 5727 50  0000 C CNN
-F 2 "" H 4500 5900 50  0000 C CNN
-F 3 "" H 4500 5900 50  0000 C CNN
-	1    4500 5900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0129
-U 1 1 5C0F5A3B
-P 4500 5800
-F 0 "#PWR0129" H 4500 5550 50  0001 C CNN
-F 1 "GND" V 4505 5627 50  0000 C CNN
-F 2 "" H 4500 5800 50  0000 C CNN
-F 3 "" H 4500 5800 50  0000 C CNN
-	1    4500 5800
-	0    -1   -1   0   
-$EndComp
-Text GLabel 2600 4500 0    60   Input ~ 0
-ESPVDD
-Wire Wire Line
-	2600 4500 2800 4500
-Wire Wire Line
 	2800 4500 2800 4800
 Wire Wire Line
-	2800 4500 2900 4500
+	2450 5500 3050 5500
 Wire Wire Line
-	2900 4500 2900 4800
-Connection ~ 2800 4500
+	2800 5300 2800 5100
+Connection ~ 2800 5300
 Wire Wire Line
-	2900 4500 3050 4500
-Wire Wire Line
-	3050 4500 3050 4800
-Connection ~ 2900 4500
-Wire Wire Line
-	3550 5300 3150 5300
-$Comp
-L device:R R?
-U 1 1 5C180D6E
-P 3150 4950
-AR Path="/59A8E319/5C180D6E" Ref="R?"  Part="1" 
-AR Path="/5C180D6E" Ref="R127"  Part="1" 
-F 0 "R127" V 3150 4850 50  0000 L CNN
-F 1 "10k" V 3200 4650 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3080 4950 50  0001 C CNN
-F 3 "" H 3150 4950 50  0000 C CNN
-	1    3150 4950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3150 4500 3150 4800
-Wire Wire Line
-	2800 5500 3550 5500
-Wire Wire Line
-	3150 5300 3150 5100
-Connection ~ 3150 5300
-Wire Wire Line
-	3150 4500 3050 4500
-Connection ~ 3050 4500
-Wire Wire Line
-	3050 5700 3550 5700
+	2800 4500 2700 4500
+Connection ~ 2700 4500
 $Comp
 L device:R R?
 U 1 1 5C1C8BE8
@@ -1601,14 +1481,14 @@ F 3 "" H 1550 1950 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	1400 1950 1200 1950
-Text Notes 2000 5950 0    50   ~ 0
+Text Notes 2150 5950 0    50   ~ 0
 Master/Slave select
 Wire Wire Line
 	1700 1950 1700 1850
 Connection ~ 1700 1850
 Wire Wire Line
 	1700 1850 2650 1850
-Text GLabel 2300 5800 0    60   Input ~ 0
+Text GLabel 2350 5800 0    60   Input ~ 0
 MS_SEL
 $Comp
 L ESD_Protection:SRV05-4 U?
@@ -1637,31 +1517,27 @@ F 3 "" H 5400 7000 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text GLabel 5300 6000 0    60   Input ~ 0
-ESPVDD
+LEDLOGICVDD
 Wire Wire Line
 	5300 6000 5400 6000
 Wire Wire Line
 	5000 6600 4950 6600
 Wire Wire Line
-	2300 5800 3550 5800
-Wire Wire Line
 	5900 6600 5950 6600
 Wire Wire Line
-	2300 5300 3150 5300
+	2350 5300 2800 5300
 Wire Wire Line
-	2300 5500 2800 5500
+	2350 5500 2450 5500
 Wire Wire Line
-	2300 5700 3050 5700
+	2350 5700 2700 5700
 Wire Wire Line
-	2300 5600 2900 5600
+	2350 5600 2550 5600
 Wire Wire Line
 	6000 5300 5950 5300
 Wire Wire Line
 	4500 5500 5900 5500
 Wire Wire Line
 	6000 5600 4850 5600
-Wire Wire Line
-	4500 5700 4900 5700
 Wire Wire Line
 	4900 6400 4900 5700
 Connection ~ 4900 5700
@@ -1672,8 +1548,6 @@ Wire Wire Line
 Wire Wire Line
 	4850 6600 4850 5600
 Connection ~ 4850 5600
-Wire Wire Line
-	4850 5600 4500 5600
 Wire Wire Line
 	5900 6400 5900 5500
 Connection ~ 5900 5500
@@ -1733,7 +1607,7 @@ Wire Wire Line
 Wire Wire Line
 	10550 3400 10400 3400
 Text GLabel 9900 2650 0    60   Input ~ 0
-ESPVDD
+LEDLOGICVDD
 Wire Wire Line
 	10400 3400 10400 2400
 Wire Wire Line
@@ -1937,4 +1811,66 @@ Wire Wire Line
 Connection ~ 9150 1000
 Wire Wire Line
 	9150 1000 9150 1100
+Wire Wire Line
+	8800 5600 9700 5600
+Wire Wire Line
+	8800 5050 9700 5050
+Wire Wire Line
+	8800 4750 9500 4750
+Wire Wire Line
+	8800 4350 9700 4350
+Wire Wire Line
+	8800 4250 9700 4250
+$Comp
+L Connector:Conn_02x04_Odd_Even J1
+U 1 1 5BD246FD
+P 3250 5300
+F 0 "J1" H 3300 5617 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 3300 5526 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x04_Pitch2.54mm" H 3250 5300 50  0001 C CNN
+F 3 "~" H 3250 5300 50  0001 C CNN
+	1    3250 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 5600 3600 5500
+Wire Wire Line
+	3600 5500 3550 5500
+Wire Wire Line
+	2550 5600 3600 5600
+Wire Wire Line
+	3650 5700 3650 5400
+Wire Wire Line
+	3650 5400 3550 5400
+Wire Wire Line
+	2700 5700 3650 5700
+Wire Wire Line
+	3700 5800 3700 5300
+Wire Wire Line
+	3700 5300 3550 5300
+Wire Wire Line
+	2350 5800 3700 5800
+$Comp
+L Connector:Conn_02x04_Odd_Even J2
+U 1 1 5BDEBF26
+P 4300 5400
+F 0 "J2" H 4350 4975 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 4350 5066 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_2x04_Pitch2.54mm" H 4300 5400 50  0001 C CNN
+F 3 "~" H 4300 5400 50  0001 C CNN
+	1    4300 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3950 5600 3950 5500
+Wire Wire Line
+	3950 5500 4000 5500
+Wire Wire Line
+	3900 5700 3900 5400
+Wire Wire Line
+	3900 5400 4000 5400
+Wire Wire Line
+	3900 5700 4900 5700
+Wire Wire Line
+	3950 5600 4850 5600
 $EndSCHEMATC

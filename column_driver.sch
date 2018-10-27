@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:dotmatrix_64x48-cache
-EELAYER 28 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -134,23 +134,15 @@ Wire Wire Line
 Wire Wire Line
 	1350 2350 1350 2450
 Wire Wire Line
-	1250 2350 1250 2450
-Wire Wire Line
 	3350 2600 1750 2600
-Wire Wire Line
-	7550 2350 7550 2450
 Wire Wire Line
 	7550 2600 5950 2600
 Wire Wire Line
 	5950 2600 5950 2350
 Wire Wire Line
-	5450 2350 5450 2450
-Wire Wire Line
 	5450 2600 3850 2600
 Wire Wire Line
 	3850 2600 3850 2350
-Wire Wire Line
-	3350 2350 3350 2450
 Wire Wire Line
 	1750 2600 1750 2350
 $Comp
@@ -492,23 +484,15 @@ Wire Wire Line
 Wire Wire Line
 	1350 5150 1350 5250
 Wire Wire Line
-	1250 5150 1250 5250
-Wire Wire Line
 	3350 5400 1750 5400
-Wire Wire Line
-	7550 5150 7550 5250
 Wire Wire Line
 	7550 5400 5950 5400
 Wire Wire Line
 	5950 5400 5950 5150
 Wire Wire Line
-	5450 5150 5450 5250
-Wire Wire Line
 	5450 5400 3850 5400
 Wire Wire Line
 	3850 5400 3850 5150
-Wire Wire Line
-	3350 5150 3350 5250
 Wire Wire Line
 	1750 5400 1750 5150
 $Comp
@@ -662,131 +646,6 @@ F 3 "" H 10300 3900 50  0000 C CNN
 	1    10300 3900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Test_Point W10
-U 1 1 58ABAB2B
-P 1200 2450
-F 0 "W10" V 1250 2500 50  0000 C CNN
-F 1 "TEST_1P" V 1304 2524 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1400 2450 50  0001 C CNN
-F 3 "" H 1400 2450 50  0000 C CNN
-	1    1200 2450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1200 2450 1250 2450
-Connection ~ 1250 2450
-$Comp
-L Connector:Test_Point W13
-U 1 1 58ABB0BD
-P 3300 2450
-F 0 "W13" V 3350 2500 50  0000 C CNN
-F 1 "TEST_1P" V 3404 2524 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 3500 2450 50  0001 C CNN
-F 3 "" H 3500 2450 50  0000 C CNN
-	1    3300 2450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3300 2450 3350 2450
-Connection ~ 3350 2450
-$Comp
-L Connector:Test_Point W15
-U 1 1 58ABB383
-P 5400 2450
-F 0 "W15" V 5450 2500 50  0000 C CNN
-F 1 "TEST_1P" V 5504 2524 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5600 2450 50  0001 C CNN
-F 3 "" H 5600 2450 50  0000 C CNN
-	1    5400 2450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5400 2450 5450 2450
-Connection ~ 5450 2450
-$Comp
-L Connector:Test_Point W17
-U 1 1 58ABB414
-P 7500 2450
-F 0 "W17" V 7550 2500 50  0000 C CNN
-F 1 "TEST_1P" V 7604 2524 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7700 2450 50  0001 C CNN
-F 3 "" H 7700 2450 50  0000 C CNN
-	1    7500 2450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7500 2450 7550 2450
-Connection ~ 7550 2450
-$Comp
-L Connector:Test_Point W12
-U 1 1 58ABB953
-P 1200 5250
-F 0 "W12" V 1250 5300 50  0000 C CNN
-F 1 "TEST_1P" V 1304 5324 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1400 5250 50  0001 C CNN
-F 3 "" H 1400 5250 50  0000 C CNN
-	1    1200 5250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1200 5250 1250 5250
-Connection ~ 1250 5250
-$Comp
-L Connector:Test_Point W14
-U 1 1 58ABB9DC
-P 3300 5250
-F 0 "W14" V 3350 5300 50  0000 C CNN
-F 1 "TEST_1P" V 3404 5324 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 3500 5250 50  0001 C CNN
-F 3 "" H 3500 5250 50  0000 C CNN
-	1    3300 5250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3300 5250 3350 5250
-Connection ~ 3350 5250
-$Comp
-L Connector:Test_Point W16
-U 1 1 58ABBC10
-P 5400 5250
-F 0 "W16" V 5450 5300 50  0000 C CNN
-F 1 "TEST_1P" V 5504 5324 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 5600 5250 50  0001 C CNN
-F 3 "" H 5600 5250 50  0000 C CNN
-	1    5400 5250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5400 5250 5450 5250
-Connection ~ 5450 5250
-$Comp
-L Connector:Test_Point W18
-U 1 1 58ABBDEF
-P 7500 5250
-F 0 "W18" V 7500 5500 50  0000 C CNN
-F 1 "TEST_1P" V 7604 5324 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7700 5250 50  0001 C CNN
-F 3 "" H 7700 5250 50  0000 C CNN
-	1    7500 5250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7500 5250 7550 5250
-Connection ~ 7550 5250
-$Comp
-L Connector:Test_Point W19
-U 1 1 58ABBF5D
-P 7600 5250
-F 0 "W19" V 7500 5350 50  0000 C CNN
-F 1 "TEST_1P" V 7704 5324 50  0001 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7800 5250 50  0001 C CNN
-F 3 "" H 7800 5250 50  0000 C CNN
-	1    7600 5250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7600 5250 7650 5250
 Connection ~ 7650 5250
 $Comp
 L power:GND #PWR062
@@ -1099,22 +958,6 @@ LED1642VDD
 Text GLabel 1050 5150 3    60   Input ~ 0
 LED1642VDD
 Wire Wire Line
-	1250 2450 1250 2650
-Wire Wire Line
-	3350 2450 3350 2600
-Wire Wire Line
-	5450 2450 5450 2600
-Wire Wire Line
-	7550 2450 7550 2600
-Wire Wire Line
-	1250 5250 1250 6050
-Wire Wire Line
-	3350 5250 3350 5400
-Wire Wire Line
-	5450 5250 5450 5400
-Wire Wire Line
-	7550 5250 7550 5400
-Wire Wire Line
 	7650 5250 7650 5450
 Wire Wire Line
 	1550 2350 1550 2450
@@ -1169,4 +1012,20 @@ Wire Wire Line
 	7850 5150 7850 5250
 Wire Wire Line
 	7850 5250 7650 5250
+Wire Wire Line
+	1250 5150 1250 6050
+Wire Wire Line
+	3350 5150 3350 5400
+Wire Wire Line
+	5450 5150 5450 5400
+Wire Wire Line
+	7550 5150 7550 5400
+Wire Wire Line
+	7550 2350 7550 2600
+Wire Wire Line
+	5450 2350 5450 2600
+Wire Wire Line
+	3350 2350 3350 2600
+Wire Wire Line
+	1250 2350 1250 2650
 $EndSCHEMATC

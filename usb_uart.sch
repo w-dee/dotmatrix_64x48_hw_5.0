@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:dotmatrix_64x48-cache
-EELAYER 28 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -115,7 +115,6 @@ F 3 "" H 4200 1450 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	3800 1300 3800 1250
-Connection ~ 3800 1250
 Wire Wire Line
 	4000 1300 4000 1250
 Connection ~ 4000 1250
@@ -128,21 +127,6 @@ Wire Wire Line
 	4200 1250 4000 1250
 Wire Wire Line
 	4200 1250 4400 1250
-$Comp
-L power:GND #PWR022
-U 1 1 5BBD8B5F
-P 3500 1400
-F 0 "#PWR022" H 3500 1150 50  0001 C CNN
-F 1 "GND" H 3505 1227 50  0000 C CNN
-F 2 "" H 3500 1400 50  0001 C CNN
-F 3 "" H 3500 1400 50  0001 C CNN
-	1    3500 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 1400 3500 1250
-Wire Wire Line
-	3500 1250 3800 1250
 $Comp
 L power:GND #PWR052
 U 1 1 5BBDC36A
