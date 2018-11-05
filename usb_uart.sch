@@ -345,7 +345,7 @@ U 1 1 5BC37DD7
 P 7050 1850
 F 0 "P2" H 7127 1936 50  0000 L CNN
 F 1 "CONN_01X06" H 7127 1845 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 7127 1754 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06_Pitch2.54mm" H 7127 1754 50  0000 L CNN
 F 3 "" H 7050 1850 50  0000 C CNN
 	1    7050 1850
 	1    0    0    -1  
@@ -483,4 +483,14 @@ Connection ~ 2950 4150
 Wire Wire Line
 	3450 3750 3450 3550
 Connection ~ 3450 3750
+Text GLabel 6850 1950 0    60   Input ~ 0
+E_TX
+Text GLabel 6850 1850 0    60   Input ~ 0
+E_RX
+Text GLabel 6850 2150 0    60   Input ~ 0
+RTS
+Text GLabel 6850 2050 0    60   Input ~ 0
+DTR
+Text Label 2550 2500 0    50   ~ 0
+VBUS
 $EndSCHEMATC

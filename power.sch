@@ -499,7 +499,7 @@ Wire Wire Line
 	5900 3600 6150 3600
 Connection ~ 6150 3600
 Wire Wire Line
-	6150 3600 6750 3600
+	6150 3600 6350 3600
 Wire Wire Line
 	4650 3600 5100 3600
 Connection ~ 5100 3600
@@ -1131,4 +1131,34 @@ Text Label 2900 5700 0    50   ~ 0
 LEDDC_SW
 Text Label 2050 1350 0    50   ~ 0
 DC_IN_N
+$Comp
+L device:C C2
+U 1 1 5BDA55B3
+P 6350 3750
+AR Path="/59A82F84/5BDA55B3" Ref="C2"  Part="1" 
+AR Path="/5BB33F0A/5BDA55B3" Ref="C?"  Part="1" 
+F 0 "C2" H 6500 3600 50  0000 L CNN
+F 1 "10u" H 6500 3500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6465 3659 50  0001 L CNN
+F 3 "" H 6350 3750 50  0000 C CNN
+	1    6350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BDA8B7D
+P 6350 3900
+AR Path="/59A8E319/5BDA8B7D" Ref="#PWR?"  Part="1" 
+AR Path="/5BDA8B7D" Ref="#PWR?"  Part="1" 
+AR Path="/59A82F84/5BDA8B7D" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR0151" H 6350 3650 50  0001 C CNN
+F 1 "GND" H 6355 3727 50  0000 C CNN
+F 2 "" H 6350 3900 50  0000 C CNN
+F 3 "" H 6350 3900 50  0000 C CNN
+	1    6350 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6350 3600
+Wire Wire Line
+	6350 3600 6750 3600
 $EndSCHEMATC
