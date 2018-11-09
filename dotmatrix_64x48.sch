@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 11
 Title ""
 Date ""
 Rev ""
@@ -15,31 +15,31 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 700  5750 1100 150 
+S 600  5450 1100 150 
 U 57BB11DB
 F0 "IR_Sensor" 60
 F1 "IR_Sensor.sch" 60
 $EndSheet
 $Sheet
-S 700  6100 1100 150 
+S 600  5800 1100 150 
 U 5814137C
 F0 "led_matrix" 60
 F1 "ledmatrix.sch" 60
 $EndSheet
 $Sheet
-S 700  6800 1100 150 
+S 600  6500 1100 150 
 U 5814137E
 F0 "column_driver" 60
 F1 "column_driver.sch" 60
 $EndSheet
 $Sheet
-S 700  6450 1100 150 
+S 600  6150 1100 150 
 U 58141380
 F0 "row_driver" 60
 F1 "row_driver.sch" 60
 $EndSheet
 $Sheet
-S 700  7150 1100 150 
+S 600  6850 1100 150 
 U 59A82F84
 F0 "power" 60
 F1 "power.sch" 60
@@ -560,7 +560,7 @@ Wire Wire Line
 	3050 2900 3600 2900
 Connection ~ 3050 2550
 $Sheet
-S 700  7500 1100 150 
+S 600  7200 1100 150 
 U 5BB33F0A
 F0 "USB_UART" 60
 F1 "usb_uart.sch" 60
@@ -1370,7 +1370,7 @@ AR Path="/58141380/5C1D67D6" Ref="SW?"  Part="1"
 AR Path="/5C1D67D6" Ref="SW2"  Part="1" 
 F 0 "SW2" H 10900 1134 50  0000 C CNN
 F 1 "SW_PUSH_SMALL_H" H 10900 1134 50  0001 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_FSMSM" H 10900 1200 50  0001 C CNN
+F 2 "components:TACT_SW_SMD_Panasonic-EVPAWBD2A" H 10900 1200 50  0001 C CNN
 F 3 "" H 10900 1200 50  0000 C CNN
 	1    10900 1000
 	-1   0    0    -1  
@@ -1383,7 +1383,7 @@ AR Path="/58141380/5C20E4D2" Ref="SW?"  Part="1"
 AR Path="/5C20E4D2" Ref="SW1"  Part="1" 
 F 0 "SW1" H 9550 984 50  0000 C CNN
 F 1 "SW_PUSH_SMALL_H" H 9550 984 50  0001 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_FSMSM" H 9550 1050 50  0001 C CNN
+F 2 "components:TACT_SW_SMD_Panasonic-EVPAWBD2A" H 9550 1050 50  0001 C CNN
 F 3 "" H 9550 1050 50  0000 C CNN
 	1    9550 850 
 	-1   0    0    -1  
@@ -1463,8 +1463,6 @@ Wire Wire Line
 	9600 4200 10500 4200
 Wire Wire Line
 	2350 5800 2500 5800
-Text GLabel 8450 2500 0    50   Input ~ 0
-IRLED_A
 Text Label 8250 3550 0    50   ~ 0
 HC541VDD
 $Comp
@@ -2078,4 +2076,10 @@ Text GLabel 4950 5400 0    50   Input ~ 0
 E_HS2_CLK
 Text GLabel 5950 5200 2    50   Input ~ 0
 E_HS2_DATA0
+$Sheet
+S 600  7550 1100 150 
+U 5BE422F0
+F0 "PowerAmplifier" 50
+F1 "power_amp.sch" 50
+$EndSheet
 $EndSCHEMATC
