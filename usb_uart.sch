@@ -26,7 +26,7 @@ F 3 "http://www.silabs.com/support%20documents/technicaldocs/cp2102n-datasheet.p
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C71
+L dotmatrix_64x48-rescue:C-device C71
 U 1 1 5BBCC45B
 P 4000 2350
 F 0 "C71" H 3950 1950 50  0000 L CNN
@@ -37,7 +37,7 @@ F 3 "" H 4000 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C69
+L dotmatrix_64x48-rescue:C-device C69
 U 1 1 5BBCC461
 P 3800 2350
 F 0 "C69" H 3750 1950 50  0000 L CNN
@@ -48,7 +48,7 @@ F 3 "" H 3800 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C74
+L dotmatrix_64x48-rescue:C-device C74
 U 1 1 5BBCC467
 P 4200 2350
 F 0 "C74" H 4150 1950 50  0000 L CNN
@@ -81,7 +81,7 @@ Connection ~ 4450 2150
 Wire Wire Line
 	4450 2150 4200 2150
 $Comp
-L device:C C70
+L dotmatrix_64x48-rescue:C-device C70
 U 1 1 5BBD1F28
 P 4000 1450
 F 0 "C70" H 3950 1050 50  0000 L CNN
@@ -92,7 +92,7 @@ F 3 "" H 4000 1450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C67
+L dotmatrix_64x48-rescue:C-device C67
 U 1 1 5BBD1F2E
 P 3800 1450
 F 0 "C67" H 3750 1050 50  0000 L CNN
@@ -103,7 +103,7 @@ F 3 "" H 3800 1450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C73
+L dotmatrix_64x48-rescue:C-device C73
 U 1 1 5BBD1F34
 P 4200 1450
 F 0 "C73" H 4150 1050 50  0000 L CNN
@@ -128,7 +128,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 1250 4400 1250
 $Comp
-L power:GND #PWR052
+L dotmatrix_64x48-rescue:GND-power #PWR052
 U 1 1 5BBDC36A
 P 4200 1600
 F 0 "#PWR052" H 4200 1350 50  0001 C CNN
@@ -139,7 +139,7 @@ F 3 "" H 4200 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR026
+L dotmatrix_64x48-rescue:GND-power #PWR026
 U 1 1 5BBDF9D0
 P 4000 1600
 F 0 "#PWR026" H 4000 1350 50  0001 C CNN
@@ -150,7 +150,7 @@ F 3 "" H 4000 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR023
+L dotmatrix_64x48-rescue:GND-power #PWR023
 U 1 1 5BBE3036
 P 3800 1600
 F 0 "#PWR023" H 3800 1350 50  0001 C CNN
@@ -161,7 +161,7 @@ F 3 "" H 3800 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR053
+L dotmatrix_64x48-rescue:GND-power #PWR053
 U 1 1 5BBE9D25
 P 4200 2500
 F 0 "#PWR053" H 4200 2250 50  0001 C CNN
@@ -172,7 +172,7 @@ F 3 "" H 4200 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR051
+L dotmatrix_64x48-rescue:GND-power #PWR051
 U 1 1 5BBE9D2B
 P 4000 2500
 F 0 "#PWR051" H 4000 2250 50  0001 C CNN
@@ -183,7 +183,7 @@ F 3 "" H 4000 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR025
+L dotmatrix_64x48-rescue:GND-power #PWR025
 U 1 1 5BBE9D31
 P 3800 2500
 F 0 "#PWR025" H 3800 2250 50  0001 C CNN
@@ -194,7 +194,7 @@ F 3 "" H 3800 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_OTG CONN?
+L dotmatrix_64x48-rescue:USB_OTG-Connector CONN?
 U 1 1 5BBED423
 P 2100 2700
 AR Path="/584C83E3/5BBED423" Ref="CONN?"  Part="1" 
@@ -215,7 +215,7 @@ NoConn ~ 2400 2900
 Wire Wire Line
 	2000 3200 2050 3200
 $Comp
-L power:GND #PWR019
+L dotmatrix_64x48-rescue:GND-power #PWR019
 U 1 1 5BBF16CE
 P 2050 3200
 F 0 "#PWR019" H 2050 2950 50  0001 C CNN
@@ -253,7 +253,7 @@ USBDP
 Text Label 3100 2800 0    50   ~ 0
 USBDN
 $Comp
-L power:GND #PWR054
+L dotmatrix_64x48-rescue:GND-power #PWR054
 U 1 1 5BC0208A
 P 5350 3600
 F 0 "#PWR054" H 5350 3350 50  0001 C CNN
@@ -264,7 +264,7 @@ F 3 "" H 5350 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR067
+L dotmatrix_64x48-rescue:GND-power #PWR067
 U 1 1 5BC069E8
 P 5450 3600
 F 0 "#PWR067" H 5450 3350 50  0001 C CNN
@@ -275,7 +275,7 @@ F 3 "" H 5450 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R117
+L dotmatrix_64x48-rescue:R-device R117
 U 1 1 5BC0FE7D
 P 4550 1550
 F 0 "R117" V 4550 1450 50  0000 L CNN
@@ -293,7 +293,7 @@ Connection ~ 4400 1250
 Wire Wire Line
 	4400 1250 5350 1250
 $Comp
-L device:LED_Small D13
+L dotmatrix_64x48-rescue:LED_Small-device D13
 U 1 1 5BC197DC
 P 2850 1850
 F 0 "D13" V 2896 1782 50  0000 R CNN
@@ -304,7 +304,7 @@ F 3 "" V 2850 1850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R116
+L dotmatrix_64x48-rescue:R-device R116
 U 1 1 5BC197E2
 P 3250 1850
 F 0 "R116" V 3250 1750 50  0000 L CNN
@@ -317,7 +317,7 @@ $EndComp
 Wire Wire Line
 	3100 1850 2950 1850
 $Comp
-L power:GND #PWR020
+L dotmatrix_64x48-rescue:GND-power #PWR020
 U 1 1 5BC2860D
 P 2550 1850
 F 0 "#PWR020" H 2550 1600 50  0001 C CNN
@@ -340,7 +340,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 1950 4850 1950
 $Comp
-L Connector:Conn_01x06 P2
+L dotmatrix_64x48-rescue:Conn_01x06-Connector P2
 U 1 1 5BC37DD7
 P 7050 1850
 F 0 "P2" H 7127 1936 50  0000 L CNN
@@ -360,7 +360,7 @@ Connection ~ 5350 1250
 Text Label 6150 1250 0    50   ~ 0
 USB3V3
 $Comp
-L power:GND #PWR068
+L dotmatrix_64x48-rescue:GND-power #PWR068
 U 1 1 5BC42F9C
 P 6400 1750
 F 0 "#PWR068" H 6400 1500 50  0001 C CNN
@@ -429,7 +429,7 @@ NoConn ~ 6050 3050
 NoConn ~ 6050 3150
 NoConn ~ 4850 1850
 $Comp
-L ESD_Protection:SRV05-4 U25
+L dotmatrix_64x48-rescue:SRV05-4-ESD_Protection U25
 U 1 1 5C65572B
 P 2950 3650
 F 0 "U25" H 2950 4328 50  0000 C CNN
@@ -440,7 +440,7 @@ F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 2950 3650 50  0001 C 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0136
+L dotmatrix_64x48-rescue:GND-power #PWR0136
 U 1 1 5C655732
 P 2950 4150
 F 0 "#PWR0136" H 2950 3900 50  0001 C CNN

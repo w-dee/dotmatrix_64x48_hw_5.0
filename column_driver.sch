@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L device:R R24
+L dotmatrix_64x48-rescue:R-device R24
 U 1 1 58122B4C
 P 8350 2800
 F 0 "R24" H 8420 2846 50  0000 L CNN
@@ -26,7 +26,7 @@ F 3 "" H 8350 2800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R22
+L dotmatrix_64x48-rescue:R-device R22
 U 1 1 58122B59
 P 6250 2800
 F 0 "R22" H 6320 2846 50  0000 L CNN
@@ -37,7 +37,7 @@ F 3 "" H 6250 2800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R20
+L dotmatrix_64x48-rescue:R-device R20
 U 1 1 58122B66
 P 4150 2800
 F 0 "R20" H 4220 2846 50  0000 L CNN
@@ -48,7 +48,7 @@ F 3 "" H 4150 2800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R18
+L dotmatrix_64x48-rescue:R-device R18
 U 1 1 58122B73
 P 2050 2800
 F 0 "R18" H 2120 2846 50  0000 L CNN
@@ -367,7 +367,7 @@ co63
 Text GLabel 8350 5250 3    60   Input ~ 0
 COLSEROUT
 $Comp
-L device:R R25
+L dotmatrix_64x48-rescue:R-device R25
 U 1 1 5811DEF4
 P 8500 5600
 F 0 "R25" H 8570 5646 50  0000 L CNN
@@ -378,7 +378,7 @@ F 3 "" H 8500 5600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R23
+L dotmatrix_64x48-rescue:R-device R23
 U 1 1 5811DF00
 P 6250 5600
 F 0 "R23" H 6320 5646 50  0000 L CNN
@@ -389,7 +389,7 @@ F 3 "" H 6250 5600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R21
+L dotmatrix_64x48-rescue:R-device R21
 U 1 1 5811DF0C
 P 4150 5600
 F 0 "R21" H 4220 5646 50  0000 L CNN
@@ -400,7 +400,7 @@ F 3 "" H 4150 5600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R19
+L dotmatrix_64x48-rescue:R-device R19
 U 1 1 5811DF18
 P 2050 5600
 F 0 "R19" H 2120 5646 50  0000 L CNN
@@ -557,7 +557,7 @@ co10
 Text GLabel 6350 3750 1    60   Input ~ 0
 ce10
 $Comp
-L device:C C5
+L dotmatrix_64x48-rescue:C-device C5
 U 1 1 581833BD
 P 9400 2600
 F 0 "C5" H 9515 2646 50  0000 L CNN
@@ -570,7 +570,7 @@ $EndComp
 Text GLabel 9400 2450 1    60   Input ~ 0
 LED1642VDD
 $Comp
-L device:C C7
+L dotmatrix_64x48-rescue:C-device C7
 U 1 1 58183AA7
 P 9700 2600
 F 0 "C7" H 9815 2646 50  0000 L CNN
@@ -581,7 +581,7 @@ F 3 "" H 9700 2600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C9
+L dotmatrix_64x48-rescue:C-device C9
 U 1 1 58183AFE
 P 10000 2600
 F 0 "C9" H 10115 2646 50  0000 L CNN
@@ -592,7 +592,7 @@ F 3 "" H 10000 2600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C11
+L dotmatrix_64x48-rescue:C-device C11
 U 1 1 58183B0B
 P 10300 2600
 F 0 "C11" H 10415 2646 50  0000 L CNN
@@ -603,7 +603,7 @@ F 3 "" H 10300 2600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C6
+L dotmatrix_64x48-rescue:C-device C6
 U 1 1 58183BCC
 P 9400 3900
 F 0 "C6" H 9515 3946 50  0000 L CNN
@@ -614,7 +614,7 @@ F 3 "" H 9400 3900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C8
+L dotmatrix_64x48-rescue:C-device C8
 U 1 1 58183BD9
 P 9700 3900
 F 0 "C8" H 9815 3946 50  0000 L CNN
@@ -625,7 +625,7 @@ F 3 "" H 9700 3900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C10
+L dotmatrix_64x48-rescue:C-device C10
 U 1 1 58183BE6
 P 10000 3900
 F 0 "C10" H 10115 3946 50  0000 L CNN
@@ -636,7 +636,7 @@ F 3 "" H 10000 3900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C12
+L dotmatrix_64x48-rescue:C-device C12
 U 1 1 58183BF3
 P 10300 3900
 F 0 "C12" H 10415 3946 50  0000 L CNN
@@ -648,7 +648,7 @@ F 3 "" H 10300 3900 50  0000 C CNN
 $EndComp
 Connection ~ 7650 5250
 $Comp
-L power:GND #PWR062
+L dotmatrix_64x48-rescue:GND-power #PWR062
 U 1 1 5943C2CA
 P 8850 5150
 F 0 "#PWR062" H 8850 4900 50  0001 C CNN
@@ -659,7 +659,7 @@ F 3 "" H 8850 5150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR066
+L dotmatrix_64x48-rescue:GND-power #PWR066
 U 1 1 59439C71
 P 8500 5750
 F 0 "#PWR066" H 8500 5500 50  0001 C CNN
@@ -670,7 +670,7 @@ F 3 "" H 8500 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR061
+L dotmatrix_64x48-rescue:GND-power #PWR061
 U 1 1 5943AA65
 P 6750 5150
 F 0 "#PWR061" H 6750 4900 50  0001 C CNN
@@ -681,7 +681,7 @@ F 3 "" H 6750 5150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR065
+L dotmatrix_64x48-rescue:GND-power #PWR065
 U 1 1 5943AA6B
 P 6250 5750
 F 0 "#PWR065" H 6250 5500 50  0001 C CNN
@@ -692,7 +692,7 @@ F 3 "" H 6250 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR060
+L dotmatrix_64x48-rescue:GND-power #PWR060
 U 1 1 5943ABA3
 P 4650 5150
 F 0 "#PWR060" H 4650 4900 50  0001 C CNN
@@ -703,7 +703,7 @@ F 3 "" H 4650 5150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR064
+L dotmatrix_64x48-rescue:GND-power #PWR064
 U 1 1 5943ABA9
 P 4150 5750
 F 0 "#PWR064" H 4150 5500 50  0001 C CNN
@@ -714,7 +714,7 @@ F 3 "" H 4150 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR058
+L dotmatrix_64x48-rescue:GND-power #PWR058
 U 1 1 5943ACE1
 P 10300 4050
 F 0 "#PWR058" H 10300 3800 50  0001 C CNN
@@ -725,7 +725,7 @@ F 3 "" H 10300 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR057
+L dotmatrix_64x48-rescue:GND-power #PWR057
 U 1 1 5943ACE7
 P 10000 4050
 F 0 "#PWR057" H 10000 3800 50  0001 C CNN
@@ -736,7 +736,7 @@ F 3 "" H 10000 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR059
+L dotmatrix_64x48-rescue:GND-power #PWR059
 U 1 1 5943AFDB
 P 2550 5150
 F 0 "#PWR059" H 2550 4900 50  0001 C CNN
@@ -747,7 +747,7 @@ F 3 "" H 2550 5150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR063
+L dotmatrix_64x48-rescue:GND-power #PWR063
 U 1 1 5943AFE1
 P 2050 5750
 F 0 "#PWR063" H 2050 5500 50  0001 C CNN
@@ -758,7 +758,7 @@ F 3 "" H 2050 5750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR042
+L dotmatrix_64x48-rescue:GND-power #PWR042
 U 1 1 5943B229
 P 8850 2350
 F 0 "#PWR042" H 8850 2100 50  0001 C CNN
@@ -769,7 +769,7 @@ F 3 "" H 8850 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR050
+L dotmatrix_64x48-rescue:GND-power #PWR050
 U 1 1 5943B22F
 P 8350 2950
 F 0 "#PWR050" H 8350 2700 50  0001 C CNN
@@ -780,7 +780,7 @@ F 3 "" H 8350 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR041
+L dotmatrix_64x48-rescue:GND-power #PWR041
 U 1 1 5943B345
 P 6750 2350
 F 0 "#PWR041" H 6750 2100 50  0001 C CNN
@@ -791,7 +791,7 @@ F 3 "" H 6750 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR049
+L dotmatrix_64x48-rescue:GND-power #PWR049
 U 1 1 5943B34B
 P 6250 2950
 F 0 "#PWR049" H 6250 2700 50  0001 C CNN
@@ -802,7 +802,7 @@ F 3 "" H 6250 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR040
+L dotmatrix_64x48-rescue:GND-power #PWR040
 U 1 1 5943B4A5
 P 4650 2350
 F 0 "#PWR040" H 4650 2100 50  0001 C CNN
@@ -813,7 +813,7 @@ F 3 "" H 4650 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR048
+L dotmatrix_64x48-rescue:GND-power #PWR048
 U 1 1 5943B4AB
 P 4150 2950
 F 0 "#PWR048" H 4150 2700 50  0001 C CNN
@@ -824,7 +824,7 @@ F 3 "" H 4150 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR039
+L dotmatrix_64x48-rescue:GND-power #PWR039
 U 1 1 5943B803
 P 2550 2350
 F 0 "#PWR039" H 2550 2100 50  0001 C CNN
@@ -835,7 +835,7 @@ F 3 "" H 2550 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR047
+L dotmatrix_64x48-rescue:GND-power #PWR047
 U 1 1 5943B809
 P 2050 2950
 F 0 "#PWR047" H 2050 2700 50  0001 C CNN
@@ -846,7 +846,7 @@ F 3 "" H 2050 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR056
+L dotmatrix_64x48-rescue:GND-power #PWR056
 U 1 1 5943BAD9
 P 9700 4050
 F 0 "#PWR056" H 9700 3800 50  0001 C CNN
@@ -857,7 +857,7 @@ F 3 "" H 9700 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR055
+L dotmatrix_64x48-rescue:GND-power #PWR055
 U 1 1 5943BADF
 P 9400 4050
 F 0 "#PWR055" H 9400 3800 50  0001 C CNN
@@ -868,7 +868,7 @@ F 3 "" H 9400 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR046
+L dotmatrix_64x48-rescue:GND-power #PWR046
 U 1 1 5943BB07
 P 10300 2750
 F 0 "#PWR046" H 10300 2500 50  0001 C CNN
@@ -879,7 +879,7 @@ F 3 "" H 10300 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR045
+L dotmatrix_64x48-rescue:GND-power #PWR045
 U 1 1 5943BB0D
 P 10000 2750
 F 0 "#PWR045" H 10000 2500 50  0001 C CNN
@@ -890,7 +890,7 @@ F 3 "" H 10000 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR044
+L dotmatrix_64x48-rescue:GND-power #PWR044
 U 1 1 5943BB13
 P 9700 2750
 F 0 "#PWR044" H 9700 2500 50  0001 C CNN
@@ -901,7 +901,7 @@ F 3 "" H 9700 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR043
+L dotmatrix_64x48-rescue:GND-power #PWR043
 U 1 1 5943BB19
 P 9400 2750
 F 0 "#PWR043" H 9400 2500 50  0001 C CNN

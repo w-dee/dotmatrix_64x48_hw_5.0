@@ -17,7 +17,7 @@ $EndDescr
 Text GLabel 1350 1250 1    60   Input ~ 0
 DC_IN_P
 $Comp
-L device:Polyfuse_Small F1
+L dotmatrix_64x48-rescue:Polyfuse_Small-device F1
 U 1 1 57A2A89C
 P 4250 1050
 AR Path="/59A82F84/57A2A89C" Ref="F1"  Part="1" 
@@ -30,7 +30,7 @@ F 3 "" H 4250 1050 50  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:VCC #PWR0134
+L dotmatrix_64x48-rescue:VCC-power #PWR0134
 U 1 1 57A2D136
 P 4900 950
 AR Path="/59A82F84/57A2D136" Ref="#PWR0134"  Part="1" 
@@ -43,11 +43,12 @@ F 3 "" H 4900 950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Barrel_Jack CONN1
+L dotmatrix_64x48-rescue:Barrel_Jack-Connector CONN1
 U 1 1 57A2CB58
 P 1000 1350
 AR Path="/59A82F84/57A2CB58" Ref="CONN1"  Part="1" 
 AR Path="/5BB33F0A/57A2CB58" Ref="CONN?"  Part="1" 
+AR Path="/57A2CB58" Ref="CONN1"  Part="1" 
 F 0 "CONN1" H 982 1675 50  0000 C CNN
 F 1 "BARREL_JACK" H 982 1584 50  0000 C CNN
 F 2 "components:BARREL_JACK_HIGH_CURRENT_PJ018" H 1000 1350 50  0001 C CNN
@@ -56,7 +57,7 @@ F 3 "" H 1000 1350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0137
+L dotmatrix_64x48-rescue:GND-power #PWR0137
 U 1 1 5837D4C6
 P 4450 1400
 AR Path="/59A82F84/5837D4C6" Ref="#PWR0137"  Part="1" 
@@ -69,7 +70,7 @@ F 3 "" H 4450 1400 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L device:C C64
+L dotmatrix_64x48-rescue:C-device C64
 U 1 1 5836E9C2
 P 4450 1250
 AR Path="/59A82F84/5836E9C2" Ref="C64"  Part="1" 
@@ -82,7 +83,7 @@ F 3 "" H 4450 1250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0138
+L dotmatrix_64x48-rescue:GND-power #PWR0138
 U 1 1 5836E9B0
 P 4700 1400
 AR Path="/59A82F84/5836E9B0" Ref="#PWR0138"  Part="1" 
@@ -95,7 +96,7 @@ F 3 "" H 4700 1400 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0135
+L dotmatrix_64x48-rescue:GND-power #PWR0135
 U 1 1 582622CC
 P 3850 1250
 AR Path="/59A82F84/582622CC" Ref="#PWR0135"  Part="1" 
@@ -121,7 +122,7 @@ F 3 "" V 3350 950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:D_Zener_Small_ALT D7
+L dotmatrix_64x48-rescue:D_Zener_Small_ALT-device D7
 U 1 1 5859EE13
 P 1750 1100
 AR Path="/59A82F84/5859EE13" Ref="D7"  Part="1" 
@@ -134,7 +135,7 @@ F 3 "" V 1750 1100 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C72
+L dotmatrix_64x48-rescue:C-device C72
 U 1 1 583E92D5
 P 2700 1200
 AR Path="/59A82F84/583E92D5" Ref="C72"  Part="1" 
@@ -147,7 +148,7 @@ F 3 "" H 2700 1200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C66
+L dotmatrix_64x48-rescue:C-device C66
 U 1 1 5837D4CC
 P 4700 1250
 AR Path="/59A82F84/5837D4CC" Ref="C66"  Part="1" 
@@ -183,7 +184,7 @@ Wire Wire Line
 Wire Wire Line
 	1500 1250 1300 1250
 $Comp
-L device:C C33
+L dotmatrix_64x48-rescue:C-device C33
 U 1 1 59E42088
 P 1100 3350
 AR Path="/59A82F84/59E42088" Ref="C33"  Part="1" 
@@ -196,7 +197,7 @@ F 3 "" H 1100 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0146
+L dotmatrix_64x48-rescue:GND-power #PWR0146
 U 1 1 59E4208E
 P 1100 3550
 AR Path="/59A82F84/59E4208E" Ref="#PWR0146"  Part="1" 
@@ -211,7 +212,7 @@ $EndComp
 Wire Wire Line
 	1100 3550 1100 3500
 $Comp
-L device:L L1
+L dotmatrix_64x48-rescue:L-device L1
 U 1 1 59E42358
 P 3250 3400
 AR Path="/59A82F84/59E42358" Ref="L1"  Part="1" 
@@ -224,7 +225,7 @@ F 3 "" H 3250 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C34
+L dotmatrix_64x48-rescue:C-device C34
 U 1 1 59E426BA
 P 3650 3550
 AR Path="/59A82F84/59E426BA" Ref="C34"  Part="1" 
@@ -237,7 +238,7 @@ F 3 "" H 3650 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0148
+L dotmatrix_64x48-rescue:GND-power #PWR0148
 U 1 1 59E426C0
 P 3650 3900
 AR Path="/59A82F84/59E426C0" Ref="#PWR0148"  Part="1" 
@@ -252,7 +253,7 @@ $EndComp
 Wire Wire Line
 	3650 3700 3650 3900
 $Comp
-L device:R R38
+L dotmatrix_64x48-rescue:R-device R38
 U 1 1 59E42F9D
 P 4050 3600
 AR Path="/59A82F84/59E42F9D" Ref="R38"  Part="1" 
@@ -265,7 +266,7 @@ F 3 "" H 4050 3600 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R39
+L dotmatrix_64x48-rescue:R-device R39
 U 1 1 59E430E9
 P 4050 4000
 AR Path="/59A82F84/59E430E9" Ref="R39"  Part="1" 
@@ -278,7 +279,7 @@ F 3 "" H 4050 4000 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:C C35
+L dotmatrix_64x48-rescue:C-device C35
 U 1 1 59E4315B
 P 4400 3550
 AR Path="/59A82F84/59E4315B" Ref="C35"  Part="1" 
@@ -308,7 +309,7 @@ Wire Wire Line
 	1400 3400 1400 3200
 Connection ~ 1400 3200
 $Comp
-L power:VCC #PWR0145
+L dotmatrix_64x48-rescue:VCC-power #PWR0145
 U 1 1 59E439B6
 P 850 3000
 AR Path="/59A82F84/59E439B6" Ref="#PWR0145"  Part="1" 
@@ -325,7 +326,7 @@ Wire Wire Line
 Text GLabel 5100 2950 2    60   Input ~ 0
 LEDLOGICVDD
 $Comp
-L power:GND #PWR0147
+L dotmatrix_64x48-rescue:GND-power #PWR0147
 U 1 1 59E441C7
 P 2000 3800
 AR Path="/59A82F84/59E441C7" Ref="#PWR0147"  Part="1" 
@@ -338,7 +339,7 @@ F 3 "" H 2000 3800 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0149
+L dotmatrix_64x48-rescue:GND-power #PWR0149
 U 1 1 59E449D3
 P 4050 4150
 AR Path="/59A82F84/59E449D3" Ref="#PWR0149"  Part="1" 
@@ -389,7 +390,7 @@ Connection ~ 3650 3400
 Wire Wire Line
 	3650 3400 4050 3400
 $Comp
-L device:C C55
+L dotmatrix_64x48-rescue:C-device C55
 U 1 1 5BABFE14
 P 2750 3200
 AR Path="/59A82F84/5BABFE14" Ref="C55"  Part="1" 
@@ -420,7 +421,7 @@ Wire Wire Line
 Text GLabel 6850 3150 2    60   Input ~ 0
 ESPVDD
 $Comp
-L device:Ferrite_Bead_Small L?
+L dotmatrix_64x48-rescue:Ferrite_Bead_Small-device L?
 U 1 1 5BB82B05
 P 5650 3600
 AR Path="/5BB82B05" Ref="L?"  Part="1" 
@@ -433,7 +434,7 @@ F 3 "" H 5650 3600 50  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L dotmatrix_64x48-rescue:GND-power #PWR?
 U 1 1 5BB82B0D
 P 5900 3950
 AR Path="/59A8E319/5BB82B0D" Ref="#PWR?"  Part="1" 
@@ -447,7 +448,7 @@ F 3 "" H 5900 3950 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L device:C C?
+L dotmatrix_64x48-rescue:C-device C?
 U 1 1 5BB82B13
 P 5900 3750
 AR Path="/59A8E319/5BB82B13" Ref="C?"  Part="1" 
@@ -461,7 +462,7 @@ F 3 "" H 5900 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C?
+L dotmatrix_64x48-rescue:C-device C?
 U 1 1 5BB82B1A
 P 6150 3750
 AR Path="/59A8E319/5BB82B1A" Ref="C?"  Part="1" 
@@ -475,7 +476,7 @@ F 3 "" H 6150 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L dotmatrix_64x48-rescue:GND-power #PWR?
 U 1 1 5BB82B21
 P 6150 3950
 AR Path="/59A8E319/5BB82B21" Ref="#PWR?"  Part="1" 
@@ -512,7 +513,7 @@ Wire Wire Line
 Text Notes 4050 3250 0    50   ~ 0
 3V3 2A
 $Comp
-L device:Q_PMOS_GSD Q29
+L dotmatrix_64x48-rescue:Q_PMOS_GSD-device Q29
 U 1 1 5BB939F2
 P 8500 3250
 F 0 "Q29" H 8691 3204 50  0000 L CNN
@@ -527,7 +528,7 @@ LED1642VDD
 Wire Wire Line
 	8200 3150 8300 3150
 $Comp
-L device:Q_NPN_BEC Q30
+L dotmatrix_64x48-rescue:Q_NPN_BEC-device Q30
 U 1 1 5BB939FB
 P 9350 3900
 F 0 "Q30" H 9540 3946 50  0000 L CNN
@@ -538,7 +539,7 @@ F 3 "" H 9350 3900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R114
+L dotmatrix_64x48-rescue:R-device R114
 U 1 1 5BB93A02
 P 8950 3900
 F 0 "R114" V 8950 3800 50  0000 L CNN
@@ -549,7 +550,7 @@ F 3 "" H 8950 3900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:R R105
+L dotmatrix_64x48-rescue:R-device R105
 U 1 1 5BB93A09
 P 8250 3900
 F 0 "R105" V 8250 3800 50  0000 L CNN
@@ -560,7 +561,7 @@ F 3 "" H 8250 3900 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR018
+L dotmatrix_64x48-rescue:GND-power #PWR018
 U 1 1 5BB93A10
 P 9450 4150
 F 0 "#PWR018" H 9450 3900 50  0001 C CNN
@@ -586,7 +587,7 @@ Wire Wire Line
 Wire Wire Line
 	9450 3150 9650 3150
 $Comp
-L device:R R115
+L dotmatrix_64x48-rescue:R-device R115
 U 1 1 5BB93A1E
 P 9450 3500
 F 0 "R115" H 9520 3546 50  0000 L CNN
@@ -632,7 +633,7 @@ F 3 "http://cds.linear.com/docs/en/datasheet/1624f.pdf" H 2400 5700 50  0001 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C28
+L dotmatrix_64x48-rescue:C-device C28
 U 1 1 5BBCC3D9
 P 1000 5450
 AR Path="/59A82F84/5BBCC3D9" Ref="C28"  Part="1" 
@@ -645,7 +646,7 @@ F 3 "" H 1000 5450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR07
+L dotmatrix_64x48-rescue:GND-power #PWR07
 U 1 1 5BBCC3DF
 P 1000 5650
 AR Path="/59A82F84/5BBCC3DF" Ref="#PWR07"  Part="1" 
@@ -660,7 +661,7 @@ $EndComp
 Wire Wire Line
 	1000 5650 1000 5600
 $Comp
-L power:VCC #PWR06
+L dotmatrix_64x48-rescue:VCC-power #PWR06
 U 1 1 5BBCC3E6
 P 1000 5100
 AR Path="/59A82F84/5BBCC3E6" Ref="#PWR06"  Part="1" 
@@ -675,7 +676,7 @@ $EndComp
 Wire Wire Line
 	1000 5100 1000 5300
 $Comp
-L device:C C?
+L dotmatrix_64x48-rescue:C-device C?
 U 1 1 5BBD1AF5
 P 1650 5850
 AR Path="/59A8E319/5BBD1AF5" Ref="C?"  Part="1" 
@@ -691,7 +692,7 @@ $EndComp
 Wire Wire Line
 	1900 5700 1650 5700
 $Comp
-L device:C C?
+L dotmatrix_64x48-rescue:C-device C?
 U 1 1 5BBD4DFE
 P 1850 6000
 AR Path="/59A8E319/5BBD4DFE" Ref="C?"  Part="1" 
@@ -707,7 +708,7 @@ $EndComp
 Wire Wire Line
 	1850 5850 1900 5850
 $Comp
-L power:GND #PWR?
+L dotmatrix_64x48-rescue:GND-power #PWR?
 U 1 1 5BBD8503
 P 2400 6400
 AR Path="/59A8E319/5BBD8503" Ref="#PWR?"  Part="1" 
@@ -721,7 +722,7 @@ F 3 "" H 2400 6400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C?
+L dotmatrix_64x48-rescue:C-device C?
 U 1 1 5BBDA610
 P 3150 5550
 AR Path="/59A8E319/5BBDA610" Ref="C?"  Part="1" 
@@ -743,7 +744,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 5700 3350 5550
 $Comp
-L device:L L2
+L dotmatrix_64x48-rescue:L-device L2
 U 1 1 5BBE36D3
 P 3700 5700
 AR Path="/59A82F84/5BBE36D3" Ref="L2"  Part="1" 
@@ -756,7 +757,7 @@ F 3 "" H 3700 5700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:C C57
+L dotmatrix_64x48-rescue:C-device C57
 U 1 1 5BBE36D9
 P 4150 5850
 AR Path="/59A82F84/5BBE36D9" Ref="C57"  Part="1" 
@@ -772,7 +773,7 @@ Wire Wire Line
 	3350 5700 3550 5700
 Connection ~ 3350 5700
 $Comp
-L device:C C59
+L dotmatrix_64x48-rescue:C-device C59
 U 1 1 5BBE58F5
 P 4350 5850
 AR Path="/59A82F84/5BBE58F5" Ref="C59"  Part="1" 
@@ -786,7 +787,7 @@ F 3 "" H 4350 5850 50  0000 C CNN
 $EndComp
 Connection ~ 4350 5700
 $Comp
-L device:C C60
+L dotmatrix_64x48-rescue:C-device C60
 U 1 1 5BBE9B14
 P 4550 5850
 AR Path="/59A82F84/5BBE9B14" Ref="C60"  Part="1" 
@@ -804,7 +805,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 5700 4000 5700
 $Comp
-L device:C C61
+L dotmatrix_64x48-rescue:C-device C61
 U 1 1 5BBEDEC6
 P 4750 5850
 AR Path="/59A82F84/5BBEDEC6" Ref="C61"  Part="1" 
@@ -822,7 +823,7 @@ Wire Wire Line
 	4550 5700 4750 5700
 Connection ~ 4550 5700
 $Comp
-L device:R R102
+L dotmatrix_64x48-rescue:R-device R102
 U 1 1 5BBF4A3E
 P 3850 6000
 AR Path="/59A82F84/5BBF4A3E" Ref="R102"  Part="1" 
@@ -835,7 +836,7 @@ F 3 "" H 3850 6000 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L device:R R103
+L dotmatrix_64x48-rescue:R-device R103
 U 1 1 5BBF9176
 P 3850 6450
 AR Path="/59A82F84/5BBF9176" Ref="R103"  Part="1" 
@@ -848,7 +849,7 @@ F 3 "" H 3850 6450 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR011
+L dotmatrix_64x48-rescue:GND-power #PWR011
 U 1 1 5BBF917C
 P 3850 6900
 AR Path="/59A82F84/5BBF917C" Ref="#PWR011"  Part="1" 
@@ -861,7 +862,7 @@ F 3 "" H 3850 6900 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR012
+L dotmatrix_64x48-rescue:GND-power #PWR012
 U 1 1 5BBFB3AB
 P 4150 6000
 AR Path="/59A82F84/5BBFB3AB" Ref="#PWR012"  Part="1" 
@@ -874,7 +875,7 @@ F 3 "" H 4150 6000 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR013
+L dotmatrix_64x48-rescue:GND-power #PWR013
 U 1 1 5BBFD5DA
 P 4350 6000
 AR Path="/59A82F84/5BBFD5DA" Ref="#PWR013"  Part="1" 
@@ -887,7 +888,7 @@ F 3 "" H 4350 6000 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR014
+L dotmatrix_64x48-rescue:GND-power #PWR014
 U 1 1 5BBFF809
 P 4550 6000
 AR Path="/59A82F84/5BBFF809" Ref="#PWR014"  Part="1" 
@@ -900,7 +901,7 @@ F 3 "" H 4550 6000 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR015
+L dotmatrix_64x48-rescue:GND-power #PWR015
 U 1 1 5BBFF80F
 P 4750 6000
 AR Path="/59A82F84/5BBFF80F" Ref="#PWR015"  Part="1" 
@@ -913,7 +914,7 @@ F 3 "" H 4750 6000 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L device:R R104
+L dotmatrix_64x48-rescue:R-device R104
 U 1 1 5BC04AA9
 P 3850 6750
 AR Path="/59A82F84/5BC04AA9" Ref="R104"  Part="1" 
@@ -942,7 +943,7 @@ Connection ~ 3850 6200
 Wire Wire Line
 	3850 6200 3850 6300
 $Comp
-L device:C C56
+L dotmatrix_64x48-rescue:C-device C56
 U 1 1 5BC104FD
 P 3500 6050
 AR Path="/59A82F84/5BC104FD" Ref="C56"  Part="1" 
@@ -970,7 +971,7 @@ Connection ~ 4750 5700
 Text Notes 4600 5650 0    50   ~ 0
 3.15V, 4A
 $Comp
-L device:R R101
+L dotmatrix_64x48-rescue:R-device R101
 U 1 1 5BC29E87
 P 1600 5450
 AR Path="/59A82F84/5BC29E87" Ref="R101"  Part="1" 
@@ -1015,7 +1016,7 @@ Wire Wire Line
 	2500 1050 2500 950 
 Connection ~ 2700 1050
 $Comp
-L power:GND #PWR0139
+L dotmatrix_64x48-rescue:GND-power #PWR0139
 U 1 1 5BC62B5B
 P 1300 3500
 AR Path="/59A82F84/5BC62B5B" Ref="#PWR0139"  Part="1" 
@@ -1028,7 +1029,7 @@ F 3 "" H 1300 3500 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L device:C C75
+L dotmatrix_64x48-rescue:C-device C75
 U 1 1 5BC62B65
 P 1300 3350
 AR Path="/59A82F84/5BC62B65" Ref="C75"  Part="1" 
@@ -1047,7 +1048,7 @@ Connection ~ 1000 5300
 Wire Wire Line
 	1000 5300 1250 5300
 $Comp
-L power:GND #PWR0140
+L dotmatrix_64x48-rescue:GND-power #PWR0140
 U 1 1 5BC71055
 P 1250 5600
 AR Path="/59A82F84/5BC71055" Ref="#PWR0140"  Part="1" 
@@ -1060,7 +1061,7 @@ F 3 "" H 1250 5600 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L device:C C76
+L dotmatrix_64x48-rescue:C-device C76
 U 1 1 5BC7105F
 P 1250 5450
 AR Path="/59A82F84/5BC7105F" Ref="C76"  Part="1" 
@@ -1076,7 +1077,7 @@ Connection ~ 1250 5300
 Wire Wire Line
 	1250 5300 1600 5300
 $Comp
-L power:GND #PWR?
+L dotmatrix_64x48-rescue:GND-power #PWR?
 U 1 1 5BC7F814
 P 2600 6100
 AR Path="/59A8E319/5BC7F814" Ref="#PWR?"  Part="1" 
@@ -1094,7 +1095,7 @@ LEDDC_SW
 Text Label 2050 1350 0    50   ~ 0
 DC_IN_N
 $Comp
-L device:C C2
+L dotmatrix_64x48-rescue:C-device C2
 U 1 1 5BDA55B3
 P 6350 3750
 AR Path="/59A82F84/5BDA55B3" Ref="C2"  Part="1" 
@@ -1107,7 +1108,7 @@ F 3 "" H 6350 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L dotmatrix_64x48-rescue:GND-power #PWR?
 U 1 1 5BDA8B7D
 P 6350 3900
 AR Path="/59A8E319/5BDA8B7D" Ref="#PWR?"  Part="1" 
