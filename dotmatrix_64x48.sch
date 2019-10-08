@@ -1,10 +1,9 @@
-EESchema Schematic File Version 4
-LIBS:dotmatrix_64x48-cache
-EELAYER 29 0
+EESchema Schematic File Version 5
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -13,6 +12,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 $Sheet
 S 600  5450 1100 150 
@@ -1971,12 +1975,6 @@ Text GLabel 4950 5400 0    50   Input ~ 0
 E_HS2_CLK
 Text GLabel 5950 5200 2    50   Input ~ 0
 E_HS2_DATA0
-$Sheet
-S 600  7550 1100 150 
-U 5BE422F0
-F0 "PowerAmplifier" 50
-F1 "power_amp.sch" 50
-$EndSheet
 Wire Wire Line
 	5050 2400 5050 2500
 Wire Wire Line
@@ -2143,4 +2141,6 @@ Wire Wire Line
 	9150 4600 9150 4750
 Wire Wire Line
 	9150 4750 9550 4750
+Connection ~ 3050 2550
+Connection ~ 8950 3100
 $EndSCHEMATC
