@@ -280,11 +280,11 @@ F 3 "" H 7750 5300 50  0000 C CNN
 	1    7750 5300
 	1    0    0    -1  
 $EndComp
-Text GLabel 7850 4800 0    60   Input ~ 0
-D_COLLATCH
-Text GLabel 7850 4900 0    60   Input ~ 0
-D_COLCLK
 Text GLabel 7850 4600 0    60   Input ~ 0
+D_COLLATCH
+Text GLabel 7850 4700 0    60   Input ~ 0
+D_COLCLK
+Text GLabel 7850 4900 0    60   Input ~ 0
 D_COLSER
 Text GLabel 10150 5250 2    60   Input ~ 0
 COLSER
@@ -480,8 +480,8 @@ HC595LATCH
 Wire Wire Line
 	8500 3900 8500 3550
 Wire Wire Line
-	7850 4700 8000 4700
-Text GLabel 7850 4700 0    60   Input ~ 0
+	7850 4800 8000 4800
+Text GLabel 7850 4800 0    60   Input ~ 0
 D_ROW_LAT
 Wire Wire Line
 	7750 5100 8000 5100
@@ -744,7 +744,7 @@ AR Path="/59A8E319/5BC17EE5" Ref="R?"  Part="1"
 AR Path="/5BC17EE5" Ref="R98"  Part="1" 
 F 0 "R98" V 10550 6050 50  0000 L CNN
 F 1 "1k" V 10650 6000 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10480 6150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10480 6150 50  0001 C CNN
 F 3 "" H 10550 6150 50  0000 C CNN
 	1    10550 6150
 	0    -1   -1   0   
@@ -815,7 +815,7 @@ AR Path="/59A8E319/5BC565FC" Ref="R?"  Part="1"
 AR Path="/5BC565FC" Ref="R79"  Part="1" 
 F 0 "R79" V 8150 6050 50  0000 L CNN
 F 1 "1k" V 8250 6000 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 8080 6150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8080 6150 50  0001 C CNN
 F 3 "" H 8150 6150 50  0000 C CNN
 	1    8150 6150
 	0    -1   -1   0   
@@ -2015,33 +2015,33 @@ Connection ~ 4350 6150
 Wire Wire Line
 	4350 6150 4450 6150
 Wire Wire Line
-	7850 4600 8000 4600
+	7850 4900 8000 4900
 Wire Wire Line
-	7850 4800 8000 4800
+	7850 4700 8000 4700
 Wire Wire Line
-	8000 4900 7850 4900
+	8000 4600 7850 4600
 Wire Wire Line
 	9550 4850 9500 4850
 Wire Wire Line
 	9500 4850 9500 4650
 Wire Wire Line
 	9500 4650 9550 4650
-Text GLabel 7850 4400 0    50   Input ~ 0
-D_I2S_SPK_BCLK
-Text GLabel 7850 4500 0    50   Input ~ 0
-D_I2S_SPK_MCLK
 Text GLabel 7850 4300 0    50   Input ~ 0
-D_I2S_SPK_LRCLK
+D_I2S_SPK_BCLK
 Text GLabel 7850 4200 0    50   Input ~ 0
+D_I2S_SPK_MCLK
+Text GLabel 7850 4400 0    50   Input ~ 0
+D_I2S_SPK_LRCLK
+Text GLabel 7850 4500 0    50   Input ~ 0
 D_I2S_SPK_DATA
 Wire Wire Line
-	7850 4200 8000 4200
-Wire Wire Line
-	7850 4300 8000 4300
+	7850 4500 8000 4500
 Wire Wire Line
 	7850 4400 8000 4400
 Wire Wire Line
-	7850 4500 8000 4500
+	7850 4300 8000 4300
+Wire Wire Line
+	7850 4200 8000 4200
 Connection ~ 9500 4850
 Text GLabel 10000 4300 2    50   Input ~ 0
 I2S_SPK_BCLK
@@ -2130,17 +2130,17 @@ Wire Wire Line
 Wire Wire Line
 	9050 5150 9550 5150
 Wire Wire Line
-	9100 4850 9100 4700
-Wire Wire Line
-	9100 4700 9000 4700
-Wire Wire Line
 	9100 4850 9500 4850
-Wire Wire Line
-	9000 4600 9150 4600
-Wire Wire Line
-	9150 4600 9150 4750
 Wire Wire Line
 	9150 4750 9550 4750
 Connection ~ 3050 2550
 Connection ~ 8950 3100
+Wire Wire Line
+	9150 4600 9150 4750
+Wire Wire Line
+	9000 4600 9150 4600
+Wire Wire Line
+	9100 4700 9000 4700
+Wire Wire Line
+	9100 4850 9100 4700
 $EndSCHEMATC
