@@ -410,8 +410,8 @@ AR Path="/59A82F84/5BBD3352" Ref="C?"  Part="1"
 AR Path="/5BB33F0A/5BBD3352" Ref="C?"  Part="1" 
 AR Path="/57BB11DB/5BBD3352" Ref="C1"  Part="1" 
 F 0 "C1" H 2500 1550 50  0000 L CNN
-F 1 "10u" H 2500 1450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2465 1459 50  0001 L CNN
+F 1 "10u 10V" H 2500 1450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2465 1459 50  0001 L CNN
 F 3 "" H 2350 1550 50  0000 C CNN
 	1    2350 1550
 	1    0    0    -1  
@@ -549,12 +549,8 @@ Wire Wire Line
 Connection ~ 9950 4650
 Wire Wire Line
 	9950 4650 10300 4650
-Text GLabel 10250 5050 2    60   Input ~ 0
-LEDLOGICVDD
 Wire Wire Line
 	9400 5150 10250 5150
-Wire Wire Line
-	10250 5150 10250 5050
 Text GLabel 1350 650  0    60   Input ~ 0
 LEDLOGICVDD
 Wire Wire Line
@@ -700,4 +696,6 @@ Wire Wire Line
 Connection ~ 7750 1650
 Wire Wire Line
 	7750 1650 7750 1500
+Text GLabel 10250 5150 2    60   Input ~ 0
+LED1642VDD
 $EndSCHEMATC

@@ -235,8 +235,8 @@ P 3650 3550
 AR Path="/59A82F84/59E426BA" Ref="C34"  Part="1" 
 AR Path="/5BB33F0A/59E426BA" Ref="C?"  Part="1" 
 F 0 "C34" H 3600 2950 50  0000 L CNN
-F 1 "10u" H 3600 2850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 3765 3459 50  0001 L CNN
+F 1 "10u 10V" H 3600 2850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3765 3459 50  0001 L CNN
 F 3 "" H 3650 3550 50  0000 C CNN
 	1    3650 3550
 	1    0    0    -1  
@@ -263,7 +263,7 @@ P 4050 3600
 AR Path="/59A82F84/59E42F9D" Ref="R38"  Part="1" 
 AR Path="/5BB33F0A/59E42F9D" Ref="R?"  Part="1" 
 F 0 "R38" V 4050 3550 50  0000 L CNN
-F 1 "100k" V 4150 3550 50  0000 L CNN
+F 1 "75k" V 4150 3550 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3980 3600 50  0001 C CNN
 F 3 "" H 4050 3600 50  0000 C CNN
 	1    4050 3600
@@ -276,7 +276,7 @@ P 4050 4000
 AR Path="/59A82F84/59E430E9" Ref="R39"  Part="1" 
 AR Path="/5BB33F0A/59E430E9" Ref="R?"  Part="1" 
 F 0 "R39" V 4050 3950 50  0000 L CNN
-F 1 "22k" V 4150 3950 50  0000 L CNN
+F 1 "10k" V 4150 3950 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3980 4000 50  0001 C CNN
 F 3 "" H 4050 4000 50  0000 C CNN
 	1    4050 4000
@@ -327,7 +327,7 @@ F 3 "" H 850 3000 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	850  3000 850  3200
-Text GLabel 5100 2950 2    60   Input ~ 0
+Text GLabel 6850 3100 2    60   Input ~ 0
 LEDLOGICVDD
 $Comp
 L dotmatrix_64x48-rescue:GND-power #PWR0147
@@ -356,7 +356,7 @@ F 3 "" H 4050 4150 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 750  4250 0    60   ~ 0
-Vout = .596*(100000.0/(22000)+1) = 3.305090909090909
+Vout = .596*(75.0/(10)+1) = 5.066
 Wire Wire Line
 	1600 1350 1600 1450
 Wire Wire Line
@@ -401,7 +401,7 @@ AR Path="/59A82F84/5BABFE14" Ref="C55"  Part="1"
 AR Path="/5BB33F0A/5BABFE14" Ref="C?"  Part="1" 
 F 0 "C55" V 3050 3150 50  0000 L CNN
 F 1 "0.1u" V 2950 3100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2865 3109 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2865 3109 50  0001 L CNN
 F 3 "" H 2750 3200 50  0000 C CNN
 	1    2750 3200
 	0    -1   -1   0   
@@ -422,207 +422,134 @@ LEDVDD
 Connection ~ 1100 3200
 Wire Wire Line
 	1100 3200 1300 3200
-Text GLabel 6850 3150 2    60   Input ~ 0
+Text GLabel 8600 3300 2    60   Input ~ 0
 ESPVDD
 $Comp
 L dotmatrix_64x48-rescue:Ferrite_Bead_Small-device L?
 U 1 1 5BB82B05
-P 5650 3600
+P 7050 3750
 AR Path="/5BB82B05" Ref="L?"  Part="1" 
 AR Path="/59A82F84/5BB82B05" Ref="L4"  Part="1" 
-F 0 "L4" V 5472 3600 50  0000 C CNN
-F 1 "BLM21PG331SN 300R@100MHz" V 5400 3250 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5650 3600 50  0001 C CNN
-F 3 "" H 5650 3600 50  0000 C CNN
-	1    5650 3600
+F 0 "L4" V 6872 3750 50  0000 C CNN
+F 1 "BLM21PG331SN 300R@100MHz" V 6800 3400 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7050 3750 50  0001 C CNN
+F 3 "" H 7050 3750 50  0000 C CNN
+	1    7050 3750
 	0    -1   1    0   
 $EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR?
-U 1 1 5BB82B0D
-P 5900 3950
-AR Path="/59A8E319/5BB82B0D" Ref="#PWR?"  Part="1" 
-AR Path="/5BB82B0D" Ref="#PWR?"  Part="1" 
-AR Path="/59A82F84/5BB82B0D" Ref="#PWR016"  Part="1" 
-F 0 "#PWR016" H 5900 3700 50  0001 C CNN
-F 1 "GND" H 5900 3800 50  0000 C CNN
-F 2 "" H 5900 3950 50  0000 C CNN
-F 3 "" H 5900 3950 50  0000 C CNN
-	1    5900 3950
-	-1   0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:C-device C?
-U 1 1 5BB82B13
-P 5900 3750
-AR Path="/59A8E319/5BB82B13" Ref="C?"  Part="1" 
-AR Path="/5BB82B13" Ref="C?"  Part="1" 
-AR Path="/59A82F84/5BB82B13" Ref="C62"  Part="1" 
-F 0 "C62" H 5750 3650 50  0000 L CNN
-F 1 "1u" H 5800 3550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6015 3659 50  0001 L CNN
-F 3 "" H 5900 3750 50  0000 C CNN
-	1    5900 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:C-device C?
-U 1 1 5BB82B1A
-P 6150 3750
-AR Path="/59A8E319/5BB82B1A" Ref="C?"  Part="1" 
-AR Path="/5BB82B1A" Ref="C?"  Part="1" 
-AR Path="/59A82F84/5BB82B1A" Ref="C65"  Part="1" 
-F 0 "C65" H 5950 3650 50  0000 L CNN
-F 1 "0.1u" H 5950 3550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6265 3659 50  0001 L CNN
-F 3 "" H 6150 3750 50  0000 C CNN
-	1    6150 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR?
-U 1 1 5BB82B21
-P 6150 3950
-AR Path="/59A8E319/5BB82B21" Ref="#PWR?"  Part="1" 
-AR Path="/5BB82B21" Ref="#PWR?"  Part="1" 
-AR Path="/59A82F84/5BB82B21" Ref="#PWR017"  Part="1" 
-F 0 "#PWR017" H 6150 3700 50  0001 C CNN
-F 1 "GND" H 6155 3777 50  0000 C CNN
-F 2 "" H 6150 3950 50  0000 C CNN
-F 3 "" H 6150 3950 50  0000 C CNN
-	1    6150 3950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5900 3950 5900 3900
+	6850 3750 6950 3750
 Wire Wire Line
-	6150 3900 6150 3950
+	8600 3300 8500 3300
 Wire Wire Line
-	5750 3600 5900 3600
-Connection ~ 5900 3600
-Wire Wire Line
-	5900 3600 6150 3600
-Connection ~ 6150 3600
-Wire Wire Line
-	6150 3600 6350 3600
-Wire Wire Line
-	4650 3600 5100 3600
-Connection ~ 5100 3600
-Wire Wire Line
-	5100 3600 5550 3600
-Wire Wire Line
-	6850 3150 6750 3150
-Wire Wire Line
-	6750 3150 6750 3600
+	8500 3300 8500 3750
 Text Notes 4050 3250 0    50   ~ 0
-3V3 2A
+5V 2A
 $Comp
 L dotmatrix_64x48-rescue:Q_PMOS_GSD-device Q29
 U 1 1 5BB939F2
-P 8500 3250
-F 0 "Q29" H 8691 3204 50  0000 L CNN
-F 1 "AO3401" H 8691 3295 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 8700 3350 50  0001 C CNN
-F 3 "" H 8500 3250 50  0000 C CNN
-	1    8500 3250
+P 9600 3400
+F 0 "Q29" H 9791 3354 50  0000 L CNN
+F 1 "AO3401" H 9791 3445 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9800 3500 50  0001 C CNN
+F 3 "" H 9600 3400 50  0000 C CNN
+	1    9600 3400
 	0    1    -1   0   
 $EndComp
-Text GLabel 9650 3150 2    60   Input ~ 0
+Text GLabel 10750 3300 2    60   Input ~ 0
 LED1642VDD
 Wire Wire Line
-	8200 3150 8300 3150
+	9300 3300 9400 3300
 $Comp
 L dotmatrix_64x48-rescue:Q_NPN_BEC-device Q30
 U 1 1 5BB939FB
-P 9350 3900
-F 0 "Q30" H 9540 3946 50  0000 L CNN
-F 1 "Q_NPN_BEC" H 9540 3855 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 9541 3809 50  0001 L CNN
-F 3 "" H 9350 3900 50  0000 C CNN
-	1    9350 3900
+P 10450 4050
+F 0 "Q30" H 10640 4096 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 10640 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10641 3959 50  0001 L CNN
+F 3 "" H 10450 4050 50  0000 C CNN
+	1    10450 4050
 	1    0    0    -1  
 $EndComp
 $Comp
 L dotmatrix_64x48-rescue:R-device R114
 U 1 1 5BB93A02
-P 8950 3900
-F 0 "R114" V 8950 3800 50  0000 L CNN
-F 1 "4.7k" V 9050 3850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8880 3900 50  0001 C CNN
-F 3 "" H 8950 3900 50  0000 C CNN
-	1    8950 3900
+P 10050 4050
+F 0 "R114" V 10050 3950 50  0000 L CNN
+F 1 "4.7k" V 10150 4000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9980 4050 50  0001 C CNN
+F 3 "" H 10050 4050 50  0000 C CNN
+	1    10050 4050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L dotmatrix_64x48-rescue:R-device R105
 U 1 1 5BB93A09
-P 8250 3900
-F 0 "R105" V 8250 3800 50  0000 L CNN
-F 1 "10R" V 8350 3850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8180 3900 50  0001 C CNN
-F 3 "" H 8250 3900 50  0000 C CNN
-	1    8250 3900
+P 9350 4050
+F 0 "R105" V 9350 3950 50  0000 L CNN
+F 1 "10R" V 9450 4000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9280 4050 50  0001 C CNN
+F 3 "" H 9350 4050 50  0000 C CNN
+	1    9350 4050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L dotmatrix_64x48-rescue:GND-power #PWR018
 U 1 1 5BB93A10
-P 9450 4150
-F 0 "#PWR018" H 9450 3900 50  0001 C CNN
-F 1 "GND" H 9455 3977 50  0000 C CNN
-F 2 "" H 9450 4150 50  0000 C CNN
-F 3 "" H 9450 4150 50  0000 C CNN
-	1    9450 4150
+P 10550 4300
+F 0 "#PWR018" H 10550 4050 50  0001 C CNN
+F 1 "GND" H 10555 4127 50  0000 C CNN
+F 2 "" H 10550 4300 50  0000 C CNN
+F 3 "" H 10550 4300 50  0000 C CNN
+	1    10550 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9450 3350 9450 3150
+	10550 3500 10550 3300
 Wire Wire Line
-	8700 3150 9450 3150
-Connection ~ 9450 3150
+	9800 3300 10550 3300
+Connection ~ 10550 3300
 Wire Wire Line
-	9100 3900 9150 3900
+	10200 4050 10250 4050
 Wire Wire Line
-	9450 4100 9450 4150
-Text GLabel 8000 3900 0    60   Input ~ 0
+	10550 4250 10550 4300
+Text GLabel 9100 4050 0    60   Input ~ 0
 D_LED1642_RST
 Wire Wire Line
-	8100 3900 8000 3900
+	9200 4050 9100 4050
 Wire Wire Line
-	9450 3150 9650 3150
+	10550 3300 10750 3300
 $Comp
 L dotmatrix_64x48-rescue:R-device R115
 U 1 1 5BB93A1E
-P 9450 3500
-F 0 "R115" H 9520 3546 50  0000 L CNN
-F 1 "10R" H 9520 3455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9380 3500 50  0001 C CNN
-F 3 "" H 9450 3500 50  0000 C CNN
-	1    9450 3500
+P 10550 3650
+F 0 "R115" H 10620 3696 50  0000 L CNN
+F 1 "10R" H 10620 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10480 3650 50  0001 C CNN
+F 3 "" H 10550 3650 50  0000 C CNN
+	1    10550 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 3900 8500 3900
+	9500 4050 9600 4050
 Wire Wire Line
-	9450 3700 9450 3650
+	10550 3850 10550 3800
 Wire Wire Line
-	8500 3450 8500 3900
-Connection ~ 8500 3900
+	9600 3600 9600 4050
+Connection ~ 9600 4050
 Wire Wire Line
-	8500 3900 8800 3900
+	9600 4050 9900 4050
 Wire Wire Line
-	5100 2950 5100 3100
+	6850 3100 6850 3250
 Wire Wire Line
-	8200 3150 8200 2950
+	9300 3300 9300 3100
 Wire Wire Line
-	8200 2950 5850 2950
+	7600 3100 7600 3250
 Wire Wire Line
-	5850 2950 5850 3100
+	7600 3250 6850 3250
+Connection ~ 6850 3250
 Wire Wire Line
-	5850 3100 5100 3100
-Connection ~ 5100 3100
-Wire Wire Line
-	5100 3100 5100 3600
+	6850 3250 6850 3750
 Text Notes 5000 950  0    50   ~ 0
 12V
 $Comp
@@ -760,72 +687,11 @@ F 3 "" H 3700 5700 50  0001 C CNN
 	1    3700 5700
 	0    1    1    0   
 $EndComp
-$Comp
-L dotmatrix_64x48-rescue:C-device C57
-U 1 1 5BBE36D9
-P 4150 5850
-AR Path="/59A82F84/5BBE36D9" Ref="C57"  Part="1" 
-AR Path="/5BB33F0A/5BBE36D9" Ref="C?"  Part="1" 
-F 0 "C57" H 4100 5250 50  0000 L CNN
-F 1 "10u" H 4100 5150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4265 5759 50  0001 L CNN
-F 3 "" H 4150 5850 50  0000 C CNN
-	1    4150 5850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3350 5700 3550 5700
 Connection ~ 3350 5700
-$Comp
-L dotmatrix_64x48-rescue:C-device C59
-U 1 1 5BBE58F5
-P 4350 5850
-AR Path="/59A82F84/5BBE58F5" Ref="C59"  Part="1" 
-AR Path="/5BB33F0A/5BBE58F5" Ref="C?"  Part="1" 
-F 0 "C59" H 4300 5250 50  0000 L CNN
-F 1 "10u" H 4300 5150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4465 5759 50  0001 L CNN
-F 3 "" H 4350 5850 50  0000 C CNN
-	1    4350 5850
-	1    0    0    -1  
-$EndComp
-Connection ~ 4350 5700
-$Comp
-L dotmatrix_64x48-rescue:C-device C60
-U 1 1 5BBE9B14
-P 4550 5850
-AR Path="/59A82F84/5BBE9B14" Ref="C60"  Part="1" 
-AR Path="/5BB33F0A/5BBE9B14" Ref="C?"  Part="1" 
-F 0 "C60" H 4500 5250 50  0000 L CNN
-F 1 "10u" H 4500 5150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4665 5759 50  0001 L CNN
-F 3 "" H 4550 5850 50  0000 C CNN
-	1    4550 5850
-	1    0    0    -1  
-$EndComp
-Connection ~ 4150 5700
-Wire Wire Line
-	4150 5700 4350 5700
 Wire Wire Line
 	3850 5700 4000 5700
-$Comp
-L dotmatrix_64x48-rescue:C-device C61
-U 1 1 5BBEDEC6
-P 4750 5850
-AR Path="/59A82F84/5BBEDEC6" Ref="C61"  Part="1" 
-AR Path="/5BB33F0A/5BBEDEC6" Ref="C?"  Part="1" 
-F 0 "C61" H 4700 5250 50  0000 L CNN
-F 1 "10u" H 4700 5150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 4865 5759 50  0001 L CNN
-F 3 "" H 4750 5850 50  0000 C CNN
-	1    4750 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4350 5700 4550 5700
-Wire Wire Line
-	4550 5700 4750 5700
-Connection ~ 4550 5700
 $Comp
 L dotmatrix_64x48-rescue:R-device R102
 U 1 1 5BBF4A3E
@@ -866,58 +732,6 @@ F 3 "" H 3850 6900 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L dotmatrix_64x48-rescue:GND-power #PWR012
-U 1 1 5BBFB3AB
-P 4150 6000
-AR Path="/59A82F84/5BBFB3AB" Ref="#PWR012"  Part="1" 
-AR Path="/5BB33F0A/5BBFB3AB" Ref="#PWR?"  Part="1" 
-F 0 "#PWR012" H 4150 5750 50  0001 C CNN
-F 1 "GND" H 4150 5850 50  0000 C CNN
-F 2 "" H 4150 6000 50  0000 C CNN
-F 3 "" H 4150 6000 50  0000 C CNN
-	1    4150 6000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR013
-U 1 1 5BBFD5DA
-P 4350 6000
-AR Path="/59A82F84/5BBFD5DA" Ref="#PWR013"  Part="1" 
-AR Path="/5BB33F0A/5BBFD5DA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR013" H 4350 5750 50  0001 C CNN
-F 1 "GND" H 4350 5850 50  0000 C CNN
-F 2 "" H 4350 6000 50  0000 C CNN
-F 3 "" H 4350 6000 50  0000 C CNN
-	1    4350 6000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR014
-U 1 1 5BBFF809
-P 4550 6000
-AR Path="/59A82F84/5BBFF809" Ref="#PWR014"  Part="1" 
-AR Path="/5BB33F0A/5BBFF809" Ref="#PWR?"  Part="1" 
-F 0 "#PWR014" H 4550 5750 50  0001 C CNN
-F 1 "GND" H 4550 5850 50  0000 C CNN
-F 2 "" H 4550 6000 50  0000 C CNN
-F 3 "" H 4550 6000 50  0000 C CNN
-	1    4550 6000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR015
-U 1 1 5BBFF80F
-P 4750 6000
-AR Path="/59A82F84/5BBFF80F" Ref="#PWR015"  Part="1" 
-AR Path="/5BB33F0A/5BBFF80F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR015" H 4750 5750 50  0001 C CNN
-F 1 "GND" H 4750 5850 50  0000 C CNN
-F 2 "" H 4750 6000 50  0000 C CNN
-F 3 "" H 4750 6000 50  0000 C CNN
-	1    4750 6000
-	-1   0    0    -1  
-$EndComp
-$Comp
 L dotmatrix_64x48-rescue:R-device R104
 U 1 1 5BC04AA9
 P 3850 6750
@@ -935,8 +749,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 5850 4000 5700
 Connection ~ 4000 5700
-Wire Wire Line
-	4000 5700 4150 5700
 Wire Wire Line
 	3850 6150 3850 6200
 Wire Wire Line
@@ -969,24 +781,8 @@ Wire Wire Line
 Wire Wire Line
 	3500 5850 3500 5900
 Connection ~ 3850 5850
-Wire Wire Line
-	5000 5700 4750 5700
-Connection ~ 4750 5700
 Text Notes 4600 5650 0    50   ~ 0
 3.15V, 4A
-$Comp
-L dotmatrix_64x48-rescue:R-device R101
-U 1 1 5BC29E87
-P 1600 5450
-AR Path="/59A82F84/5BC29E87" Ref="R101"  Part="1" 
-AR Path="/5BB33F0A/5BC29E87" Ref="R?"  Part="1" 
-F 0 "R101" V 1600 5350 50  0000 L CNN
-F 1 "10k" V 1700 5400 50  0000 L CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 1530 5450 50  0001 C CNN
-F 3 "" H 1600 5450 50  0000 C CNN
-	1    1600 5450
-	-1   0    0    1   
-$EndComp
 Connection ~ 1600 5300
 Wire Wire Line
 	1600 5300 2400 5300
@@ -1064,19 +860,6 @@ F 3 "" H 1250 5600 50  0000 C CNN
 	1    1250 5600
 	-1   0    0    -1  
 $EndComp
-$Comp
-L dotmatrix_64x48-rescue:C-device C76
-U 1 1 5BC7105F
-P 1250 5450
-AR Path="/59A82F84/5BC7105F" Ref="C76"  Part="1" 
-AR Path="/5BB33F0A/5BC7105F" Ref="C?"  Part="1" 
-F 0 "C76" H 1150 5050 50  0000 L CNN
-F 1 "1u 16V" H 1200 4950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1365 5359 50  0001 L CNN
-F 3 "" H 1250 5450 50  0000 C CNN
-	1    1250 5450
-	1    0    0    -1  
-$EndComp
 Connection ~ 1250 5300
 Wire Wire Line
 	1250 5300 1600 5300
@@ -1098,36 +881,6 @@ Text Label 2900 5700 0    50   ~ 0
 LEDDC_SW
 Text Label 2050 1350 0    50   ~ 0
 DC_IN_N
-$Comp
-L dotmatrix_64x48-rescue:C-device C2
-U 1 1 5BDA55B3
-P 6350 3750
-AR Path="/59A82F84/5BDA55B3" Ref="C2"  Part="1" 
-AR Path="/5BB33F0A/5BDA55B3" Ref="C?"  Part="1" 
-F 0 "C2" H 6500 3600 50  0000 L CNN
-F 1 "10u" H 6500 3500 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206_HandSoldering" H 6465 3659 50  0001 L CNN
-F 3 "" H 6350 3750 50  0000 C CNN
-	1    6350 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR?
-U 1 1 5BDA8B7D
-P 6350 3900
-AR Path="/59A8E319/5BDA8B7D" Ref="#PWR?"  Part="1" 
-AR Path="/5BDA8B7D" Ref="#PWR?"  Part="1" 
-AR Path="/59A82F84/5BDA8B7D" Ref="#PWR0151"  Part="1" 
-F 0 "#PWR0151" H 6350 3650 50  0001 C CNN
-F 1 "GND" H 6355 3727 50  0000 C CNN
-F 2 "" H 6350 3900 50  0000 C CNN
-F 3 "" H 6350 3900 50  0000 C CNN
-	1    6350 3900
-	1    0    0    -1  
-$EndComp
-Connection ~ 6350 3600
-Wire Wire Line
-	6350 3600 6750 3600
 Wire Wire Line
 	4350 1050 4450 1050
 Wire Wire Line
@@ -1155,4 +908,424 @@ Connection ~ 1850 6300
 Wire Wire Line
 	2400 6300 2400 6100
 Connection ~ 2400 6300
+Wire Wire Line
+	9300 3100 7600 3100
+$Comp
+L regul:AP1117-33 U14
+U 1 1 5DA003F8
+P 4950 3600
+F 0 "U14" H 4950 3842 50  0000 C CNN
+F 1 "AP1117-33" H 4950 3751 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4950 3800 50  0001 C CNN
+F 3 "http://www.diodes.com/datasheets/AP1117.pdf" H 5050 3350 50  0001 C CNN
+	1    4950 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR0126
+U 1 1 5DA0235C
+P 4950 3900
+AR Path="/59A82F84/5DA0235C" Ref="#PWR0126"  Part="1" 
+AR Path="/5BB33F0A/5DA0235C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0126" H 4950 3650 50  0001 C CNN
+F 1 "GND" H 4950 3750 50  0000 C CNN
+F 2 "" H 4950 3900 50  0000 C CNN
+F 3 "" H 4950 3900 50  0000 C CNN
+	1    4950 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3100 6850 3100
+Wire Wire Line
+	5250 3100 5250 3300
+$Comp
+L dotmatrix_64x48-rescue:C-device C2
+U 1 1 5DA0296E
+P 5450 3450
+AR Path="/59A82F84/5DA0296E" Ref="C2"  Part="1" 
+AR Path="/5BB33F0A/5DA0296E" Ref="C?"  Part="1" 
+F 0 "C2" H 5400 2850 50  0000 L CNN
+F 1 "10u 10V" V 5450 2400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5565 3359 50  0001 L CNN
+F 3 "" H 5450 3450 50  0000 C CNN
+	1    5450 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR0150
+U 1 1 5DA03AF0
+P 5450 3600
+AR Path="/59A82F84/5DA03AF0" Ref="#PWR0150"  Part="1" 
+AR Path="/5BB33F0A/5DA03AF0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0150" H 5450 3350 50  0001 C CNN
+F 1 "GND" H 5450 3450 50  0000 C CNN
+F 2 "" H 5450 3600 50  0000 C CNN
+F 3 "" H 5450 3600 50  0000 C CNN
+	1    5450 3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3300 5450 3300
+Connection ~ 5250 3300
+Wire Wire Line
+	5250 3300 5250 3600
+Connection ~ 5450 3300
+Wire Wire Line
+	7150 3750 7400 3750
+$Comp
+L dotmatrix_64x48-rescue:C-device C36
+U 1 1 5DA07BC2
+P 7400 3900
+AR Path="/59A82F84/5DA07BC2" Ref="C36"  Part="1" 
+AR Path="/5BB33F0A/5DA07BC2" Ref="C?"  Part="1" 
+F 0 "C36" H 7350 3400 50  0000 L CNN
+F 1 "10u 10V" V 7400 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7515 3809 50  0001 L CNN
+F 3 "" H 7400 3900 50  0000 C CNN
+	1    7400 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 7400 3750
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR?
+U 1 1 5DA09357
+P 7400 4050
+AR Path="/59A8E319/5DA09357" Ref="#PWR?"  Part="1" 
+AR Path="/5DA09357" Ref="#PWR?"  Part="1" 
+AR Path="/59A82F84/5DA09357" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR0151" H 7400 3800 50  0001 C CNN
+F 1 "GND" H 7400 3900 50  0000 C CNN
+F 2 "" H 7400 4050 50  0000 C CNN
+F 3 "" H 7400 4050 50  0000 C CNN
+	1    7400 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3300 5650 3300
+$Comp
+L dotmatrix_64x48-rescue:C-device C3
+U 1 1 5DA0782A
+P 5650 3450
+AR Path="/59A82F84/5DA0782A" Ref="C3"  Part="1" 
+AR Path="/5BB33F0A/5DA0782A" Ref="C?"  Part="1" 
+F 0 "C3" H 5600 2850 50  0000 L CNN
+F 1 "10u 10V" V 5650 2400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5765 3359 50  0001 L CNN
+F 3 "" H 5650 3450 50  0000 C CNN
+	1    5650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR0152
+U 1 1 5DA07837
+P 5650 3600
+AR Path="/59A82F84/5DA07837" Ref="#PWR0152"  Part="1" 
+AR Path="/5BB33F0A/5DA07837" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0152" H 5650 3350 50  0001 C CNN
+F 1 "GND" H 5650 3450 50  0000 C CNN
+F 2 "" H 5650 3600 50  0000 C CNN
+F 3 "" H 5650 3600 50  0000 C CNN
+	1    5650 3600
+	-1   0    0    -1  
+$EndComp
+Connection ~ 5650 3300
+Wire Wire Line
+	5650 3300 5850 3300
+$Comp
+L dotmatrix_64x48-rescue:C-device C18
+U 1 1 5DA07DAD
+P 5850 3450
+AR Path="/59A82F84/5DA07DAD" Ref="C18"  Part="1" 
+AR Path="/5BB33F0A/5DA07DAD" Ref="C?"  Part="1" 
+F 0 "C18" H 5800 2850 50  0000 L CNN
+F 1 "10u 10V" V 5850 2400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5965 3359 50  0001 L CNN
+F 3 "" H 5850 3450 50  0000 C CNN
+	1    5850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR0156
+U 1 1 5DA07DBA
+P 5850 3600
+AR Path="/59A82F84/5DA07DBA" Ref="#PWR0156"  Part="1" 
+AR Path="/5BB33F0A/5DA07DBA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0156" H 5850 3350 50  0001 C CNN
+F 1 "GND" H 5850 3450 50  0000 C CNN
+F 2 "" H 5850 3600 50  0000 C CNN
+F 3 "" H 5850 3600 50  0000 C CNN
+	1    5850 3600
+	-1   0    0    -1  
+$EndComp
+Connection ~ 5850 3300
+Wire Wire Line
+	5850 3300 6050 3300
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR0157
+U 1 1 5DA08221
+P 6050 3600
+AR Path="/59A82F84/5DA08221" Ref="#PWR0157"  Part="1" 
+AR Path="/5BB33F0A/5DA08221" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0157" H 6050 3350 50  0001 C CNN
+F 1 "GND" H 6050 3450 50  0000 C CNN
+F 2 "" H 6050 3600 50  0000 C CNN
+F 3 "" H 6050 3600 50  0000 C CNN
+	1    6050 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:C-device C19
+U 1 1 5DA0822F
+P 6050 3450
+AR Path="/59A82F84/5DA0822F" Ref="C19"  Part="1" 
+AR Path="/5BB33F0A/5DA0822F" Ref="C?"  Part="1" 
+F 0 "C19" H 6000 2850 50  0000 L CNN
+F 1 "10u 10V" V 6050 2400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6165 3359 50  0001 L CNN
+F 3 "" H 6050 3450 50  0000 C CNN
+	1    6050 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3750 8250 3750
+Wire Wire Line
+	8250 3750 8500 3750
+Wire Wire Line
+	7400 3750 7600 3750
+Connection ~ 8250 3750
+Connection ~ 8000 3750
+Wire Wire Line
+	8250 4050 8250 4100
+Wire Wire Line
+	8000 4100 8000 4050
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR?
+U 1 1 5BB82B21
+P 8250 4100
+AR Path="/59A8E319/5BB82B21" Ref="#PWR?"  Part="1" 
+AR Path="/5BB82B21" Ref="#PWR?"  Part="1" 
+AR Path="/59A82F84/5BB82B21" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 8250 3850 50  0001 C CNN
+F 1 "GND" H 8255 3927 50  0000 C CNN
+F 2 "" H 8250 4100 50  0000 C CNN
+F 3 "" H 8250 4100 50  0000 C CNN
+	1    8250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:C-device C?
+U 1 1 5BB82B1A
+P 8250 3900
+AR Path="/59A8E319/5BB82B1A" Ref="C?"  Part="1" 
+AR Path="/5BB82B1A" Ref="C?"  Part="1" 
+AR Path="/59A82F84/5BB82B1A" Ref="C65"  Part="1" 
+F 0 "C65" H 8050 3800 50  0000 L CNN
+F 1 "0.1u" H 8050 3700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8365 3809 50  0001 L CNN
+F 3 "" H 8250 3900 50  0000 C CNN
+	1    8250 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:C-device C?
+U 1 1 5BB82B13
+P 8000 3900
+AR Path="/59A8E319/5BB82B13" Ref="C?"  Part="1" 
+AR Path="/5BB82B13" Ref="C?"  Part="1" 
+AR Path="/59A82F84/5BB82B13" Ref="C62"  Part="1" 
+F 0 "C62" H 7850 3800 50  0000 L CNN
+F 1 "1u" H 7900 3700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8115 3809 50  0001 L CNN
+F 3 "" H 8000 3900 50  0000 C CNN
+	1    8000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR?
+U 1 1 5BB82B0D
+P 8000 4100
+AR Path="/59A8E319/5BB82B0D" Ref="#PWR?"  Part="1" 
+AR Path="/5BB82B0D" Ref="#PWR?"  Part="1" 
+AR Path="/59A82F84/5BB82B0D" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 8000 3850 50  0001 C CNN
+F 1 "GND" H 8000 3950 50  0000 C CNN
+F 2 "" H 8000 4100 50  0000 C CNN
+F 3 "" H 8000 4100 50  0000 C CNN
+	1    8000 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:C-device C57
+U 1 1 5DA0AAC9
+P 7600 3900
+AR Path="/59A82F84/5DA0AAC9" Ref="C57"  Part="1" 
+AR Path="/5BB33F0A/5DA0AAC9" Ref="C?"  Part="1" 
+F 0 "C57" H 7550 3400 50  0000 L CNN
+F 1 "10u 10V" V 7600 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7715 3809 50  0001 L CNN
+F 3 "" H 7600 3900 50  0000 C CNN
+	1    7600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR?
+U 1 1 5DA0AAD6
+P 7600 4050
+AR Path="/59A8E319/5DA0AAD6" Ref="#PWR?"  Part="1" 
+AR Path="/5DA0AAD6" Ref="#PWR?"  Part="1" 
+AR Path="/59A82F84/5DA0AAD6" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 7600 3800 50  0001 C CNN
+F 1 "GND" H 7600 3900 50  0000 C CNN
+F 2 "" H 7600 4050 50  0000 C CNN
+F 3 "" H 7600 4050 50  0000 C CNN
+	1    7600 4050
+	-1   0    0    -1  
+$EndComp
+Connection ~ 7600 3750
+Wire Wire Line
+	7600 3750 8000 3750
+Wire Wire Line
+	4000 5700 4250 5700
+$Comp
+L dotmatrix_64x48-rescue:C-device C59
+U 1 1 5DA0B832
+P 4250 5850
+AR Path="/59A82F84/5DA0B832" Ref="C59"  Part="1" 
+AR Path="/5BB33F0A/5DA0B832" Ref="C?"  Part="1" 
+F 0 "C59" H 4200 5250 50  0000 L CNN
+F 1 "10u 10V" V 4250 4800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4365 5759 50  0001 L CNN
+F 3 "" H 4250 5850 50  0000 C CNN
+	1    4250 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR0159
+U 1 1 5DA0B83F
+P 4250 6000
+AR Path="/59A82F84/5DA0B83F" Ref="#PWR0159"  Part="1" 
+AR Path="/5BB33F0A/5DA0B83F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0159" H 4250 5750 50  0001 C CNN
+F 1 "GND" H 4250 5850 50  0000 C CNN
+F 2 "" H 4250 6000 50  0000 C CNN
+F 3 "" H 4250 6000 50  0000 C CNN
+	1    4250 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:C-device C63
+U 1 1 5DA0B84D
+P 4850 5850
+AR Path="/59A82F84/5DA0B84D" Ref="C63"  Part="1" 
+AR Path="/5BB33F0A/5DA0B84D" Ref="C?"  Part="1" 
+F 0 "C63" H 4800 5250 50  0000 L CNN
+F 1 "10u 10V" V 4850 4800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4965 5759 50  0001 L CNN
+F 3 "" H 4850 5850 50  0000 C CNN
+	1    4850 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR0161
+U 1 1 5DA0B85A
+P 4850 6000
+AR Path="/59A82F84/5DA0B85A" Ref="#PWR0161"  Part="1" 
+AR Path="/5BB33F0A/5DA0B85A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0161" H 4850 5750 50  0001 C CNN
+F 1 "GND" H 4850 5850 50  0000 C CNN
+F 2 "" H 4850 6000 50  0000 C CNN
+F 3 "" H 4850 6000 50  0000 C CNN
+	1    4850 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:C-device C60
+U 1 1 5DA0B868
+P 4450 5850
+AR Path="/59A82F84/5DA0B868" Ref="C60"  Part="1" 
+AR Path="/5BB33F0A/5DA0B868" Ref="C?"  Part="1" 
+F 0 "C60" H 4400 5250 50  0000 L CNN
+F 1 "10u 10V" V 4450 4800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4565 5759 50  0001 L CNN
+F 3 "" H 4450 5850 50  0000 C CNN
+	1    4450 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR0162
+U 1 1 5DA0B875
+P 4650 6000
+AR Path="/59A82F84/5DA0B875" Ref="#PWR0162"  Part="1" 
+AR Path="/5BB33F0A/5DA0B875" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0162" H 4650 5750 50  0001 C CNN
+F 1 "GND" H 4650 5850 50  0000 C CNN
+F 2 "" H 4650 6000 50  0000 C CNN
+F 3 "" H 4650 6000 50  0000 C CNN
+	1    4650 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:C-device C61
+U 1 1 5DA0B883
+P 4650 5850
+AR Path="/59A82F84/5DA0B883" Ref="C61"  Part="1" 
+AR Path="/5BB33F0A/5DA0B883" Ref="C?"  Part="1" 
+F 0 "C61" H 4600 5250 50  0000 L CNN
+F 1 "10u 10V" V 4650 4800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4765 5759 50  0001 L CNN
+F 3 "" H 4650 5850 50  0000 C CNN
+	1    4650 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR0163
+U 1 1 5DA0B890
+P 4450 6000
+AR Path="/59A82F84/5DA0B890" Ref="#PWR0163"  Part="1" 
+AR Path="/5BB33F0A/5DA0B890" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0163" H 4450 5750 50  0001 C CNN
+F 1 "GND" H 4450 5850 50  0000 C CNN
+F 2 "" H 4450 6000 50  0000 C CNN
+F 3 "" H 4450 6000 50  0000 C CNN
+	1    4450 6000
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4250 5700
+Wire Wire Line
+	4250 5700 4450 5700
+Connection ~ 4450 5700
+Wire Wire Line
+	4450 5700 4650 5700
+Connection ~ 4650 5700
+Wire Wire Line
+	4650 5700 4850 5700
+Connection ~ 4850 5700
+Wire Wire Line
+	4850 5700 5000 5700
+$Comp
+L dotmatrix_64x48-rescue:C-device C76
+U 1 1 5BC7105F
+P 1250 5450
+AR Path="/59A82F84/5BC7105F" Ref="C76"  Part="1" 
+AR Path="/5BB33F0A/5BC7105F" Ref="C?"  Part="1" 
+F 0 "C76" H 1150 5050 50  0000 L CNN
+F 1 "1u 16V" H 1200 4950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1365 5359 50  0001 L CNN
+F 3 "" H 1250 5450 50  0000 C CNN
+	1    1250 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:R-device R101
+U 1 1 5BC29E87
+P 1600 5450
+AR Path="/59A82F84/5BC29E87" Ref="R101"  Part="1" 
+AR Path="/5BB33F0A/5BC29E87" Ref="R?"  Part="1" 
+F 0 "R101" V 1600 5350 50  0000 L CNN
+F 1 "10k" V 1700 5400 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1530 5450 50  0001 C CNN
+F 3 "" H 1600 5450 50  0000 C CNN
+	1    1600 5450
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
