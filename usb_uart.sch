@@ -206,7 +206,7 @@ AR Path="/5BBED423" Ref="CONN?"  Part="1"
 AR Path="/5BB33F0A/5BBED423" Ref="CONN2"  Part="1" 
 F 0 "CONN2" V 1850 2800 50  0000 L CNN
 F 1 "USB_OTG" V 1750 2750 50  0000 L CNN
-F 2 "components:USB-MICRO-B-RECEPT-UNIVERSAL" V 2086 2888 50  0001 L CNN
+F 2 "components:USB_Micro-B_Jing_A01SB141B1-067" V 2086 2888 50  0001 L CNN
 F 3 "" V 2050 2600 50  0000 C CNN
 	1    2100 2700
 	1    0    0    -1  
@@ -379,17 +379,12 @@ Wire Wire Line
 Wire Wire Line
 	6150 1750 6050 1750
 Wire Wire Line
-	2400 2800 2600 2800
-Connection ~ 2600 2800
-Wire Wire Line
 	2800 2850 2800 2500
 Wire Wire Line
 	2800 2500 3250 2500
 Wire Wire Line
 	2800 2500 2400 2500
 Connection ~ 2800 2500
-Wire Wire Line
-	2600 2800 3400 2800
 NoConn ~ 6050 1550
 NoConn ~ 6050 1650
 NoConn ~ 6050 2050
@@ -435,16 +430,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 3750 2450 3750
 Wire Wire Line
-	2600 2800 2600 3050
-Wire Wire Line
-	2400 2700 2650 2700
-Wire Wire Line
 	2450 3100 2650 3100
-Wire Wire Line
-	2650 3100 2650 2700
-Connection ~ 2650 2700
-Wire Wire Line
-	2650 2700 3450 2700
 Wire Wire Line
 	3300 2850 3300 3150
 Wire Wire Line
@@ -469,4 +455,18 @@ Text GLabel 6850 2050 2    60   Input ~ 0
 DTR
 Text Label 2550 2500 0    50   ~ 0
 VBUS
+Wire Wire Line
+	2400 2700 2600 2700
+Wire Wire Line
+	2400 2800 2650 2800
+Wire Wire Line
+	2600 3050 2600 2700
+Connection ~ 2600 2700
+Wire Wire Line
+	2600 2700 3450 2700
+Wire Wire Line
+	2650 3100 2650 2800
+Connection ~ 2650 2800
+Wire Wire Line
+	2650 2800 3400 2800
 $EndSCHEMATC
