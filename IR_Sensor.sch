@@ -313,17 +313,6 @@ $EndComp
 Text GLabel 1050 3300 0    60   Input ~ 0
 IR_OUT
 $Comp
-L dotmatrix_64x48-rescue:Ferrite_Bead_Small-device L6
-U 1 1 59A7F6A6
-P 1750 2750
-F 0 "L6" V 1572 2750 50  0000 C CNN
-F 1 "BLM21PG331SN 300R@100MHz" V 1450 2750 50  0000 C CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1750 2750 50  0001 C CNN
-F 3 "" H 1750 2750 50  0000 C CNN
-	1    1750 2750
-	0    -1   1    0   
-$EndComp
-$Comp
 L dotmatrix_64x48-rescue:D_Schottky_Small-device D14
 U 1 1 59A7F6B4
 P 1550 3550
@@ -425,10 +414,6 @@ Wire Wire Line
 Connection ~ 2350 1250
 Text Label 3300 650  0    50   ~ 0
 FILT_VDD
-Wire Wire Line
-	1350 2750 1650 2750
-Wire Wire Line
-	1850 2750 2100 2750
 $Comp
 L dotmatrix_64x48-rescue:GND-power #PWR0144
 U 1 1 5BE206B6
@@ -698,4 +683,6 @@ Wire Wire Line
 	7750 1650 7750 1500
 Text GLabel 10250 5150 2    60   Input ~ 0
 LED1642VDD
+Wire Wire Line
+	1350 2750 2100 2750
 $EndSCHEMATC

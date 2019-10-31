@@ -263,7 +263,7 @@ P 4050 3600
 AR Path="/59A82F84/59E42F9D" Ref="R38"  Part="1" 
 AR Path="/5BB33F0A/59E42F9D" Ref="R?"  Part="1" 
 F 0 "R38" V 4050 3550 50  0000 L CNN
-F 1 "75k" V 4150 3550 50  0000 L CNN
+F 1 "100k" V 4150 3550 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3980 3600 50  0001 C CNN
 F 3 "" H 4050 3600 50  0000 C CNN
 	1    4050 3600
@@ -296,17 +296,8 @@ F 3 "" H 4400 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 3750 4050 3800
-Wire Wire Line
-	3100 3800 4050 3800
-Wire Wire Line
-	3100 3800 3100 3600
-Connection ~ 4050 3800
-Wire Wire Line
 	4050 3400 4050 3450
 Connection ~ 4050 3400
-Wire Wire Line
-	4400 3800 4400 3700
 Wire Wire Line
 	1500 3400 1400 3400
 Wire Wire Line
@@ -345,18 +336,18 @@ $EndComp
 $Comp
 L dotmatrix_64x48-rescue:GND-power #PWR0149
 U 1 1 59E449D3
-P 4050 4150
+P 3250 4550
 AR Path="/59A82F84/59E449D3" Ref="#PWR0149"  Part="1" 
 AR Path="/5BB33F0A/59E449D3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0149" H 4050 3900 50  0001 C CNN
-F 1 "GND" H 4050 4000 50  0000 C CNN
-F 2 "" H 4050 4150 50  0000 C CNN
-F 3 "" H 4050 4150 50  0000 C CNN
-	1    4050 4150
+F 0 "#PWR0149" H 3250 4300 50  0001 C CNN
+F 1 "GND" H 3250 4400 50  0000 C CNN
+F 2 "" H 3250 4550 50  0000 C CNN
+F 3 "" H 3250 4550 50  0000 C CNN
+	1    3250 4550
 	-1   0    0    -1  
 $EndComp
 Text Notes 750  4250 0    60   ~ 0
-Vout = .596*(75.0/(10)+1) = 5.066
+Vout =0.596*(110.0/(14.70)+1)\n=> 5.055863945578231
 Wire Wire Line
 	1600 1350 1600 1450
 Wire Wire Line
@@ -364,17 +355,13 @@ Wire Wire Line
 Wire Wire Line
 	4450 1050 4700 1050
 Wire Wire Line
-	4050 3800 4050 3850
-Wire Wire Line
-	4050 3800 4400 3800
-Wire Wire Line
 	1400 3200 1500 3200
 Wire Wire Line
 	3400 3400 3650 3400
 Wire Wire Line
 	850  3200 1100 3200
 Wire Wire Line
-	4050 3400 4400 3400
+	4050 3400 4350 3400
 Text Notes 1750 5050 0    50   ~ 0
 TPS54428DDA for LED Anode, Anode voltage is around 3.1V
 $Comp
@@ -935,7 +922,7 @@ F 3 "" H 4950 3900 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 3100 6850 3100
+	5250 3100 6000 3100
 Wire Wire Line
 	5250 3100 5250 3300
 $Comp
@@ -1185,7 +1172,7 @@ Connection ~ 7600 3750
 Wire Wire Line
 	7600 3750 8000 3750
 Wire Wire Line
-	4000 5700 4250 5700
+	4000 5700 4200 5700
 $Comp
 L dotmatrix_64x48-rescue:C-device C59
 U 1 1 5DA0B832
@@ -1328,4 +1315,142 @@ F 3 "" H 1600 5450 50  0000 C CNN
 	1    1600 5450
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	4050 3750 4050 3850
+$Comp
+L dotmatrix_64x48-rescue:R-device R77
+U 1 1 5DB8979A
+P 3500 4450
+AR Path="/59A82F84/5DB8979A" Ref="R77"  Part="1" 
+AR Path="/5BB33F0A/5DB8979A" Ref="R?"  Part="1" 
+F 0 "R77" V 3500 4400 50  0000 L CNN
+F 1 "4.7k" V 3600 4400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3430 4450 50  0001 C CNN
+F 3 "" H 3500 4450 50  0000 C CNN
+	1    3500 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:R-device R78
+U 1 1 5DB897A8
+P 3900 4450
+AR Path="/59A82F84/5DB897A8" Ref="R78"  Part="1" 
+AR Path="/5BB33F0A/5DB897A8" Ref="R?"  Part="1" 
+F 0 "R78" V 3900 4400 50  0000 L CNN
+F 1 "10k" V 4000 4400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3830 4450 50  0001 C CNN
+F 3 "" H 3900 4450 50  0000 C CNN
+	1    3900 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3650 4450 3750 4450
+Wire Wire Line
+	4050 4450 4050 4350
+Wire Wire Line
+	4050 4350 3100 4350
+Wire Wire Line
+	3100 3600 3100 4350
+Connection ~ 4050 4350
+Wire Wire Line
+	4050 4350 4050 4150
+Wire Wire Line
+	3250 4450 3250 4550
+Wire Wire Line
+	3250 4450 3350 4450
+Wire Wire Line
+	4400 4350 4050 4350
+Wire Wire Line
+	4400 3700 4400 4350
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5DB92219
+P 4550 2900
+F 0 "J5" H 4630 2892 50  0000 L CNN
+F 1 "Conn_01x02" H 4630 2801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4550 2900 50  0001 C CNN
+F 3 "~" H 4550 2900 50  0001 C CNN
+	1    4550 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3000 4350 3400
+Connection ~ 4350 3400
+Wire Wire Line
+	4350 3400 4400 3400
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR03
+U 1 1 5DB92E8E
+P 4350 2900
+AR Path="/59A82F84/5DB92E8E" Ref="#PWR03"  Part="1" 
+AR Path="/5BB33F0A/5DB92E8E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR03" H 4350 2650 50  0001 C CNN
+F 1 "GND" H 4350 2750 50  0000 C CNN
+F 2 "" H 4350 2900 50  0000 C CNN
+F 3 "" H 4350 2900 50  0000 C CNN
+	1    4350 2900
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5DB9358A
+P 6250 2850
+F 0 "J4" H 6330 2842 50  0000 L CNN
+F 1 "Conn_01x02" H 6330 2751 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6250 2850 50  0001 C CNN
+F 3 "~" H 6250 2850 50  0001 C CNN
+	1    6250 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR02
+U 1 1 5DB93874
+P 6050 2850
+AR Path="/59A82F84/5DB93874" Ref="#PWR02"  Part="1" 
+AR Path="/5BB33F0A/5DB93874" Ref="#PWR?"  Part="1" 
+F 0 "#PWR02" H 6050 2600 50  0001 C CNN
+F 1 "GND" H 6050 2700 50  0000 C CNN
+F 2 "" H 6050 2850 50  0000 C CNN
+F 3 "" H 6050 2850 50  0000 C CNN
+	1    6050 2850
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6000 2950 6050 2950
+Wire Wire Line
+	6000 2950 6000 3100
+Connection ~ 6000 3100
+Wire Wire Line
+	6000 3100 6850 3100
+Wire Wire Line
+	4200 5400 4250 5400
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR08
+U 1 1 5DB93C0B
+P 4250 5300
+AR Path="/59A82F84/5DB93C0B" Ref="#PWR08"  Part="1" 
+AR Path="/5BB33F0A/5DB93C0B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR08" H 4250 5050 50  0001 C CNN
+F 1 "GND" H 4250 5150 50  0000 C CNN
+F 2 "" H 4250 5300 50  0000 C CNN
+F 3 "" H 4250 5300 50  0000 C CNN
+	1    4250 5300
+	0    1    -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5DB93C19
+P 4450 5300
+F 0 "J6" H 4530 5292 50  0000 L CNN
+F 1 "Conn_01x02" H 4530 5201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4450 5300 50  0001 C CNN
+F 3 "~" H 4450 5300 50  0001 C CNN
+	1    4450 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5400 4200 5700
+Connection ~ 4200 5700
+Wire Wire Line
+	4200 5700 4250 5700
 $EndSCHEMATC
