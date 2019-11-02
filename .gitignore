@@ -28,8 +28,8 @@ fp-lib-table
 fp-info-cache*
 *-cache.lib
 
-hardware/gerber/pass*
-hardware/gerber/*.zip
+gerber/
+*.zip
 
 
 *.xcf
