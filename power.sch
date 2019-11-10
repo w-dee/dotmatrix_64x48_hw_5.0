@@ -23,28 +23,15 @@ DC_IN_P
 $Comp
 L dotmatrix_64x48-rescue:Polyfuse_Small-device F1
 U 1 1 57A2A89C
-P 4250 1050
+P 2100 950
 AR Path="/59A82F84/57A2A89C" Ref="F1"  Part="1" 
 AR Path="/5BB33F0A/57A2A89C" Ref="F?"  Part="1" 
-F 0 "F1" V 4150 1050 50  0000 C CNN
-F 1 "FUSE" V 4050 1050 50  0000 C CNN
-F 2 "Resistors_SMD:R_1812" H 4250 1050 50  0001 C CNN
-F 3 "" H 4250 1050 50  0000 C CNN
-	1    4250 1050
+F 0 "F1" V 2000 950 50  0000 C CNN
+F 1 "FUSE" V 1900 950 50  0000 C CNN
+F 2 "Resistors_SMD:R_1812" H 2100 950 50  0001 C CNN
+F 3 "" H 2100 950 50  0000 C CNN
+	1    2100 950 
 	0    -1   1    0   
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:VCC-power #PWR0134
-U 1 1 57A2D136
-P 4900 950
-AR Path="/59A82F84/57A2D136" Ref="#PWR0134"  Part="1" 
-AR Path="/5BB33F0A/57A2D136" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0134" H 4900 800 50  0001 C CNN
-F 1 "VCC" H 4917 1123 50  0000 C CNN
-F 2 "" H 4900 950 50  0000 C CNN
-F 3 "" H 4900 950 50  0000 C CNN
-	1    4900 950 
-	1    0    0    -1  
 $EndComp
 $Comp
 L dotmatrix_64x48-rescue:Barrel_Jack-Connector CONN1
@@ -80,24 +67,11 @@ P 4450 1250
 AR Path="/59A82F84/5836E9C2" Ref="C64"  Part="1" 
 AR Path="/5BB33F0A/5836E9C2" Ref="C?"  Part="1" 
 F 0 "C64" H 4350 850 50  0000 L CNN
-F 1 "1u" H 4400 750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4565 1159 50  0001 L CNN
+F 1 "10u/35V" H 4400 750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4565 1159 50  0001 L CNN
 F 3 "" H 4450 1250 50  0000 C CNN
 	1    4450 1250
 	1    0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR0138
-U 1 1 5836E9B0
-P 4700 1400
-AR Path="/59A82F84/5836E9B0" Ref="#PWR0138"  Part="1" 
-AR Path="/5BB33F0A/5836E9B0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0138" H 4700 1150 50  0001 C CNN
-F 1 "GND" H 4700 1250 50  0000 C CNN
-F 2 "" H 4700 1400 50  0000 C CNN
-F 3 "" H 4700 1400 50  0000 C CNN
-	1    4700 1400
-	-1   0    0    -1  
 $EndComp
 $Comp
 L dotmatrix_64x48-rescue:GND-power #PWR0135
@@ -132,8 +106,8 @@ P 1750 1100
 AR Path="/59A82F84/5859EE13" Ref="D7"  Part="1" 
 AR Path="/5BB33F0A/5859EE13" Ref="D?"  Part="1" 
 F 0 "D7" V 2050 1100 50  0000 L CNN
-F 1 "12V TVS diode" V 2150 900 50  0000 L CNN
-F 2 "Diodes_SMD:D_SMA_Handsoldering" V 1750 1100 50  0001 C CNN
+F 1 "14V TVS diode" V 2150 900 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" V 1750 1100 50  0001 C CNN
 F 3 "" V 1750 1100 50  0000 C CNN
 	1    1750 1100
 	0    1    1    0   
@@ -151,19 +125,6 @@ F 3 "" H 2700 1200 50  0000 C CNN
 	1    2700 1200
 	1    0    0    -1  
 $EndComp
-$Comp
-L dotmatrix_64x48-rescue:C-device C66
-U 1 1 5837D4CC
-P 4700 1250
-AR Path="/59A82F84/5837D4CC" Ref="C66"  Part="1" 
-AR Path="/5BB33F0A/5837D4CC" Ref="C?"  Part="1" 
-F 0 "C66" H 4600 850 50  0000 L CNN
-F 1 "0.1u" H 4600 750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4815 1159 50  0001 L CNN
-F 3 "" H 4700 1250 50  0000 C CNN
-	1    4700 1250
-	1    0    0    -1  
-$EndComp
 Connection ~ 1750 950 
 Wire Wire Line
 	1750 950  1750 1000
@@ -177,14 +138,8 @@ Wire Wire Line
 	2850 1350 2850 1250
 Wire Wire Line
 	1500 950  1750 950 
-Connection ~ 4700 1050
-Wire Wire Line
-	4700 1050 4700 1100
-Connection ~ 4450 1050
 Wire Wire Line
 	4450 1050 4450 1100
-Wire Wire Line
-	4900 1050 4900 950 
 Wire Wire Line
 	1500 1250 1300 1250
 $Comp
@@ -194,7 +149,7 @@ P 1100 3350
 AR Path="/59A82F84/59E42088" Ref="C33"  Part="1" 
 AR Path="/5BB33F0A/59E42088" Ref="C?"  Part="1" 
 F 0 "C33" H 1050 2900 50  0000 L CNN
-F 1 "10u 16V" H 1050 2800 50  0000 L CNN
+F 1 "10u/35V" H 900 2800 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1215 3259 50  0001 L CNN
 F 3 "" H 1100 3350 50  0000 C CNN
 	1    1100 3350
@@ -215,19 +170,6 @@ F 3 "" H 1100 3550 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	1100 3550 1100 3500
-$Comp
-L dotmatrix_64x48-rescue:L-device L1
-U 1 1 59E42358
-P 3250 3400
-AR Path="/59A82F84/59E42358" Ref="L1"  Part="1" 
-AR Path="/5BB33F0A/59E42358" Ref="L?"  Part="1" 
-F 0 "L1" V 3072 3400 50  0000 C CNN
-F 1 "10uH" V 3163 3400 50  0000 C CNN
-F 2 "components:Choke_SMD_7.3x7.3_H3.5_handsoldering" H 3250 3400 50  0001 C CNN
-F 3 "" H 3250 3400 50  0001 C CNN
-	1    3250 3400
-	0    1    1    0   
-$EndComp
 $Comp
 L dotmatrix_64x48-rescue:C-device C34
 U 1 1 59E426BA
@@ -350,10 +292,6 @@ Text Notes 750  4250 0    60   ~ 0
 Vout =0.596*(110.0/(14.70)+1)\n=> 5.055863945578231
 Wire Wire Line
 	1600 1350 1600 1450
-Wire Wire Line
-	4700 1050 4900 1050
-Wire Wire Line
-	4450 1050 4700 1050
 Wire Wire Line
 	1400 3200 1500 3200
 Wire Wire Line
@@ -537,7 +475,7 @@ Wire Wire Line
 Connection ~ 6850 3250
 Wire Wire Line
 	6850 3250 6850 3750
-Text Notes 5000 950  0    50   ~ 0
+Text Notes 6550 900  0    50   ~ 0
 12V
 $Comp
 L DeeComponents:TPS54428DDA U19
@@ -557,7 +495,7 @@ P 1000 5450
 AR Path="/59A82F84/5BBCC3D9" Ref="C28"  Part="1" 
 AR Path="/5BB33F0A/5BBCC3D9" Ref="C?"  Part="1" 
 F 0 "C28" H 950 5000 50  0000 L CNN
-F 1 "10u 16V" H 950 4900 50  0000 L CNN
+F 1 "10u/35V" H 750 4900 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1115 5359 50  0001 L CNN
 F 3 "" H 1000 5450 50  0000 C CNN
 	1    1000 5450
@@ -669,7 +607,7 @@ AR Path="/59A82F84/5BBE36D3" Ref="L2"  Part="1"
 AR Path="/5BB33F0A/5BBE36D3" Ref="L?"  Part="1" 
 F 0 "L2" V 3522 5700 50  0000 C CNN
 F 1 "2.2uH" V 3613 5700 50  0000 C CNN
-F 2 "components:Choke_SMD_7.3x7.3_H3.5_handsoldering" H 3700 5700 50  0001 C CNN
+F 2 "components:Choke_SMD_10.4x10.4_H4.8_HandSoldering" H 3700 5700 50  0001 C CNN
 F 3 "" H 3700 5700 50  0001 C CNN
 	1    3700 5700
 	0    1    1    0   
@@ -869,18 +807,7 @@ LEDDC_SW
 Text Label 2050 1350 0    50   ~ 0
 DC_IN_N
 Wire Wire Line
-	4350 1050 4450 1050
-Wire Wire Line
-	1750 950  2500 950 
-Wire Wire Line
-	3850 1050 3950 1050
-Wire Wire Line
-	3950 700  3950 1050
-Connection ~ 3950 1050
-Wire Wire Line
-	3950 1050 4150 1050
-Text GLabel 3950 700  0    50   Input ~ 0
-V12_PREFUSE
+	1750 950  2000 950 
 Wire Wire Line
 	2400 6400 2400 6300
 Wire Wire Line
@@ -932,7 +859,7 @@ P 5450 3450
 AR Path="/59A82F84/5DA0296E" Ref="C2"  Part="1" 
 AR Path="/5BB33F0A/5DA0296E" Ref="C?"  Part="1" 
 F 0 "C2" H 5400 2850 50  0000 L CNN
-F 1 "10u 10V" V 5450 2400 50  0000 L CNN
+F 1 "22u/6.3V" V 5450 2400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5565 3359 50  0001 L CNN
 F 3 "" H 5450 3450 50  0000 C CNN
 	1    5450 3450
@@ -966,7 +893,7 @@ P 7400 3900
 AR Path="/59A82F84/5DA07BC2" Ref="C36"  Part="1" 
 AR Path="/5BB33F0A/5DA07BC2" Ref="C?"  Part="1" 
 F 0 "C36" H 7350 3400 50  0000 L CNN
-F 1 "10u 10V" V 7400 3000 50  0000 L CNN
+F 1 "22u/6.3V" V 7400 3000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7515 3809 50  0001 L CNN
 F 3 "" H 7400 3900 50  0000 C CNN
 	1    7400 3900
@@ -996,7 +923,7 @@ P 5650 3450
 AR Path="/59A82F84/5DA0782A" Ref="C3"  Part="1" 
 AR Path="/5BB33F0A/5DA0782A" Ref="C?"  Part="1" 
 F 0 "C3" H 5600 2850 50  0000 L CNN
-F 1 "10u 10V" V 5650 2400 50  0000 L CNN
+F 1 "22u/6.3V" V 5650 2400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5765 3359 50  0001 L CNN
 F 3 "" H 5650 3450 50  0000 C CNN
 	1    5650 3450
@@ -1025,7 +952,7 @@ P 5850 3450
 AR Path="/59A82F84/5DA07DAD" Ref="C18"  Part="1" 
 AR Path="/5BB33F0A/5DA07DAD" Ref="C?"  Part="1" 
 F 0 "C18" H 5800 2850 50  0000 L CNN
-F 1 "10u 10V" V 5850 2400 50  0000 L CNN
+F 1 "22u/6.3V" V 5850 2400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5965 3359 50  0001 L CNN
 F 3 "" H 5850 3450 50  0000 C CNN
 	1    5850 3450
@@ -1067,7 +994,7 @@ P 6050 3450
 AR Path="/59A82F84/5DA0822F" Ref="C19"  Part="1" 
 AR Path="/5BB33F0A/5DA0822F" Ref="C?"  Part="1" 
 F 0 "C19" H 6000 2850 50  0000 L CNN
-F 1 "10u 10V" V 6050 2400 50  0000 L CNN
+F 1 "22u/6.3V" V 6050 2400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6165 3359 50  0001 L CNN
 F 3 "" H 6050 3450 50  0000 C CNN
 	1    6050 3450
@@ -1148,7 +1075,7 @@ P 7600 3900
 AR Path="/59A82F84/5DA0AAC9" Ref="C57"  Part="1" 
 AR Path="/5BB33F0A/5DA0AAC9" Ref="C?"  Part="1" 
 F 0 "C57" H 7550 3400 50  0000 L CNN
-F 1 "10u 10V" V 7600 3000 50  0000 L CNN
+F 1 "22u/6.3V" V 7600 3000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7715 3809 50  0001 L CNN
 F 3 "" H 7600 3900 50  0000 C CNN
 	1    7600 3900
@@ -1180,7 +1107,7 @@ P 4250 5850
 AR Path="/59A82F84/5DA0B832" Ref="C59"  Part="1" 
 AR Path="/5BB33F0A/5DA0B832" Ref="C?"  Part="1" 
 F 0 "C59" H 4200 5250 50  0000 L CNN
-F 1 "10u 10V" V 4250 4800 50  0000 L CNN
+F 1 "22u/6.3V" V 4250 4800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4365 5759 50  0001 L CNN
 F 3 "" H 4250 5850 50  0000 C CNN
 	1    4250 5850
@@ -1206,7 +1133,7 @@ P 4850 5850
 AR Path="/59A82F84/5DA0B84D" Ref="C63"  Part="1" 
 AR Path="/5BB33F0A/5DA0B84D" Ref="C?"  Part="1" 
 F 0 "C63" H 4800 5250 50  0000 L CNN
-F 1 "10u 10V" V 4850 4800 50  0000 L CNN
+F 1 "22u/6.3V" V 4850 4800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4965 5759 50  0001 L CNN
 F 3 "" H 4850 5850 50  0000 C CNN
 	1    4850 5850
@@ -1232,7 +1159,7 @@ P 4450 5850
 AR Path="/59A82F84/5DA0B868" Ref="C60"  Part="1" 
 AR Path="/5BB33F0A/5DA0B868" Ref="C?"  Part="1" 
 F 0 "C60" H 4400 5250 50  0000 L CNN
-F 1 "10u 10V" V 4450 4800 50  0000 L CNN
+F 1 "22u/6.3V" V 4450 4800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4565 5759 50  0001 L CNN
 F 3 "" H 4450 5850 50  0000 C CNN
 	1    4450 5850
@@ -1258,7 +1185,7 @@ P 4650 5850
 AR Path="/59A82F84/5DA0B883" Ref="C61"  Part="1" 
 AR Path="/5BB33F0A/5DA0B883" Ref="C?"  Part="1" 
 F 0 "C61" H 4600 5250 50  0000 L CNN
-F 1 "10u 10V" V 4650 4800 50  0000 L CNN
+F 1 "22u/6.3V" V 4650 4800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4765 5759 50  0001 L CNN
 F 3 "" H 4650 5850 50  0000 C CNN
 	1    4650 5850
@@ -1453,4 +1380,160 @@ Wire Wire Line
 Connection ~ 4200 5700
 Wire Wire Line
 	4200 5700 4250 5700
+Wire Wire Line
+	2200 950  2500 950 
+$Comp
+L dotmatrix_64x48-rescue:VCC-power #PWR0134
+U 1 1 57A2D136
+P 6450 950
+AR Path="/59A82F84/57A2D136" Ref="#PWR0134"  Part="1" 
+AR Path="/5BB33F0A/57A2D136" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0134" H 6450 800 50  0001 C CNN
+F 1 "VCC" H 6467 1123 50  0000 C CNN
+F 2 "" H 6450 950 50  0000 C CNN
+F 3 "" H 6450 950 50  0000 C CNN
+	1    6450 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1050 6450 950 
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR09
+U 1 1 5DC28CF0
+P 5200 1400
+AR Path="/59A82F84/5DC28CF0" Ref="#PWR09"  Part="1" 
+AR Path="/5BB33F0A/5DC28CF0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR09" H 5200 1150 50  0001 C CNN
+F 1 "GND" H 5200 1250 50  0000 C CNN
+F 2 "" H 5200 1400 50  0000 C CNN
+F 3 "" H 5200 1400 50  0000 C CNN
+	1    5200 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:C-device C66
+U 1 1 5DC28CFE
+P 5200 1250
+AR Path="/59A82F84/5DC28CFE" Ref="C66"  Part="1" 
+AR Path="/5BB33F0A/5DC28CFE" Ref="C?"  Part="1" 
+F 0 "C66" H 5100 850 50  0000 L CNN
+F 1 "10u/35V" H 5150 750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5315 1159 50  0001 L CNN
+F 3 "" H 5200 1250 50  0000 C CNN
+	1    5200 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1050 5200 1100
+Wire Wire Line
+	5950 1050 5950 1100
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR012
+U 1 1 5DC29D81
+P 5950 1400
+AR Path="/59A82F84/5DC29D81" Ref="#PWR012"  Part="1" 
+AR Path="/5BB33F0A/5DC29D81" Ref="#PWR?"  Part="1" 
+F 0 "#PWR012" H 5950 1150 50  0001 C CNN
+F 1 "GND" H 5950 1250 50  0000 C CNN
+F 2 "" H 5950 1400 50  0000 C CNN
+F 3 "" H 5950 1400 50  0000 C CNN
+	1    5950 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:C-device C78
+U 1 1 5DC29D8F
+P 5950 1250
+AR Path="/59A82F84/5DC29D8F" Ref="C78"  Part="1" 
+AR Path="/5BB33F0A/5DC29D8F" Ref="C?"  Part="1" 
+F 0 "C78" H 5850 850 50  0000 L CNN
+F 1 "10u/35V" H 5900 750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6065 1159 50  0001 L CNN
+F 3 "" H 5950 1250 50  0000 C CNN
+	1    5950 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1050 4750 1050
+Connection ~ 4450 1050
+Wire Wire Line
+	5050 1050 5200 1050
+Wire Wire Line
+	5200 1050 5500 1050
+Connection ~ 5200 1050
+Wire Wire Line
+	5800 1050 5950 1050
+Connection ~ 5950 1050
+Wire Wire Line
+	3850 1050 4450 1050
+$Comp
+L dotmatrix_64x48-rescue:D_Zener_Small_ALT-device D9
+U 1 1 5DC25EB9
+P 6450 1300
+AR Path="/59A82F84/5DC25EB9" Ref="D9"  Part="1" 
+AR Path="/5BB33F0A/5DC25EB9" Ref="D?"  Part="1" 
+F 0 "D9" V 6750 1450 50  0000 L CNN
+F 1 "14V TVS diode" V 6850 1200 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" V 6450 1300 50  0001 C CNN
+F 3 "" V 6450 1300 50  0000 C CNN
+	1    6450 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 1050 6450 1200
+Connection ~ 6450 1050
+Wire Wire Line
+	5950 1050 6450 1050
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR013
+U 1 1 5DC26A9B
+P 6450 1400
+AR Path="/59A82F84/5DC26A9B" Ref="#PWR013"  Part="1" 
+AR Path="/5BB33F0A/5DC26A9B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR013" H 6450 1150 50  0001 C CNN
+F 1 "GND" H 6450 1250 50  0000 C CNN
+F 2 "" H 6450 1400 50  0000 C CNN
+F 3 "" H 6450 1400 50  0000 C CNN
+	1    6450 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:L-device L6
+U 1 1 5DC29BD6
+P 4900 1050
+AR Path="/59A82F84/5DC29BD6" Ref="L6"  Part="1" 
+AR Path="/5BB33F0A/5DC29BD6" Ref="L?"  Part="1" 
+F 0 "L6" V 4722 1050 50  0000 C CNN
+F 1 "2.2uH" V 4813 1050 50  0000 C CNN
+F 2 "components:Choke_SMD_10.4x10.4_H4.8_HandSoldering" H 4900 1050 50  0001 C CNN
+F 3 "" H 4900 1050 50  0001 C CNN
+	1    4900 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:L-device L7
+U 1 1 5DC2A0BA
+P 5650 1050
+AR Path="/59A82F84/5DC2A0BA" Ref="L7"  Part="1" 
+AR Path="/5BB33F0A/5DC2A0BA" Ref="L?"  Part="1" 
+F 0 "L7" V 5472 1050 50  0000 C CNN
+F 1 "2.2uH" V 5563 1050 50  0000 C CNN
+F 2 "components:Choke_SMD_10.4x10.4_H4.8_HandSoldering" H 5650 1050 50  0001 C CNN
+F 3 "" H 5650 1050 50  0001 C CNN
+	1    5650 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:L-device L1
+U 1 1 59E42358
+P 3250 3400
+AR Path="/59A82F84/59E42358" Ref="L1"  Part="1" 
+AR Path="/5BB33F0A/59E42358" Ref="L?"  Part="1" 
+F 0 "L1" V 3072 3400 50  0000 C CNN
+F 1 "10uH" V 3163 3400 50  0000 C CNN
+F 2 "components:Choke_SMD_7.3x7.3_H3.5_handsoldering" H 3250 3400 50  0001 C CNN
+F 3 "" H 3250 3400 50  0001 C CNN
+	1    3250 3400
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
