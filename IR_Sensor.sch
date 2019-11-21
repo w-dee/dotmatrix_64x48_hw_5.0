@@ -312,33 +312,6 @@ F 3 "" H 2100 2900 50  0000 C CNN
 $EndComp
 Text GLabel 1050 3300 0    60   Input ~ 0
 IR_OUT
-$Comp
-L dotmatrix_64x48-rescue:D_Schottky_Small-device D14
-U 1 1 59A7F6B4
-P 1550 3550
-F 0 "D14" H 1550 3437 50  0000 C CNN
-F 1 "D_Schottky_Small" H 1550 3436 50  0001 C CNN
-F 2 "components:SOD-523-mod" H 1550 3436 50  0001 C CNN
-F 3 "" V 1550 3550 50  0000 C CNN
-	1    1550 3550
-	0    1    1    0   
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR038
-U 1 1 59A7F6BB
-P 1550 3650
-F 0 "#PWR038" H 1550 3400 50  0001 C CNN
-F 1 "GND" H 1555 3477 50  0000 C CNN
-F 2 "" H 1550 3650 50  0000 C CNN
-F 3 "" H 1550 3650 50  0000 C CNN
-	1    1550 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 3450 1550 3300
-Wire Wire Line
-	1050 3300 1550 3300
-Connection ~ 1550 3300
 Wire Wire Line
 	1350 1550 1750 1550
 Wire Wire Line
@@ -367,8 +340,6 @@ Wire Wire Line
 	4600 1300 4900 1300
 Wire Wire Line
 	4600 1800 4900 1800
-Wire Wire Line
-	1550 3300 1700 3300
 $Comp
 L dotmatrix_64x48-rescue:LED-device LED49
 U 1 1 5BB50E0E
@@ -684,5 +655,43 @@ Wire Wire Line
 Text GLabel 10250 5150 2    60   Input ~ 0
 LED1642VDD
 Wire Wire Line
-	1350 2750 2100 2750
+	1350 2750 1550 2750
+Wire Wire Line
+	1050 3300 1450 3300
+$Comp
+L dotmatrix_64x48-rescue:Conn_01x03_Female-Connector J8
+U 1 1 5DD670C3
+P 2100 3700
+F 0 "J8" H 2000 3500 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 1500 3950 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2100 3700 50  0001 C CNN
+F 3 "" H 2100 3700 50  0001 C CNN
+	1    2100 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2750 1550 3600
+Wire Wire Line
+	1550 3600 1900 3600
+Connection ~ 1550 2750
+Wire Wire Line
+	1550 2750 2100 2750
+Wire Wire Line
+	1450 3300 1450 3700
+Wire Wire Line
+	1450 3700 1900 3700
+Connection ~ 1450 3300
+Wire Wire Line
+	1450 3300 1700 3300
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR0138
+U 1 1 5DD66DE4
+P 1900 3800
+F 0 "#PWR0138" H 1900 3550 50  0001 C CNN
+F 1 "GND" H 1905 3627 50  0000 C CNN
+F 2 "" H 1900 3800 50  0000 C CNN
+F 3 "" H 1900 3800 50  0000 C CNN
+	1    1900 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

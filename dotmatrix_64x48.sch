@@ -1865,4 +1865,6 @@ Text GLabel 8450 2700 0    50   Input ~ 0
 E_TX2
 Text GLabel 8450 2500 0    50   Input ~ 0
 E_RX2
+Text GLabel 5950 5400 2    60   Input ~ 0
+IR_OUT
 $EndSCHEMATC
