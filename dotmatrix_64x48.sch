@@ -1710,13 +1710,13 @@ Wire Wire Line
 	9500 4850 9500 4650
 Wire Wire Line
 	9500 4650 9550 4650
-Text GLabel 7850 4300 0    50   Input ~ 0
-D_I2S_SPK_BCLK
-Text GLabel 7850 4200 0    50   Input ~ 0
-D_I2S_SPK_MCLK
 Text GLabel 7850 4400 0    50   Input ~ 0
-D_I2S_SPK_LRCLK
+D_I2S_SPK_BCLK
 Text GLabel 7850 4500 0    50   Input ~ 0
+D_I2S_SPK_MCLK
+Text GLabel 7850 4300 0    50   Input ~ 0
+D_I2S_SPK_LRCLK
+Text GLabel 7850 4200 0    50   Input ~ 0
 D_I2S_SPK_DATA
 Wire Wire Line
 	7850 4500 8000 4500
@@ -1727,13 +1727,13 @@ Wire Wire Line
 Wire Wire Line
 	7850 4200 8000 4200
 Connection ~ 9500 4850
-Text GLabel 10000 4300 2    50   Input ~ 0
-I2S_SPK_BCLK
-Text GLabel 10000 4200 2    50   Input ~ 0
-I2S_SPK_MCLK
 Text GLabel 10000 4400 2    50   Input ~ 0
-I2S_SPK_LRCLK
+I2S_SPK_BCLK
 Text GLabel 10000 4500 2    50   Input ~ 0
+I2S_SPK_MCLK
+Text GLabel 10000 4300 2    50   Input ~ 0
+I2S_SPK_LRCLK
+Text GLabel 10000 4200 2    50   Input ~ 0
 I2S_SPK_DATA
 $Comp
 L dotmatrix_64x48-rescue:R-device R?
