@@ -743,26 +743,12 @@ Wire Wire Line
 	1300 2700 1300 3050
 Wire Wire Line
 	7500 1650 9350 1650
-Text GLabel 1450 4950 3    60   Input ~ 0
-LEDVDD
-Text GLabel 2800 4950 3    60   Input ~ 0
-LEDVDD
-Text GLabel 4150 4950 3    60   Input ~ 0
-LEDVDD
 Wire Wire Line
 	4150 4950 4150 4450
 Wire Wire Line
 	2800 4950 2800 4450
 Wire Wire Line
 	1450 4950 1450 4450
-Text GLabel 1900 5350 3    60   Input ~ 0
-LEDVDD
-Text GLabel 6650 4950 1    60   Input ~ 0
-LEDVDD
-Text GLabel 6950 4950 1    60   Input ~ 0
-LEDVDD
-Text GLabel 7250 4950 1    60   Input ~ 0
-LEDVDD
 Wire Wire Line
 	4000 3050 3750 3050
 Wire Wire Line
@@ -927,4 +913,18 @@ Wire Wire Line
 	10600 3400 10600 3500
 Text Notes 10250 4300 0    50   ~ 0
 place near TVSs
+Text GLabel 7250 4950 1    60   Input ~ 0
+LEDLOGICVDD
+Text GLabel 6950 4950 1    60   Input ~ 0
+LEDLOGICVDD
+Text GLabel 6650 4950 1    60   Input ~ 0
+LEDLOGICVDD
+Text GLabel 4150 4950 3    60   Input ~ 0
+LEDLOGICVDD
+Text GLabel 2800 4950 3    60   Input ~ 0
+LEDLOGICVDD
+Text GLabel 1450 4950 3    60   Input ~ 0
+LEDLOGICVDD
+Text GLabel 1900 5350 3    60   Input ~ 0
+LEDLOGICVDD
 $EndSCHEMATC

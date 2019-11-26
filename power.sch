@@ -1033,8 +1033,8 @@ P 8250 3900
 AR Path="/59A8E319/5BB82B1A" Ref="C?"  Part="1" 
 AR Path="/5BB82B1A" Ref="C?"  Part="1" 
 AR Path="/59A82F84/5BB82B1A" Ref="C65"  Part="1" 
-F 0 "C65" H 8050 3800 50  0000 L CNN
-F 1 "0.1u/35V" H 8050 3700 50  0000 L CNN
+F 0 "C65" H 8450 3400 50  0000 L CNN
+F 1 "0.1u/35V" H 8350 3300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8365 3809 50  0001 L CNN
 F 3 "" H 8250 3900 50  0000 C CNN
 	1    8250 3900
@@ -1047,8 +1047,8 @@ P 8000 3900
 AR Path="/59A8E319/5BB82B13" Ref="C?"  Part="1" 
 AR Path="/5BB82B13" Ref="C?"  Part="1" 
 AR Path="/59A82F84/5BB82B13" Ref="C62"  Part="1" 
-F 0 "C62" H 7850 3800 50  0000 L CNN
-F 1 "1u/35V" H 7900 3700 50  0000 L CNN
+F 0 "C62" H 7950 3400 50  0000 L CNN
+F 1 "1u/35V" H 7850 3300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8115 3809 50  0001 L CNN
 F 3 "" H 8000 3900 50  0000 C CNN
 	1    8000 3900
@@ -1348,7 +1348,7 @@ Wire Wire Line
 	6000 2950 6000 3100
 Connection ~ 6000 3100
 Wire Wire Line
-	6000 3100 6850 3100
+	6000 3100 6450 3100
 Wire Wire Line
 	4200 5400 4250 5400
 $Comp
@@ -1535,5 +1535,38 @@ F 2 "components:Choke_SMD_7.3x7.3_H3.5_handsoldering" H 3250 3400 50  0001 C CNN
 F 3 "" H 3250 3400 50  0001 C CNN
 	1    3250 3400
 	0    1    1    0   
+$EndComp
+Text Notes 5850 5650 0    50   ~ 0
+Note that:\nRow driver's P-MOSFET gate voltage swings between\nLEDLOGICVDD(off-state) and GND(on-state),\nso LEDVDD cannot be high over that point that LEDLOGICVDD\nbecomes below threshold gate voltage of the P-MOSFET.\n\n
+$Comp
+L dotmatrix_64x48-rescue:C-device C?
+U 1 1 5DDD7208
+P 6450 3250
+AR Path="/59A8E319/5DDD7208" Ref="C?"  Part="1" 
+AR Path="/5DDD7208" Ref="C?"  Part="1" 
+AR Path="/59A82F84/5DDD7208" Ref="C79"  Part="1" 
+F 0 "C79" H 6400 2750 50  0000 L CNN
+F 1 "1u/35V" H 6300 2650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6565 3159 50  0001 L CNN
+F 3 "" H 6450 3250 50  0000 C CNN
+	1    6450 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 3100
+Wire Wire Line
+	6450 3100 6850 3100
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR?
+U 1 1 5DDD7589
+P 6450 3400
+AR Path="/59A8E319/5DDD7589" Ref="#PWR?"  Part="1" 
+AR Path="/5DDD7589" Ref="#PWR?"  Part="1" 
+AR Path="/59A82F84/5DDD7589" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 6450 3150 50  0001 C CNN
+F 1 "GND" H 6450 3250 50  0000 C CNN
+F 2 "" H 6450 3400 50  0000 C CNN
+F 3 "" H 6450 3400 50  0000 C CNN
+	1    6450 3400
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
