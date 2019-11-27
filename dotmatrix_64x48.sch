@@ -979,7 +979,7 @@ AR Path="/58141380/5C5A9FB3" Ref="U?"  Part="1"
 AR Path="/5C5A9FB3" Ref="U22"  Part="1" 
 F 0 "U22" H 8950 3278 50  0000 C CNN
 F 1 "CM1293A-04SO" H 8950 3187 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 8950 2600 50  0001 C CNN
+F 2 "components:SOT-23-6_Handsoldering_mod" H 8950 2600 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 8950 2600 50  0001 C CNN
 	1    8950 2600
 	1    0    0    -1  
@@ -1623,7 +1623,7 @@ AR Path="/58141380/5C42EDCF" Ref="U?"  Part="1"
 AR Path="/5C42EDCF" Ref="U21"  Part="1" 
 F 0 "U21" H 2700 7428 50  0000 C CNN
 F 1 "CM1293A-04SO" H 2700 7337 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 2700 6750 50  0001 C CNN
+F 2 "components:SOT-23-6_Handsoldering_mod" H 2700 6750 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 2700 6750 50  0001 C CNN
 	1    2700 6750
 	1    0    0    -1  
@@ -1649,7 +1649,7 @@ AR Path="/58141380/5C7B65A5" Ref="U?"  Part="1"
 AR Path="/5C7B65A5" Ref="U27"  Part="1" 
 F 0 "U27" H 5450 5978 50  0000 C CNN
 F 1 "CM1293A-04SO" H 5450 5887 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 5450 5300 50  0001 C CNN
+F 2 "components:SOT-23-6_Handsoldering_mod" H 5450 5300 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 5450 5300 50  0001 C CNN
 	1    5450 5300
 	1    0    0    -1  

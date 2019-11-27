@@ -247,7 +247,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 2800 3400 3050
 Wire Wire Line
-	3400 3050 4450 3050
+	3400 3050 3550 3050
 Wire Wire Line
 	4450 3050 4450 2650
 Wire Wire Line
@@ -405,7 +405,7 @@ U 1 1 5C65572B
 P 2950 3650
 F 0 "U25" H 2950 4328 50  0000 C CNN
 F 1 "CM1293A-04SO" H 2950 4237 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 2950 3650 50  0001 C CNN
+F 2 "components:SOT-23-6_Handsoldering_mod" H 2950 3650 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 2950 3650 50  0001 C CNN
 	1    2950 3650
 	1    0    0    -1  
@@ -422,29 +422,11 @@ F 3 "" H 2950 4150 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 3100 2450 3550
-Wire Wire Line
-	2600 3050 2400 3050
-Wire Wire Line
-	2400 3050 2400 3750
-Wire Wire Line
-	2400 3750 2450 3750
-Wire Wire Line
-	2450 3100 2650 3100
-Wire Wire Line
 	3300 2850 3300 3150
 Wire Wire Line
 	3300 3150 2950 3150
 Wire Wire Line
 	2800 2850 3300 2850
-Wire Wire Line
-	2950 4150 3450 4150
-Wire Wire Line
-	3450 4150 3450 3750
-Connection ~ 2950 4150
-Wire Wire Line
-	3450 3750 3450 3550
-Connection ~ 3450 3750
 Text GLabel 6850 1950 2    60   Input ~ 0
 E_TX
 Text GLabel 6850 1850 2    60   Input ~ 0
@@ -456,17 +438,30 @@ DTR
 Text Label 2550 2500 0    50   ~ 0
 VBUS
 Wire Wire Line
-	2400 2700 2600 2700
+	2400 2800 3400 2800
 Wire Wire Line
-	2400 2800 2650 2800
+	2400 2700 2450 2700
 Wire Wire Line
-	2600 3050 2600 2700
-Connection ~ 2600 2700
+	3550 3050 3550 3750
 Wire Wire Line
-	2600 2700 3450 2700
+	3550 3750 3450 3750
+Connection ~ 3550 3050
 Wire Wire Line
-	2650 3100 2650 2800
-Connection ~ 2650 2800
+	3550 3050 4450 3050
 Wire Wire Line
-	2650 2800 3400 2800
+	2450 3550 2450 2700
+Connection ~ 2450 2700
+Wire Wire Line
+	2450 2700 3450 2700
+Connection ~ 2950 4150
+Wire Wire Line
+	2950 4150 2450 4150
+Wire Wire Line
+	2450 4150 2450 3750
+Wire Wire Line
+	3450 3550 3500 3550
+Wire Wire Line
+	3500 3550 3500 4150
+Wire Wire Line
+	2950 4150 3500 4150
 $EndSCHEMATC

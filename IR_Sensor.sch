@@ -452,7 +452,7 @@ AR Path="/5C1694C3" Ref="U?"  Part="1"
 AR Path="/57BB11DB/5C1694C3" Ref="U26"  Part="1" 
 F 0 "U26" H 9400 6328 50  0000 C CNN
 F 1 "CM1293A-04SO" H 9400 6237 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 9400 5650 50  0001 C CNN
+F 2 "components:SOT-23-6_Handsoldering_mod" H 9400 5650 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 9400 5650 50  0001 C CNN
 	1    9400 5650
 	1    0    0    -1  

@@ -781,7 +781,7 @@ U 1 1 5C37A961
 P 8650 3100
 F 0 "U23" H 8650 3778 50  0000 C CNN
 F 1 "CM1293A-04SO" H 8650 3687 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 8650 3100 50  0001 C CNN
+F 2 "components:SOT-23-6_Handsoldering_mod" H 8650 3100 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 8650 3100 50  0001 C CNN
 	1    8650 3100
 	1    0    0    -1  
@@ -832,7 +832,7 @@ U 1 1 5C3C9D6E
 P 10000 3100
 F 0 "U24" H 10000 3778 50  0000 C CNN
 F 1 "CM1293A-04SO" H 10000 3687 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6_Handsoldering" H 10000 3100 50  0001 C CNN
+F 2 "components:SOT-23-6_Handsoldering_mod" H 10000 3100 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 10000 3100 50  0001 C CNN
 	1    10000 3100
 	1    0    0    -1  

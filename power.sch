@@ -310,7 +310,7 @@ AR Path="/59A82F84/5BABB6F1" Ref="U2"  Part="1"
 AR Path="/5BB33F0A/5BABB6F1" Ref="U?"  Part="1" 
 F 0 "U2" H 2000 3867 50  0000 C CNN
 F 1 "TPS54202" H 2000 3776 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 2000 2900 50  0001 C CIN
+F 2 "components:SOT-23-6_Handsoldering_mod" H 2000 2900 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tps54202.pdf" H 1600 3850 50  0001 C CNN
 	1    2000 3400
 	1    0    0    -1  
