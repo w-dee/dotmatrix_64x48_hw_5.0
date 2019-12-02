@@ -1537,7 +1537,7 @@ F 3 "" H 3250 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Notes 5850 5650 0    50   ~ 0
-Note that:\nRow driver's P-MOSFET gate voltage swings between\nLEDLOGICVDD(off-state) and GND(on-state),\nso LEDVDD cannot be high over that point that LEDLOGICVDD\nbecomes below threshold gate voltage of the P-MOSFET.\n\n
+LEDVDD  must be from min 3.1V to max 5.0V
 $Comp
 L dotmatrix_64x48-rescue:C-device C?
 U 1 1 5DDD7208

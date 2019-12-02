@@ -824,23 +824,6 @@ Wire Wire Line
 	5550 1500 5800 1500
 $Comp
 L dotmatrix_64x48-rescue:R-device R?
-U 1 1 5BC0278A
-P 2800 1650
-AR Path="/59A8E319/5BC0278A" Ref="R?"  Part="1" 
-AR Path="/5BC0278A" Ref="R119"  Part="1" 
-F 0 "R119" V 2800 1550 50  0000 L CNN
-F 1 "120R" V 2850 1350 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2730 1650 50  0001 C CNN
-F 3 "" H 2800 1650 50  0000 C CNN
-	1    2800 1650
-	0    1    -1   0   
-$EndComp
-Text GLabel 2400 1650 0    60   Input ~ 0
-HC595SEROUT
-Wire Wire Line
-	2950 1650 3100 1650
-$Comp
-L dotmatrix_64x48-rescue:R-device R?
 U 1 1 5BC5ACF1
 P 2800 1750
 AR Path="/59A8E319/5BC5ACF1" Ref="R?"  Part="1" 
@@ -921,8 +904,6 @@ F 3 "" H 1200 1750 50  0000 C CNN
 	1    1200 1750
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	2400 1650 2650 1650
 Wire Wire Line
 	1350 1850 1500 1850
 Wire Wire Line
@@ -1867,4 +1848,8 @@ Text GLabel 8450 2500 0    50   Input ~ 0
 E_RX2
 Text GLabel 5950 5400 2    60   Input ~ 0
 IR_OUT
+Text GLabel 2400 1650 0    60   Input ~ 0
+HC595SEROUT_LS
+Wire Wire Line
+	2400 1650 3100 1650
 $EndSCHEMATC

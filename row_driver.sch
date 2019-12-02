@@ -340,7 +340,7 @@ L DeeComponents:74HC595-alt-vdd U11
 U 1 1 581950A0
 P 1750 3750
 F 0 "U11" V 1900 3700 50  0000 L CNN
-F 1 "74HC595" V 1800 3400 50  0000 L CNN
+F 1 "74HCT595" V 1800 3400 50  0000 L CNN
 F 2 "components:SOIC-16-1.27mm" V 1700 3200 50  0000 L CNN
 F 3 "" H 1750 3750 50  0000 C CNN
 	1    1750 3750
@@ -351,7 +351,7 @@ L DeeComponents:74HC595-alt-vdd U13
 U 1 1 5819597E
 P 3100 3750
 F 0 "U13" V 3250 3700 50  0000 L CNN
-F 1 "74HC595" V 3150 3400 50  0000 L CNN
+F 1 "74HCT595" V 3150 3400 50  0000 L CNN
 F 2 "components:SOIC-16-1.27mm" V 3050 3200 50  0000 L CNN
 F 3 "" H 3100 3750 50  0000 C CNN
 	1    3100 3750
@@ -362,7 +362,7 @@ L DeeComponents:74HC595-alt-vdd U15
 U 1 1 581959CD
 P 4450 3750
 F 0 "U15" V 4600 3700 50  0000 L CNN
-F 1 "74HC595" V 4500 3400 50  0000 L CNN
+F 1 "74HCT595" V 4500 3400 50  0000 L CNN
 F 2 "components:SOIC-16-1.27mm" V 4400 3200 50  0000 L CNN
 F 3 "" H 4450 3750 50  0000 C CNN
 	1    4450 3750
@@ -914,17 +914,79 @@ Wire Wire Line
 Text Notes 10250 4300 0    50   ~ 0
 place near TVSs
 Text GLabel 7250 4950 1    60   Input ~ 0
-LEDLOGICVDD
+LEDVDD
 Text GLabel 6950 4950 1    60   Input ~ 0
-LEDLOGICVDD
+LEDVDD
 Text GLabel 6650 4950 1    60   Input ~ 0
-LEDLOGICVDD
+LEDVDD
 Text GLabel 4150 4950 3    60   Input ~ 0
-LEDLOGICVDD
+LEDVDD
 Text GLabel 2800 4950 3    60   Input ~ 0
-LEDLOGICVDD
+LEDVDD
 Text GLabel 1450 4950 3    60   Input ~ 0
-LEDLOGICVDD
+LEDVDD
 Text GLabel 1900 5350 3    60   Input ~ 0
-LEDLOGICVDD
+LEDVDD
+$Comp
+L dotmatrix_64x48-rescue:R-device R?
+U 1 1 5BC0278A
+P 9150 5050
+AR Path="/59A8E319/5BC0278A" Ref="R?"  Part="1" 
+AR Path="/5BC0278A" Ref="R119"  Part="1" 
+AR Path="/58141380/5BC0278A" Ref="R119"  Part="1" 
+F 0 "R119" V 9150 4950 50  0000 L CNN
+F 1 "10k" V 9200 4750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9080 5050 50  0001 C CNN
+F 3 "" H 9150 5050 50  0000 C CNN
+	1    9150 5050
+	0    1    -1   0   
+$EndComp
+Text GLabel 8850 5050 0    60   Input ~ 0
+HC595SEROUT
+Text GLabel 9600 5050 2    60   Input ~ 0
+HC595SEROUT_LS
+$Comp
+L dotmatrix_64x48-rescue:R-device R?
+U 1 1 5DE6F14B
+P 9500 5350
+AR Path="/59A8E319/5DE6F14B" Ref="R?"  Part="1" 
+AR Path="/5DE6F14B" Ref="R?"  Part="1" 
+AR Path="/58141380/5DE6F14B" Ref="R46"  Part="1" 
+F 0 "R46" V 9500 5250 50  0000 L CNN
+F 1 "22k DNI" V 9600 5050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9430 5350 50  0001 C CNN
+F 3 "" H 9500 5350 50  0000 C CNN
+	1    9500 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR015
+U 1 1 5DE70132
+P 9500 5700
+F 0 "#PWR015" H 9500 5450 50  0001 C CNN
+F 1 "GND" H 9505 5527 50  0000 C CNN
+F 2 "" H 9500 5700 50  0000 C CNN
+F 3 "" H 9500 5700 50  0000 C CNN
+	1    9500 5700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5050 9000 5050
+Wire Wire Line
+	9300 5050 9500 5050
+Wire Wire Line
+	9500 5200 9500 5050
+Connection ~ 9500 5050
+Wire Wire Line
+	9500 5050 9600 5050
+Wire Wire Line
+	9500 5500 9500 5700
+Text Notes 7400 6200 0    50   ~ 0
+R46 must be installed when HC595SEROUT does not match to 3.3V levels
+Text Notes 8150 5000 0    50   ~ 0
+3.1V to 5.0V
+Text Notes 9850 5000 0    50   ~ 0
+3.3V
+Text Notes 5200 3900 0    50   ~ 0
+for LEDVDD > 4.5V : use 74HCT595; otherwise use 74HC595
 $EndSCHEMATC
