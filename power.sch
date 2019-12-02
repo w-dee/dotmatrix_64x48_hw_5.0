@@ -1569,4 +1569,6 @@ F 3 "" H 6450 3400 50  0000 C CNN
 	1    6450 3400
 	-1   0    0    -1  
 $EndComp
+Text Notes 5850 5950 0    50   ~ 0
+Note about making LEDVDD > 4.5V :\n + Install R46 to make  5V -> 3.3V level shifter\n + Use HCT595 instead of HC595\n
 $EndSCHEMATC

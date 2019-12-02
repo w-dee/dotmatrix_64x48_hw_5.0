@@ -935,7 +935,7 @@ AR Path="/59A8E319/5BC0278A" Ref="R?"  Part="1"
 AR Path="/5BC0278A" Ref="R119"  Part="1" 
 AR Path="/58141380/5BC0278A" Ref="R119"  Part="1" 
 F 0 "R119" V 9150 4950 50  0000 L CNN
-F 1 "10k" V 9200 4750 50  0000 L CNN
+F 1 "4.7k" V 9200 4750 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9080 5050 50  0001 C CNN
 F 3 "" H 9150 5050 50  0000 C CNN
 	1    9150 5050
@@ -953,7 +953,7 @@ AR Path="/59A8E319/5DE6F14B" Ref="R?"  Part="1"
 AR Path="/5DE6F14B" Ref="R?"  Part="1" 
 AR Path="/58141380/5DE6F14B" Ref="R46"  Part="1" 
 F 0 "R46" V 9500 5250 50  0000 L CNN
-F 1 "22k DNI" V 9600 5050 50  0000 L CNN
+F 1 "10k DNI" V 9600 5050 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9430 5350 50  0001 C CNN
 F 3 "" H 9500 5350 50  0000 C CNN
 	1    9500 5350
@@ -981,7 +981,7 @@ Wire Wire Line
 	9500 5050 9600 5050
 Wire Wire Line
 	9500 5500 9500 5700
-Text Notes 7400 6200 0    50   ~ 0
+Text Notes 8100 6200 0    50   ~ 0
 R46 must be installed when HC595SEROUT does not match to 3.3V levels
 Text Notes 8150 5000 0    50   ~ 0
 3.1V to 5.0V
