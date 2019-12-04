@@ -653,7 +653,7 @@ Connection ~ 7750 1650
 Wire Wire Line
 	7750 1650 7750 1500
 Text GLabel 10250 5150 2    60   Input ~ 0
-LED1642VDD
+LEDLOGICVDD
 Wire Wire Line
 	1350 2750 1550 2750
 Wire Wire Line
