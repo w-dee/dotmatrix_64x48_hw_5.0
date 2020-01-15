@@ -108,6 +108,17 @@ Text GLabel 6700 1350 1    60   Input ~ 0
 ce43
 Text GLabel 6800 1350 1    60   Input ~ 0
 ce44
+$Comp
+L matrix-dotmatrix_64x48:LED64x48 LED1
+U 1 1 5D9CB339
+P 1900 1450
+F 0 "LED1" H 8828 -96 60  0000 L CNN
+F 1 "LED64x48" H 8828 -203 60  0000 L CNN
+F 2 "components:LED1608_Handsoldering_64x48" H 1900 1450 60  0001 C CNN
+F 3 "" H 1900 1450 60  0001 C CNN
+	1    1900 1450
+	1    0    0    -1  
+$EndComp
 Text GLabel 6900 1350 1    60   Input ~ 0
 ce45
 Text GLabel 7000 1350 1    60   Input ~ 0
@@ -162,8 +173,10 @@ Text GLabel 1700 2750 0    60   Input ~ 0
 r6
 Text GLabel 1700 2850 0    60   Input ~ 0
 r7
-Text GLabel 1700 3750 0    60   Input ~ 0
-r16
+Text GLabel 1700 2950 0    60   Input ~ 0
+r8
+Text GLabel 1700 3050 0    60   Input ~ 0
+r9
 Text GLabel 1700 3850 0    60   Input ~ 0
 r17
 Text GLabel 1700 3950 0    60   Input ~ 0
@@ -174,14 +187,8 @@ Text GLabel 1700 4150 0    60   Input ~ 0
 r20
 Text GLabel 1700 4250 0    60   Input ~ 0
 r21
-Text GLabel 1700 4350 0    60   Input ~ 0
-r22
-Text GLabel 1700 4450 0    60   Input ~ 0
-r23
-Text GLabel 1700 2950 0    60   Input ~ 0
-r8
-Text GLabel 1700 3050 0    60   Input ~ 0
-r9
+Text GLabel 1700 3750 0    60   Input ~ 0
+r16
 Text GLabel 1700 3150 0    60   Input ~ 0
 r10
 Text GLabel 1700 3250 0    60   Input ~ 0
@@ -194,6 +201,10 @@ Text GLabel 1700 3550 0    60   Input ~ 0
 r14
 Text GLabel 1700 3650 0    60   Input ~ 0
 r15
+Text GLabel 1700 4350 0    60   Input ~ 0
+r22
+Text GLabel 1700 4450 0    60   Input ~ 0
+r23
 Text GLabel 2400 4750 3    60   Input ~ 0
 co0
 Text GLabel 2500 4750 3    60   Input ~ 0
@@ -322,15 +333,4 @@ Text GLabel 8600 4750 3    60   Input ~ 0
 co62
 Text GLabel 8700 4750 3    60   Input ~ 0
 co63
-$Comp
-L matrix-dotmatrix_64x48:LED64x48 LED1
-U 1 1 5D9CB339
-P 1900 1450
-F 0 "LED1" H 8828 -96 60  0000 L CNN
-F 1 "LED64x48" H 8828 -203 60  0000 L CNN
-F 2 "components:LED1608_Handsoldering_64x48" H 1900 1450 60  0001 C CNN
-F 3 "" H 1900 1450 60  0001 C CNN
-	1    1900 1450
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
