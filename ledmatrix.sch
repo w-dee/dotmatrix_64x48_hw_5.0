@@ -58,16 +58,6 @@ Text GLabel 4200 1350 1    60   Input ~ 0
 ce18
 Text GLabel 4300 1350 1    60   Input ~ 0
 ce19
-Text GLabel 4400 1350 1    60   Input ~ 0
-ce20
-Text GLabel 4500 1350 1    60   Input ~ 0
-ce21
-Text GLabel 4600 1350 1    60   Input ~ 0
-ce22
-Text GLabel 4700 1350 1    60   Input ~ 0
-ce23
-Text GLabel 4800 1350 1    60   Input ~ 0
-ce24
 Text GLabel 4900 1350 1    60   Input ~ 0
 ce25
 Text GLabel 5000 1350 1    60   Input ~ 0
@@ -98,16 +88,14 @@ Text GLabel 6200 1350 1    60   Input ~ 0
 ce38
 Text GLabel 6300 1350 1    60   Input ~ 0
 ce39
-Text GLabel 6400 1350 1    60   Input ~ 0
-ce40
-Text GLabel 6500 1350 1    60   Input ~ 0
-ce41
-Text GLabel 6600 1350 1    60   Input ~ 0
-ce42
-Text GLabel 6700 1350 1    60   Input ~ 0
-ce43
-Text GLabel 6800 1350 1    60   Input ~ 0
-ce44
+Text GLabel 6900 1350 1    60   Input ~ 0
+ce45
+Text GLabel 7000 1350 1    60   Input ~ 0
+ce46
+Text GLabel 7100 1350 1    60   Input ~ 0
+ce47
+Text GLabel 8700 1350 1    60   Input ~ 0
+ce63
 $Comp
 L matrix-dotmatrix_64x48:LED64x48 LED1
 U 1 1 5D9CB339
@@ -119,12 +107,28 @@ F 3 "" H 1900 1450 60  0001 C CNN
 	1    1900 1450
 	1    0    0    -1  
 $EndComp
-Text GLabel 6900 1350 1    60   Input ~ 0
-ce45
-Text GLabel 7000 1350 1    60   Input ~ 0
-ce46
-Text GLabel 7100 1350 1    60   Input ~ 0
-ce47
+Text GLabel 1700 2150 0    60   Input ~ 0
+r0
+Text GLabel 1700 2250 0    60   Input ~ 0
+r1
+Text GLabel 1700 2350 0    60   Input ~ 0
+r2
+Text GLabel 1700 2450 0    60   Input ~ 0
+r3
+Text GLabel 1700 2950 0    60   Input ~ 0
+r8
+Text GLabel 1700 3050 0    60   Input ~ 0
+r9
+Text GLabel 6400 1350 1    60   Input ~ 0
+ce40
+Text GLabel 6500 1350 1    60   Input ~ 0
+ce41
+Text GLabel 6600 1350 1    60   Input ~ 0
+ce42
+Text GLabel 6700 1350 1    60   Input ~ 0
+ce43
+Text GLabel 6800 1350 1    60   Input ~ 0
+ce44
 Text GLabel 7200 1350 1    60   Input ~ 0
 ce48
 Text GLabel 7300 1350 1    60   Input ~ 0
@@ -155,16 +159,16 @@ Text GLabel 8500 1350 1    60   Input ~ 0
 ce61
 Text GLabel 8600 1350 1    60   Input ~ 0
 ce62
-Text GLabel 8700 1350 1    60   Input ~ 0
-ce63
-Text GLabel 1700 2150 0    60   Input ~ 0
-r0
-Text GLabel 1700 2250 0    60   Input ~ 0
-r1
-Text GLabel 1700 2350 0    60   Input ~ 0
-r2
-Text GLabel 1700 2450 0    60   Input ~ 0
-r3
+Text GLabel 4400 1350 1    60   Input ~ 0
+ce20
+Text GLabel 4500 1350 1    60   Input ~ 0
+ce21
+Text GLabel 4600 1350 1    60   Input ~ 0
+ce22
+Text GLabel 4700 1350 1    60   Input ~ 0
+ce23
+Text GLabel 4800 1350 1    60   Input ~ 0
+ce24
 Text GLabel 1700 2550 0    60   Input ~ 0
 r4
 Text GLabel 1700 2650 0    60   Input ~ 0
@@ -173,22 +177,6 @@ Text GLabel 1700 2750 0    60   Input ~ 0
 r6
 Text GLabel 1700 2850 0    60   Input ~ 0
 r7
-Text GLabel 1700 2950 0    60   Input ~ 0
-r8
-Text GLabel 1700 3050 0    60   Input ~ 0
-r9
-Text GLabel 1700 3850 0    60   Input ~ 0
-r17
-Text GLabel 1700 3950 0    60   Input ~ 0
-r18
-Text GLabel 1700 4050 0    60   Input ~ 0
-r19
-Text GLabel 1700 4150 0    60   Input ~ 0
-r20
-Text GLabel 1700 4250 0    60   Input ~ 0
-r21
-Text GLabel 1700 3750 0    60   Input ~ 0
-r16
 Text GLabel 1700 3150 0    60   Input ~ 0
 r10
 Text GLabel 1700 3250 0    60   Input ~ 0
@@ -197,10 +185,42 @@ Text GLabel 1700 3350 0    60   Input ~ 0
 r12
 Text GLabel 1700 3450 0    60   Input ~ 0
 r13
+Text GLabel 3900 4750 3    60   Input ~ 0
+co15
+Text GLabel 4000 4750 3    60   Input ~ 0
+co16
+Text GLabel 4100 4750 3    60   Input ~ 0
+co17
+Text GLabel 4200 4750 3    60   Input ~ 0
+co18
+Text GLabel 4300 4750 3    60   Input ~ 0
+co19
+Text GLabel 4400 4750 3    60   Input ~ 0
+co20
+Text GLabel 4500 4750 3    60   Input ~ 0
+co21
+Text GLabel 4600 4750 3    60   Input ~ 0
+co22
+Text GLabel 4700 4750 3    60   Input ~ 0
+co23
+Text GLabel 4800 4750 3    60   Input ~ 0
+co24
+Text GLabel 1700 3850 0    60   Input ~ 0
+r17
+Text GLabel 1700 3950 0    60   Input ~ 0
+r18
+Text GLabel 1700 3750 0    60   Input ~ 0
+r16
 Text GLabel 1700 3550 0    60   Input ~ 0
 r14
 Text GLabel 1700 3650 0    60   Input ~ 0
 r15
+Text GLabel 1700 4050 0    60   Input ~ 0
+r19
+Text GLabel 1700 4150 0    60   Input ~ 0
+r20
+Text GLabel 1700 4250 0    60   Input ~ 0
+r21
 Text GLabel 1700 4350 0    60   Input ~ 0
 r22
 Text GLabel 1700 4450 0    60   Input ~ 0
@@ -235,26 +255,6 @@ Text GLabel 3700 4750 3    60   Input ~ 0
 co13
 Text GLabel 3800 4750 3    60   Input ~ 0
 co14
-Text GLabel 3900 4750 3    60   Input ~ 0
-co15
-Text GLabel 4000 4750 3    60   Input ~ 0
-co16
-Text GLabel 4100 4750 3    60   Input ~ 0
-co17
-Text GLabel 4200 4750 3    60   Input ~ 0
-co18
-Text GLabel 4300 4750 3    60   Input ~ 0
-co19
-Text GLabel 4400 4750 3    60   Input ~ 0
-co20
-Text GLabel 4500 4750 3    60   Input ~ 0
-co21
-Text GLabel 4600 4750 3    60   Input ~ 0
-co22
-Text GLabel 4700 4750 3    60   Input ~ 0
-co23
-Text GLabel 4800 4750 3    60   Input ~ 0
-co24
 Text GLabel 4900 4750 3    60   Input ~ 0
 co25
 Text GLabel 5000 4750 3    60   Input ~ 0

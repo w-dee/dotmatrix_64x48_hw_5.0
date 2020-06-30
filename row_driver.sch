@@ -28,6 +28,52 @@ Text GLabel 3150 1500 1    60   Input ~ 0
 r11
 Text GLabel 3050 1500 1    60   Input ~ 0
 r10
+Text GLabel 2850 1500 1    60   Input ~ 0
+r8
+Text GLabel 2950 1500 1    60   Input ~ 0
+r9
+Wire Wire Line
+	3250 1500 3250 1600
+Wire Wire Line
+	3350 1500 3350 1600
+Wire Wire Line
+	3450 1500 3450 1600
+Wire Wire Line
+	3550 1500 3550 1600
+Text GLabel 3550 1500 1    60   Input ~ 0
+r15
+Wire Wire Line
+	4500 1500 4500 1600
+Wire Wire Line
+	4600 1500 4600 1600
+Text GLabel 4700 1500 1    60   Input ~ 0
+r21
+Text GLabel 4600 1500 1    60   Input ~ 0
+r20
+Text GLabel 4500 1500 1    60   Input ~ 0
+r19
+$Sheet
+S 4150 1600 800  700 
+U 5817D18C
+F0 "f_r16" 60
+F1 "fet-driver.sch" 60
+F2 "IN0" I B 4200 2300 60 
+F3 "OUT0" I T 4200 1600 60 
+F4 "IN1" I B 4300 2300 60 
+F5 "OUT1" I T 4300 1600 60 
+F6 "IN2" I B 4400 2300 60 
+F7 "OUT2" I T 4400 1600 60 
+F8 "IN3" I B 4500 2300 60 
+F9 "OUT3" I T 4500 1600 60 
+F10 "IN6" I B 4800 2300 60 
+F11 "OUT6" I T 4800 1600 60 
+F12 "IN7" I B 4900 2300 60 
+F13 "OUT7" I T 4900 1600 60 
+F14 "IN4" I B 4600 2300 60 
+F15 "OUT4" I T 4600 1600 60 
+F16 "IN5" I B 4700 2300 60 
+F17 "OUT5" I T 4700 1600 60 
+$EndSheet
 $Sheet
 S 2800 1600 800  700 
 U 5817D105
@@ -55,19 +101,19 @@ Wire Wire Line
 Wire Wire Line
 	3150 1500 3150 1600
 Wire Wire Line
-	3250 1500 3250 1600
+	2850 1500 2850 1600
 Wire Wire Line
-	3350 1500 3350 1600
+	2950 1500 2950 1600
 Wire Wire Line
-	4800 2300 4800 3050
+	4200 1500 4200 1600
 Wire Wire Line
-	4700 2300 4700 3050
-Wire Wire Line
-	4600 2300 4600 3050
-Wire Wire Line
-	4500 2300 4500 3050
-Wire Wire Line
-	4400 2300 4400 3050
+	4300 1500 4300 1600
+Text GLabel 4200 1500 1    60   Input ~ 0
+r16
+Text GLabel 4400 1500 1    60   Input ~ 0
+r18
+Text GLabel 4300 1500 1    60   Input ~ 0
+r17
 $Comp
 L DeeComponents:74HC595-alt-vdd U13
 U 1 1 5819597E
@@ -80,51 +126,15 @@ F 3 "" H 3100 3750 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	3350 2300 3350 3050
-Wire Wire Line
-	3250 2300 3250 3050
-Wire Wire Line
-	3150 2300 3150 3050
-Wire Wire Line
-	3050 2300 3050 3050
-Wire Wire Line
 	2950 2300 2950 3050
 Wire Wire Line
 	2850 2300 2850 3050
 Wire Wire Line
-	4300 2300 4300 3050
-Wire Wire Line
-	4200 2300 4200 3050
-Wire Wire Line
 	3550 2300 3550 3050
-Wire Wire Line
-	3450 2300 3450 3050
-Wire Wire Line
-	4000 3050 3750 3050
-Wire Wire Line
-	4400 1500 4400 1600
-Wire Wire Line
-	4500 1500 4500 1600
-Wire Wire Line
-	4600 1500 4600 1600
-Wire Wire Line
-	4700 1500 4700 1600
-Wire Wire Line
-	4800 1500 4800 1600
-Wire Wire Line
-	4200 1500 4200 1600
-Wire Wire Line
-	4300 1500 4300 1600
-Wire Wire Line
-	3450 1500 3450 1600
-Wire Wire Line
-	3550 1500 3550 1600
 Text GLabel 650  2700 1    60   Input ~ 0
 HC595SEROUT
 Text Label 1500 3050 1    60   ~ 0
 SEL1
-Wire Wire Line
-	2200 2300 2200 3050
 Wire Wire Line
 	1300 2700 1300 3050
 Wire Wire Line
@@ -136,6 +146,8 @@ Wire Wire Line
 Connection ~ 1700 5800
 Wire Wire Line
 	1700 5800 1700 5850
+Text GLabel 1900 5350 3    60   Input ~ 0
+LEDVDD
 $Comp
 L dotmatrix_64x48-rescue:GND-power #PWR074
 U 1 1 5943B9EC
@@ -160,17 +172,6 @@ F 3 "" H 1300 4450 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	1900 4450 1900 4850
-Connection ~ 1900 4850
-Wire Wire Line
-	1450 4950 1450 4450
-Text GLabel 1450 4950 3    60   Input ~ 0
-LEDVDD
-Text Label 1600 3050 1    60   ~ 0
-SEL2
-Text Label 1700 3050 1    60   ~ 0
-SEL3
-Text Label 1800 3050 1    60   ~ 0
-SEL4
 $Comp
 L DeeComponents:74HC595-alt-vdd U11
 U 1 1 581950A0
@@ -182,6 +183,13 @@ F 3 "" H 1750 3750 50  0000 C CNN
 	1    1750 3750
 	0    1    -1   0   
 $EndComp
+Wire Wire Line
+	2400 3050 2400 4450
+Connection ~ 1900 4850
+Wire Wire Line
+	1450 4950 1450 4450
+Text GLabel 1450 4950 3    60   Input ~ 0
+LEDVDD
 Text GLabel 2000 4950 3    60   Input ~ 0
 HC595CLK
 $Comp
@@ -198,12 +206,55 @@ $EndComp
 Wire Wire Line
 	1700 4450 1700 5800
 Wire Wire Line
+	2200 2300 2200 3050
+Text Label 1600 3050 1    60   ~ 0
+SEL2
+Text Label 1700 3050 1    60   ~ 0
+SEL3
+Text Label 1800 3050 1    60   ~ 0
+SEL4
+Text Label 1900 3050 1    60   ~ 0
+SEL5
+Wire Wire Line
 	3050 5800 1700 5800
 Wire Wire Line
 	3050 4450 3050 5800
 Connection ~ 3050 5800
-Text GLabel 1900 5350 3    60   Input ~ 0
+Wire Wire Line
+	1900 4850 1900 4950
+Text GLabel 2800 4950 3    60   Input ~ 0
 LEDVDD
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR077
+U 1 1 5943B994
+P 2950 4450
+F 0 "#PWR077" H 2950 4200 50  0001 C CNN
+F 1 "GND" H 2955 4277 50  0000 C CNN
+F 2 "" H 2950 4450 50  0000 C CNN
+F 3 "" H 2950 4450 50  0000 C CNN
+	1    2950 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR075
+U 1 1 5943B9C0
+P 2650 4450
+F 0 "#PWR075" H 2650 4200 50  0001 C CNN
+F 1 "GND" H 2655 4277 50  0000 C CNN
+F 2 "" H 2650 4450 50  0000 C CNN
+F 3 "" H 2650 4450 50  0000 C CNN
+	1    2650 4450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4450 2000 4950
+Wire Wire Line
+	1900 4850 3250 4850
+Wire Wire Line
+	2800 4950 2800 4450
+Wire Wire Line
+	2400 4450 2200 4450
+Connection ~ 3250 4850
 Text GLabel 2200 1500 1    60   Input ~ 0
 r7
 Text GLabel 2100 1500 1    60   Input ~ 0
@@ -213,35 +264,13 @@ r5
 Text GLabel 1900 1500 1    60   Input ~ 0
 r4
 Wire Wire Line
+	2200 1500 2200 1600
+Wire Wire Line
 	1900 1500 1900 1600
 Wire Wire Line
 	2000 1500 2000 1600
 Wire Wire Line
 	2100 1500 2100 1600
-Wire Wire Line
-	2200 1500 2200 1600
-Text Label 1900 3050 1    60   ~ 0
-SEL5
-Text Label 2000 3050 1    60   ~ 0
-SEL6
-Wire Wire Line
-	2100 2300 2100 3050
-Wire Wire Line
-	2000 2300 2000 3050
-Wire Wire Line
-	2650 3050 2400 3050
-Text GLabel 1800 1500 1    60   Input ~ 0
-r3
-Text GLabel 1700 1500 1    60   Input ~ 0
-r2
-Text GLabel 1600 1500 1    60   Input ~ 0
-r1
-Text GLabel 1500 1500 1    60   Input ~ 0
-r0
-Wire Wire Line
-	1500 1500 1500 1600
-Wire Wire Line
-	1900 2300 1900 3050
 Wire Wire Line
 	1800 2300 1800 3050
 Wire Wire Line
@@ -272,36 +301,60 @@ F15 "OUT4" I T 1900 1600 60
 F16 "IN5" I B 2000 2300 60 
 F17 "OUT5" I T 2000 1600 60 
 $EndSheet
+Text GLabel 1800 1500 1    60   Input ~ 0
+r3
+Text GLabel 1700 1500 1    60   Input ~ 0
+r2
+Text GLabel 1600 1500 1    60   Input ~ 0
+r1
+Text GLabel 1500 1500 1    60   Input ~ 0
+r0
+Wire Wire Line
+	1500 1500 1500 1600
 Wire Wire Line
 	1600 1500 1600 1600
 Wire Wire Line
 	1700 1500 1700 1600
 Wire Wire Line
 	1800 1500 1800 1600
-Text GLabel 2850 1500 1    60   Input ~ 0
-r8
-Text GLabel 2950 1500 1    60   Input ~ 0
-r9
+Text Label 2000 3050 1    60   ~ 0
+SEL6
 Wire Wire Line
-	2850 1500 2850 1600
+	2100 2300 2100 3050
 Wire Wire Line
-	2950 1500 2950 1600
-Text GLabel 4200 1500 1    60   Input ~ 0
-r16
-Text GLabel 3550 1500 1    60   Input ~ 0
-r15
-Text GLabel 4400 1500 1    60   Input ~ 0
-r18
-Text GLabel 4300 1500 1    60   Input ~ 0
-r17
+	2000 2300 2000 3050
+Wire Wire Line
+	2650 3050 2400 3050
+Wire Wire Line
+	1900 2300 1900 3050
+Wire Wire Line
+	4600 2300 4600 3050
+Wire Wire Line
+	4500 2300 4500 3050
+Wire Wire Line
+	4400 2300 4400 3050
+Wire Wire Line
+	4300 2300 4300 3050
+Wire Wire Line
+	4200 2300 4200 3050
+Wire Wire Line
+	3350 2300 3350 3050
+Wire Wire Line
+	3250 2300 3250 3050
+Wire Wire Line
+	3150 2300 3150 3050
+Wire Wire Line
+	3050 2300 3050 3050
+Wire Wire Line
+	3450 2300 3450 3050
+Wire Wire Line
+	4000 3050 3750 3050
+Wire Wire Line
+	4700 1500 4700 1600
+Wire Wire Line
+	4800 1500 4800 1600
 Text GLabel 4800 1500 1    60   Input ~ 0
 r22
-Text GLabel 4700 1500 1    60   Input ~ 0
-r21
-Text GLabel 4600 1500 1    60   Input ~ 0
-r20
-Text GLabel 4500 1500 1    60   Input ~ 0
-r19
 Wire Wire Line
 	4900 1500 4900 1600
 Text GLabel 4900 1500 1    60   Input ~ 0
@@ -312,28 +365,10 @@ Wire Wire Line
 	5650 2000 5650 1500
 Wire Wire Line
 	5400 1650 5400 1500
-$Sheet
-S 4150 1600 800  700 
-U 5817D18C
-F0 "f_r16" 60
-F1 "fet-driver.sch" 60
-F2 "IN0" I B 4200 2300 60 
-F3 "OUT0" I T 4200 1600 60 
-F4 "IN1" I B 4300 2300 60 
-F5 "OUT1" I T 4300 1600 60 
-F6 "IN2" I B 4400 2300 60 
-F7 "OUT2" I T 4400 1600 60 
-F8 "IN3" I B 4500 2300 60 
-F9 "OUT3" I T 4500 1600 60 
-F10 "IN6" I B 4800 2300 60 
-F11 "OUT6" I T 4800 1600 60 
-F12 "IN7" I B 4900 2300 60 
-F13 "OUT7" I T 4900 1600 60 
-F14 "IN4" I B 4600 2300 60 
-F15 "OUT4" I T 4600 1600 60 
-F16 "IN5" I B 4700 2300 60 
-F17 "OUT5" I T 4700 1600 60 
-$EndSheet
+Wire Wire Line
+	4800 2300 4800 3050
+Wire Wire Line
+	4700 2300 4700 3050
 $Comp
 L DeeComponents:74HC595-alt-vdd U15
 U 1 1 581959CD
@@ -346,55 +381,13 @@ F 3 "" H 4450 3750 50  0000 C CNN
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	4900 4450 4900 4950
+	3750 3050 3750 4450
+Wire Wire Line
+	4900 2300 4900 3050
 Wire Wire Line
 	4150 4950 4150 4450
 Wire Wire Line
-	3750 3050 3750 4450
-Wire Wire Line
 	3750 4450 3550 4450
-Text GLabel 4900 4950 3    60   Input ~ 0
-HC595SER
-Text GLabel 4700 4950 3    60   Input ~ 0
-HC595CLK
-Wire Wire Line
-	4600 4850 4600 4450
-Wire Wire Line
-	3250 4850 4600 4850
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR077
-U 1 1 5943B994
-P 2950 4450
-F 0 "#PWR077" H 2950 4200 50  0001 C CNN
-F 1 "GND" H 2955 4277 50  0000 C CNN
-F 2 "" H 2950 4450 50  0000 C CNN
-F 3 "" H 2950 4450 50  0000 C CNN
-	1    2950 4450
-	-1   0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR075
-U 1 1 5943B9C0
-P 2650 4450
-F 0 "#PWR075" H 2650 4200 50  0001 C CNN
-F 1 "GND" H 2655 4277 50  0000 C CNN
-F 2 "" H 2650 4450 50  0000 C CNN
-F 3 "" H 2650 4450 50  0000 C CNN
-	1    2650 4450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2000 4450 2000 4950
-Wire Wire Line
-	1900 4850 3250 4850
-Wire Wire Line
-	1900 4850 1900 4950
-Wire Wire Line
-	2800 4950 2800 4450
-Wire Wire Line
-	2400 3050 2400 4450
-Wire Wire Line
-	2400 4450 2200 4450
 $Comp
 L dotmatrix_64x48-rescue:GND-power #PWR080
 U 1 1 5943B74E
@@ -418,49 +411,37 @@ F 3 "" H 4000 4450 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
+	3350 4450 3350 4950
+Wire Wire Line
+	4900 4450 4900 4950
+Text GLabel 4900 4950 3    60   Input ~ 0
+HC595SER
+Text GLabel 4700 4950 3    60   Input ~ 0
+HC595CLK
+Wire Wire Line
+	4600 4850 4600 4450
+Wire Wire Line
 	4700 4450 4700 4950
 Wire Wire Line
-	4900 2300 4900 3050
+	3250 4850 4600 4850
 Text GLabel 3350 4950 3    60   Input ~ 0
 HC595CLK
 Wire Wire Line
-	3350 4450 3350 4950
-Wire Wire Line
 	3250 4450 3250 4850
-Connection ~ 3250 4850
 Wire Wire Line
 	3050 5800 4400 5800
 Wire Wire Line
 	4400 4450 4400 5800
 Text GLabel 4150 4950 3    60   Input ~ 0
 LEDVDD
-Text GLabel 2800 4950 3    60   Input ~ 0
-LEDVDD
-$Comp
-L dotmatrix_64x48-rescue:SW_Push-Switch SW4
-U 1 1 58183FA7
-P 6200 1750
-F 0 "SW4" H 6200 1884 50  0000 C CNN
-F 1 "SW_PUSH_SMALL_H" H 6200 1884 50  0001 C CNN
-F 2 "components:TACT_SW_SMD_Panasonic-EVPAWBD2A" H 6200 1950 50  0001 C CNN
-F 3 "" H 6200 1950 50  0000 C CNN
-	1    6200 1750
-	-1   0    0    -1  
-$EndComp
-Connection ~ 7000 1650
 Wire Wire Line
-	6000 1500 6450 1500
+	4400 1500 4400 1600
 Wire Wire Line
 	5650 1500 6000 1500
-Connection ~ 7500 1650
 Wire Wire Line
-	6550 1750 6550 1850
+	6000 2100 6100 2100
 Wire Wire Line
-	6650 1850 6650 1700
-Wire Wire Line
-	6650 1700 6400 1700
-Wire Wire Line
-	6400 1700 6400 1750
+	6100 2100 6100 2000
 $Comp
 L dotmatrix_64x48-rescue:SW_Push-Switch SW3
 U 1 1 58181DE2
@@ -473,30 +454,23 @@ F 3 "" H 5850 2200 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 1850 6050 1850
-Wire Wire Line
-	6000 2100 6100 2100
-Wire Wire Line
-	6100 2100 6100 2000
-Wire Wire Line
 	6100 2000 6450 2000
 Wire Wire Line
 	5400 2200 5400 1950
-Wire Wire Line
-	6650 1650 7000 1650
-Wire Wire Line
-	6650 1500 6650 1650
-Connection ~ 6450 1500
 Connection ~ 6450 2000
 Wire Wire Line
-	6450 1500 6650 1500
+	6450 2050 6450 2000
+Wire Wire Line
+	6000 1500 6450 1500
+Wire Wire Line
+	6400 1700 6400 1750
 Wire Wire Line
 	6450 2000 6450 1500
 Wire Wire Line
-	6000 1500 6000 1750
-Wire Wire Line
 	6050 1850 6050 2000
 Connection ~ 6000 1500
+Wire Wire Line
+	6000 1500 6000 1750
 $Comp
 L dotmatrix_64x48-rescue:R-device R50
 U 1 1 59E6F4DB
@@ -521,6 +495,21 @@ F 3 "" H 5400 2200 50  0000 C CNN
 $EndComp
 Connection ~ 5650 1500
 $Comp
+L dotmatrix_64x48-rescue:SW_Push-Switch SW4
+U 1 1 58183FA7
+P 6200 1750
+F 0 "SW4" H 6200 1884 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 6200 1884 50  0001 C CNN
+F 2 "components:TACT_SW_SMD_Panasonic-EVPAWBD2A" H 6200 1950 50  0001 C CNN
+F 3 "" H 6200 1950 50  0000 C CNN
+	1    6200 1750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1700 6400 1700
+Wire Wire Line
+	6550 1850 6050 1850
+$Comp
 L dotmatrix_64x48-rescue:SW_Push-Switch SW5
 U 1 1 58184034
 P 6200 2250
@@ -531,6 +520,10 @@ F 3 "" H 6200 2450 50  0000 C CNN
 	1    6200 2250
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	6850 2200 6850 2050
+Wire Wire Line
+	7000 2050 7000 1650
 $Comp
 L dotmatrix_64x48-rescue:SW_Push-Switch SW6
 U 1 1 58184145
@@ -546,6 +539,217 @@ Wire Wire Line
 	6000 2250 6000 2100
 Text Notes 5200 3900 0    50   ~ 0
 for LEDVDD > 4.5V : use 74HCT595; otherwise use 74HC595
+Wire Wire Line
+	7400 2150 7400 2050
+Wire Wire Line
+	7500 2050 7500 1650
+Wire Wire Line
+	7000 1650 7500 1650
+$Comp
+L dotmatrix_64x48-rescue:SW_Push-Switch SW7
+U 1 1 58184270
+P 7200 2050
+F 0 "SW7" H 7200 2184 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 7200 2184 50  0001 C CNN
+F 2 "components:TACT_SW_SMD_Panasonic-EVPAWBD2A" H 7200 2250 50  0001 C CNN
+F 3 "" H 7200 2250 50  0000 C CNN
+	1    7200 2050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 2200 6850 2200
+Wire Wire Line
+	8000 2050 8000 2200
+Wire Wire Line
+	7950 2250 6400 2250
+Connection ~ 7000 1650
+Connection ~ 7500 1650
+Wire Wire Line
+	6650 1850 6650 1700
+Wire Wire Line
+	6650 1650 7000 1650
+Wire Wire Line
+	6550 1750 6550 1850
+Wire Wire Line
+	6650 1500 6650 1650
+Connection ~ 6450 1500
+Wire Wire Line
+	6450 1500 6650 1500
+Wire Wire Line
+	7950 1950 9150 1950
+Wire Wire Line
+	8000 2050 9200 2050
+Wire Wire Line
+	7500 1650 9350 1650
+Connection ~ 8150 1750
+Wire Wire Line
+	7400 2150 9300 2150
+Connection ~ 9150 1950
+Connection ~ 9200 2050
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR0132
+U 1 1 5C3A7031
+P 8650 3600
+F 0 "#PWR0132" H 8650 3350 50  0001 C CNN
+F 1 "GND" H 8655 3427 50  0000 C CNN
+F 2 "" H 8650 3600 50  0000 C CNN
+F 3 "" H 8650 3600 50  0000 C CNN
+	1    8650 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:SW_Push-Switch SW8
+U 1 1 58184403
+P 7700 2050
+F 0 "SW8" H 7700 2184 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 7700 2184 50  0001 C CNN
+F 2 "components:TACT_SW_SMD_Panasonic-EVPAWBD2A" H 7700 2250 50  0001 C CNN
+F 3 "" H 7700 2250 50  0000 C CNN
+	1    7700 2050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 1750 8150 1750
+Wire Wire Line
+	6650 1850 8100 1850
+Wire Wire Line
+	7950 1950 7950 2250
+Wire Wire Line
+	7900 2350 7900 2050
+Wire Wire Line
+	8050 2350 7900 2350
+Text GLabel 7250 4950 1    60   Input ~ 0
+LEDVDD
+Text GLabel 6950 4950 1    60   Input ~ 0
+LEDVDD
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR086
+U 1 1 5943AB4A
+P 6650 5250
+F 0 "#PWR086" H 6650 5000 50  0001 C CNN
+F 1 "GND" H 6655 5077 50  0000 C CNN
+F 2 "" H 6650 5250 50  0000 C CNN
+F 3 "" H 6650 5250 50  0000 C CNN
+	1    6650 5250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR087
+U 1 1 5943AB76
+P 6950 5250
+F 0 "#PWR087" H 6950 5000 50  0001 C CNN
+F 1 "GND" H 6955 5077 50  0000 C CNN
+F 2 "" H 6950 5250 50  0000 C CNN
+F 3 "" H 6950 5250 50  0000 C CNN
+	1    6950 5250
+	-1   0    0    -1  
+$EndComp
+Text GLabel 6650 4950 1    60   Input ~ 0
+LEDVDD
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR088
+U 1 1 5943ABA2
+P 7250 5250
+F 0 "#PWR088" H 7250 5000 50  0001 C CNN
+F 1 "GND" H 7255 5077 50  0000 C CNN
+F 2 "" H 7250 5250 50  0000 C CNN
+F 3 "" H 7250 5250 50  0000 C CNN
+	1    7250 5250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:C-device C13
+U 1 1 58184657
+P 6650 5100
+F 0 "C13" H 6550 4550 50  0000 L CNN
+F 1 "1u/35V" H 6500 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6765 5009 50  0001 L CNN
+F 3 "" H 6650 5100 50  0000 C CNN
+	1    6650 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:C-device C15
+U 1 1 58184673
+P 7250 5100
+F 0 "C15" H 7200 4550 50  0000 L CNN
+F 1 "1u/35V" H 7200 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7365 5009 50  0001 L CNN
+F 3 "" H 7250 5100 50  0000 C CNN
+	1    7250 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 8850 5050 0    60   Input ~ 0
+HC595SEROUT
+$Comp
+L dotmatrix_64x48-rescue:C-device C14
+U 1 1 58184665
+P 6950 5100
+F 0 "C14" H 6900 4550 50  0000 L CNN
+F 1 "1u/35V" H 6850 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7065 5009 50  0001 L CNN
+F 3 "" H 6950 5100 50  0000 C CNN
+	1    6950 5100
+	1    0    0    -1  
+$EndComp
+Connection ~ 9500 5050
+Text Notes 8150 5000 0    50   ~ 0
+3.1V to 5.0V
+Wire Wire Line
+	9500 5050 9600 5050
+Wire Wire Line
+	8850 5050 9000 5050
+Wire Wire Line
+	9300 5050 9500 5050
+$Comp
+L dotmatrix_64x48-rescue:R-device R?
+U 1 1 5BC0278A
+P 9150 5050
+AR Path="/59A8E319/5BC0278A" Ref="R?"  Part="1" 
+AR Path="/5BC0278A" Ref="R119"  Part="1" 
+AR Path="/58141380/5BC0278A" Ref="R119"  Part="1" 
+F 0 "R119" V 9150 4950 50  0000 L CNN
+F 1 "4.7k" V 9200 4750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9080 5050 50  0001 C CNN
+F 3 "" H 9150 5050 50  0000 C CNN
+	1    9150 5050
+	0    1    -1   0   
+$EndComp
+Text GLabel 9600 5050 2    60   Input ~ 0
+HC595SEROUT_LS
+Text Notes 8100 6200 0    50   ~ 0
+R46 must be installed when HC595SEROUT does not match to 3.3V levels
+Text Notes 9850 5000 0    50   ~ 0
+3.3V
+Wire Wire Line
+	9500 5500 9500 5700
+Wire Wire Line
+	9500 5200 9500 5050
+$Comp
+L dotmatrix_64x48-rescue:R-device R?
+U 1 1 5DE6F14B
+P 9500 5350
+AR Path="/59A8E319/5DE6F14B" Ref="R?"  Part="1" 
+AR Path="/5DE6F14B" Ref="R?"  Part="1" 
+AR Path="/58141380/5DE6F14B" Ref="R46"  Part="1" 
+F 0 "R46" V 9500 5250 50  0000 L CNN
+F 1 "10k DNI" V 9600 5050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9430 5350 50  0001 C CNN
+F 3 "" H 9500 5350 50  0000 C CNN
+	1    9500 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR015
+U 1 1 5DE70132
+P 9500 5700
+F 0 "#PWR015" H 9500 5450 50  0001 C CNN
+F 1 "GND" H 9505 5527 50  0000 C CNN
+F 2 "" H 9500 5700 50  0000 C CNN
+F 3 "" H 9500 5700 50  0000 C CNN
+	1    9500 5700
+	-1   0    0    -1  
+$EndComp
 Text Label 10600 1850 0    60   ~ 0
 SEL2
 Text Label 10600 1950 0    60   ~ 0
@@ -565,6 +769,10 @@ F 3 "" H 10700 1250 50  0000 C CNN
 	1    10700 1250
 	1    0    0    -1  
 $EndComp
+Text Label 10600 2150 0    60   ~ 0
+SEL5
+Text Label 10600 2250 0    60   ~ 0
+SEL6
 $Comp
 L dotmatrix_64x48-rescue:D_Schottky_Small-device D1
 U 1 1 58182A5C
@@ -620,14 +828,19 @@ F 3 "" V 10500 2150 50  0000 C CNN
 	1    10500 2150
 	-1   0    0    1   
 $EndComp
+$Comp
+L dotmatrix_64x48-rescue:D_Schottky_Small-device D6
+U 1 1 58184409
+P 10500 2250
+F 0 "D6" H 10050 2250 50  0000 C CNN
+F 1 "D_Schottky_Small" H 10500 2136 50  0001 C CNN
+F 2 "components:SOD-523-mod" H 10500 2136 50  0001 C CNN
+F 3 "" V 10500 2250 50  0000 C CNN
+	1    10500 2250
+	-1   0    0    1   
+$EndComp
 Text Label 10600 1750 0    60   ~ 0
 SEL1
-Text Notes 10250 1200 0    60   ~ 0
-3.3V
-Text GLabel 10500 1000 0    60   Input ~ 0
-LEDLOGICVDD
-Text Label 9700 1650 0    60   ~ 0
-SWPAD_COM
 Wire Wire Line
 	10700 1400 10700 1650
 Connection ~ 10700 1650
@@ -635,16 +848,14 @@ Wire Wire Line
 	10700 1100 10700 1000
 Wire Wire Line
 	10700 1000 10500 1000
+Text Notes 10250 1200 0    60   ~ 0
+3.3V
+Text GLabel 10500 1000 0    60   Input ~ 0
+LEDLOGICVDD
+Text Label 9700 1650 0    60   ~ 0
+SWPAD_COM
 Text Label 9700 1750 0    60   ~ 0
 SWPAD_LEFT
-Text Label 9700 1950 0    60   ~ 0
-SWPAD_DOWN
-Text Label 9700 2050 0    60   ~ 0
-SWPAD_RIGHT
-Text Label 9700 2150 0    60   ~ 0
-SWPAD_OK
-Text Label 9700 2250 0    60   ~ 0
-SWPAD_CANCEL
 Wire Wire Line
 	10700 1650 10950 1650
 $Comp
@@ -677,116 +888,80 @@ Wire Wire Line
 	10600 3400 10600 3500
 Text Notes 10250 4300 0    50   ~ 0
 place near TVSs
-Wire Wire Line
-	7950 1950 9150 1950
-Wire Wire Line
-	8000 2050 9200 2050
-Wire Wire Line
-	7500 1650 9350 1650
-Connection ~ 8150 1750
+Text Label 9700 1950 0    60   ~ 0
+SWPAD_DOWN
+Text Label 9700 2050 0    60   ~ 0
+SWPAD_RIGHT
+Text Label 9700 2150 0    60   ~ 0
+SWPAD_OK
+Text Label 9700 2250 0    60   ~ 0
+SWPAD_CANCEL
+Text Label 9700 1850 0    60   ~ 0
+SWPAD_UP
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR0133
+U 1 1 5C3C9D74
+P 10000 3600
+F 0 "#PWR0133" H 10000 3350 50  0001 C CNN
+F 1 "GND" H 10005 3427 50  0000 C CNN
+F 2 "" H 10000 3600 50  0000 C CNN
+F 3 "" H 10000 3600 50  0000 C CNN
+	1    10000 3600
+	-1   0    0    -1  
+$EndComp
 Connection ~ 8100 1850
-Wire Wire Line
-	7400 2150 9300 2150
-Wire Wire Line
-	8050 2250 9250 2250
-Wire Wire Line
-	6850 2200 6850 2050
-Wire Wire Line
-	7400 2150 7400 2050
-Wire Wire Line
-	7500 2050 7500 1650
-Wire Wire Line
-	7000 2050 7000 1650
-Wire Wire Line
-	7000 1650 7500 1650
-$Comp
-L dotmatrix_64x48-rescue:SW_Push-Switch SW7
-U 1 1 58184270
-P 7200 2050
-F 0 "SW7" H 7200 2184 50  0000 C CNN
-F 1 "SW_PUSH_SMALL_H" H 7200 2184 50  0001 C CNN
-F 2 "components:TACT_SW_SMD_Panasonic-EVPAWBD2A" H 7200 2250 50  0001 C CNN
-F 3 "" H 7200 2250 50  0000 C CNN
-	1    7200 2050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:SW_Push-Switch SW8
-U 1 1 58184403
-P 7700 2050
-F 0 "SW8" H 7700 2184 50  0000 C CNN
-F 1 "SW_PUSH_SMALL_H" H 7700 2184 50  0001 C CNN
-F 2 "components:TACT_SW_SMD_Panasonic-EVPAWBD2A" H 7700 2250 50  0001 C CNN
-F 3 "" H 7700 2250 50  0000 C CNN
-	1    7700 2050
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6550 1750 8150 1750
-Wire Wire Line
-	8000 2200 6850 2200
-Wire Wire Line
-	6450 2050 6450 2000
-Wire Wire Line
-	8000 2050 8000 2200
 Wire Wire Line
 	8150 3000 8150 1750
 Wire Wire Line
 	9150 3000 9150 1950
 Wire Wire Line
-	9200 3200 9200 2050
-Wire Wire Line
-	6650 1850 8100 1850
-Wire Wire Line
-	7950 1950 7950 2250
-Wire Wire Line
-	7950 2250 6400 2250
-Wire Wire Line
-	7900 2350 7900 2050
-Wire Wire Line
 	8100 3200 8100 1850
-Text Label 9700 1850 0    60   ~ 0
-SWPAD_UP
 Wire Wire Line
-	8150 1750 10400 1750
+	8050 2250 8050 2350
+$Comp
+L dotmatrix_64x48-rescue:SRV05-4-ESD_Protection U23
+U 1 1 5C37A961
+P 8650 3100
+F 0 "U23" H 8650 3778 50  0000 C CNN
+F 1 "CM1293A-04SO" H 8650 3687 50  0000 C CNN
+F 2 "components:SOT-23-6_Handsoldering_mod" H 8650 3100 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 8650 3100 50  0001 C CNN
+	1    8650 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 8550 2600 0    60   Input ~ 0
+LEDLOGICVDD
+Wire Wire Line
+	8150 3200 8100 3200
+Wire Wire Line
+	8050 2250 9250 2250
 Wire Wire Line
 	8100 1850 10400 1850
-Connection ~ 9150 1950
-Wire Wire Line
-	9150 1950 10400 1950
-Connection ~ 9200 2050
-Wire Wire Line
-	9200 2050 10400 2050
-Text Label 10600 2150 0    60   ~ 0
-SEL5
-$Comp
-L dotmatrix_64x48-rescue:D_Schottky_Small-device D6
-U 1 1 58184409
-P 10500 2250
-F 0 "D6" H 10050 2250 50  0000 C CNN
-F 1 "D_Schottky_Small" H 10500 2136 50  0001 C CNN
-F 2 "components:SOD-523-mod" H 10500 2136 50  0001 C CNN
-F 3 "" V 10500 2250 50  0000 C CNN
-	1    10500 2250
-	-1   0    0    1   
-$EndComp
-Text Label 10600 2250 0    60   ~ 0
-SEL6
-Wire Wire Line
-	9800 2600 10000 2600
 Connection ~ 9300 2150
-Wire Wire Line
-	9300 2150 10400 2150
 Connection ~ 9250 2250
 Wire Wire Line
 	9250 2250 10400 2250
 Wire Wire Line
-	9350 2350 9350 1650
+	9150 1950 10400 1950
+Wire Wire Line
+	9200 2050 10400 2050
+Wire Wire Line
+	9300 2150 10400 2150
 Connection ~ 9350 1650
 Wire Wire Line
 	9350 1650 10700 1650
+Wire Wire Line
+	8150 1750 10400 1750
+Wire Wire Line
+	9800 2600 10000 2600
+Wire Wire Line
+	9350 2350 9350 1650
 Text GLabel 9800 2600 0    60   Input ~ 0
 LEDLOGICVDD
+Wire Wire Line
+	8550 2600 8650 2600
+Wire Wire Line
+	9200 3200 9200 2050
 Wire Wire Line
 	9300 3000 9300 2150
 Wire Wire Line
@@ -812,181 +987,6 @@ Wire Wire Line
 	10500 2350 9350 2350
 Text GLabel 10500 3200 2    50   Input ~ 0
 IRLED_K
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR088
-U 1 1 5943ABA2
-P 7250 5250
-F 0 "#PWR088" H 7250 5000 50  0001 C CNN
-F 1 "GND" H 7255 5077 50  0000 C CNN
-F 2 "" H 7250 5250 50  0000 C CNN
-F 3 "" H 7250 5250 50  0000 C CNN
-	1    7250 5250
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8050 2250 8050 2350
-Wire Wire Line
-	8050 2350 7900 2350
-Text GLabel 7250 4950 1    60   Input ~ 0
-LEDVDD
-Text GLabel 6950 4950 1    60   Input ~ 0
-LEDVDD
-$Comp
-L dotmatrix_64x48-rescue:C-device C13
-U 1 1 58184657
-P 6650 5100
-F 0 "C13" H 6550 4550 50  0000 L CNN
-F 1 "1u/35V" H 6500 4650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6765 5009 50  0001 L CNN
-F 3 "" H 6650 5100 50  0000 C CNN
-	1    6650 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR086
-U 1 1 5943AB4A
-P 6650 5250
-F 0 "#PWR086" H 6650 5000 50  0001 C CNN
-F 1 "GND" H 6655 5077 50  0000 C CNN
-F 2 "" H 6650 5250 50  0000 C CNN
-F 3 "" H 6650 5250 50  0000 C CNN
-	1    6650 5250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR087
-U 1 1 5943AB76
-P 6950 5250
-F 0 "#PWR087" H 6950 5000 50  0001 C CNN
-F 1 "GND" H 6955 5077 50  0000 C CNN
-F 2 "" H 6950 5250 50  0000 C CNN
-F 3 "" H 6950 5250 50  0000 C CNN
-	1    6950 5250
-	-1   0    0    -1  
-$EndComp
-Text GLabel 6650 4950 1    60   Input ~ 0
-LEDVDD
-$Comp
-L dotmatrix_64x48-rescue:SRV05-4-ESD_Protection U23
-U 1 1 5C37A961
-P 8650 3100
-F 0 "U23" H 8650 3778 50  0000 C CNN
-F 1 "CM1293A-04SO" H 8650 3687 50  0000 C CNN
-F 2 "components:SOT-23-6_Handsoldering_mod" H 8650 3100 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 8650 3100 50  0001 C CNN
-	1    8650 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR0132
-U 1 1 5C3A7031
-P 8650 3600
-F 0 "#PWR0132" H 8650 3350 50  0001 C CNN
-F 1 "GND" H 8655 3427 50  0000 C CNN
-F 2 "" H 8650 3600 50  0000 C CNN
-F 3 "" H 8650 3600 50  0000 C CNN
-	1    8650 3600
-	-1   0    0    -1  
-$EndComp
-Text GLabel 8550 2600 0    60   Input ~ 0
-LEDLOGICVDD
-Wire Wire Line
-	8550 2600 8650 2600
-Wire Wire Line
-	8150 3200 8100 3200
 Wire Wire Line
 	9150 3200 9200 3200
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR0133
-U 1 1 5C3C9D74
-P 10000 3600
-F 0 "#PWR0133" H 10000 3350 50  0001 C CNN
-F 1 "GND" H 10005 3427 50  0000 C CNN
-F 2 "" H 10000 3600 50  0000 C CNN
-F 3 "" H 10000 3600 50  0000 C CNN
-	1    10000 3600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:C-device C15
-U 1 1 58184673
-P 7250 5100
-F 0 "C15" H 7200 4550 50  0000 L CNN
-F 1 "1u/35V" H 7200 4650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7365 5009 50  0001 L CNN
-F 3 "" H 7250 5100 50  0000 C CNN
-	1    7250 5100
-	1    0    0    -1  
-$EndComp
-Text GLabel 8850 5050 0    60   Input ~ 0
-HC595SEROUT
-Wire Wire Line
-	9500 5050 9600 5050
-Wire Wire Line
-	9500 5500 9500 5700
-$Comp
-L dotmatrix_64x48-rescue:C-device C14
-U 1 1 58184665
-P 6950 5100
-F 0 "C14" H 6900 4550 50  0000 L CNN
-F 1 "1u/35V" H 6850 4650 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7065 5009 50  0001 L CNN
-F 3 "" H 6950 5100 50  0000 C CNN
-	1    6950 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 5050 9000 5050
-Wire Wire Line
-	9300 5050 9500 5050
-Wire Wire Line
-	9500 5200 9500 5050
-Connection ~ 9500 5050
-Text Notes 8150 5000 0    50   ~ 0
-3.1V to 5.0V
-$Comp
-L dotmatrix_64x48-rescue:R-device R?
-U 1 1 5BC0278A
-P 9150 5050
-AR Path="/59A8E319/5BC0278A" Ref="R?"  Part="1" 
-AR Path="/5BC0278A" Ref="R119"  Part="1" 
-AR Path="/58141380/5BC0278A" Ref="R119"  Part="1" 
-F 0 "R119" V 9150 4950 50  0000 L CNN
-F 1 "4.7k" V 9200 4750 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9080 5050 50  0001 C CNN
-F 3 "" H 9150 5050 50  0000 C CNN
-	1    9150 5050
-	0    1    -1   0   
-$EndComp
-Text GLabel 9600 5050 2    60   Input ~ 0
-HC595SEROUT_LS
-$Comp
-L dotmatrix_64x48-rescue:R-device R?
-U 1 1 5DE6F14B
-P 9500 5350
-AR Path="/59A8E319/5DE6F14B" Ref="R?"  Part="1" 
-AR Path="/5DE6F14B" Ref="R?"  Part="1" 
-AR Path="/58141380/5DE6F14B" Ref="R46"  Part="1" 
-F 0 "R46" V 9500 5250 50  0000 L CNN
-F 1 "10k DNI" V 9600 5050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9430 5350 50  0001 C CNN
-F 3 "" H 9500 5350 50  0000 C CNN
-	1    9500 5350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR015
-U 1 1 5DE70132
-P 9500 5700
-F 0 "#PWR015" H 9500 5450 50  0001 C CNN
-F 1 "GND" H 9505 5527 50  0000 C CNN
-F 2 "" H 9500 5700 50  0000 C CNN
-F 3 "" H 9500 5700 50  0000 C CNN
-	1    9500 5700
-	-1   0    0    -1  
-$EndComp
-Text Notes 8100 6200 0    50   ~ 0
-R46 must be installed when HC595SEROUT does not match to 3.3V levels
-Text Notes 9850 5000 0    50   ~ 0
-3.3V
 $EndSCHEMATC

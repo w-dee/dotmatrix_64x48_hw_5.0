@@ -18,6 +18,44 @@ Comment7 ""
 Comment8 ""
 Comment9 ""
 $EndDescr
+Text GLabel 6850 1950 2    60   Input ~ 0
+E_TX
+Text GLabel 6850 1850 2    60   Input ~ 0
+E_RX
+Text GLabel 6850 2150 2    60   Input ~ 0
+RTS
+Text GLabel 6850 2050 2    60   Input ~ 0
+DTR
+Wire Wire Line
+	6700 2150 6050 2150
+Wire Wire Line
+	6850 2250 6150 2250
+Wire Wire Line
+	6600 2050 6250 2050
+Wire Wire Line
+	6250 2050 6250 1850
+Wire Wire Line
+	6700 2050 6700 2150
+Wire Wire Line
+	6850 2150 6850 2250
+Wire Wire Line
+	6600 1250 5350 1250
+Text Label 6600 1250 0    50   ~ 0
+USB3V3
+Wire Wire Line
+	6550 1950 6050 1950
+Wire Wire Line
+	6250 1850 6050 1850
+Wire Wire Line
+	6850 1850 6550 1850
+Wire Wire Line
+	6550 1850 6550 1950
+Wire Wire Line
+	6850 1950 6600 1950
+Wire Wire Line
+	6600 1950 6600 2050
+Wire Wire Line
+	6850 2050 6700 2050
 $Comp
 L DeeComponents:CP2102N-A01-GQFN28 U20
 U 1 1 5BBC7515
@@ -27,17 +65,6 @@ F 1 "CP2102N-A01-GQFN28" H 5475 3137 50  0000 C CNN
 F 2 "components:QFN-28-1EP_5x5mm_Pitch0.5mm-handsoldering" H 5950 800 50  0001 L CNN
 F 3 "http://www.silabs.com/support%20documents/technicaldocs/cp2102n-datasheet.pdf" H 5500 1100 50  0001 C CNN
 	1    5450 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:C-device C71
-U 1 1 5BBCC45B
-P 4000 2350
-F 0 "C71" H 3950 1950 50  0000 L CNN
-F 1 "1u/35V" V 4000 1250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4115 2259 50  0001 L CNN
-F 3 "" H 4000 2350 50  0000 C CNN
-	1    4000 2350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -52,11 +79,308 @@ F 3 "" H 4200 2350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 2150 6050 2150
+	4450 2450 4450 2150
 Wire Wire Line
-	6850 2250 6150 2250
+	4850 2450 4450 2450
+Wire Wire Line
+	4450 3050 4450 2650
+$Comp
+L dotmatrix_64x48-rescue:C-device C71
+U 1 1 5BBCC45B
+P 4000 2350
+F 0 "C71" H 3950 1950 50  0000 L CNN
+F 1 "1u/35V" V 4000 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4115 2259 50  0001 L CNN
+F 3 "" H 4000 2350 50  0000 C CNN
+	1    4000 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6050 2950
+$Comp
+L dotmatrix_64x48-rescue:C-device C69
+U 1 1 5BBCC461
+P 3800 2350
+F 0 "C69" H 3750 1950 50  0000 L CNN
+F 1 "10u/35V" V 3800 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3915 2259 50  0001 L CNN
+F 3 "" H 3800 2350 50  0000 C CNN
+	1    3800 2350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6050 3050
+NoConn ~ 6050 3150
+Wire Wire Line
+	3550 1850 3550 2050
+$Comp
+L dotmatrix_64x48-rescue:LED_Small-device D13
+U 1 1 5BC197DC
+P 2850 1850
+F 0 "D13" V 2896 1782 50  0000 R CNN
+F 1 "Led_Small" V 2805 1782 50  0000 R CNN
+F 2 "components:LED1608_Handsoldering" V 2850 1850 50  0001 C CNN
+F 3 "" V 2850 1850 50  0000 C CNN
+	1    2850 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1850 2950 1850
+Wire Wire Line
+	2750 1850 2550 1850
+Connection ~ 2800 2500
+Wire Wire Line
+	3250 2500 3250 2150
+$Comp
+L dotmatrix_64x48-rescue:USB_OTG-Connector CONN?
+U 1 1 5BBED423
+P 1275 2700
+AR Path="/584C83E3/5BBED423" Ref="CONN?"  Part="1" 
+AR Path="/5BBED423" Ref="CONN?"  Part="1" 
+AR Path="/5BB33F0A/5BBED423" Ref="CONN2"  Part="1" 
+F 0 "CONN2" V 1025 2800 50  0000 L CNN
+F 1 "USB_OTG" V 925 2750 50  0000 L CNN
+F 2 "components:USB_Micro-B_Jing_A01SB141B1-067" V 1261 2888 50  0001 L CNN
+F 3 "" V 1225 2600 50  0000 C CNN
+	1    1275 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:Conn_01x04_Female-Connector J9
+U 1 1 5E1316BB
+P 1900 2150
+F 0 "J9" H 1950 1950 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 1300 1850 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1900 2150 50  0001 C CNN
+F 3 "" H 1900 2150 50  0001 C CNN
+	1    1900 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1575 2500 1800 2500
+NoConn ~ 1575 2900
+Wire Wire Line
+	1800 2350 1800 2500
+Connection ~ 1800 2500
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR020
+U 1 1 5BC2860D
+P 2550 1850
+F 0 "#PWR020" H 2550 1600 50  0001 C CNN
+F 1 "GND" H 2555 1677 50  0000 C CNN
+F 2 "" H 2550 1850 50  0001 C CNN
+F 3 "" H 2550 1850 50  0001 C CNN
+	1    2550 1850
+	1    0    0    -1  
+$EndComp
+Text Label 2550 2500 0    50   ~ 0
+VBUS
+Wire Wire Line
+	1800 2500 2800 2500
+Text Label 3100 2700 0    50   ~ 0
+USBDP
+Text Label 3100 2800 0    50   ~ 0
+USBDN
+Wire Wire Line
+	2800 2500 3250 2500
+Wire Wire Line
+	2800 2850 3300 2850
+Wire Wire Line
+	2450 2700 3450 2700
+Wire Wire Line
+	1175 3200 1225 3200
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR019
+U 1 1 5BBF16CE
+P 1225 3200
+F 0 "#PWR019" H 1225 2950 50  0001 C CNN
+F 1 "GND" H 1230 3027 50  0000 C CNN
+F 2 "" H 1225 3200 50  0001 C CNN
+F 3 "" H 1225 3200 50  0001 C CNN
+	1    1225 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 1225 3200
+Wire Wire Line
+	1225 3200 1275 3200
+Connection ~ 1275 3200
+Wire Wire Line
+	1175 3200 1175 3100
+Wire Wire Line
+	1275 3200 1275 3100
+Wire Wire Line
+	3450 2950 3450 2700
+Wire Wire Line
+	3400 2800 3400 3050
+Wire Wire Line
+	3400 3050 3550 3050
+Wire Wire Line
+	3300 2850 3300 3150
+Wire Wire Line
+	3300 3150 2950 3150
+Wire Wire Line
+	1575 2800 1900 2800
+Wire Wire Line
+	1575 2700 2000 2700
+Wire Wire Line
+	2100 3200 1275 3200
+Wire Wire Line
+	2100 2350 2100 3200
+Wire Wire Line
+	1900 2350 1900 2800
+Connection ~ 1900 2800
+Wire Wire Line
+	2000 2350 2000 2700
+Connection ~ 2000 2700
+Wire Wire Line
+	2800 2850 2800 2500
+Wire Wire Line
+	1900 2800 3400 2800
+Connection ~ 2450 2700
+Wire Wire Line
+	2000 2700 2450 2700
+Connection ~ 4200 1250
+Connection ~ 4400 1250
+$Comp
+L dotmatrix_64x48-rescue:C-device C70
+U 1 1 5BBD1F28
+P 4000 1450
+F 0 "C70" H 3950 1050 50  0000 L CNN
+F 1 "1u/35V" V 4000 1850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4115 1359 50  0001 L CNN
+F 3 "" H 4000 1450 50  0000 C CNN
+	1    4000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:C-device C67
+U 1 1 5BBD1F2E
+P 3800 1450
+F 0 "C67" H 3750 1050 50  0000 L CNN
+F 1 "22u/6.3V" V 3800 1800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3915 1359 50  0001 L CNN
+F 3 "" H 3800 1450 50  0000 C CNN
+	1    3800 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 4000 1250
+Connection ~ 5350 1250
+Wire Wire Line
+	4700 1550 4850 1550
+Wire Wire Line
+	4600 1950 4850 1950
+NoConn ~ 4850 1850
+Connection ~ 4450 2150
+Wire Wire Line
+	4850 2150 4450 2150
+Wire Wire Line
+	4600 2050 4600 1950
+Wire Wire Line
+	4850 2550 4350 2550
+Wire Wire Line
+	4450 2650 4850 2650
+Wire Wire Line
+	4200 2200 4200 2150
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR053
+U 1 1 5BBE9D25
+P 4200 2500
+F 0 "#PWR053" H 4200 2250 50  0001 C CNN
+F 1 "GND" H 4205 2327 50  0000 C CNN
+F 2 "" H 4200 2500 50  0001 C CNN
+F 3 "" H 4200 2500 50  0001 C CNN
+	1    4200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR051
+U 1 1 5BBE9D2B
+P 4000 2500
+F 0 "#PWR051" H 4000 2250 50  0001 C CNN
+F 1 "GND" H 4005 2327 50  0000 C CNN
+F 2 "" H 4000 2500 50  0001 C CNN
+F 3 "" H 4000 2500 50  0001 C CNN
+	1    4000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2550 4350 2950
+Wire Wire Line
+	4200 2150 4000 2150
+Wire Wire Line
+	3800 2200 3800 2150
+Wire Wire Line
+	4000 2200 4000 2150
+Wire Wire Line
+	4000 2150 3800 2150
+$Comp
+L dotmatrix_64x48-rescue:C-device C73
+U 1 1 5BBD1F34
+P 4200 1450
+F 0 "C73" H 4150 1050 50  0000 L CNN
+F 1 "0.1u/35V" V 4200 1800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4315 1359 50  0001 L CNN
+F 3 "" H 4200 1450 50  0000 C CNN
+	1    4200 1450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6050 1550
+Wire Wire Line
+	6150 1750 6050 1750
+NoConn ~ 6050 1650
+Wire Wire Line
+	6150 2250 6150 1750
+NoConn ~ 6050 2050
+NoConn ~ 6050 2250
+NoConn ~ 6100 2350
+NoConn ~ 6100 2450
+NoConn ~ 6100 2550
+NoConn ~ 6100 2650
+NoConn ~ 6100 2750
+NoConn ~ 6050 2850
+Connection ~ 4200 2150
+Wire Wire Line
+	4450 2150 4200 2150
+$Comp
+L dotmatrix_64x48-rescue:GND-power #PWR025
+U 1 1 5BBE9D31
+P 3800 2500
+F 0 "#PWR025" H 3800 2250 50  0001 C CNN
+F 1 "GND" H 3805 2327 50  0000 C CNN
+F 2 "" H 3800 2500 50  0001 C CNN
+F 3 "" H 3800 2500 50  0001 C CNN
+	1    3800 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 2150
+Connection ~ 4000 2150
 Wire Wire Line
 	4200 1250 4000 1250
+Wire Wire Line
+	4200 1300 4200 1250
+Wire Wire Line
+	3800 1300 3800 1250
+Wire Wire Line
+	4000 1300 4000 1250
+Wire Wire Line
+	4000 1250 3800 1250
+$Comp
+L dotmatrix_64x48-rescue:R-device R117
+U 1 1 5BC0FE7D
+P 4550 1550
+F 0 "R117" V 4550 1450 50  0000 L CNN
+F 1 "1k" V 4650 1600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4480 1550 50  0001 C CNN
+F 3 "" H 4550 1550 50  0000 C CNN
+	1    4550 1550
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4200 1250 4400 1250
+Wire Wire Line
+	4400 1550 4400 1250
+Wire Wire Line
+	4400 1250 5350 1250
+Wire Wire Line
+	3550 2050 4600 2050
 $Comp
 L dotmatrix_64x48-rescue:GND-power #PWR052
 U 1 1 5BBDC36A
@@ -91,103 +415,6 @@ F 3 "" H 3800 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dotmatrix_64x48-rescue:R-device R117
-U 1 1 5BC0FE7D
-P 4550 1550
-F 0 "R117" V 4550 1450 50  0000 L CNN
-F 1 "1k" V 4650 1600 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 4480 1550 50  0001 C CNN
-F 3 "" H 4550 1550 50  0000 C CNN
-	1    4550 1550
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	4200 1300 4200 1250
-Connection ~ 4200 1250
-Wire Wire Line
-	4200 1250 4400 1250
-Wire Wire Line
-	4400 1550 4400 1250
-Connection ~ 4400 1250
-Wire Wire Line
-	6600 1250 5350 1250
-Text Label 6600 1250 0    50   ~ 0
-USB3V3
-Wire Wire Line
-	6850 1850 6550 1850
-Wire Wire Line
-	6550 1850 6550 1950
-Wire Wire Line
-	6550 1950 6050 1950
-Wire Wire Line
-	6850 1950 6600 1950
-Wire Wire Line
-	6250 1850 6050 1850
-$Comp
-L dotmatrix_64x48-rescue:C-device C70
-U 1 1 5BBD1F28
-P 4000 1450
-F 0 "C70" H 3950 1050 50  0000 L CNN
-F 1 "1u/35V" V 4000 1850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4115 1359 50  0001 L CNN
-F 3 "" H 4000 1450 50  0000 C CNN
-	1    4000 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:C-device C73
-U 1 1 5BBD1F34
-P 4200 1450
-F 0 "C73" H 4150 1050 50  0000 L CNN
-F 1 "0.1u/35V" V 4200 1800 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4315 1359 50  0001 L CNN
-F 3 "" H 4200 1450 50  0000 C CNN
-	1    4200 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 2050 6250 2050
-Wire Wire Line
-	6250 2050 6250 1850
-Wire Wire Line
-	6600 1950 6600 2050
-Wire Wire Line
-	6700 2050 6700 2150
-Wire Wire Line
-	6850 2050 6700 2050
-Wire Wire Line
-	6850 2150 6850 2250
-$Comp
-L dotmatrix_64x48-rescue:C-device C67
-U 1 1 5BBD1F2E
-P 3800 1450
-F 0 "C67" H 3750 1050 50  0000 L CNN
-F 1 "22u/6.3V" V 3800 1800 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3915 1359 50  0001 L CNN
-F 3 "" H 3800 1450 50  0000 C CNN
-	1    3800 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 1250 5350 1250
-Connection ~ 5350 1250
-NoConn ~ 6050 1550
-Text GLabel 6850 1950 2    60   Input ~ 0
-E_TX
-Text GLabel 6850 1850 2    60   Input ~ 0
-E_RX
-Text GLabel 6850 2150 2    60   Input ~ 0
-RTS
-Text GLabel 6850 2050 2    60   Input ~ 0
-DTR
-Wire Wire Line
-	3800 1300 3800 1250
-Wire Wire Line
-	4000 1300 4000 1250
-Connection ~ 4000 1250
-Wire Wire Line
-	4000 1250 3800 1250
-$Comp
 L dotmatrix_64x48-rescue:R-device R116
 U 1 1 5BC197E2
 P 3250 1850
@@ -201,172 +428,9 @@ $EndComp
 Wire Wire Line
 	3400 1850 3550 1850
 Wire Wire Line
-	3550 1850 3550 2050
-$Comp
-L dotmatrix_64x48-rescue:USB_OTG-Connector CONN?
-U 1 1 5BBED423
-P 1275 2700
-AR Path="/584C83E3/5BBED423" Ref="CONN?"  Part="1" 
-AR Path="/5BBED423" Ref="CONN?"  Part="1" 
-AR Path="/5BB33F0A/5BBED423" Ref="CONN2"  Part="1" 
-F 0 "CONN2" V 1025 2800 50  0000 L CNN
-F 1 "USB_OTG" V 925 2750 50  0000 L CNN
-F 2 "components:USB_Micro-B_Jing_A01SB141B1-067" V 1261 2888 50  0001 L CNN
-F 3 "" V 1225 2600 50  0000 C CNN
-	1    1275 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:Conn_01x04_Female-Connector J9
-U 1 1 5E1316BB
-P 1900 2150
-F 0 "J9" H 1950 1950 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 1300 1850 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1900 2150 50  0001 C CNN
-F 3 "" H 1900 2150 50  0001 C CNN
-	1    1900 2150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1575 2500 1800 2500
-Wire Wire Line
-	1800 2350 1800 2500
-Connection ~ 1800 2500
-Wire Wire Line
-	1575 2800 1900 2800
-Wire Wire Line
-	1575 2700 2000 2700
-$Comp
-L dotmatrix_64x48-rescue:LED_Small-device D13
-U 1 1 5BC197DC
-P 2850 1850
-F 0 "D13" V 2896 1782 50  0000 R CNN
-F 1 "Led_Small" V 2805 1782 50  0000 R CNN
-F 2 "components:LED1608_Handsoldering" V 2850 1850 50  0001 C CNN
-F 3 "" V 2850 1850 50  0000 C CNN
-	1    2850 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 1850 2950 1850
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR020
-U 1 1 5BC2860D
-P 2550 1850
-F 0 "#PWR020" H 2550 1600 50  0001 C CNN
-F 1 "GND" H 2555 1677 50  0000 C CNN
-F 2 "" H 2550 1850 50  0001 C CNN
-F 3 "" H 2550 1850 50  0001 C CNN
-	1    2550 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2750 1850 2550 1850
-Connection ~ 2800 2500
-Text Label 2550 2500 0    50   ~ 0
-VBUS
-Wire Wire Line
-	1800 2500 2800 2500
-Text Label 3100 2700 0    50   ~ 0
-USBDP
-Text Label 3100 2800 0    50   ~ 0
-USBDN
-Wire Wire Line
-	2800 2850 2800 2500
-Wire Wire Line
-	2800 2500 3250 2500
-Wire Wire Line
-	2800 2850 3300 2850
-Wire Wire Line
-	1175 3200 1225 3200
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR019
-U 1 1 5BBF16CE
-P 1225 3200
-F 0 "#PWR019" H 1225 2950 50  0001 C CNN
-F 1 "GND" H 1230 3027 50  0000 C CNN
-F 2 "" H 1225 3200 50  0001 C CNN
-F 3 "" H 1225 3200 50  0001 C CNN
-	1    1225 3200
-	1    0    0    -1  
-$EndComp
-Connection ~ 1225 3200
-Wire Wire Line
-	1225 3200 1275 3200
-Connection ~ 1275 3200
-Wire Wire Line
-	1175 3200 1175 3100
-Wire Wire Line
-	1275 3200 1275 3100
-NoConn ~ 1575 2900
-Wire Wire Line
-	2100 3200 1275 3200
-Wire Wire Line
-	4200 2200 4200 2150
-Connection ~ 4200 2150
-Wire Wire Line
-	4450 2450 4450 2150
-Connection ~ 4450 2150
-Wire Wire Line
-	4450 2150 4200 2150
-Wire Wire Line
-	3550 2050 4600 2050
-Wire Wire Line
-	4850 2150 4450 2150
-Wire Wire Line
-	4850 2450 4450 2450
-Wire Wire Line
-	4700 1550 4850 1550
-Wire Wire Line
-	4600 2050 4600 1950
-Wire Wire Line
-	4600 1950 4850 1950
-NoConn ~ 4850 1850
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR053
-U 1 1 5BBE9D25
-P 4200 2500
-F 0 "#PWR053" H 4200 2250 50  0001 C CNN
-F 1 "GND" H 4205 2327 50  0000 C CNN
-F 2 "" H 4200 2500 50  0001 C CNN
-F 3 "" H 4200 2500 50  0001 C CNN
-	1    4200 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR051
-U 1 1 5BBE9D2B
-P 4000 2500
-F 0 "#PWR051" H 4000 2250 50  0001 C CNN
-F 1 "GND" H 4005 2327 50  0000 C CNN
-F 2 "" H 4000 2500 50  0001 C CNN
-F 3 "" H 4000 2500 50  0001 C CNN
-	1    4000 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L dotmatrix_64x48-rescue:GND-power #PWR025
-U 1 1 5BBE9D31
-P 3800 2500
-F 0 "#PWR025" H 3800 2250 50  0001 C CNN
-F 1 "GND" H 3805 2327 50  0000 C CNN
-F 2 "" H 3800 2500 50  0001 C CNN
-F 3 "" H 3800 2500 50  0001 C CNN
-	1    3800 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 3050 3550 3750
+	3250 2150 3800 2150
 Wire Wire Line
 	3550 3050 4450 3050
-Wire Wire Line
-	4850 2550 4350 2550
-Wire Wire Line
-	4350 2550 4350 2950
-Wire Wire Line
-	4450 3050 4450 2650
-Wire Wire Line
-	4450 2650 4850 2650
 $Comp
 L dotmatrix_64x48-rescue:GND-power #PWR054
 U 1 1 5BC0208A
@@ -390,54 +454,11 @@ F 3 "" H 5450 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 2250 6150 1750
-Wire Wire Line
-	6150 1750 6050 1750
-NoConn ~ 6050 1650
-NoConn ~ 6050 2050
-NoConn ~ 6050 2250
-NoConn ~ 6100 2350
-NoConn ~ 6100 2450
-NoConn ~ 6100 2550
-NoConn ~ 6100 2650
-NoConn ~ 6100 2750
-NoConn ~ 6050 2850
-NoConn ~ 6050 2950
-$Comp
-L dotmatrix_64x48-rescue:C-device C69
-U 1 1 5BBCC461
-P 3800 2350
-F 0 "C69" H 3750 1950 50  0000 L CNN
-F 1 "10u/35V" V 3800 1250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3915 2259 50  0001 L CNN
-F 3 "" H 3800 2350 50  0000 C CNN
-	1    3800 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 2150 4000 2150
-NoConn ~ 6050 3050
-NoConn ~ 6050 3150
-Wire Wire Line
-	3800 2200 3800 2150
-Connection ~ 3800 2150
-Connection ~ 4000 2150
-Wire Wire Line
-	3250 2500 3250 2150
-Wire Wire Line
-	3250 2150 3800 2150
-Wire Wire Line
-	4000 2200 4000 2150
-Wire Wire Line
-	4000 2150 3800 2150
-Wire Wire Line
 	4350 2950 3450 2950
 Wire Wire Line
-	3450 2950 3450 2700
+	3550 3750 3450 3750
 Wire Wire Line
-	3400 2800 3400 3050
-Wire Wire Line
-	3400 3050 3550 3050
+	3450 3550 3500 3550
 $Comp
 L dotmatrix_64x48-rescue:GND-power #PWR0136
 U 1 1 5C655732
@@ -454,6 +475,12 @@ Wire Wire Line
 	2950 4150 2450 4150
 Wire Wire Line
 	2450 4150 2450 3750
+Wire Wire Line
+	3500 3550 3500 4150
+Wire Wire Line
+	2950 4150 3500 4150
+Wire Wire Line
+	3550 3050 3550 3750
 $Comp
 L dotmatrix_64x48-rescue:SRV05-4-ESD_Protection U25
 U 1 1 5C65572B
@@ -466,33 +493,6 @@ F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 2950 3650 50  0001 C 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 2850 3300 3150
-Wire Wire Line
 	2450 3550 2450 2700
-Wire Wire Line
-	2450 2700 3450 2700
-Wire Wire Line
-	1900 2800 3400 2800
-Wire Wire Line
-	3300 3150 2950 3150
-Wire Wire Line
-	3550 3750 3450 3750
 Connection ~ 3550 3050
-Wire Wire Line
-	3450 3550 3500 3550
-Wire Wire Line
-	3500 3550 3500 4150
-Wire Wire Line
-	2950 4150 3500 4150
-Connection ~ 2450 2700
-Wire Wire Line
-	2100 2350 2100 3200
-Wire Wire Line
-	1900 2350 1900 2800
-Connection ~ 1900 2800
-Wire Wire Line
-	2000 2350 2000 2700
-Connection ~ 2000 2700
-Wire Wire Line
-	2000 2700 2450 2700
 $EndSCHEMATC
