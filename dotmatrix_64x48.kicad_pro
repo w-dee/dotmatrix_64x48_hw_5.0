@@ -445,6 +445,7 @@
           "Net-(C64-Pad1)",
           "Net-(C66-Pad1)",
           "Net-(C72-Pad1)",
+          "Net-(C80-Pad2)",
           "Net-(CONN2-Pad4)",
           "Net-(D13-Pad2)",
           "Net-(D8-Pad2)",
@@ -477,8 +478,8 @@
           "Net-(Q29-Pad1)",
           "Net-(Q30-Pad1)",
           "Net-(Q30-Pad3)",
-          "Net-(Q31-Pad1)",
           "Net-(Q31-Pad2)",
+          "Net-(Q31-Pad3)",
           "Net-(Q4-Pad1)",
           "Net-(Q5-Pad1)",
           "Net-(Q6-Pad1)",
@@ -810,7 +811,7 @@
   },
   "sheets": [
     [
-      "ae9d2ee1-4f27-4df6-bb83-550ee67178dd",
+      "1e1913c9-8972-4aa7-b2e6-0f8c0fcdfc17",
       ""
     ],
     [
