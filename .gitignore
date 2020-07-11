@@ -22,7 +22,6 @@ _autosave-*
 *.xml
 *.csv
 *.svg
-*.pdf
 
 # private information
 fp-lib-table
