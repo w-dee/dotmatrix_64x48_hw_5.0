@@ -438,7 +438,6 @@
           "Net-(C31-Pad1)",
           "Net-(C34-Pad1)",
           "Net-(C35-Pad2)",
-          "Net-(C35-Pad2)_1",
           "Net-(C55-Pad1)",
           "Net-(C55-Pad2)",
           "Net-(C56-Pad2)",
@@ -478,7 +477,6 @@
           "Net-(Q29-Pad1)",
           "Net-(Q30-Pad1)",
           "Net-(Q30-Pad3)",
-          "Net-(Q31-Pad2)",
           "Net-(Q31-Pad3)",
           "Net-(Q4-Pad1)",
           "Net-(Q5-Pad1)",
@@ -573,6 +571,7 @@
           "RTS",
           "SCL",
           "SDA",
+          "SU_SEL",
           "VCC",
           "ce0",
           "ce1",
@@ -811,7 +810,7 @@
   },
   "sheets": [
     [
-      "1e1913c9-8972-4aa7-b2e6-0f8c0fcdfc17",
+      "d5715237-081f-45e2-824f-986074fa83c9",
       ""
     ],
     [
