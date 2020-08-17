@@ -1,4 +1,4 @@
-(kicad_sch (version 20200618) (host eeschema "5.99.0-unknown-1463dd1~88~ubuntu18.04.1")
+(kicad_sch (version 20200618) (host eeschema "5.99.0-unknown-7340c97~89~ubuntu18.04.1")
 
   (page 1 10)
 
@@ -1142,15 +1142,15 @@
   (junction (at 262.89 22.86) (diameter 0) (color 0 0 0 0))
   (junction (at 271.78 25.4) (diameter 0) (color 0 0 0 0))
 
-  (no_connect (at 109.22 73.66))
-  (no_connect (at 99.06 73.66))
-  (no_connect (at 101.6 73.66))
-  (no_connect (at 48.26 87.63))
-  (no_connect (at 104.14 73.66))
-  (no_connect (at 151.13 137.16))
-  (no_connect (at 96.52 73.66))
   (no_connect (at 106.68 73.66))
+  (no_connect (at 104.14 73.66))
+  (no_connect (at 48.26 87.63))
+  (no_connect (at 109.22 73.66))
+  (no_connect (at 96.52 73.66))
   (no_connect (at 125.73 27.94))
+  (no_connect (at 101.6 73.66))
+  (no_connect (at 151.13 137.16))
+  (no_connect (at 99.06 73.66))
 
   (wire (pts (xy 20.32 92.71) (xy 39.37 92.71))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -4356,6 +4356,9 @@
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005da0235c"
       (reference "#PWR0126") (unit 1)
     )
+    (path "/00000000-0000-0000-0000-000059a82f84/33c680d5-4c4b-4e4e-bd9a-8760665ef25e"
+      (reference "#PWR0130") (unit 1)
+    )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-000057a2d136"
       (reference "#PWR0134") (unit 1)
     )
@@ -4484,6 +4487,9 @@
     )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005ddd7208"
       (reference "C79") (unit 1)
+    )
+    (path "/00000000-0000-0000-0000-000059a82f84/5b244e60-9a69-4605-ba0e-2776d0c17ae6"
+      (reference "C81") (unit 1)
     )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-000057a2cb58"
       (reference "CONN1") (unit 1)

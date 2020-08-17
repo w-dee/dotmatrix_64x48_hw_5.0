@@ -154,7 +154,8 @@
         }
       ],
       "zones_use_no_outline": false
-    }
+    },
+    "layer_presets": []
   },
   "boards": [],
   "cvpcb": {
@@ -348,19 +349,6 @@
         "diff_pair_width": 0.2,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "Default",
-        "nets": [],
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4
-      },
-      {
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
         "name": "HighPower",
         "nets": [],
         "track_width": 0.25,
@@ -396,7 +384,8 @@
     ],
     "meta": {
       "version": 0
-    }
+    },
+    "net_colors": null
   },
   "pcbnew": {
     "last_paths": {
@@ -434,7 +423,7 @@
   },
   "sheets": [
     [
-      "d5715237-081f-45e2-824f-986074fa83c9",
+      "9fd3ebce-f88d-4336-a36a-70114be99d41",
       ""
     ],
     [
