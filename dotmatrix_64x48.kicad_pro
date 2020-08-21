@@ -443,12 +443,13 @@
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
+    "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
   "sheets": [
     [
-      "9fd3ebce-f88d-4336-a36a-70114be99d41",
+      "4aac4131-edec-453c-ad50-b1162aa1f566",
       ""
     ],
     [
