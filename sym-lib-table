@@ -1,5 +1,5 @@
 (sym_lib_table
-  (lib (name "DeeComponents")(type "Legacy")(uri "/workspace/kicad/my-kicad-library/components/DeeComponents.lib")(options "")(descr ""))
+  (lib (name "DeeComponents")(type "KiCad")(uri "/workspace/kicad/my-kicad-library/components/DeeComponents.kicad_sym")(options "")(descr ""))
   (lib (name "aod403")(type "Legacy")(uri "/workspace/kicad/my-kicad-library/components/aod403.lib")(options "")(descr ""))
   (lib (name "ESP32-footprints-Shem-Lib")(type "Legacy")(uri "/workspace/kicad/my-kicad-library/components/ESP32-footprints-Shem-Lib.lib")(options "")(descr ""))
   (lib (name "bb-ch340t")(type "Legacy")(uri "/workspace/kicad/my-kicad-library/components/bb-ch340t.lib")(options "")(descr ""))

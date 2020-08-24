@@ -25,9 +25,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 0.9906,
+          "width": 2.0066
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -100,29 +100,28 @@
         "solder_mask_clearance": 0.19999999999999998,
         "solder_mask_min_width": 0.0,
         "solder_paste_clearance": 0.0,
-        "solder_paste_margin_ratio": 0.0
+        "solder_paste_margin_ratio": -0.0
       },
       "track_widths": [
         0.25,
-        0.16,
+        0.25,
         0.25,
         0.4,
+        0.4,
+        0.5,
         0.5,
         0.6,
+        0.6,
         0.8,
+        0.8,
+        1.5,
         1.5,
         2.3,
-        0.25,
-        0.4,
-        0.5,
-        0.6,
-        0.8,
-        1.5,
         2.3
       ],
       "via_dimensions": [
         {
-          "diameter": 0.8,
+          "diameter": 0.9,
           "drill": 0.4
         },
         {
@@ -134,20 +133,20 @@
           "drill": 0.4
         },
         {
-          "diameter": 1.2,
-          "drill": 0.5
-        },
-        {
-          "diameter": 2.3,
-          "drill": 0.8
-        },
-        {
           "diameter": 0.9,
           "drill": 0.4
         },
         {
           "diameter": 1.2,
           "drill": 0.5
+        },
+        {
+          "diameter": 1.2,
+          "drill": 0.5
+        },
+        {
+          "diameter": 2.3,
+          "drill": 0.8
         },
         {
           "diameter": 2.3,
@@ -354,7 +353,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "track_width": 0.25,
-        "via_diameter": 0.8,
+        "via_diameter": 0.9,
         "via_drill": 0.4,
         "wire_width": 6.0
       },
@@ -369,9 +368,9 @@
         "microvia_drill": 0.1,
         "name": "HighPower",
         "nets": [],
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "track_width": 1.5,
+        "via_diameter": 2.3,
+        "via_drill": 0.8,
         "wire_width": 6.0
       },
       {
@@ -385,9 +384,9 @@
         "microvia_drill": 0.1,
         "name": "LEDRows",
         "nets": [],
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "track_width": 0.5,
+        "via_diameter": 1.1,
+        "via_drill": 0.5,
         "wire_width": 6.0
       },
       {
@@ -401,9 +400,9 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "nets": [],
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "track_width": 0.8,
+        "via_diameter": 1.1,
+        "via_drill": 0.5,
         "wire_width": 6.0
       }
     ],
@@ -449,7 +448,7 @@
   },
   "sheets": [
     [
-      "4aac4131-edec-453c-ad50-b1162aa1f566",
+      "235ac919-6153-4f40-9321-2ca8faa0e3fe",
       ""
     ],
     [

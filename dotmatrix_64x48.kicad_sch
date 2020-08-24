@@ -1,4 +1,4 @@
-(kicad_sch (version 20200714) (host eeschema "5.99.0-unknown-e5f2015a9~89~ubuntu18.04.1")
+(kicad_sch (version 20200714) (host eeschema "5.99.0-unknown-3ddee6503~89~ubuntu18.04.1")
 
   (page 1 10)
 
@@ -1380,15 +1380,15 @@
   (junction (at 262.89 22.86) (diameter 0.3048) (color 0 0 0 0))
   (junction (at 271.78 25.4) (diameter 0.3048) (color 0 0 0 0))
 
+  (no_connect (at 48.26 87.63))
   (no_connect (at 125.73 27.94))
   (no_connect (at 104.14 73.66))
-  (no_connect (at 99.06 73.66))
-  (no_connect (at 48.26 87.63))
-  (no_connect (at 101.6 73.66))
-  (no_connect (at 109.22 73.66))
-  (no_connect (at 106.68 73.66))
   (no_connect (at 151.13 137.16))
+  (no_connect (at 109.22 73.66))
   (no_connect (at 96.52 73.66))
+  (no_connect (at 99.06 73.66))
+  (no_connect (at 101.6 73.66))
+  (no_connect (at 106.68 73.66))
 
   (wire (pts (xy 20.32 92.71) (xy 39.37 92.71))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -3869,7 +3869,7 @@
       (reference "J8") (unit 1)
     )
     (path "/00000000-0000-0000-0000-000057bb11db/f1b3c346-e518-4c58-a488-5ca223506c32"
-      (reference "L?") (unit 1)
+      (reference "L8") (unit 1)
     )
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005bb50e0e"
       (reference "LED49") (unit 1)
@@ -4825,9 +4825,6 @@
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005bbc789b"
       (reference "U19") (unit 1)
     )
-    (path "/00000000-0000-0000-0000-00005bb33f0a/00000000-0000-0000-0000-00005bbf16ce"
-      (reference "#PWR019") (unit 1)
-    )
     (path "/00000000-0000-0000-0000-00005bb33f0a/00000000-0000-0000-0000-00005bc2860d"
       (reference "#PWR020") (unit 1)
     )
@@ -4855,8 +4852,17 @@
     (path "/00000000-0000-0000-0000-00005bb33f0a/00000000-0000-0000-0000-00005bc069e8"
       (reference "#PWR067") (unit 1)
     )
+    (path "/00000000-0000-0000-0000-00005bb33f0a/40fe4d8a-b2c0-49d5-a577-d8fbe689bfbf"
+      (reference "#PWR0131") (unit 1)
+    )
     (path "/00000000-0000-0000-0000-00005bb33f0a/00000000-0000-0000-0000-00005c655732"
       (reference "#PWR0136") (unit 1)
+    )
+    (path "/00000000-0000-0000-0000-00005bb33f0a/cf5bb0e0-e898-4489-a73b-5fcffc6ffd09"
+      (reference "#PWR0140") (unit 1)
+    )
+    (path "/00000000-0000-0000-0000-00005bb33f0a/740a00b7-9139-4572-96dc-733cd34f58d6"
+      (reference "#PWR0143") (unit 1)
     )
     (path "/00000000-0000-0000-0000-00005bb33f0a/00000000-0000-0000-0000-00005bbd1f2e"
       (reference "C67") (unit 1)
@@ -4876,20 +4882,35 @@
     (path "/00000000-0000-0000-0000-00005bb33f0a/00000000-0000-0000-0000-00005bbcc467"
       (reference "C74") (unit 1)
     )
-    (path "/00000000-0000-0000-0000-00005bb33f0a/00000000-0000-0000-0000-00005bbed423"
-      (reference "CONN2") (unit 1)
-    )
     (path "/00000000-0000-0000-0000-00005bb33f0a/00000000-0000-0000-0000-00005bc197dc"
       (reference "D13") (unit 1)
     )
-    (path "/00000000-0000-0000-0000-00005bb33f0a/00000000-0000-0000-0000-00005e1316bb"
+    (path "/00000000-0000-0000-0000-00005bb33f0a/a809659a-a2c4-4518-a94d-fa6191bdfb97"
       (reference "J9") (unit 1)
+    )
+    (path "/00000000-0000-0000-0000-00005bb33f0a/ded6e71f-c357-4925-808e-0d2db4d233ba"
+      (reference "R81") (unit 1)
+    )
+    (path "/00000000-0000-0000-0000-00005bb33f0a/3c6d35cd-0040-4c8a-b46c-b1a26f672f4c"
+      (reference "R98") (unit 1)
     )
     (path "/00000000-0000-0000-0000-00005bb33f0a/00000000-0000-0000-0000-00005bc197e2"
       (reference "R116") (unit 1)
     )
     (path "/00000000-0000-0000-0000-00005bb33f0a/00000000-0000-0000-0000-00005bc0fe7d"
       (reference "R117") (unit 1)
+    )
+    (path "/00000000-0000-0000-0000-00005bb33f0a/6d3405ea-81c6-4d14-a736-af1c6062dc47"
+      (reference "R128") (unit 1)
+    )
+    (path "/00000000-0000-0000-0000-00005bb33f0a/fae1fa3a-e43d-4a93-8e6e-58853d5fd1b7"
+      (reference "R133") (unit 1)
+    )
+    (path "/00000000-0000-0000-0000-00005bb33f0a/e8414b46-161f-4498-9b2e-41da446ea8b5"
+      (reference "R134") (unit 1)
+    )
+    (path "/00000000-0000-0000-0000-00005bb33f0a/89d3a403-fd74-450a-b817-a8471389b2a6"
+      (reference "R135") (unit 1)
     )
     (path "/00000000-0000-0000-0000-00005bb33f0a/00000000-0000-0000-0000-00005bbc7515"
       (reference "U20") (unit 1)

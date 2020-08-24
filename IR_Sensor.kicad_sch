@@ -1,4 +1,4 @@
-(kicad_sch (version 20200714) (host eeschema "5.99.0-unknown-e5f2015a9~89~ubuntu18.04.1")
+(kicad_sch (version 20200714) (host eeschema "5.99.0-unknown-3ddee6503~89~ubuntu18.04.1")
 
   (page 2 10)
 
@@ -1512,7 +1512,7 @@
   (symbol (lib_id "dotmatrix_64x48-rescue:Ferrite_Bead_Small-device") (at 27.94 20.32 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid "f1b3c346-e518-4c58-a488-5ca223506c32")
-    (property "Reference" "L?" (id 0) (at 27.94 15.7988 90))
+    (property "Reference" "L8" (id 0) (at 27.94 15.7988 90))
     (property "Value" "BLM21PG331SN 300R@100MHz" (id 1) (at 29.21 13.97 90))
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (id 2) (at 27.94 20.32 0)
       (effects (font (size 1.27 1.27)) hide)
