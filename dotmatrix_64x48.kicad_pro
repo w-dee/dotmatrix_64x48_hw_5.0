@@ -25,9 +25,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.9906,
-          "width": 2.0066
+          "drill": 3.0,
+          "height": 3.5,
+          "width": 3.5
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -325,7 +325,8 @@
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "similar_labels": "error",
-      "unresolved_variable": "error"
+      "unresolved_variable": "error",
+      "wire_dangling": "error"
     }
   },
   "libraries": {
@@ -444,7 +445,7 @@
   },
   "sheets": [
     [
-      "71b13fdf-77c6-48b5-aa10-be12e59164f4",
+      "a1ef775a-cced-49e7-a6b8-358633c38602",
       ""
     ],
     [

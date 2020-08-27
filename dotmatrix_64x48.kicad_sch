@@ -1,4 +1,4 @@
-(kicad_sch (version 20200820) (host eeschema "5.99.0-unknown-dd374e12a~102~ubuntu18.04.1")
+(kicad_sch (version 20200820) (host eeschema "5.99.0-unknown-b0af66afc~103~ubuntu18.04.1")
 
   (page 1 10)
 
@@ -1382,13 +1382,13 @@
 
   (no_connect (at 151.13 137.16))
   (no_connect (at 104.14 73.66))
-  (no_connect (at 48.26 87.63))
-  (no_connect (at 109.22 73.66))
-  (no_connect (at 101.6 73.66))
-  (no_connect (at 106.68 73.66))
   (no_connect (at 125.73 27.94))
-  (no_connect (at 99.06 73.66))
+  (no_connect (at 109.22 73.66))
   (no_connect (at 96.52 73.66))
+  (no_connect (at 106.68 73.66))
+  (no_connect (at 101.6 73.66))
+  (no_connect (at 48.26 87.63))
+  (no_connect (at 99.06 73.66))
 
   (wire (pts (xy 20.32 92.71) (xy 39.37 92.71))
     (stroke (width 0) (type solid) (color 0 0 0 0))

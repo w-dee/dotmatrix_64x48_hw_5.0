@@ -1,4 +1,4 @@
-(kicad_sch (version 20200820) (host eeschema "5.99.0-unknown-dd374e12a~102~ubuntu18.04.1")
+(kicad_sch (version 20200820) (host eeschema "5.99.0-unknown-b0af66afc~103~ubuntu18.04.1")
 
   (page 10 10)
 
@@ -810,22 +810,22 @@
   (junction (at 113.03 54.61) (diameter 0.3048) (color 0 0 0 0))
   (junction (at 135.89 31.75) (diameter 0.3048) (color 0 0 0 0))
 
-  (no_connect (at 153.67 57.15))
-  (no_connect (at 154.94 64.77))
-  (no_connect (at 40.64 80.01))
-  (no_connect (at 153.67 77.47))
-  (no_connect (at 154.94 59.69))
-  (no_connect (at 153.67 52.07))
-  (no_connect (at 123.19 46.99))
-  (no_connect (at 154.94 67.31))
-  (no_connect (at 153.67 80.01))
-  (no_connect (at 40.64 77.47))
   (no_connect (at 153.67 39.37))
   (no_connect (at 154.94 62.23))
-  (no_connect (at 153.67 72.39))
-  (no_connect (at 153.67 74.93))
-  (no_connect (at 154.94 69.85))
+  (no_connect (at 123.19 46.99))
+  (no_connect (at 153.67 77.47))
   (no_connect (at 153.67 41.91))
+  (no_connect (at 154.94 67.31))
+  (no_connect (at 153.67 74.93))
+  (no_connect (at 40.64 77.47))
+  (no_connect (at 40.64 80.01))
+  (no_connect (at 154.94 59.69))
+  (no_connect (at 153.67 52.07))
+  (no_connect (at 154.94 69.85))
+  (no_connect (at 154.94 64.77))
+  (no_connect (at 153.67 72.39))
+  (no_connect (at 153.67 80.01))
+  (no_connect (at 153.67 57.15))
 
   (wire (pts (xy 17.78 87.63) (xy 17.78 91.44))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -1192,6 +1192,10 @@
   )
 
   (text "2x 5.12k \n(5.1k +/- 10% is the spec)" (at 45.72 128.27 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+  )
+  (text "The connector is JAE DX07S016JA1 .\nAlways check the pin order is compatible\nwhen you use another connector."
+    (at 55.88 34.29 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
   )
   (text "3mm at light speed requires a time to travel of : 0.01 ns\nA time needed by one phase of 12MHz wave  : 83.33 ns\n\nTherefore, 3mm length mismatch is negligible at this transmission speed.  "

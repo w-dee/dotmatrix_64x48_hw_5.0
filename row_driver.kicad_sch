@@ -1,4 +1,4 @@
-(kicad_sch (version 20200820) (host eeschema "5.99.0-unknown-dd374e12a~102~ubuntu18.04.1")
+(kicad_sch (version 20200820) (host eeschema "5.99.0-unknown-b0af66afc~103~ubuntu18.04.1")
 
   (page 4 10)
 
@@ -1049,8 +1049,8 @@
     (stroke (width 0) (type solid) (color 0 0 0 0))
   )
 
-  (text "for LEDVDD > 4.5V : use 74HCT595; otherwise use 74HC595"
-    (at 132.08 99.06 0)
+  (text "HC595SER is a 3.3V logic while HC595 runs on LEDVDD which is between 3.1V to 5.0V depending on\nLED color you use. The default kit's LED color is red, and the LEDVDD is 3.1V.\nAlways check the logic level is compatible.\nfor LEDVDD > 4.5V : use 74HCT595; otherwise use 74HC595"
+    (at 129.54 107.95 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
   )
   (text "R46 must be installed when HC595SEROUT does not match to 3.3V levels"
