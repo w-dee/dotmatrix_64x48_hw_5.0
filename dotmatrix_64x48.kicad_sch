@@ -1381,15 +1381,15 @@
   (junction (at 254 83.82) (diameter 0.3048) (color 0 0 0 0))
   (junction (at 259.08 34.29) (diameter 0.3048) (color 0 0 0 0))
 
-  (no_connect (at 104.14 73.66))
   (no_connect (at 106.68 73.66))
-  (no_connect (at 96.52 73.66))
-  (no_connect (at 109.22 73.66))
-  (no_connect (at 151.13 137.16))
   (no_connect (at 48.26 87.63))
+  (no_connect (at 109.22 73.66))
+  (no_connect (at 96.52 73.66))
+  (no_connect (at 99.06 73.66))
+  (no_connect (at 104.14 73.66))
   (no_connect (at 125.73 27.94))
   (no_connect (at 101.6 73.66))
-  (no_connect (at 99.06 73.66))
+  (no_connect (at 151.13 137.16))
 
   (wire (pts (xy 20.32 92.71) (xy 39.37 92.71))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -3885,6 +3885,9 @@
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005de835f0"
       (reference "#PWR0164") (unit 1)
     )
+    (path "/00000000-0000-0000-0000-000057bb11db/0f662dd0-750b-4a1c-9f39-4ba1d04a41cd"
+      (reference "#PWR?") (unit 1)
+    )
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005bbd3352"
       (reference "C1") (unit 1)
     )
@@ -3908,6 +3911,9 @@
     )
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005c135f0d"
       (reference "CONN4") (unit 1)
+    )
+    (path "/00000000-0000-0000-0000-000057bb11db/726ca1c8-00a0-4046-a29b-c2fedf7778e2"
+      (reference "D?") (unit 1)
     )
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005dd670c3"
       (reference "J8") (unit 1)
