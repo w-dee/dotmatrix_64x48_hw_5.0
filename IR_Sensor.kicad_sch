@@ -1,4 +1,4 @@
-(kicad_sch (version 20200820) (host eeschema "5.99.0-unknown-b0af66afc~103~ubuntu18.04.1")
+(kicad_sch (version 20200827) (generator eeschema)
 
   (page 2 10)
 
@@ -1199,12 +1199,23 @@
     (stroke (width 0) (type solid) (color 0 0 0 0))
   )
 
+  (text "You will see this stupid low-pass filter on the VCC line in\nsome IR receiver chip datasheet. I don't know why they\nare so much volunerable to the power noise."
+    (at 78.74 58.42 0)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+  )
   (text "A filter circuit which prevents the\nIR LED remains ON state after the\nESP32 hangs up during the IR_OUT going high.\nNon-pulse driven IR LED would easily be destroyed by the heat."
     (at 100.33 107.95 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
   )
   (text "Longer lead side" (at 125.73 35.56 0)
     (effects (font (size 1.524 1.524)) (justify left bottom))
+  )
+  (text "Note: LEDVDD *may* higher than IR_OUT logic.\nThis will always drive Q1 as on state."
+    (at 154.94 101.6 0)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+  )
+  (text "Use AE-BME280 as I2C mode." (at 228.6 58.42 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
   )
 
   (label "SENSVDD" (at 57.15 17.78 180)

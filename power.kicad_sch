@@ -1,4 +1,4 @@
-(kicad_sch (version 20200820) (host eeschema "5.99.0-unknown-b0af66afc~103~ubuntu18.04.1")
+(kicad_sch (version 20200827) (generator eeschema)
 
   (page 9 10)
 
@@ -197,7 +197,7 @@
         )
       )
     )
-    (symbol "DeeComponents:TPS54428DDA" (pin_names (offset 0.508))
+    (symbol "DeeComponents:TPS54428DDA"
       (property "Reference" "U" (id 0) (at -8.89 8.89 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -1463,8 +1463,16 @@
     (at 148.59 151.13 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
   )
+  (text "Some PI filters to reduce power line current ripples."
+    (at 156.21 19.05 0)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+  )
   (text "12V" (at 166.37 22.86 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
+  )
+  (text "There is no way to reset LED1642's internal counter other than using its Power-ON-Reset.\nThis circuit pulls LED1642's VDD to the ground."
+    (at 279.4 72.39 0)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
   )
 
   (label "DC_IN_N" (at 52.07 34.29 0)

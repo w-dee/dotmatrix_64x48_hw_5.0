@@ -1,4 +1,4 @@
-(kicad_sch (version 20200820) (host eeschema "5.99.0-unknown-b0af66afc~103~ubuntu18.04.1")
+(kicad_sch (version 20200827) (generator eeschema)
 
   (page 1 10)
 
@@ -1381,15 +1381,15 @@
   (junction (at 254 83.82) (diameter 0.3048) (color 0 0 0 0))
   (junction (at 259.08 34.29) (diameter 0.3048) (color 0 0 0 0))
 
-  (no_connect (at 106.68 73.66))
-  (no_connect (at 48.26 87.63))
-  (no_connect (at 109.22 73.66))
-  (no_connect (at 96.52 73.66))
   (no_connect (at 99.06 73.66))
-  (no_connect (at 104.14 73.66))
-  (no_connect (at 125.73 27.94))
   (no_connect (at 101.6 73.66))
+  (no_connect (at 96.52 73.66))
+  (no_connect (at 48.26 87.63))
+  (no_connect (at 104.14 73.66))
+  (no_connect (at 106.68 73.66))
   (no_connect (at 151.13 137.16))
+  (no_connect (at 125.73 27.94))
+  (no_connect (at 109.22 73.66))
 
   (wire (pts (xy 20.32 92.71) (xy 39.37 92.71))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -2048,6 +2048,10 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
   )
   (text "strap pin: IO0 - internally PU'ed" (at 171.45 64.77 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+  )
+  (text "HC541 is required to drive relatively long lines.\nESP8266 got unstable if it drives directly long line as this would.\nI'm not sure ESP32 has the same problem."
+    (at 257.81 152.4 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
   )
   (text "The internal pull-up resistor of GPIO0 seems to be too\nweak to prevent inducing noize. Here, we added an external pull-up resistor,"

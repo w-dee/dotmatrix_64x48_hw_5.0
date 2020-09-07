@@ -149,6 +149,7 @@
           "drill": 0.8
         }
       ],
+      "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
     "layer_presets": []
@@ -445,7 +446,7 @@
   },
   "sheets": [
     [
-      "f7437aab-40da-4c62-8fc4-2f36e3b9eb2b",
+      "3dc4de82-fb31-4f0c-8ead-1db1af3e8b8b",
       ""
     ],
     [
