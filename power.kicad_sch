@@ -1456,6 +1456,10 @@
   (text "3.15V, 4A" (at 116.84 143.51 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
   )
+  (text "NCP1117ST33 explicitly allows using ceramic\ncapacitors at input and the output.\nI'm not sure that other compatible 1117 series \nregurators work well as this chip."
+    (at 140.97 69.85 0)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+  )
   (text "LEDVDD  must be from min 3.1V to max 5.0V" (at 148.59 143.51 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
   )
