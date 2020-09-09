@@ -3257,9 +3257,9 @@
   (symbol (lib_id "dotmatrix_64x48-rescue:Ferrite_Bead_Small-device") (at 147.32 24.13 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid "c788adc5-bd1b-4179-9658-5ebe5800a5bd")
-    (property "Reference" "L?" (id 0) (at 146.05 26.67 90))
+    (property "Reference" "L9" (id 0) (at 146.05 26.67 90))
     (property "Value" "BLM18RK102SN1 1k @ 100MHz" (id 1) (at 146.05 21.59 90))
-    (property "Footprint" "Resistors_SMD:R_0603_HandSoldering" (id 2) (at 147.32 24.13 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (id 2) (at 147.32 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 147.32 24.13 0))
@@ -3268,9 +3268,9 @@
   (symbol (lib_id "dotmatrix_64x48-rescue:Ferrite_Bead_Small-device") (at 173.99 38.1 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid "9e0326f7-50f2-4702-8dfc-880eee015938")
-    (property "Reference" "L?" (id 0) (at 172.72 40.64 90))
+    (property "Reference" "L10" (id 0) (at 172.72 40.64 90))
     (property "Value" "BLM18RK102SN1 1k @ 100MHz" (id 1) (at 172.72 35.56 90))
-    (property "Footprint" "Resistors_SMD:R_0603_HandSoldering" (id 2) (at 173.99 38.1 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (id 2) (at 173.99 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 173.99 38.1 0))
@@ -3722,11 +3722,11 @@
     (path "/00000000-0000-0000-0000-00005c63d3ef"
       (reference "L5") (unit 1)
     )
-    (path "/9e0326f7-50f2-4702-8dfc-880eee015938"
-      (reference "L?") (unit 1)
-    )
     (path "/c788adc5-bd1b-4179-9658-5ebe5800a5bd"
-      (reference "L?") (unit 1)
+      (reference "L9") (unit 1)
+    )
+    (path "/9e0326f7-50f2-4702-8dfc-880eee015938"
+      (reference "L10") (unit 1)
     )
     (path "/00000000-0000-0000-0000-00005bb4df6a"
       (reference "P1") (unit 1)
@@ -3923,17 +3923,17 @@
     (path "/00000000-0000-0000-0000-000057bb11db/0f662dd0-750b-4a1c-9f39-4ba1d04a41cd"
       (reference "#PWR0155") (unit 1)
     )
-    (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005de835f0"
-      (reference "#PWR0164") (unit 1)
-    )
-    (path "/00000000-0000-0000-0000-000057bb11db/45a0d4ff-a4aa-4e12-90f3-7d7fc9d24a76"
-      (reference "#PWR?") (unit 1)
-    )
     (path "/00000000-0000-0000-0000-000057bb11db/6e021b66-8bb4-43ec-a0cd-2d4260eda0fd"
-      (reference "#PWR?") (unit 1)
+      (reference "#PWR0159") (unit 1)
     )
     (path "/00000000-0000-0000-0000-000057bb11db/7f9ae4e6-3b9c-4d57-a50a-3970e41497b9"
-      (reference "#PWR?") (unit 1)
+      (reference "#PWR0161") (unit 1)
+    )
+    (path "/00000000-0000-0000-0000-000057bb11db/45a0d4ff-a4aa-4e12-90f3-7d7fc9d24a76"
+      (reference "#PWR0162") (unit 1)
+    )
+    (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005de835f0"
+      (reference "#PWR0164") (unit 1)
     )
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005bbd3352"
       (reference "C1") (unit 1)
