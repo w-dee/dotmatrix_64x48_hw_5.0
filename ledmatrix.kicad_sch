@@ -5,7 +5,7 @@
   (paper "A3" portrait)
 
   (lib_symbols
-    (symbol "matrix-dotmatrix_64x48:LED64x48"
+    (symbol "matrix-dotmatrix_64x48:LED64x48" (in_bom yes) (on_board yes)
       (property "Reference" "LED" (id 0) (at 8.89 -13.97 0)
         (effects (font (size 1.524 1.524)))
       )

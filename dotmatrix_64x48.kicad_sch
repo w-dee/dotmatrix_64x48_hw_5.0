@@ -5,7 +5,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "DeeComponents:ESP32-WROOM"
+    (symbol "DeeComponents:ESP32-WROOM" (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at -17.78 31.75 0)
         (effects (font (size 1.524 1.524)))
       )
@@ -199,7 +199,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:74LS541-Logic_74xx"
+    (symbol "dotmatrix_64x48-rescue:74LS541-Logic_74xx" (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at -7.62 16.51 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -332,7 +332,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:C-device" (pin_numbers hide) (pin_names (offset 0.254))
+    (symbol "dotmatrix_64x48-rescue:C-device" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (id 0) (at 0.635 2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -375,7 +375,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:Conn_01x03_Female-Connector" (pin_names hide)
+    (symbol "dotmatrix_64x48-rescue:Conn_01x03_Female-Connector" (pin_names hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -436,7 +436,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:Conn_01x03_Male-Connector" (pin_names hide)
+    (symbol "dotmatrix_64x48-rescue:Conn_01x03_Male-Connector" (pin_names hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -497,7 +497,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:Conn_01x04_Female-Connector" (pin_names hide)
+    (symbol "dotmatrix_64x48-rescue:Conn_01x04_Female-Connector" (pin_names hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -572,7 +572,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:Conn_01x06-Connector" (pin_names hide)
+    (symbol "dotmatrix_64x48-rescue:Conn_01x06-Connector" (pin_names hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 7.62 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -636,7 +636,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:Ferrite_Bead_Small-device" (pin_numbers hide) (pin_names (offset 0))
+    (symbol "dotmatrix_64x48-rescue:Ferrite_Bead_Small-device" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "L" (id 0) (at 1.905 1.27 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -689,7 +689,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:GND-power" (power) (pin_names (offset 0))
+    (symbol "dotmatrix_64x48-rescue:GND-power" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (id 0) (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
       )
@@ -722,7 +722,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:GS2-Connector" (pin_numbers hide) (pin_names hide)
+    (symbol "dotmatrix_64x48-rescue:GS2-Connector" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 2.54 3.81 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -769,7 +769,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:LED_Small-device" (pin_numbers hide) (pin_names (offset 0.254) hide)
+    (symbol "dotmatrix_64x48-rescue:LED_Small-device" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (id 0) (at -1.27 3.175 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -841,7 +841,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:Micro_SD_Card-Connector"
+    (symbol "dotmatrix_64x48-rescue:Micro_SD_Card-Connector" (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at -16.51 15.24 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -946,7 +946,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:Q_NPN_BEC-device" (pin_names (offset 0) hide)
+    (symbol "dotmatrix_64x48-rescue:Q_NPN_BEC-device" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
       (property "Reference" "Q" (id 0) (at 5.08 1.27 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -1010,7 +1010,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:R-device" (pin_numbers hide) (pin_names (offset 0))
+    (symbol "dotmatrix_64x48-rescue:R-device" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "R" (id 0) (at 2.032 0 90)
         (effects (font (size 1.27 1.27)))
       )
@@ -1042,7 +1042,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:SRV05-4-ESD_Protection" (pin_names (offset 0))
+    (symbol "dotmatrix_64x48-rescue:SRV05-4-ESD_Protection" (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at -5.08 11.43 0)
         (effects (font (size 1.27 1.27)) (justify right))
       )
@@ -1312,7 +1312,7 @@
         )
       )
     )
-    (symbol "dotmatrix_64x48-rescue:SW_Push-Switch" (pin_numbers hide) (pin_names hide)
+    (symbol "dotmatrix_64x48-rescue:SW_Push-Switch" (pin_numbers hide) (pin_names hide) (in_bom yes) (on_board yes)
       (property "Reference" "SW" (id 0) (at 1.27 2.54 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -1381,15 +1381,15 @@
   (junction (at 254 83.82) (diameter 0.3048) (color 0 0 0 0))
   (junction (at 259.08 34.29) (diameter 0.3048) (color 0 0 0 0))
 
-  (no_connect (at 106.68 73.66))
   (no_connect (at 48.26 87.63))
-  (no_connect (at 99.06 73.66))
-  (no_connect (at 101.6 73.66))
-  (no_connect (at 109.22 73.66))
-  (no_connect (at 96.52 73.66))
-  (no_connect (at 151.13 137.16))
-  (no_connect (at 104.14 73.66))
   (no_connect (at 125.73 27.94))
+  (no_connect (at 151.13 137.16))
+  (no_connect (at 96.52 73.66))
+  (no_connect (at 109.22 73.66))
+  (no_connect (at 101.6 73.66))
+  (no_connect (at 99.06 73.66))
+  (no_connect (at 106.68 73.66))
+  (no_connect (at 104.14 73.66))
 
   (wire (pts (xy 20.32 92.71) (xy 39.37 92.71))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -4076,9 +4076,6 @@
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005c3c9d74"
       (reference "#PWR0133") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-000059e6f925"
-      (reference "#PWR0160") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-000058184657"
       (reference "C13") (unit 1) (value "1u/35V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
@@ -4091,23 +4088,14 @@
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005be4b4c9"
       (reference "C96") (unit 1) (value "1u/35V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
-    (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-000058182a5c"
-      (reference "D1") (unit 1) (value "D_Schottky_Small") (footprint "components:SOD-523-mod")
+    (path "/00000000-0000-0000-0000-000058141380/6a5e1492-e2f8-4d70-a0c9-a11235879a35"
+      (reference "D1") (unit 1) (value "BAT54A") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
-    (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-000058183fad"
-      (reference "D2") (unit 1) (value "D_Schottky_Small") (footprint "components:SOD-523-mod")
+    (path "/00000000-0000-0000-0000-000058141380/b020d47d-1a5b-4138-a695-a26cbb9af827"
+      (reference "D2") (unit 1) (value "BAT54A") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
-    (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005818403a"
-      (reference "D3") (unit 1) (value "D_Schottky_Small") (footprint "components:SOD-523-mod")
-    )
-    (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005818414b"
-      (reference "D4") (unit 1) (value "D_Schottky_Small") (footprint "components:SOD-523-mod")
-    )
-    (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-000058184276"
-      (reference "D5") (unit 1) (value "D_Schottky_Small") (footprint "components:SOD-523-mod")
-    )
-    (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-000058184409"
-      (reference "D6") (unit 1) (value "D_Schottky_Small") (footprint "components:SOD-523-mod")
+    (path "/00000000-0000-0000-0000-000058141380/dc0bebbe-dfa7-4313-9162-7b5198e073ba"
+      (reference "D3") (unit 1) (value "BAT54A") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-000058185f31"
       (reference "R28") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
@@ -4117,9 +4105,6 @@
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-0000582610fb"
       (reference "R47") (unit 1) (value "4.7k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
-    )
-    (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-000059e6f4db"
-      (reference "R50") (unit 1) (value "10k DNI") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005bc0278a"
       (reference "R119") (unit 1) (value "4.7k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
