@@ -1381,15 +1381,15 @@
   (junction (at 254 83.82) (diameter 0.3048) (color 0 0 0 0))
   (junction (at 259.08 34.29) (diameter 0.3048) (color 0 0 0 0))
 
-  (no_connect (at 48.26 87.63))
-  (no_connect (at 104.14 73.66))
-  (no_connect (at 96.52 73.66))
-  (no_connect (at 125.73 27.94))
+  (no_connect (at 99.06 73.66))
   (no_connect (at 106.68 73.66))
+  (no_connect (at 125.73 27.94))
   (no_connect (at 109.22 73.66))
+  (no_connect (at 96.52 73.66))
   (no_connect (at 101.6 73.66))
   (no_connect (at 151.13 137.16))
-  (no_connect (at 99.06 73.66))
+  (no_connect (at 104.14 73.66))
+  (no_connect (at 48.26 87.63))
 
   (wire (pts (xy 20.32 92.71) (xy 39.37 92.71))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -3962,8 +3962,8 @@
     (path "/00000000-0000-0000-0000-000057bb11db/726ca1c8-00a0-4046-a29b-c2fedf7778e2"
       (reference "D10") (unit 1) (value "Led_Small") (footprint "components:LED1608_Handsoldering")
     )
-    (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005dd670c3"
-      (reference "J8") (unit 1) (value "Conn_01x03_Female") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical")
+    (path "/00000000-0000-0000-0000-000057bb11db/9fc416b9-ee52-4374-b8a2-0bb5ea1d83d6"
+      (reference "J8") (unit 1) (value "Conn_01x04_Female") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000057bb11db/f1b3c346-e518-4c58-a488-5ca223506c32"
       (reference "L8") (unit 1) (value "BLM21PG331SN 300R@100MHz") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
