@@ -1383,13 +1383,13 @@
 
   (no_connect (at 109.22 73.66))
   (no_connect (at 125.73 27.94))
-  (no_connect (at 99.06 73.66))
   (no_connect (at 96.52 73.66))
-  (no_connect (at 106.68 73.66))
-  (no_connect (at 104.14 73.66))
-  (no_connect (at 151.13 137.16))
   (no_connect (at 101.6 73.66))
+  (no_connect (at 151.13 137.16))
+  (no_connect (at 104.14 73.66))
+  (no_connect (at 106.68 73.66))
   (no_connect (at 48.26 87.63))
+  (no_connect (at 99.06 73.66))
 
   (wire (pts (xy 20.32 92.71) (xy 39.37 92.71))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -3236,7 +3236,7 @@
     (uuid "00000000-0000-0000-0000-00005c63d3ef")
     (property "Reference" "L5" (id 0) (at 100.33 169.4688 90))
     (property "Value" "BLM21PG331SN 300R@100MHz" (id 1) (at 101.6 167.64 90))
-    (property "Footprint" "Capacitors_SMD:C_0805_HandSoldering" (id 2) (at 100.33 173.99 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (id 2) (at 100.33 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 100.33 173.99 0))
@@ -3269,7 +3269,7 @@
     (uuid "00000000-0000-0000-0000-00005baee4a1")
     (property "Reference" "L3" (id 0) (at 187.96 92.71 90))
     (property "Value" "BLM18RK102SN1 1k @ 100MHz" (id 1) (at 187.96 87.63 90))
-    (property "Footprint" "Resistors_SMD:R_0603_HandSoldering" (id 2) (at 189.23 90.17 0)
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (id 2) (at 189.23 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 189.23 90.17 0))
@@ -3702,10 +3702,10 @@
       (reference "JP1") (unit 1) (value "0") (footprint "components:SolderJumper_S")
     )
     (path "/00000000-0000-0000-0000-00005baee4a1"
-      (reference "L3") (unit 1) (value "BLM18RK102SN1 1k @ 100MHz") (footprint "Resistors_SMD:R_0603_HandSoldering")
+      (reference "L3") (unit 1) (value "BLM18RK102SN1 1k @ 100MHz") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-00005c63d3ef"
-      (reference "L5") (unit 1) (value "BLM21PG331SN 300R@100MHz") (footprint "Capacitors_SMD:C_0805_HandSoldering")
+      (reference "L5") (unit 1) (value "BLM21PG331SN 300R@100MHz") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/43e0bb1c-a7db-4c69-b9da-02f45389f93f"
       (reference "L11") (unit 1) (value "BLM18RK102SN1 1k @ 100MHz") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
@@ -3932,9 +3932,6 @@
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-000057b9f506"
       (reference "C32") (unit 1) (value "1u/35V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
-    (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005818b2ab"
-      (reference "C58") (unit 1) (value "0.1u/35V DNI") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
-    )
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-0000583d96ac"
       (reference "C68") (unit 1) (value "1u/35V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
@@ -3957,7 +3954,7 @@
       (reference "LED49") (unit 1) (value "IR") (footprint "LEDs:LED_PLCC_2835_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005be39f04"
-      (reference "Q1") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q1") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005818b2b2"
       (reference "Q3") (unit 1) (value "NJL7302L-F3") (footprint "LED_THT:LED_D3.0mm")
@@ -3984,10 +3981,7 @@
       (reference "R43") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-0000581be703"
-      (reference "R44") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
-    )
-    (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-0000581be747"
-      (reference "R45") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+      (reference "R44") (unit 1) (value "22k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-00005de7f331"
       (reference "R79") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
@@ -4176,28 +4170,28 @@
       (reference "C38") (unit 1) (value "1u/35V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005816f8d6/00000000-0000-0000-0000-000058170f54"
-      (reference "Q5") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q5") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005816f8d6/00000000-0000-0000-0000-000058185931"
-      (reference "Q6") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q6") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005816f8d6/00000000-0000-0000-0000-000058185a11"
-      (reference "Q7") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q7") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005816f8d6/00000000-0000-0000-0000-000058185b83"
-      (reference "Q8") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q8") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005816f8d6/00000000-0000-0000-0000-000058185cb1"
-      (reference "Q9") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q9") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005816f8d6/00000000-0000-0000-0000-000058185d8f"
-      (reference "Q10") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q10") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005816f8d6/00000000-0000-0000-0000-000058185f92"
-      (reference "Q11") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q11") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005816f8d6/00000000-0000-0000-0000-00005818602b"
-      (reference "Q12") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q12") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005816f8d6/00000000-0000-0000-0000-0000581715d9"
       (reference "R29") (unit 1) (value "10R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
@@ -4296,28 +4290,28 @@
       (reference "C46") (unit 1) (value "1u/35V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d105/00000000-0000-0000-0000-000058170f54"
-      (reference "Q13") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q13") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d105/00000000-0000-0000-0000-000058185931"
-      (reference "Q14") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q14") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d105/00000000-0000-0000-0000-000058185a11"
-      (reference "Q15") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q15") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d105/00000000-0000-0000-0000-000058185b83"
-      (reference "Q16") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q16") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d105/00000000-0000-0000-0000-000058185cb1"
-      (reference "Q17") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q17") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d105/00000000-0000-0000-0000-000058185d8f"
-      (reference "Q18") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q18") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d105/00000000-0000-0000-0000-000058185f92"
-      (reference "Q19") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q19") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d105/00000000-0000-0000-0000-00005818602b"
-      (reference "Q20") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q20") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d105/00000000-0000-0000-0000-0000581715d9"
       (reference "R66") (unit 1) (value "10R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
@@ -4416,28 +4410,28 @@
       (reference "C54") (unit 1) (value "1u/35V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d18c/00000000-0000-0000-0000-000058170f54"
-      (reference "Q21") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q21") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d18c/00000000-0000-0000-0000-000058185931"
-      (reference "Q22") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q22") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d18c/00000000-0000-0000-0000-000058185a11"
-      (reference "Q23") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q23") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d18c/00000000-0000-0000-0000-000058185b83"
-      (reference "Q24") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q24") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d18c/00000000-0000-0000-0000-000058185cb1"
-      (reference "Q25") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q25") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d18c/00000000-0000-0000-0000-000058185d8f"
-      (reference "Q26") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q26") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d18c/00000000-0000-0000-0000-000058185f92"
-      (reference "Q27") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q27") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d18c/00000000-0000-0000-0000-00005818602b"
-      (reference "Q28") (unit 1) (value "AO3401") (footprint "TO_SOT_Packages_SMD:SOT-23_Handsoldering")
+      (reference "Q28") (unit 1) (value "AO3401") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005817d18c/00000000-0000-0000-0000-0000581715d9"
       (reference "R90") (unit 1) (value "10R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
@@ -4836,7 +4830,7 @@
       (reference "L2") (unit 1) (value "2.2uH") (footprint "components:Choke_SMD_10.4x10.4_H4.8_HandSoldering")
     )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005bb82b05"
-      (reference "L4") (unit 1) (value "BLM21PG331SN 300R@100MHz") (footprint "Capacitors_SMD:C_0805_HandSoldering")
+      (reference "L4") (unit 1) (value "BLM21PG331SN 300R@100MHz") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005dc29bd6"
       (reference "L6") (unit 1) (value "2.2uH") (footprint "components:Choke_SMD_10.4x10.4_H4.8_HandSoldering")
