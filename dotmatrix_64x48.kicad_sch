@@ -1381,15 +1381,15 @@
   (junction (at 254 83.82) (diameter 0.3048) (color 0 0 0 0))
   (junction (at 259.08 34.29) (diameter 0.3048) (color 0 0 0 0))
 
+  (no_connect (at 48.26 87.63))
+  (no_connect (at 104.14 73.66))
   (no_connect (at 109.22 73.66))
-  (no_connect (at 125.73 27.94))
-  (no_connect (at 96.52 73.66))
   (no_connect (at 101.6 73.66))
   (no_connect (at 151.13 137.16))
-  (no_connect (at 104.14 73.66))
-  (no_connect (at 106.68 73.66))
-  (no_connect (at 48.26 87.63))
   (no_connect (at 99.06 73.66))
+  (no_connect (at 96.52 73.66))
+  (no_connect (at 106.68 73.66))
+  (no_connect (at 125.73 27.94))
 
   (wire (pts (xy 20.32 92.71) (xy 39.37 92.71))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -4706,6 +4706,9 @@
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005da07837"
       (reference "#PWR0152") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-000059a82f84/9237ec02-6f20-4519-a03a-4e240bcb16f9"
+      (reference "#PWR0153") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005da07dba"
       (reference "#PWR0156") (unit 1) (value "GND") (footprint "")
     )
@@ -4759,6 +4762,9 @@
     )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005da0aac9"
       (reference "C57") (unit 1) (value "22u/6.3V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+    )
+    (path "/00000000-0000-0000-0000-000059a82f84/ae46a065-10e6-472a-9d7a-b3653745a69b"
+      (reference "C58") (unit 1) (value "1u/35V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005da0b832"
       (reference "C59") (unit 1) (value "22u/6.3V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
@@ -4847,8 +4853,11 @@
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-000059e42f9d"
       (reference "R38") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
+    (path "/00000000-0000-0000-0000-000059a82f84/7569b788-3519-48a8-8bad-443232c592b5"
+      (reference "R39") (unit 1) (value "4.7k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+    )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005db8979a"
-      (reference "R77") (unit 1) (value "4.7k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
+      (reference "R77") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005db897a8"
       (reference "R78") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
@@ -4880,8 +4889,8 @@
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005babb6f1"
       (reference "U2") (unit 1) (value "TPS54202") (footprint "components:SOT-23-6_Handsoldering_mod")
     )
-    (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005da003f8"
-      (reference "U14") (unit 1) (value "NCP1117ST33") (footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2")
+    (path "/00000000-0000-0000-0000-000059a82f84/e7c4e835-fcee-4215-b093-063dffbebfd6"
+      (reference "U14") (unit 1) (value "NJM2845DL1-3.3") (footprint "Package_TO_SOT_SMD:TO-252-3_TabPin2")
     )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005bbc789b"
       (reference "U19") (unit 1) (value "TPS54428DDA") (footprint "Housings_SOIC:TI_SO-PowerPAD-8")
