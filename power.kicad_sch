@@ -1,6 +1,6 @@
-(kicad_sch (version 20200828) (generator eeschema)
+(kicad_sch (version 20201015) (generator eeschema)
 
-  (page 9 10)
+  (page 1 10)
 
   (paper "A4")
 
@@ -273,7 +273,7 @@
       (property "Datasheet" "" (id 3) (at 1.27 -1.016 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "Barrel*Jack*\nBARREL*JACK*" (id 4) (at 0 0 0)
+      (property "ki_fp_filters" "Barrel*Jack* BARREL*JACK*" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "Barrel_Jack-Connector_0_1"
@@ -392,7 +392,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 90)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "TO-???*\n*SingleDiode\n*_Diode_*\n*SingleDiode*\nD_*" (id 4) (at 0 0 0)
+      (property "ki_fp_filters" "TO-???* *SingleDiode *_Diode_* *SingleDiode* D_*" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "D_Zener_Small_ALT-device_0_1"
@@ -445,7 +445,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "Inductor_*\nL_*\n*Ferrite*" (id 4) (at 0 0 0)
+      (property "ki_fp_filters" "Inductor_* L_* *Ferrite*" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "Ferrite_Bead_Small-device_0_1"
@@ -531,7 +531,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "Choke_*\n*Coil*\nInductor_*\nL_*" (id 4) (at 0 0 0)
+      (property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "L-device_0_1"
@@ -572,7 +572,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "*polyfuse*\n*PTC*" (id 4) (at 0 0 0)
+      (property "ki_fp_filters" "*polyfuse* *PTC*" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "Polyfuse_Small-device_0_1"
@@ -831,7 +831,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "R_*\nR_*" (id 4) (at 0 0 0)
+      (property "ki_fp_filters" "R_* R_*" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "R-device_0_1"
@@ -1230,10 +1230,7 @@
   (wire (pts (xy 97.79 175.26) (xy 60.96 175.26))
     (stroke (width 0) (type solid) (color 0 0 0 0))
   )
-  (wire (pts (xy 99.06 73.66) (xy 99.06 76.2))
-    (stroke (width 0) (type solid) (color 0 0 0 0))
-  )
-  (wire (pts (xy 99.06 76.2) (xy 99.06 86.36))
+  (wire (pts (xy 99.06 73.66) (xy 99.06 86.36))
     (stroke (width 0) (type solid) (color 0 0 0 0))
   )
   (wire (pts (xy 99.06 86.36) (xy 100.33 86.36))

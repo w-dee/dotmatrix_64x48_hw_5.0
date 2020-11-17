@@ -1,6 +1,6 @@
-(kicad_sch (version 20200828) (generator eeschema)
+(kicad_sch (version 20201015) (generator eeschema)
 
-  (page 2 10)
+  (page 1 10)
 
   (paper "A4")
 
@@ -24,7 +24,7 @@
       (property "ki_description" "Generic connector, single row, 01x04" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "Connector*:*_??x*mm*\nConnector*:*1x??x*mm*\nSocket?Strip?Straight?1X*\nSocket?Strip?Angled?1X*" (id 6) (at 0 0 0)
+      (property "ki_fp_filters" "Connector*:*_??x*mm* Connector*:*1x??x*mm* Socket?Strip?Straight?1X* Socket?Strip?Angled?1X*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "Conn_01x04_Female_1_1"
@@ -393,7 +393,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "Connector*:*_??x*mm*\nConnector*:*1x??x*mm*\nSocket?Strip?Straight?1X*\nSocket?Strip?Angled?1X*" (id 4) (at 0 0 0)
+      (property "ki_fp_filters" "Connector*:*_??x*mm* Connector*:*1x??x*mm* Socket?Strip?Straight?1X* Socket?Strip?Angled?1X*" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "Conn_01x03_Female-Connector_1_1"
@@ -454,7 +454,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "Connector*:*_??x*mm*\nConnector*:*1x??x*mm*\nPin?Header?Straight?1X*\nPin?Header?Angled?1X*\nSocket?Strip?Straight?1X*\nSocket?Strip?Angled?1X*" (id 4) (at 0 0 0)
+      (property "ki_fp_filters" "Connector*:*_??x*mm* Connector*:*1x??x*mm* Pin?Header?Straight?1X* Pin?Header?Angled?1X* Socket?Strip?Straight?1X* Socket?Strip?Angled?1X*" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "Conn_01x05-Connector_1_1"
@@ -511,7 +511,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "Inductor_*\nL_*\n*Ferrite*" (id 4) (at 0 0 0)
+      (property "ki_fp_filters" "Inductor_* L_* *Ferrite*" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "Ferrite_Bead_Small-device_0_1"
@@ -952,7 +952,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "R_*\nR_*" (id 4) (at 0 0 0)
+      (property "ki_fp_filters" "R_* R_*" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "R-device_0_1"

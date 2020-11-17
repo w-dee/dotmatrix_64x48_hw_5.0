@@ -1,4 +1,4 @@
-(kicad_sch (version 20200828) (generator eeschema)
+(kicad_sch (version 20201015) (generator eeschema)
 
   (page 0 10)
 
@@ -241,7 +241,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "R_*\nR_*" (id 4) (at 0 0 0)
+      (property "ki_fp_filters" "R_* R_*" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "R-device_0_1"
