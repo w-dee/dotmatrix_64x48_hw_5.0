@@ -1,7 +1,5 @@
 (kicad_sch (version 20201015) (generator eeschema)
 
-  (page 1 10)
-
   (paper "A4")
 
   (lib_symbols
@@ -27,11 +25,6 @@
       (property "ki_fp_filters" "QFN*4x4mm*Pitch0.5mm*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "CP2102N-A01-GQFN28_0_1"
-        (rectangle (start -11.43 19.05) (end 11.43 -33.02)
-          (stroke (width 0.254)) (fill (type background))
-        )
-      )
       (symbol "CP2102N-A01-GQFN28_0_0"
         (pin output line (at 16.51 -5.08 180) (length 5.08)
           (name "CHR1" (effects (font (size 1.27 1.27))))
@@ -52,6 +45,11 @@
         (pin bidirectional line (at 16.51 -15.24 180) (length 5.08)
           (name "GPIO.4" (effects (font (size 1.27 1.27))))
           (number "22" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "CP2102N-A01-GQFN28_0_1"
+        (rectangle (start -11.43 19.05) (end 11.43 -33.02)
+          (stroke (width 0.254)) (fill (type background))
         )
       )
       (symbol "CP2102N-A01-GQFN28_1_1"
@@ -171,46 +169,6 @@
       (property "ki_fp_filters" "USB*C*Receptacle*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "USB_C_Receptacle_2.0_0_1"
-        (arc (start -6.35 15.24) (end -5.08 15.24) (radius (at -5.715 15.24) (length 0.635) (angles -179.9 -0.1))
-          (stroke (width 0.254)) (fill (type outline))
-        )
-        (arc (start -6.35 15.24) (end -5.08 15.24) (radius (at -5.715 15.24) (length 0.635) (angles -179.9 -0.1))
-          (stroke (width 0.254)) (fill (type none))
-        )
-        (arc (start -7.62 15.24) (end -3.81 15.24) (radius (at -5.715 15.24) (length 1.905) (angles -179.9 -0.1))
-          (stroke (width 0.508)) (fill (type none))
-        )
-        (arc (start -3.81 22.86) (end -7.62 22.86) (radius (at -5.715 22.86) (length 1.905) (angles 0.1 179.9))
-          (stroke (width 0.508)) (fill (type none))
-        )
-        (arc (start -5.08 22.86) (end -6.35 22.86) (radius (at -5.715 22.86) (length 0.635) (angles 0.1 179.9))
-          (stroke (width 0.254)) (fill (type none))
-        )
-        (arc (start -5.08 22.86) (end -6.35 22.86) (radius (at -5.715 22.86) (length 0.635) (angles 0.1 179.9))
-          (stroke (width 0.254)) (fill (type outline))
-        )
-        (rectangle (start -10.16 35.56) (end 10.16 -3.81)
-          (stroke (width 0.254)) (fill (type background))
-        )
-        (rectangle (start -6.35 15.24) (end -5.08 22.86)
-          (stroke (width 0.254)) (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy -7.62 15.24)
-            (xy -7.62 22.86)
-          )
-          (stroke (width 0.508)) (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.81 22.86)
-            (xy -3.81 15.24)
-          )
-          (stroke (width 0.508)) (fill (type none))
-        )
-      )
       (symbol "USB_C_Receptacle_2.0_0_0"
         (rectangle (start -4.064 15.24) (end -3.556 16.256)
           (stroke (width 0)) (fill (type none))
@@ -259,6 +217,46 @@
         )
         (rectangle (start 10.16 33.274) (end 9.144 32.766)
           (stroke (width 0)) (fill (type none))
+        )
+      )
+      (symbol "USB_C_Receptacle_2.0_0_1"
+        (arc (start -6.35 15.24) (end -5.08 15.24) (radius (at -5.715 15.24) (length 0.635) (angles -179.9 -0.1))
+          (stroke (width 0.254)) (fill (type outline))
+        )
+        (arc (start -6.35 15.24) (end -5.08 15.24) (radius (at -5.715 15.24) (length 0.635) (angles -179.9 -0.1))
+          (stroke (width 0.254)) (fill (type none))
+        )
+        (arc (start -7.62 15.24) (end -3.81 15.24) (radius (at -5.715 15.24) (length 1.905) (angles -179.9 -0.1))
+          (stroke (width 0.508)) (fill (type none))
+        )
+        (arc (start -3.81 22.86) (end -7.62 22.86) (radius (at -5.715 22.86) (length 1.905) (angles 0.1 179.9))
+          (stroke (width 0.508)) (fill (type none))
+        )
+        (arc (start -5.08 22.86) (end -6.35 22.86) (radius (at -5.715 22.86) (length 0.635) (angles 0.1 179.9))
+          (stroke (width 0.254)) (fill (type none))
+        )
+        (arc (start -5.08 22.86) (end -6.35 22.86) (radius (at -5.715 22.86) (length 0.635) (angles 0.1 179.9))
+          (stroke (width 0.254)) (fill (type outline))
+        )
+        (rectangle (start -10.16 35.56) (end 10.16 -3.81)
+          (stroke (width 0.254)) (fill (type background))
+        )
+        (rectangle (start -6.35 15.24) (end -5.08 22.86)
+          (stroke (width 0.254)) (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy -7.62 15.24)
+            (xy -7.62 22.86)
+          )
+          (stroke (width 0.508)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.81 22.86)
+            (xy -3.81 15.24)
+          )
+          (stroke (width 0.508)) (fill (type none))
         )
       )
       (symbol "USB_C_Receptacle_2.0_1_1"
@@ -528,6 +526,25 @@
       (property "ki_fp_filters" "SOT?23?6*" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
+      (symbol "SRV05-4-ESD_Protection_0_0"
+        (rectangle (start -5.715 6.477) (end 5.715 -6.604)
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.175 -6.604)
+            (xy -3.175 6.477)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 3.175 6.477)
+            (xy 3.175 -6.604)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+      )
       (symbol "SRV05-4-ESD_Protection_0_1"
         (circle (center -5.715 -2.54) (radius 0.2794) (stroke (width 0)) (fill (type outline)))
         (circle (center -3.175 -6.604) (radius 0.2794) (stroke (width 0)) (fill (type outline)))
@@ -736,25 +753,6 @@
           (stroke (width 0)) (fill (type outline))
         )
       )
-      (symbol "SRV05-4-ESD_Protection_0_0"
-        (rectangle (start -5.715 6.477) (end 5.715 -6.604)
-          (stroke (width 0)) (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -3.175 -6.604)
-            (xy -3.175 6.477)
-          )
-          (stroke (width 0)) (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 3.175 6.477)
-            (xy 3.175 -6.604)
-          )
-          (stroke (width 0)) (fill (type none))
-        )
-      )
       (symbol "SRV05-4-ESD_Protection_1_1"
         (pin passive line (at -12.7 2.54 0) (length 5.08)
           (name "IO1" (effects (font (size 1.27 1.27))))
@@ -810,22 +808,22 @@
   (junction (at 113.03 54.61) (diameter 0.3048) (color 0 0 0 0))
   (junction (at 135.89 31.75) (diameter 0.3048) (color 0 0 0 0))
 
-  (no_connect (at 153.67 80.01))
-  (no_connect (at 154.94 67.31))
-  (no_connect (at 153.67 41.91))
-  (no_connect (at 153.67 72.39))
-  (no_connect (at 153.67 39.37))
+  (no_connect (at 40.64 77.47))
   (no_connect (at 40.64 80.01))
-  (no_connect (at 154.94 69.85))
+  (no_connect (at 123.19 46.99))
+  (no_connect (at 153.67 39.37))
+  (no_connect (at 153.67 41.91))
   (no_connect (at 153.67 52.07))
+  (no_connect (at 153.67 57.15))
+  (no_connect (at 153.67 72.39))
+  (no_connect (at 153.67 74.93))
+  (no_connect (at 153.67 77.47))
+  (no_connect (at 153.67 80.01))
+  (no_connect (at 154.94 59.69))
   (no_connect (at 154.94 62.23))
   (no_connect (at 154.94 64.77))
-  (no_connect (at 153.67 57.15))
-  (no_connect (at 153.67 74.93))
-  (no_connect (at 123.19 46.99))
-  (no_connect (at 40.64 77.47))
-  (no_connect (at 154.94 59.69))
-  (no_connect (at 153.67 77.47))
+  (no_connect (at 154.94 67.31))
+  (no_connect (at 154.94 69.85))
 
   (wire (pts (xy 17.78 87.63) (xy 17.78 91.44))
     (stroke (width 0) (type solid) (color 0 0 0 0))
@@ -1195,16 +1193,28 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
   )
 
-  (global_label "E_RX" (shape input) (at 173.99 49.53 0)
+  (global_label "E_RX" (shape input) (at 173.99 49.53 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+
     (effects (font (size 1.524 1.524)) (justify left))
   )
-  (global_label "E_TX" (shape input) (at 173.99 52.07 0)
+  (global_label "E_TX" (shape input) (at 173.99 52.07 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+
     (effects (font (size 1.524 1.524)) (justify left))
   )
-  (global_label "DTR" (shape input) (at 173.99 54.61 0)
+  (global_label "DTR" (shape input) (at 173.99 54.61 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+
     (effects (font (size 1.524 1.524)) (justify left))
   )
-  (global_label "RTS" (shape input) (at 173.99 57.15 0)
+  (global_label "RTS" (shape input) (at 173.99 57.15 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+
     (effects (font (size 1.524 1.524)) (justify left))
   )
 
