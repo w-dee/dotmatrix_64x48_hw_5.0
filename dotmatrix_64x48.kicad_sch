@@ -4810,13 +4810,13 @@
       (reference "C96") (unit 1) (value "1u/35V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000058141380/6a5e1492-e2f8-4d70-a0c9-a11235879a35"
-      (reference "D1") (unit 1) (value "BAT54AT") (footprint "components:SOT-523-handsoldering")
+      (reference "D1") (unit 1) (value "BAT54A") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/b020d47d-1a5b-4138-a695-a26cbb9af827"
-      (reference "D2") (unit 1) (value "BAT54AT") (footprint "components:SOT-523-handsoldering")
+      (reference "D2") (unit 1) (value "BAT54A") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/dc0bebbe-dfa7-4313-9162-7b5198e073ba"
-      (reference "D3") (unit 1) (value "BAT54AT") (footprint "components:SOT-523-handsoldering")
+      (reference "D3") (unit 1) (value "BAT54A") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-000058185f31"
       (reference "R28") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
