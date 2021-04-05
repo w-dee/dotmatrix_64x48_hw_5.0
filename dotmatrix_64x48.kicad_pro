@@ -34,8 +34,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 1.2,
-          "width": 2.2
+          "height": 1.6,
+          "width": 3.5
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -53,6 +53,11 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.2,
+          "via_gap": 0.2,
+          "width": 0.2
         }
       ],
       "drc_exclusions": [],
@@ -454,6 +459,27 @@
         "via_diameter": 1.1,
         "via_drill": 0.5,
         "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "SignalDiff",
+        "nets": [
+          "/USB_UART/USBDN",
+          "/USB_UART/USBDP"
+        ],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.9,
+        "via_drill": 0.4,
+        "wire_width": 6.0
       }
     ],
     "meta": {
@@ -496,6 +522,12 @@
       "version": 0
     },
     "net_format_name": "",
+    "ngspice": {
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
