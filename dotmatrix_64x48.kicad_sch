@@ -5674,7 +5674,7 @@
       (reference "L1") (unit 1) (value "10uH") (footprint "components:Choke_SMD_7.3x7.3_H3.5_handsoldering")
     )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005bbe36d3"
-      (reference "L2") (unit 1) (value "2.2uH") (footprint "components:Choke_SMD_10.4x10.4_H4.8_HandSoldering")
+      (reference "L2") (unit 1) (value "2.2uH to 6.8uH") (footprint "components:Choke_SMD_10.4x10.4_H4.8_HandSoldering")
     )
     (path "/00000000-0000-0000-0000-000059a82f84/00000000-0000-0000-0000-00005bb82b05"
       (reference "L4") (unit 1) (value "BLM21PG331SN 300R@100MHz") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder")

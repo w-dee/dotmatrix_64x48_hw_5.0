@@ -2261,7 +2261,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005bbe36d3)
     (property "Reference" "L2" (id 0) (at 93.98 140.2588 90))
-    (property "Value" "2.2uH" (id 1) (at 93.98 142.57 90))
+    (property "Value" "2.2uH to 6.8uH" (id 1) (at 93.98 142.57 90))
     (property "Footprint" "components:Choke_SMD_10.4x10.4_H4.8_HandSoldering" (id 2) (at 93.98 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
