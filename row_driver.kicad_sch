@@ -1,4 +1,6 @@
-(kicad_sch (version 20210126) (generator eeschema)
+(kicad_sch (version 20210621) (generator eeschema)
+
+  (uuid 4f86cf40-ff71-4d31-8ed0-b0188fdb2da2)
 
   (paper "A4")
 
@@ -83,7 +85,7 @@
           (number "8" (effects (font (size 1.27 1.27))))
         )
         (pin output line (at 17.78 -11.43 180) (length 7.62)
-          (name "~QH" (effects (font (size 1.27 1.27))))
+          (name "~{QH}" (effects (font (size 1.27 1.27))))
           (number "9" (effects (font (size 1.27 1.27))))
         )
       )

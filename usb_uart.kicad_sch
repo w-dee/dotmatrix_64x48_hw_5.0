@@ -1,4 +1,6 @@
-(kicad_sch (version 20210126) (generator eeschema)
+(kicad_sch (version 20210621) (generator eeschema)
+
+  (uuid 53049ec2-4da9-4fce-affc-3d8fd9ea116e)
 
   (paper "A4")
 
@@ -62,7 +64,7 @@
           (number "10" (effects (font (size 1.27 1.27))))
         )
         (pin output line (at -15.24 5.08 0) (length 3.81)
-          (name "~SUSPENDb" (effects (font (size 1.27 1.27))))
+          (name "~{SUSPENDb}" (effects (font (size 1.27 1.27))))
           (number "11" (effects (font (size 1.27 1.27))))
         )
         (pin output line (at -15.24 7.62 0) (length 3.81)
@@ -142,7 +144,7 @@
           (number "8" (effects (font (size 1.27 1.27))))
         )
         (pin input line (at -15.24 15.24 0) (length 3.81)
-          (name "~RSTb" (effects (font (size 1.27 1.27))))
+          (name "~{RSTb}" (effects (font (size 1.27 1.27))))
           (number "9" (effects (font (size 1.27 1.27))))
         )
       )
