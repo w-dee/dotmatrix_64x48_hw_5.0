@@ -1308,6 +1308,7 @@
   (junction (at 248.92 67.31) (diameter 0.3048) (color 0 0 0 0))
   (junction (at 248.92 78.74) (diameter 0.3048) (color 0 0 0 0))
   (junction (at 252.73 34.29) (diameter 0.3048) (color 0 0 0 0))
+  (junction (at 254 67.31) (diameter 0.3048) (color 0 0 0 0))
   (junction (at 254 83.82) (diameter 0.3048) (color 0 0 0 0))
   (junction (at 259.08 34.29) (diameter 0.3048) (color 0 0 0 0))
 
@@ -2994,6 +2995,18 @@
     (pin "1" (uuid 7f761b37-7c99-4c99-b1d2-a61aaf18bf14))
   )
 
+  (symbol (lib_id "dotmatrix_64x48-rescue:GND-power") (at 261.62 67.31 90) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 4ab9720c-012d-4598-bd18-c6c969306de1)
+    (property "Reference" "#PWR031" (id 0) (at 267.97 67.31 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 266.0142 67.437 90))
+    (property "Footprint" "" (id 2) (at 261.62 67.31 0))
+    (property "Datasheet" "" (id 3) (at 261.62 67.31 0))
+    (pin "1" (uuid ac2d90dd-e6b7-46bc-9526-84c358d74a83))
+  )
+
   (symbol (lib_id "dotmatrix_64x48-rescue:GND-power") (at 261.62 81.28 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000059d73494)
@@ -4045,6 +4058,23 @@
     (pin "2" (uuid 03fd14f0-f0cb-4a98-84b6-0c11bc50a1c8))
   )
 
+  (symbol (lib_id "dotmatrix_64x48-rescue:C-device") (at 257.81 67.31 90) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 49857815-1581-4fad-8e41-86c5ebc194e1)
+    (property "Reference" "C94" (id 0) (at 260.35 71.12 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "1u/35V" (id 1) (at 262.89 76.2 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" (id 2) (at 260.1214 64.389 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 257.81 67.31 0))
+    (pin "1" (uuid 6ced30b5-1c50-4d8a-946a-b84c060f9a69))
+    (pin "2" (uuid 8e4ca210-ff2f-4665-8389-e1b26121a9e5))
+  )
+
   (symbol (lib_id "dotmatrix_64x48-rescue:SW_Push-Switch") (at 223.52 27.94 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005c20e4d2)
@@ -4456,6 +4486,9 @@
     )
     (path "/00000000-0000-0000-0000-000059a82f84/098d6be8-db74-4450-b19a-97f6c45b7ffa"
       (reference "#PWR030") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/4ab9720c-012d-4598-bd18-c6c969306de1"
+      (reference "#PWR031") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000057bb11db/00000000-0000-0000-0000-000057a9f4d2"
       (reference "#PWR032") (unit 1) (value "GND") (footprint "")
@@ -5095,6 +5128,9 @@
     )
     (path "/00000000-0000-0000-0000-000059a82f84/17b14bc4-a365-46ac-b920-5df65fcf7a98"
       (reference "C93") (unit 1) (value "470uF/6.3V SolidPolymer") (footprint "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm")
+    )
+    (path "/49857815-1581-4fad-8e41-86c5ebc194e1"
+      (reference "C94") (unit 1) (value "1u/35V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
     )
     (path "/00000000-0000-0000-0000-000058141380/00000000-0000-0000-0000-00005be4b4c9"
       (reference "C96") (unit 1) (value "1u/35V") (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder")
